@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1672797130 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1672797146 0
+["pdflatex"] 1682632271 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1682632290 0
   "DifferentialCalculusPictures/Concavity.png" 1671869223 10402 80577835fd5b07a6bed5a068b676cb66 ""
   "DifferentialCalculusPictures/InscribedCylinder.png" 1671869223 3005 5b5fd80a8c31f947b3e7ad7c754d68a5 ""
   "DifferentialCalculusPictures/MVTImage.png" 1671869223 13099 c29deb603fb0f21b46053cf8eb8c54ed ""
@@ -55,10 +55,10 @@
   "Math217Pictures/stokesThmEx.png" 1671869224 44320 dda12106e4163a2ce2bd9f9a6108aa14 ""
   "Math217Pictures/vectorFieldEx1.png" 1671869224 211385 a1bdf8a2f46a6f638dfe3ba8b36ebce2 ""
   "Math217Pictures/vectorFieldEx2.png" 1671869224 186514 04cb81dbdbffe4db706cc1604e371bcd ""
-  "MathNotes.aux" 1672797146 43937 a587fc9d1bfd59a7b9bbcd429afba3f8 "pdflatex"
-  "MathNotes.out" 1672797146 53586 2de01b02966c7489c92d068bff2ce788 "pdflatex"
-  "MathNotes.tex" 1672797103 594876 91789ad1c4d204405232f93232435f88 ""
-  "MathNotes.toc" 1672797146 30140 d7c16076d5307737fca1e72b1678ddf5 "pdflatex"
+  "MathNotes.aux" 1682632289 44308 9c77c5f57d6e2367e05da92e782d7d03 "pdflatex"
+  "MathNotes.out" 1682632289 54003 c8b7c54a441b76f30f980f90fe36a0fb "pdflatex"
+  "MathNotes.tex" 1682632194 595009 e4cae33d68f51e4e59a6dafe8c1a8cf9 ""
+  "MathNotes.toc" 1682632289 30388 6317b78b07d7156ffb311f3fab0d71ec "pdflatex"
   "ODEPictures/Beats.png" 1671869224 28218 5734b99fad1aab76bca6399a44a28460 ""
   "ODEPictures/PhaseLineStable.png" 1671869224 2691 0232b09c0fc00065a28665f494fa7907 ""
   "ODEPictures/PhaseLineUnstable.png" 1671869224 2992 15c040b48b5f9618296db3fbd03ce684 ""
@@ -99,7 +99,7 @@
   "PreCalcPictures/SinxandCosx.jpg" 1671869223 123272 84846cf91bbb644776807dc0459e1690 ""
   "PreCalcPictures/TriangleInvTrig.png" 1671869223 3233 f29bf7e860503cae2677315b612e1b2b ""
   "PreCalcPictures/tanx.png" 1671869223 6097 efa54ffe3ca70f2330ca5431764dd671 ""
-  "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1672797103 594876 91789ad1c4d204405232f93232435f88 ""
+  "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1682632194 595009 e4cae33d68f51e4e59a6dafe8c1a8cf9 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1671857571 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1671859246 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1671858536 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -292,7 +292,7 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1671865898 4662777 6d30ebd1f2949ad7a3d8a3b5cd0d9f7d ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671866077 7874780 abc809e35257333a6d31dd99a03d1709 ""
   "c:/texlive/2022/texmf.cnf" 1671865872 713 e69b156964470283e0530f5060668171 ""
-  "fizztex.sty" 1672204369 3312 e6886b73fcf86e65d6dfc047f5c469d3 ""
+  "fizztex.sty" 1682631755 3312 e6886b73fcf86e65d6dfc047f5c469d3 ""
   (generated)
   "MathNotes.aux"
   "MathNotes.log"
