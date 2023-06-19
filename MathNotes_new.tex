@@ -1,0 +1,38 @@
+\documentclass[11pt, fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath,amssymb,array}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{polynom}
+\usepackage{mathrsfs}
+\usepackage{esint}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{import}
+\hypersetup{
+    linktoc=all
+}
+\setlength{\parindent}{0em}
+
+% include custom package
+\usepackage{fizztex}
+
+\title{Math Notes}
+\author{Tyler Wilson}
+\date{}
+
+
+% begin document
+
+\begin{document}
+\allowdisplaybreaks
+
+\maketitle
+\tableofcontents
+
+\subimport*{Sections/}{Foundations.tex}
+
+\end{document}
