@@ -1,7 +1,18 @@
-\contentsline {section}{\numberline {1}Mathematical Proof}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Logic}{1}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Statement Types and Definitions}{1}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Set Notation}{2}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Logical Statements}{3}{subsubsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.2}Introduction to Proofs}{4}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}A First Proof}{4}{subsubsection.1.2.1}%
+\contentsline {section}{\numberline {1}Introductory Logic}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Arguments}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Introduction to Arguments, Fallacies, and Logic}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Types of Arguments}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Debates}{8}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Dialectic}{12}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}Elementary Logic}{15}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Entailment}{15}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Conjunction, Disjunction, and Negation}{17}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Conditionals and Biconditionals}{18}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Testing Arguments for Validity}{19}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Formal and Informal Logic}{22}{subsubsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.3}Formal Deductive Systems}{25}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Classification of Syetem P and Formal Logic}{25}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Conditional Proof}{31}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}Non-Classical Logic}{33}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Non-Classical Propositional Logic}{33}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Term Logic}{35}{subsubsection.1.4.2}%
