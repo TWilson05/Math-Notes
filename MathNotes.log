@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  27 APR 2023 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  13 JUL 2023 03:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -519,6 +519,8 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip61
 \thm@headsep=\skip62
 \dth@everypar=\toks42
+) (c:/texlive/2022/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
 ) (./fizztex.sty
 Package: fizztex 2022/09/16 Tyler's Engineering Physics Package
  (c:/texlive/2022/texmf-dist/tex/latex/fundus-calligra/calligra.sty
@@ -558,24 +560,24 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 ) (./MathNotes.aux)
 \openout1 = `MathNotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count314
@@ -595,24 +597,24 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 30.
  (./MathNotes.out) (./MathNotes.out)
 \@outlinefile=\write4
 \openout4 = `MathNotes.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 47.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 34.
  (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 47.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 34.
  (c:/texlive/2022/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 ) (./MathNotes.toc [1
@@ -621,2220 +623,2232 @@ File: uesint.fd
 \tf@toc=\write5
 \openout5 = `MathNotes.toc'.
 
- [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+ (./Sections/Foundations.tex (./Sections/Foundations/Numbers.tex) (./Sections/Foundations/Arithmetic.tex [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 166.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 84.
 (c:/texlive/2022/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--195
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+) (./Sections/Foundations/FractionalNumbers.tex
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--195
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--195
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--195
+Underfull \hbox (badness 10000) in paragraph at lines 82--1
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 204--212
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--212
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 214--219
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--227
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--235
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--244
+) (./Sections/Foundations/LinesAndAngles.tex
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
 
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 363--372
+[12]) (./Sections/Foundations/NegativeNumbers.tex [13]) (./Sections/Foundations/OrderOfOperations.tex [14]
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
  []
 
-[15] [16] [17]
-<FundamentalsPictures/CircleGeometry.jpg, id=2032, 868.24374pt x 861.2175pt>
-File: FundamentalsPictures/CircleGeometry.jpg Graphic file (type jpg)
-<use FundamentalsPictures/CircleGeometry.jpg>
-Package pdftex.def Info: FundamentalsPictures/CircleGeometry.jpg  used on input line 481.
+) (./Sections/Foundations/Shapes.tex [15] [16] [17]
+<Images/FundamentalsPictures/CircleGeometry.jpg, id=2026, 868.24374pt x 861.2175pt>
+File: Images/FundamentalsPictures/CircleGeometry.jpg Graphic file (type jpg)
+<use Images/FundamentalsPictures/CircleGeometry.jpg>
+Package pdftex.def Info: Images/FundamentalsPictures/CircleGeometry.jpg  used on input line 76.
 (pdftex.def)             Requested size: 147.59947pt x 146.40503pt.
- [18 <./FundamentalsPictures/CircleGeometry.jpg>] [19] [20] [21]
-<FundamentalsPictures/TrigRatios.jpg, id=2050, 1003.75pt x 628.3475pt>
-File: FundamentalsPictures/TrigRatios.jpg Graphic file (type jpg)
-<use FundamentalsPictures/TrigRatios.jpg>
-Package pdftex.def Info: FundamentalsPictures/TrigRatios.jpg  used on input line 638.
+ [18 <./Images/FundamentalsPictures/CircleGeometry.jpg>]) (./Sections/Foundations/VariableArithmetic.tex [19]) (./Sections/Foundations/TrigonometricRatios.tex [20]
+<Images/FundamentalsPictures/TrigRatios.jpg, id=2040, 1003.75pt x 628.3475pt>
+File: Images/FundamentalsPictures/TrigRatios.jpg Graphic file (type jpg)
+<use Images/FundamentalsPictures/TrigRatios.jpg>
+Package pdftex.def Info: Images/FundamentalsPictures/TrigRatios.jpg  used on input line 4.
 (pdftex.def)             Requested size: 301.12732pt x 188.50569pt.
- [22]
-<FundamentalsPictures/SpecialTriangles.png, id=2055, 752.8125pt x 385.44pt>
-File: FundamentalsPictures/SpecialTriangles.png Graphic file (type png)
-<use FundamentalsPictures/SpecialTriangles.png>
-Package pdftex.def Info: FundamentalsPictures/SpecialTriangles.png  used on input line 646.
+<Images/FundamentalsPictures/SpecialTriangles.png, id=2041, 752.8125pt x 385.44pt>
+File: Images/FundamentalsPictures/SpecialTriangles.png Graphic file (type png)
+<use Images/FundamentalsPictures/SpecialTriangles.png>
+Package pdftex.def Info: Images/FundamentalsPictures/SpecialTriangles.png  used on input line 12.
 (pdftex.def)             Requested size: 376.40532pt x 192.71953pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--647
+Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
-<FundamentalsPictures/SineLawTriangle.png, id=2057, 469.755pt x 186.6975pt>
-File: FundamentalsPictures/SineLawTriangle.png Graphic file (type png)
-<use FundamentalsPictures/SineLawTriangle.png>
-Package pdftex.def Info: FundamentalsPictures/SineLawTriangle.png  used on input line 649.
+[21 <./Images/FundamentalsPictures/TrigRatios.jpg>]
+<Images/FundamentalsPictures/SineLawTriangle.png, id=2047, 469.755pt x 186.6975pt>
+File: Images/FundamentalsPictures/SineLawTriangle.png Graphic file (type png)
+<use Images/FundamentalsPictures/SineLawTriangle.png>
+Package pdftex.def Info: Images/FundamentalsPictures/SineLawTriangle.png  used on input line 15.
 (pdftex.def)             Requested size: 328.82626pt x 130.68735pt.
-[23 <./FundamentalsPictures/TrigRatios.jpg> <./FundamentalsPictures/SpecialTriangles.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 651--655
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
  []
 
-[24 <./FundamentalsPictures/SineLawTriangle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+) (./Sections/Foundations/SequencesAndSeries.tex [22 <./Images/FundamentalsPictures/SpecialTriangles.png> <./Images/FundamentalsPictures/SineLawTriangle.png>] [23] [24]) (./Sections/Foundations/AnalyzingData.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<FundamentalsPictures/barGraph.png, id=2069, 272.81924pt x 245.718pt>
-File: FundamentalsPictures/barGraph.png Graphic file (type png)
-<use FundamentalsPictures/barGraph.png>
-Package pdftex.def Info: FundamentalsPictures/barGraph.png  used on input line 718.
+<Images/FundamentalsPictures/barGraph.png, id=2063, 272.81924pt x 245.718pt>
+File: Images/FundamentalsPictures/barGraph.png Graphic file (type png)
+<use Images/FundamentalsPictures/barGraph.png>
+Package pdftex.def Info: Images/FundamentalsPictures/barGraph.png  used on input line 16.
 (pdftex.def)             Requested size: 190.97217pt x 172.00142pt.
-<FundamentalsPictures/histogram.png, id=2070, 319.79475pt x 226.446pt>
-File: FundamentalsPictures/histogram.png Graphic file (type png)
-<use FundamentalsPictures/histogram.png>
-Package pdftex.def Info: FundamentalsPictures/histogram.png  used on input line 738.
+<Images/FundamentalsPictures/histogram.png, id=2064, 319.79475pt x 226.446pt>
+File: Images/FundamentalsPictures/histogram.png Graphic file (type png)
+<use Images/FundamentalsPictures/histogram.png>
+Package pdftex.def Info: Images/FundamentalsPictures/histogram.png  used on input line 36.
 (pdftex.def)             Requested size: 223.85478pt x 158.51111pt.
-[25] [26 <./FundamentalsPictures/barGraph.png> <./FundamentalsPictures/histogram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 758--762
+[25 <./Images/FundamentalsPictures/barGraph.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+[26 <./Images/FundamentalsPictures/histogram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-<FundamentalsPictures/boxPlot.png, id=2083, 220.4235pt x 90.3375pt>
-File: FundamentalsPictures/boxPlot.png Graphic file (type png)
-<use FundamentalsPictures/boxPlot.png>
-Package pdftex.def Info: FundamentalsPictures/boxPlot.png  used on input line 776.
+<Images/FundamentalsPictures/boxPlot.png, id=2077, 220.4235pt x 90.3375pt>
+File: Images/FundamentalsPictures/boxPlot.png Graphic file (type png)
+<use Images/FundamentalsPictures/boxPlot.png>
+Package pdftex.def Info: Images/FundamentalsPictures/boxPlot.png  used on input line 74.
 (pdftex.def)             Requested size: 220.42294pt x 90.33727pt.
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 796--803
+[27 <./Images/FundamentalsPictures/boxPlot.png>]) (./Sections/Foundations/Probability.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
-[28 <./FundamentalsPictures/boxPlot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 820--829
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--37
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 843--845
+Underfull \hbox (badness 10000) in paragraph at lines 66--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--877
+Underfull \hbox (badness 10000) in paragraph at lines 66--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--877
+Underfull \hbox (badness 10000) in paragraph at lines 66--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--877
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 877--888
-
- []
-
-<FundamentalsPictures/PascalTriangle.jpg, id=2101, 670.505pt x 492.84125pt>
-File: FundamentalsPictures/PascalTriangle.jpg Graphic file (type jpg)
-<use FundamentalsPictures/PascalTriangle.jpg>
-Package pdftex.def Info: FundamentalsPictures/PascalTriangle.jpg  used on input line 897.
+<Images/FundamentalsPictures/PascalTriangle.jpg, id=2095, 670.505pt x 492.84125pt>
+File: Images/FundamentalsPictures/PascalTriangle.jpg Graphic file (type jpg)
+<use Images/FundamentalsPictures/PascalTriangle.jpg>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangle.jpg  used on input line 105.
 (pdftex.def)             Requested size: 335.25168pt x 246.42001pt.
-<FundamentalsPictures/PascalTriangleComb.png, id=2102, 1284.8pt x 1009.7725pt>
-File: FundamentalsPictures/PascalTriangleComb.png Graphic file (type png)
-<use FundamentalsPictures/PascalTriangleComb.png>
-Package pdftex.def Info: FundamentalsPictures/PascalTriangleComb.png  used on input line 899.
+<Images/FundamentalsPictures/PascalTriangleComb.png, id=2096, 1284.8pt x 1009.7725pt>
+File: Images/FundamentalsPictures/PascalTriangleComb.png Graphic file (type png)
+<use Images/FundamentalsPictures/PascalTriangleComb.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangleComb.png  used on input line 107.
 (pdftex.def)             Requested size: 256.95544pt x 201.95091pt.
-<FundamentalsPictures/PascalTrianglePathway.png, id=2103, 360.34625pt x 346.29375pt>
-File: FundamentalsPictures/PascalTrianglePathway.png Graphic file (type png)
-<use FundamentalsPictures/PascalTrianglePathway.png>
-Package pdftex.def Info: FundamentalsPictures/PascalTrianglePathway.png  used on input line 904.
+<Images/FundamentalsPictures/PascalTrianglePathway.png, id=2097, 360.34625pt x 346.29375pt>
+File: Images/FundamentalsPictures/PascalTrianglePathway.png Graphic file (type png)
+<use Images/FundamentalsPictures/PascalTrianglePathway.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTrianglePathway.png  used on input line 112.
 (pdftex.def)             Requested size: 198.19104pt x 190.46214pt.
-<FundamentalsPictures/PathwayEx.png, id=2104, 493.845pt x 307.1475pt>
-File: FundamentalsPictures/PathwayEx.png Graphic file (type png)
-<use FundamentalsPictures/PathwayEx.png>
-Package pdftex.def Info: FundamentalsPictures/PathwayEx.png  used on input line 909.
+<Images/FundamentalsPictures/PathwayEx.png, id=2098, 493.845pt x 307.1475pt>
+File: Images/FundamentalsPictures/PathwayEx.png Graphic file (type png)
+<use Images/FundamentalsPictures/PathwayEx.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PathwayEx.png  used on input line 117.
 (pdftex.def)             Requested size: 395.07652pt x 245.71832pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--915
+Underfull \hbox (badness 10000) in paragraph at lines 106--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--915
+Underfull \hbox (badness 10000) in paragraph at lines 106--123
 
  []
 
-[31 <./FundamentalsPictures/PascalTriangle.jpg>] [32 <./FundamentalsPictures/PascalTriangleComb.png> <./FundamentalsPictures/PascalTrianglePathway.png>] [33 <./FundamentalsPictures/PathwayEx.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 973--976
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 977--979
+[31 <./Images/FundamentalsPictures/PascalTriangle.jpg> <./Images/FundamentalsPictures/PascalTriangleComb.png>] [32 <./Images/FundamentalsPictures/PascalTrianglePathway.png> <./Images/FundamentalsPictures/PathwayEx.png>])) (./Sections/Introductory_Logic.tex (./Sections/Introductory_Logic/Arguments.tex
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 980--986
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 995--998
+Underfull \hbox (badness 10000) in paragraph at lines 28--34
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 999--1007
+Underfull \hbox (badness 10000) in paragraph at lines 47--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1015
+Underfull \hbox (badness 10000) in paragraph at lines 56--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1022
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1024
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1031
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1037
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1052
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1113
+Underfull \hbox (badness 10000) in paragraph at lines 143--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1118
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1129
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1136
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1164
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1182
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1189
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1203
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1208
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1222--1224
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1225--1227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1230
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1244
+Underfull \hbox (badness 10000) in paragraph at lines 302--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1246
+Underfull \hbox (badness 10000) in paragraph at lines 307--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1254--1258
+Underfull \hbox (badness 10000) in paragraph at lines 322--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1259--1270
+Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1277
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1278--1281
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1282--1283
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1284--1286
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1292
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--364
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1294
+Underfull \hbox (badness 10000) in paragraph at lines 370--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1297
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1302
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1303--1316
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1322--1326
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1327--1328
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1330
+Underfull \hbox (badness 10000) in paragraph at lines 392--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1331--1332
+Underfull \hbox (badness 10000) in paragraph at lines 399--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1334
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1335--1336
+Underfull \hbox (badness 10000) in paragraph at lines 406--409
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1350
+Underfull \hbox (badness 10000) in paragraph at lines 414--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1357
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
+Underfull \hbox (badness 10000) in paragraph at lines 436--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1371--1372
+Underfull \hbox (badness 10000) in paragraph at lines 447--457
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1398
+Underfull \hbox (badness 10000) in paragraph at lines 458--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1410--1421
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
 
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1422--1426
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1439--1443
+Underfull \hbox (badness 10000) in paragraph at lines 492--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1458
+Underfull \hbox (badness 10000) in paragraph at lines 507--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1465
+Underfull \hbox (badness 10000) in paragraph at lines 514--529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1481
+Underfull \hbox (badness 10000) in paragraph at lines 530--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--542
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--551
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1482--1490
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1491--1494
+Underfull \hbox (badness 10000) in paragraph at lines 561--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1498
+Underfull \hbox (badness 10000) in paragraph at lines 571--573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1503
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1512
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
+
+ []
+
+[46]) (./Sections/Introductory_Logic/Elementary_Logic.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1513--1516
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 1523--1525
+Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1532--1534
+Underfull \hbox (badness 10000) in paragraph at lines 24--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1541--1543
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1565
+Underfull \hbox (badness 10000) in paragraph at lines 33--54
 
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1566--1574
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1575--1583
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1584--1605
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
+Underfull \hbox (badness 10000) in paragraph at lines 72--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1608--1615
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1616--1622
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1623--1630
-
- []
-
-[48]
-Underfull \hbox (badness 1231) in paragraph at lines 1635--1636
+Underfull \hbox (badness 1231) in paragraph at lines 84--85
 []|\OT1/cmr/m/n/10.95 Therefore, ei-ther
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1631--1637
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1638--1640
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1641--1643
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1647
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1655--1657
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1662
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--164
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
+Underfull \hbox (badness 10000) in paragraph at lines 166--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1674--1683
+Underfull \hbox (badness 10000) in paragraph at lines 177--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1684--1693
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1701
+Underfull \hbox (badness 10000) in paragraph at lines 190--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1702--1715
+Underfull \hbox (badness 10000) in paragraph at lines 200--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1727
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1728--1737
+Underfull \hbox (badness 10000) in paragraph at lines 210--219
 
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 1738--1740
+Underfull \hbox (badness 10000) in paragraph at lines 221--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1741--1750
+Underfull \hbox (badness 10000) in paragraph at lines 238--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1751--1760
+Underfull \hbox (badness 10000) in paragraph at lines 253--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1761--1770
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1772--1788
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1789--1803
+Underfull \hbox (badness 10000) in paragraph at lines 264--282
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 1804--1814
+Underfull \hbox (badness 10000) in paragraph at lines 283--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1815--1833
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1834--1859
+Underfull \hbox (badness 10000) in paragraph at lines 319--351
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 1870--1902
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--392
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 1909--1912
+Underfull \hbox (badness 10000) in paragraph at lines 404--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1917--1919
+Underfull \hbox (badness 10000) in paragraph at lines 413--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1924--1927
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1928--1943
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1955--1963
+Underfull \hbox (badness 10000) in paragraph at lines 422--436
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 1964--1969
+Underfull \hbox (badness 10000) in paragraph at lines 437--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1970--1972
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1973--1987
+Underfull \hbox (badness 10000) in paragraph at lines 447--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1988--1995
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1996--1997
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1998--2000
+Underfull \hbox (badness 10000) in paragraph at lines 458--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--467
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 2001--2004
+Underfull \hbox (badness 10000) in paragraph at lines 468--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2005--2008
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2009--2012
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2013--2018
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2019--2022
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2023--2025
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2026--2028
+) (./Sections/Introductory_Logic/Formal_Deductive_Systems.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--17
 
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 2045--2047
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2077
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2078--2085
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2092--2094
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2095--2100
-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 2130--2130
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|$\U/msa/m/n/10.95 )
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2146--2164
-
- []
-
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2224
-
- []
-
-[60] [61] [62]
-Underfull \hbox (badness 10000) in paragraph at lines 2309--2372
-
- []
-
-[63] [64]
-Underfull \hbox (badness 10000) in paragraph at lines 2394--2395
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 86--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2396--2399
+Underfull \hbox (badness 10000) in paragraph at lines 105--164
+
+ []
+
+[59] [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 249--312
+
+ []
+
+[62]) (./Sections/Introductory_Logic/Non-Classical_Logic.tex [63]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2400--2403
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2408--2409
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2410--2411
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<Phil120Pictures/image1.png, id=2277, 157.7895pt x 76.48575pt>
-File: Phil120Pictures/image1.png Graphic file (type png)
-<use Phil120Pictures/image1.png>
-Package pdftex.def Info: Phil120Pictures/image1.png  used on input line 2425.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+<Images/Phil120Pictures/image1.png, id=2267, 157.7895pt x 76.48575pt>
+File: Images/Phil120Pictures/image1.png Graphic file (type png)
+<use Images/Phil120Pictures/image1.png>
+Package pdftex.def Info: Images/Phil120Pictures/image1.png  used on input line 35.
 (pdftex.def)             Requested size: 157.78911pt x 76.48553pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2416--2427
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
 
  []
 
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 2428--2468
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2469--2471
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 38--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2472--2483
-
- []
-
-[66 <./Phil120Pictures/image1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2484--2498
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2504--2509
+Underfull \hbox (badness 10000) in paragraph at lines 82--93
+
+ []
+
+[65 <./Images/Phil120Pictures/image1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2510--2514
+Underfull \hbox (badness 10000) in paragraph at lines 114--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2515--2518
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2519--2530
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
 
  []
 
-[67]
-<Phil120Pictures/image2.png, id=2292, 438.438pt x 489.62926pt>
-File: Phil120Pictures/image2.png Graphic file (type png)
-<use Phil120Pictures/image2.png>
-Package pdftex.def Info: Phil120Pictures/image2.png  used on input line 2541.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--140
+
+ []
+
+[66]
+<Images/Phil120Pictures/image2.png, id=2281, 438.438pt x 489.62926pt>
+File: Images/Phil120Pictures/image2.png Graphic file (type png)
+<use Images/Phil120Pictures/image2.png>
+Package pdftex.def Info: Images/Phil120Pictures/image2.png  used on input line 151.
 (pdftex.def)             Requested size: 350.75087pt x 391.70393pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2541--2542
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2543--2545
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
-[68 <./Phil120Pictures/image2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2546--2559
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2560--2562
+[67 <./Images/Phil120Pictures/image2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2563--2572
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2573--2577
+Underfull \hbox (badness 10000) in paragraph at lines 173--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2578--2580
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2581--2583
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2584--2586
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2587--2590
-
- []
-
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 2591--2594
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2595--2598
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
  []
 
-<Phil120Pictures/image3.png, id=2303, 427.5975pt x 176.45924pt>
-File: Phil120Pictures/image3.png Graphic file (type png)
-<use Phil120Pictures/image3.png>
-Package pdftex.def Info: Phil120Pictures/image3.png  used on input line 2600.
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
+
+ []
+
+<Images/Phil120Pictures/image3.png, id=2292, 427.5975pt x 176.45924pt>
+File: Images/Phil120Pictures/image3.png Graphic file (type png)
+<use Images/Phil120Pictures/image3.png>
+Package pdftex.def Info: Images/Phil120Pictures/image3.png  used on input line 210.
 (pdftex.def)             Requested size: 342.07846pt x 141.16757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2599--2610
+Underfull \hbox (badness 10000) in paragraph at lines 209--220
 
  []
 
-<Phil120Pictures/image4.png, id=2304, 225.2415pt x 98.16675pt>
-File: Phil120Pictures/image4.png Graphic file (type png)
-<use Phil120Pictures/image4.png>
-Package pdftex.def Info: Phil120Pictures/image4.png  used on input line 2617.
+<Images/Phil120Pictures/image4.png, id=2293, 225.2415pt x 98.16675pt>
+File: Images/Phil120Pictures/image4.png Graphic file (type png)
+<use Images/Phil120Pictures/image4.png>
+Package pdftex.def Info: Images/Phil120Pictures/image4.png  used on input line 227.
 (pdftex.def)             Requested size: 157.66795pt x 68.71625pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2611--2618
+Underfull \hbox (badness 10000) in paragraph at lines 221--228
 
  []
 
-[70 <./Phil120Pictures/image3.png> <./Phil120Pictures/image4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2619--2624
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2625--2628
+[69 <./Images/Phil120Pictures/image3.png> <./Images/Phil120Pictures/image4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2629--2631
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
-<PreCalcPictures/Cartesian Coordinate system.jpg, id=2311, 1204.5pt x 803.0pt>
-File: PreCalcPictures/Cartesian Coordinate system.jpg Graphic file (type jpg)
-<use PreCalcPictures/Cartesian Coordinate system.jpg>
-Package pdftex.def Info: PreCalcPictures/Cartesian Coordinate system.jpg  used on input line 2717.
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+
+ []
+
+)) (./Sections/Pre-Calculus.tex (./Sections/Pre-Calculus/Functions_and_Coordinates.tex
+<Images/PreCalcPictures/Cartesian Coordinate system.jpg, id=2300, 1204.5pt x 803.0pt>
+File: Images/PreCalcPictures/Cartesian Coordinate system.jpg Graphic file (type jpg)
+<use Images/PreCalcPictures/Cartesian Coordinate system.jpg>
+Package pdftex.def Info: Images/PreCalcPictures/Cartesian Coordinate system.jpg  used on input line 5.
 (pdftex.def)             Requested size: 180.6672pt x 120.4448pt.
-[71] [72 <./PreCalcPictures/Cartesian Coordinate system.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2774--2779
+ [70]) (./Sections/Pre-Calculus/Linear_Functions.tex [71 <./Images/PreCalcPictures/Cartesian Coordinate system.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
 
-<PreCalcPictures/LinearSystemIntersection.png, id=2320, 409.53pt x 153.9351pt>
-File: PreCalcPictures/LinearSystemIntersection.png Graphic file (type png)
-<use PreCalcPictures/LinearSystemIntersection.png>
-Package pdftex.def Info: PreCalcPictures/LinearSystemIntersection.png  used on input line 2793.
+<Images/PreCalcPictures/LinearSystemIntersection.png, id=2310, 409.53pt x 153.9351pt>
+File: Images/PreCalcPictures/LinearSystemIntersection.png Graphic file (type png)
+<use Images/PreCalcPictures/LinearSystemIntersection.png>
+Package pdftex.def Info: Images/PreCalcPictures/LinearSystemIntersection.png  used on input line 41.
 (pdftex.def)             Requested size: 286.66904pt x 107.75381pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2786--2801
+Underfull \hbox (badness 10000) in paragraph at lines 34--49
 
  []
 
-[73] [74 <./PreCalcPictures/LinearSystemIntersection.png>]
-<PreCalcPictures/LinearInequalities.jpg, id=2331, 1532.72626pt x 687.56876pt>
-File: PreCalcPictures/LinearInequalities.jpg Graphic file (type jpg)
-<use PreCalcPictures/LinearInequalities.jpg>
-Package pdftex.def Info: PreCalcPictures/LinearInequalities.jpg  used on input line 2840.
+[72] [73 <./Images/PreCalcPictures/LinearSystemIntersection.png>]
+<Images/PreCalcPictures/LinearInequalities.jpg, id=2321, 1532.72626pt x 687.56876pt>
+File: Images/PreCalcPictures/LinearInequalities.jpg Graphic file (type jpg)
+<use Images/PreCalcPictures/LinearInequalities.jpg>
+Package pdftex.def Info: Images/PreCalcPictures/LinearInequalities.jpg  used on input line 88.
 (pdftex.def)             Requested size: 459.82143pt x 206.27222pt.
- [75 <./PreCalcPictures/LinearInequalities.jpg>]
-<PreCalcPictures/ParabolaSolutions.png, id=2336, 561.09625pt x 211.79124pt>
-File: PreCalcPictures/ParabolaSolutions.png Graphic file (type png)
-<use PreCalcPictures/ParabolaSolutions.png>
-Package pdftex.def Info: PreCalcPictures/ParabolaSolutions.png  used on input line 2860.
+) (./Sections/Pre-Calculus/Quadratic_Functions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 87--1
+
+ []
+
+[74 <./Images/PreCalcPictures/LinearInequalities.jpg>]
+<Images/PreCalcPictures/ParabolaSolutions.png, id=2326, 561.09625pt x 211.79124pt>
+File: Images/PreCalcPictures/ParabolaSolutions.png Graphic file (type png)
+<use Images/PreCalcPictures/ParabolaSolutions.png>
+Package pdftex.def Info: Images/PreCalcPictures/ParabolaSolutions.png  used on input line 12.
 (pdftex.def)             Requested size: 336.66034pt x 127.07571pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2861
+Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2862--2874
+Underfull \hbox (badness 10000) in paragraph at lines 14--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2862--2874
+Underfull \hbox (badness 10000) in paragraph at lines 14--26
 
  []
 
-[76 <./PreCalcPictures/ParabolaSolutions.png>] [77]
-Underfull \hbox (badness 10000) in paragraph at lines 2919--2930
+[75 <./Images/PreCalcPictures/ParabolaSolutions.png>] [76]
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
 
  []
 
-<PreCalcPictures/Inequality1.png, id=2346, 469.755pt x 25.59563pt>
-File: PreCalcPictures/Inequality1.png Graphic file (type png)
-<use PreCalcPictures/Inequality1.png>
-Package pdftex.def Info: PreCalcPictures/Inequality1.png  used on input line 2943.
+<Images/PreCalcPictures/Inequality1.png, id=2336, 469.755pt x 25.59563pt>
+File: Images/PreCalcPictures/Inequality1.png Graphic file (type png)
+<use Images/PreCalcPictures/Inequality1.png>
+Package pdftex.def Info: Images/PreCalcPictures/Inequality1.png  used on input line 95.
 (pdftex.def)             Requested size: 469.75386pt x 25.59555pt.
-<PreCalcPictures/Inequality2.png, id=2347, 469.755pt x 24.84282pt>
-File: PreCalcPictures/Inequality2.png Graphic file (type png)
-<use PreCalcPictures/Inequality2.png>
-Package pdftex.def Info: PreCalcPictures/Inequality2.png  used on input line 2945.
+<Images/PreCalcPictures/Inequality2.png, id=2337, 469.755pt x 24.84282pt>
+File: Images/PreCalcPictures/Inequality2.png Graphic file (type png)
+<use Images/PreCalcPictures/Inequality2.png>
+Package pdftex.def Info: Images/PreCalcPictures/Inequality2.png  used on input line 97.
 (pdftex.def)             Requested size: 469.75386pt x 24.84274pt.
-<PreCalcPictures/Inequality3.png, id=2348, 469.755pt x 21.07875pt>
-File: PreCalcPictures/Inequality3.png Graphic file (type png)
-<use PreCalcPictures/Inequality3.png>
-Package pdftex.def Info: PreCalcPictures/Inequality3.png  used on input line 2947.
+<Images/PreCalcPictures/Inequality3.png, id=2338, 469.755pt x 21.07875pt>
+File: Images/PreCalcPictures/Inequality3.png Graphic file (type png)
+<use Images/PreCalcPictures/Inequality3.png>
+Package pdftex.def Info: Images/PreCalcPictures/Inequality3.png  used on input line 99.
 (pdftex.def)             Requested size: 469.75386pt x 21.07867pt.
-[78 <./PreCalcPictures/Inequality1.png> <./PreCalcPictures/Inequality2.png> <./PreCalcPictures/Inequality3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2960--2963
+) (./Sections/Pre-Calculus/Transforming_Functions.tex [77 <./Images/PreCalcPictures/Inequality1.png> <./Images/PreCalcPictures/Inequality2.png> <./Images/PreCalcPictures/Inequality3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2963--2967
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2967--2971
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2971--2975
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2975--2979
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2979--2983
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2983--2987
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
+
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 42--48
 
  []
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 2998--3004
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-[80]
-Underfull \hbox (badness 10000) in paragraph at lines 3029--3031
-
- []
-
-<PreCalcPictures/ReciprocalEx.png, id=2365, 469.755pt x 345.54094pt>
-File: PreCalcPictures/ReciprocalEx.png Graphic file (type png)
-<use PreCalcPictures/ReciprocalEx.png>
-Package pdftex.def Info: PreCalcPictures/ReciprocalEx.png  used on input line 3038.
+<Images/PreCalcPictures/ReciprocalEx.png, id=2355, 469.755pt x 345.54094pt>
+File: Images/PreCalcPictures/ReciprocalEx.png Graphic file (type png)
+<use Images/PreCalcPictures/ReciprocalEx.png>
+Package pdftex.def Info: Images/PreCalcPictures/ReciprocalEx.png  used on input line 82.
 (pdftex.def)             Requested size: 234.87692pt x 172.77003pt.
-[81 <./PreCalcPictures/ReciprocalEx.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 3063--3074
+[80 <./Images/PreCalcPictures/ReciprocalEx.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 107--118
 
  []
 
-[82]
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3113
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 130--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3113
+Underfull \hbox (badness 10000) in paragraph at lines 130--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3113
+Underfull \hbox (badness 10000) in paragraph at lines 130--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3113
+Underfull \hbox (badness 10000) in paragraph at lines 130--157
 
  []
 
-[83]
-<PreCalcPictures/ConicSections.png, id=2379, 803.0pt x 329.23pt>
-File: PreCalcPictures/ConicSections.png Graphic file (type png)
-<use PreCalcPictures/ConicSections.png>
-Package pdftex.def Info: PreCalcPictures/ConicSections.png  used on input line 3129.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--157
+
+ []
+
+[82]) (./Sections/Pre-Calculus/Conic_Sections.tex
+<Images/PreCalcPictures/ConicSections.png, id=2369, 803.0pt x 329.23pt>
+File: Images/PreCalcPictures/ConicSections.png Graphic file (type png)
+<use Images/PreCalcPictures/ConicSections.png>
+Package pdftex.def Info: Images/PreCalcPictures/ConicSections.png  used on input line 3.
 (pdftex.def)             Requested size: 401.49902pt x 164.6146pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3132--3134
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[84 <./PreCalcPictures/ConicSections.png>]
-<PreCalcPictures/ParabolaConic.png, id=2385, 182.96202pt x 136.61165pt>
-File: PreCalcPictures/ParabolaConic.png Graphic file (type png)
-<use PreCalcPictures/ParabolaConic.png>
-Package pdftex.def Info: PreCalcPictures/ParabolaConic.png  used on input line 3155.
+[83 <./Images/PreCalcPictures/ConicSections.png>]
+<Images/PreCalcPictures/ParabolaConic.png, id=2375, 182.96202pt x 136.61165pt>
+File: Images/PreCalcPictures/ParabolaConic.png Graphic file (type png)
+<use Images/PreCalcPictures/ParabolaConic.png>
+Package pdftex.def Info: Images/PreCalcPictures/ParabolaConic.png  used on input line 29.
 (pdftex.def)             Requested size: 219.55331pt x 163.93315pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3154--3159
+Underfull \hbox (badness 10000) in paragraph at lines 28--33
 
  []
 
-[85 <./PreCalcPictures/ParabolaConic.png (PNG copy)>]
-<PreCalcPictures/HyperbolaGraph.png, id=2391, 1095.09125pt x 881.2925pt>
-File: PreCalcPictures/HyperbolaGraph.png Graphic file (type png)
-<use PreCalcPictures/HyperbolaGraph.png>
-Package pdftex.def Info: PreCalcPictures/HyperbolaGraph.png  used on input line 3173.
+[84 <./Images/PreCalcPictures/ParabolaConic.png (PNG copy)>]
+<Images/PreCalcPictures/HyperbolaGraph.png, id=2380, 1095.09125pt x 881.2925pt>
+File: Images/PreCalcPictures/HyperbolaGraph.png Graphic file (type png)
+<use Images/PreCalcPictures/HyperbolaGraph.png>
+Package pdftex.def Info: Images/PreCalcPictures/HyperbolaGraph.png  used on input line 47.
 (pdftex.def)             Requested size: 328.5299pt x 264.38979pt.
- [86 <./PreCalcPictures/HyperbolaGraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 3189--3203
+) (./Sections/Pre-Calculus/Polynomial_Functions.tex [85 <./Images/PreCalcPictures/HyperbolaGraph.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3205--3219
+Underfull \hbox (badness 10000) in paragraph at lines 23--37
 
  []
 
-[87] [88]
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3262
+[86]) (./Sections/Pre-Calculus/Exponential_and_Logs.tex [87]
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3278--3285
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
-[89] [90]
-<PreCalcPictures/ReferenceAngle.png, id=2414, 2738.23pt x 2354.7975pt>
-File: PreCalcPictures/ReferenceAngle.png Graphic file (type png)
-<use PreCalcPictures/ReferenceAngle.png>
-Package pdftex.def Info: PreCalcPictures/ReferenceAngle.png  used on input line 3367.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
+
+ []
+
+[88] [89]) (./Sections/Pre-Calculus/Trig_Functions.tex
+<Images/PreCalcPictures/ReferenceAngle.png, id=2404, 2738.23pt x 2354.7975pt>
+File: Images/PreCalcPictures/ReferenceAngle.png Graphic file (type png)
+<use Images/PreCalcPictures/ReferenceAngle.png>
+Package pdftex.def Info: Images/PreCalcPictures/ReferenceAngle.png  used on input line 7.
 (pdftex.def)             Requested size: 355.98239pt x 306.13441pt.
- [91]
-<PreCalcPictures/SinxandCosx.jpg, id=2421, 234.6366pt x 212.9556pt>
-File: PreCalcPictures/SinxandCosx.jpg Graphic file (type jpg)
-<use PreCalcPictures/SinxandCosx.jpg>
-Package pdftex.def Info: PreCalcPictures/SinxandCosx.jpg  used on input line 3382.
+ [90]
+<Images/PreCalcPictures/SinxandCosx.jpg, id=2409, 234.6366pt x 212.9556pt>
+File: Images/PreCalcPictures/SinxandCosx.jpg Graphic file (type jpg)
+<use Images/PreCalcPictures/SinxandCosx.jpg>
+Package pdftex.def Info: Images/PreCalcPictures/SinxandCosx.jpg  used on input line 22.
 (pdftex.def)             Requested size: 281.5625pt x 255.54543pt.
- [92 <./PreCalcPictures/ReferenceAngle.png>] [93 <./PreCalcPictures/SinxandCosx.jpg>]
-<PreCalcPictures/tanx.png, id=2431, 380.42125pt x 248.93pt>
-File: PreCalcPictures/tanx.png Graphic file (type png)
-<use PreCalcPictures/tanx.png>
-Package pdftex.def Info: PreCalcPictures/tanx.png  used on input line 3401.
+ [91 <./Images/PreCalcPictures/ReferenceAngle.png>] [92 <./Images/PreCalcPictures/SinxandCosx.jpg>]
+<Images/PreCalcPictures/tanx.png, id=2421, 380.42125pt x 248.93pt>
+File: Images/PreCalcPictures/tanx.png Graphic file (type png)
+<use Images/PreCalcPictures/tanx.png>
+Package pdftex.def Info: Images/PreCalcPictures/tanx.png  used on input line 41.
 (pdftex.def)             Requested size: 342.37595pt x 224.03491pt.
-<PreCalcPictures/Cscx.png, id=2432, 372.64218pt x 368.87813pt>
-File: PreCalcPictures/Cscx.png Graphic file (type png)
-<use PreCalcPictures/Cscx.png>
-Package pdftex.def Info: PreCalcPictures/Cscx.png  used on input line 3408.
+<Images/PreCalcPictures/Cscx.png, id=2422, 372.64218pt x 368.87813pt>
+File: Images/PreCalcPictures/Cscx.png Graphic file (type png)
+<use Images/PreCalcPictures/Cscx.png>
+Package pdftex.def Info: Images/PreCalcPictures/Cscx.png  used on input line 48.
 (pdftex.def)             Requested size: 149.05423pt x 147.54863pt.
-<PreCalcPictures/Secx.png, id=2433, 371.13657pt x 368.87813pt>
-File: PreCalcPictures/Secx.png Graphic file (type png)
-<use PreCalcPictures/Secx.png>
-Package pdftex.def Info: PreCalcPictures/Secx.png  used on input line 3409.
+<Images/PreCalcPictures/Secx.png, id=2423, 371.13657pt x 368.87813pt>
+File: Images/PreCalcPictures/Secx.png Graphic file (type png)
+<use Images/PreCalcPictures/Secx.png>
+Package pdftex.def Info: Images/PreCalcPictures/Secx.png  used on input line 49.
 (pdftex.def)             Requested size: 148.45198pt x 147.54863pt.
-<PreCalcPictures/Cotx.png, id=2434, 370.38374pt x 368.87813pt>
-File: PreCalcPictures/Cotx.png Graphic file (type png)
-<use PreCalcPictures/Cotx.png>
-Package pdftex.def Info: PreCalcPictures/Cotx.png  used on input line 3410.
+<Images/PreCalcPictures/Cotx.png, id=2424, 370.38374pt x 368.87813pt>
+File: Images/PreCalcPictures/Cotx.png Graphic file (type png)
+<use Images/PreCalcPictures/Cotx.png>
+Package pdftex.def Info: Images/PreCalcPictures/Cotx.png  used on input line 50.
 (pdftex.def)             Requested size: 148.15086pt x 147.54863pt.
- [94 <./PreCalcPictures/tanx.png> <./PreCalcPictures/Cscx.png> <./PreCalcPictures/Secx.png> <./PreCalcPictures/Cotx.png>] [95] [96]
-Underfull \hbox (badness 10000) in paragraph at lines 3495--3496
+ [93 <./Images/PreCalcPictures/tanx.png> <./Images/PreCalcPictures/Cscx.png> <./Images/PreCalcPictures/Secx.png> <./Images/PreCalcPictures/Cotx.png>] [94] [95]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[97]
-<PreCalcPictures/InverseTrigGraphs.png, id=2456, 939.51pt x 678.535pt>
-File: PreCalcPictures/InverseTrigGraphs.png Graphic file (type png)
-<use PreCalcPictures/InverseTrigGraphs.png>
-Package pdftex.def Info: PreCalcPictures/InverseTrigGraphs.png  used on input line 3535.
+[96]
+<Images/PreCalcPictures/InverseTrigGraphs.png, id=2445, 939.51pt x 678.535pt>
+File: Images/PreCalcPictures/InverseTrigGraphs.png Graphic file (type png)
+<use Images/PreCalcPictures/InverseTrigGraphs.png>
+Package pdftex.def Info: Images/PreCalcPictures/InverseTrigGraphs.png  used on input line 175.
 (pdftex.def)             Requested size: 469.75385pt x 339.26666pt.
- [98]
-<PreCalcPictures/TriangleInvTrig.png, id=2461, 313.9228pt x 190.46156pt>
-File: PreCalcPictures/TriangleInvTrig.png Graphic file (type png)
-<use PreCalcPictures/TriangleInvTrig.png>
-Package pdftex.def Info: PreCalcPictures/TriangleInvTrig.png  used on input line 3562.
+ [97]
+<Images/PreCalcPictures/TriangleInvTrig.png, id=2451, 313.9228pt x 190.46156pt>
+File: Images/PreCalcPictures/TriangleInvTrig.png Graphic file (type png)
+<use Images/PreCalcPictures/TriangleInvTrig.png>
+Package pdftex.def Info: Images/PreCalcPictures/TriangleInvTrig.png  used on input line 202.
 (pdftex.def)             Requested size: 156.96101pt x 95.23053pt.
- [99 <./PreCalcPictures/InverseTrigGraphs.png>] [100 <./PreCalcPictures/TriangleInvTrig.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 3683--3688
+ [98 <./Images/PreCalcPictures/InverseTrigGraphs.png>]) (./Sections/Pre-Calculus/Complex_Numbers.tex [99 <./Images/PreCalcPictures/TriangleInvTrig.png>])) (./Sections/Differential_Calculus.tex (./Sections/Differential_Calculus/Limits_and_Continuity.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-[101] [102]
-<DifferentialCalculusPictures/limitTriangle.png, id=2479, 333.49594pt x 288.3272pt>
-File: DifferentialCalculusPictures/limitTriangle.png Graphic file (type png)
-<use DifferentialCalculusPictures/limitTriangle.png>
-Package pdftex.def Info: DifferentialCalculusPictures/limitTriangle.png  used on input line 3735.
+[100] [101]
+<Images/DifferentialCalculusPictures/limitTriangle.png, id=2469, 333.49594pt x 288.3272pt>
+File: Images/DifferentialCalculusPictures/limitTriangle.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/limitTriangle.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/limitTriangle.png  used on input line 64.
 (pdftex.def)             Requested size: 200.09909pt x 172.99763pt.
- [103] [104 <./DifferentialCalculusPictures/limitTriangle.png>]
-<DifferentialCalculusPictures/Tangent.png, id=2490, 469.755pt x 304.13625pt>
-File: DifferentialCalculusPictures/Tangent.png Graphic file (type png)
-<use DifferentialCalculusPictures/Tangent.png>
-Package pdftex.def Info: DifferentialCalculusPictures/Tangent.png  used on input line 3800.
+ [102] [103 <./Images/DifferentialCalculusPictures/limitTriangle.png>]) (./Sections/Differential_Calculus/Differentiation.tex
+<Images/DifferentialCalculusPictures/Tangent.png, id=2480, 469.755pt x 304.13625pt>
+File: Images/DifferentialCalculusPictures/Tangent.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/Tangent.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/Tangent.png  used on input line 5.
 (pdftex.def)             Requested size: 328.82626pt x 212.8939pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3799--3807
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-[105] [106 <./DifferentialCalculusPictures/Tangent.png>] [107] [108]
-Underfull \hbox (badness 10000) in paragraph at lines 3890--3898
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3890--3898
+[104] [105 <./Images/DifferentialCalculusPictures/Tangent.png>] [106] [107]
+Underfull \hbox (badness 10000) in paragraph at lines 95--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3890--3898
+Underfull \hbox (badness 10000) in paragraph at lines 95--103
 
  []
 
-[109] [110] [111] [112]
-Overfull \hbox (22.07385pt too wide) detected at line 4057
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--103
+
+ []
+
+[108]) (./Sections/Differential_Calculus/Differentiation_Techniques.tex [109] [110] [111]
+Overfull \hbox (22.07385pt too wide) detected at line 122
 []
  []
 
-[113] [114] [115] [116] [117] [118] [119]
-Underfull \hbox (badness 10000) in paragraph at lines 4282--4285
+[112] [113]) (./Sections/Differential_Calculus/Approximations.tex [114] [115] [116] [117] [118]) (./Sections/Differential_Calculus/Graphing.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4301--4307
+Underfull \hbox (badness 10000) in paragraph at lines 23--29
 
  []
 
-[120]
-<DifferentialCalculusPictures/RollesTheorem.png, id=2567, 298.11375pt x 286.06876pt>
-File: DifferentialCalculusPictures/RollesTheorem.png Graphic file (type png)
-<use DifferentialCalculusPictures/RollesTheorem.png>
-Package pdftex.def Info: DifferentialCalculusPictures/RollesTheorem.png  used on input line 4338.
+[119]
+<Images/DifferentialCalculusPictures/RollesTheorem.png, id=2557, 298.11375pt x 286.06876pt>
+File: Images/DifferentialCalculusPictures/RollesTheorem.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/RollesTheorem.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/RollesTheorem.png  used on input line 60.
 (pdftex.def)             Requested size: 178.86963pt x 171.64258pt.
- [121 <./DifferentialCalculusPictures/RollesTheorem.png>]
-<DifferentialCalculusPictures/MVTImage.png, id=2574, 383.93437pt x 355.3275pt>
-File: DifferentialCalculusPictures/MVTImage.png Graphic file (type png)
-<use DifferentialCalculusPictures/MVTImage.png>
-Package pdftex.def Info: DifferentialCalculusPictures/MVTImage.png  used on input line 4368.
+ [120 <./Images/DifferentialCalculusPictures/RollesTheorem.png>]
+<Images/DifferentialCalculusPictures/MVTImage.png, id=2563, 383.93437pt x 355.3275pt>
+File: Images/DifferentialCalculusPictures/MVTImage.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/MVTImage.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/MVTImage.png  used on input line 90.
 (pdftex.def)             Requested size: 230.3624pt x 213.19814pt.
- [122 <./DifferentialCalculusPictures/MVTImage.png>] [123] [124]
-<DifferentialCalculusPictures/Concavity.png, id=2588, 543.53062pt x 240.14719pt>
-File: DifferentialCalculusPictures/Concavity.png Graphic file (type png)
-<use DifferentialCalculusPictures/Concavity.png>
-Package pdftex.def Info: DifferentialCalculusPictures/Concavity.png  used on input line 4463.
+ [121 <./Images/DifferentialCalculusPictures/MVTImage.png>] [122] [123]
+<Images/DifferentialCalculusPictures/Concavity.png, id=2578, 543.53062pt x 240.14719pt>
+File: Images/DifferentialCalculusPictures/Concavity.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/Concavity.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/Concavity.png  used on input line 185.
 (pdftex.def)             Requested size: 380.46883pt x 168.10187pt.
- [125] [126 <./DifferentialCalculusPictures/Concavity.png>] [127]
-<DifferentialCalculusPictures/SketchingEx1.png, id=2611, 469.755pt x 297.36093pt>
-File: DifferentialCalculusPictures/SketchingEx1.png Graphic file (type png)
-<use DifferentialCalculusPictures/SketchingEx1.png>
-Package pdftex.def Info: DifferentialCalculusPictures/SketchingEx1.png  used on input line 4545.
+ [124] [125 <./Images/DifferentialCalculusPictures/Concavity.png>] [126]
+<Images/DifferentialCalculusPictures/SketchingEx1.png, id=2600, 469.755pt x 297.36093pt>
+File: Images/DifferentialCalculusPictures/SketchingEx1.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/SketchingEx1.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/SketchingEx1.png  used on input line 267.
 (pdftex.def)             Requested size: 422.7756pt x 267.62236pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4535--4546
+) (./Sections/Differential_Calculus/Applications_of_Derivatives.tex
+Underfull \hbox (badness 10000) in paragraph at lines 257--1
 
  []
 
-[128 <./DifferentialCalculusPictures/SketchingEx1.png>]
-<DifferentialCalculusPictures/OptimizationEx.png, id=2621, 376.40625pt x 234.1247pt>
-File: DifferentialCalculusPictures/OptimizationEx.png Graphic file (type png)
-<use DifferentialCalculusPictures/OptimizationEx.png>
-Package pdftex.def Info: DifferentialCalculusPictures/OptimizationEx.png  used on input line 4580.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--1
+
+ []
+
+[127 <./Images/DifferentialCalculusPictures/SketchingEx1.png>]
+<Images/DifferentialCalculusPictures/OptimizationEx.png, id=2611, 376.40625pt x 234.1247pt>
+File: Images/DifferentialCalculusPictures/OptimizationEx.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/OptimizationEx.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/OptimizationEx.png  used on input line 28.
 (pdftex.def)             Requested size: 301.1254pt x 187.3pt.
- [129 <./DifferentialCalculusPictures/OptimizationEx.png>]
-<DifferentialCalculusPictures/InscribedCylinder.png, id=2628, 240.9pt x 225.09094pt>
-File: DifferentialCalculusPictures/InscribedCylinder.png Graphic file (type png)
-<use DifferentialCalculusPictures/InscribedCylinder.png>
-Package pdftex.def Info: DifferentialCalculusPictures/InscribedCylinder.png  used on input line 4595.
+ [128 <./Images/DifferentialCalculusPictures/OptimizationEx.png>]
+<Images/DifferentialCalculusPictures/InscribedCylinder.png, id=2618, 240.9pt x 225.09094pt>
+File: Images/DifferentialCalculusPictures/InscribedCylinder.png Graphic file (type png)
+<use Images/DifferentialCalculusPictures/InscribedCylinder.png>
+Package pdftex.def Info: Images/DifferentialCalculusPictures/InscribedCylinder.png  used on input line 43.
 (pdftex.def)             Requested size: 156.58313pt x 146.30736pt.
- [130 <./DifferentialCalculusPictures/InscribedCylinder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 4621--4624
+ [129 <./Images/DifferentialCalculusPictures/InscribedCylinder.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
 
-[131]
-Underfull \hbox (badness 10000) in paragraph at lines 4708--4710
+)) (./Sections/Integral_Calculus.tex (./Sections/Integral_Calculus/Definition_of_Integral.tex [130]
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
-<IntegralCalcPictures/RiemannSums.png, id=2638, 877.2775pt x 320.19624pt>
-File: IntegralCalcPictures/RiemannSums.png Graphic file (type png)
-<use IntegralCalcPictures/RiemannSums.png>
-Package pdftex.def Info: IntegralCalcPictures/RiemannSums.png  used on input line 4714.
+<Images/IntegralCalcPictures/RiemannSums.png, id=2628, 877.2775pt x 320.19624pt>
+File: Images/IntegralCalcPictures/RiemannSums.png Graphic file (type png)
+<use Images/IntegralCalcPictures/RiemannSums.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/RiemannSums.png  used on input line 18.
 (pdftex.def)             Requested size: 500.05338pt x 182.51375pt.
 
-Overfull \hbox (30.29836pt too wide) in paragraph at lines 4711--4717
+Overfull \hbox (30.29836pt too wide) in paragraph at lines 15--21
 [] 
  []
 
-[132 <./IntegralCalcPictures/RiemannSums.png>] [133]
-Underfull \hbox (badness 10000) in paragraph at lines 4757--4759
+[131 <./Images/IntegralCalcPictures/RiemannSums.png>] [132]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4767--4779
+Underfull \hbox (badness 10000) in paragraph at lines 71--83
+
+ []
+
+[133]
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 [134]
-Underfull \hbox (badness 10000) in paragraph at lines 4797--4799
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 [135]
-Underfull \hbox (badness 10000) in paragraph at lines 4826--4828
-
- []
-
-[136]
-<IntegralCalcPictures/AreaOfBellCurve.png, id=2663, 469.755pt x 268.00125pt>
-File: IntegralCalcPictures/AreaOfBellCurve.png Graphic file (type png)
-<use IntegralCalcPictures/AreaOfBellCurve.png>
-Package pdftex.def Info: IntegralCalcPictures/AreaOfBellCurve.png  used on input line 4851.
+<Images/IntegralCalcPictures/AreaOfBellCurve.png, id=2652, 469.755pt x 268.00125pt>
+File: Images/IntegralCalcPictures/AreaOfBellCurve.png Graphic file (type png)
+<use Images/IntegralCalcPictures/AreaOfBellCurve.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/AreaOfBellCurve.png  used on input line 155.
 (pdftex.def)             Requested size: 375.80452pt x 214.40128pt.
- [137 <./IntegralCalcPictures/AreaOfBellCurve.png>] [138] [139] [140] [141] [142] [143] [144]
-Underfull \hbox (badness 10000) in paragraph at lines 5098--5099
+ [136 <./Images/IntegralCalcPictures/AreaOfBellCurve.png>]) (./Sections/Integral_Calculus/Integration_Techniques.tex [137] [138] [139] [140] [141] [142] [143]
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
-<IntegralCalcPictures/TrigSubTan.png, id=2698, 343.2825pt x 197.98969pt>
-File: IntegralCalcPictures/TrigSubTan.png Graphic file (type png)
-<use IntegralCalcPictures/TrigSubTan.png>
-Package pdftex.def Info: IntegralCalcPictures/TrigSubTan.png  used on input line 5101.
+<Images/IntegralCalcPictures/TrigSubTan.png, id=2688, 343.2825pt x 197.98969pt>
+File: Images/IntegralCalcPictures/TrigSubTan.png Graphic file (type png)
+<use Images/IntegralCalcPictures/TrigSubTan.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubTan.png  used on input line 226.
 (pdftex.def)             Requested size: 240.2961pt x 138.59183pt.
-<IntegralCalcPictures/TrigSubSin.png, id=2699, 324.46219pt x 202.50656pt>
-File: IntegralCalcPictures/TrigSubSin.png Graphic file (type png)
-<use IntegralCalcPictures/TrigSubSin.png>
-Package pdftex.def Info: IntegralCalcPictures/TrigSubSin.png  used on input line 5103.
+<Images/IntegralCalcPictures/TrigSubSin.png, id=2689, 324.46219pt x 202.50656pt>
+File: Images/IntegralCalcPictures/TrigSubSin.png Graphic file (type png)
+<use Images/IntegralCalcPictures/TrigSubSin.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubSin.png  used on input line 228.
 (pdftex.def)             Requested size: 227.12196pt x 141.7536pt.
-<IntegralCalcPictures/TrigSubSec.png, id=2700, 391.4625pt x 201.00093pt>
-File: IntegralCalcPictures/TrigSubSec.png Graphic file (type png)
-<use IntegralCalcPictures/TrigSubSec.png>
-Package pdftex.def Info: IntegralCalcPictures/TrigSubSec.png  used on input line 5105.
+<Images/IntegralCalcPictures/TrigSubSec.png, id=2690, 391.4625pt x 201.00093pt>
+File: Images/IntegralCalcPictures/TrigSubSec.png Graphic file (type png)
+<use Images/IntegralCalcPictures/TrigSubSec.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubSec.png  used on input line 230.
 (pdftex.def)             Requested size: 274.02187pt x 140.69968pt.
-[145 <./IntegralCalcPictures/TrigSubTan.png> <./IntegralCalcPictures/TrigSubSin.png>] [146 <./IntegralCalcPictures/TrigSubSec.png>] [147]
-Underfull \hbox (badness 10000) in paragraph at lines 5172--5174
+[144 <./Images/IntegralCalcPictures/TrigSubTan.png> <./Images/IntegralCalcPictures/TrigSubSin.png>] [145 <./Images/IntegralCalcPictures/TrigSubSec.png>] [146]
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 
  []
 
-[148] [149] [150]
-Underfull \hbox (badness 10000) in paragraph at lines 5277--5279
+[147] [148] [149]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
-[151]
-Underfull \hbox (badness 10000) in paragraph at lines 5314--5316
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 439--441
 
  []
 
-[152]
-Underfull \hbox (badness 10000) in paragraph at lines 5340--5341
+[151]) (./Sections/Integral_Calculus/Applications_of_Integrals.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<IntegralCalcPictures/AreaBetweenCurvesEx1.png, id=2738, 371.13657pt x 348.55219pt>
-File: IntegralCalcPictures/AreaBetweenCurvesEx1.png Graphic file (type png)
-<use IntegralCalcPictures/AreaBetweenCurvesEx1.png>
-Package pdftex.def Info: IntegralCalcPictures/AreaBetweenCurvesEx1.png  used on input line 5344.
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png, id=2728, 371.13657pt x 348.55219pt>
+File: Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png Graphic file (type png)
+<use Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png  used on input line 7.
 (pdftex.def)             Requested size: 185.56783pt x 174.27565pt.
-[153]
-<IntegralCalcPictures/AreaBetweenCurvesEx2.png, id=2743, 377.15906pt x 433.62pt>
-File: IntegralCalcPictures/AreaBetweenCurvesEx2.png Graphic file (type png)
-<use IntegralCalcPictures/AreaBetweenCurvesEx2.png>
-Package pdftex.def Info: IntegralCalcPictures/AreaBetweenCurvesEx2.png  used on input line 5356.
+[152]
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png, id=2733, 377.15906pt x 433.62pt>
+File: Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png Graphic file (type png)
+<use Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png  used on input line 19.
 (pdftex.def)             Requested size: 188.57907pt x 216.80946pt.
- [154 <./IntegralCalcPictures/AreaBetweenCurvesEx1.png> <./IntegralCalcPictures/AreaBetweenCurvesEx2.png>]
-<IntegralCalcPictures/AreaBetweenCurvesEx3.png, id=2750, 417.05812pt x 405.01312pt>
-File: IntegralCalcPictures/AreaBetweenCurvesEx3.png Graphic file (type png)
-<use IntegralCalcPictures/AreaBetweenCurvesEx3.png>
-Package pdftex.def Info: IntegralCalcPictures/AreaBetweenCurvesEx3.png  used on input line 5372.
+ [153 <./Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png> <./Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png>]
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png, id=2740, 417.05812pt x 405.01312pt>
+File: Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png Graphic file (type png)
+<use Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png  used on input line 35.
 (pdftex.def)             Requested size: 208.52855pt x 202.50606pt.
- [155 <./IntegralCalcPictures/AreaBetweenCurvesEx3.png>] [156]
-<IntegralCalcPictures/ArcLengthTriangle.png, id=2760, 280.04625pt x 264.99pt>
-File: IntegralCalcPictures/ArcLengthTriangle.png Graphic file (type png)
-<use IntegralCalcPictures/ArcLengthTriangle.png>
-Package pdftex.def Info: IntegralCalcPictures/ArcLengthTriangle.png  used on input line 5435.
+ [154 <./Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png>] [155]
+<Images/IntegralCalcPictures/ArcLengthTriangle.png, id=2750, 280.04625pt x 264.99pt>
+File: Images/IntegralCalcPictures/ArcLengthTriangle.png Graphic file (type png)
+<use Images/IntegralCalcPictures/ArcLengthTriangle.png>
+Package pdftex.def Info: Images/IntegralCalcPictures/ArcLengthTriangle.png  used on input line 98.
 (pdftex.def)             Requested size: 196.03102pt x 185.49173pt.
- [157] [158 <./IntegralCalcPictures/ArcLengthTriangle.png>]
-Overfull \hbox (7.42197pt too wide) in paragraph at lines 5462--5466
+ [156] [157 <./Images/IntegralCalcPictures/ArcLengthTriangle.png>]
+Overfull \hbox (7.42197pt too wide) in paragraph at lines 125--129
 \OT1/cmr/m/n/10.95 Similar to vol-umes of rev-o-lu-tion, we can com-pute the sur-face area us-ing rings: $[]$ 
  []
 
-[159]
-Overfull \hbox (7.12807pt too wide) detected at line 5526
+[158]
+Overfull \hbox (7.12807pt too wide) detected at line 189
 []
  []
 
-[160] [161] [162] [163] [164]
-Underfull \hbox (badness 10000) in paragraph at lines 5701--5703
+[159] [160] [161])) (./Sections/Series_and_Transforms.tex (./Sections/Series_and_Transforms/Sequences_and_Series.tex [162] [163]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[165]
-Underfull \hbox (badness 10000) in paragraph at lines 5711--5713
+[164]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
-[166] [167]
-Underfull \hbox (badness 10000) in paragraph at lines 5765--5769
+[165] [166]
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
+
+ []
+
+[167]
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
 [168]
-Underfull \hbox (badness 10000) in paragraph at lines 5795--5797
+Underfull \hbox (badness 10000) in paragraph at lines 199--204
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 5818--5823
-
- []
-
-[169] [170] [171]
-Overfull \hbox (7.72525pt too wide) detected at line 5879
+[169] [170]
+Overfull \hbox (7.72525pt too wide) detected at line 260
 []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 5904--5909
-
- []
-
-[172]
-Underfull \hbox (badness 10000) in paragraph at lines 5931--5933
+) (./Sections/Series_and_Transforms/Delta_Functions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[173]
-<FourierImages/Convolution.png, id=2834, 291.0875pt x 174.6525pt>
-File: FourierImages/Convolution.png Graphic file (type png)
-<use FourierImages/Convolution.png>
-Package pdftex.def Info: FourierImages/Convolution.png  used on input line 5946.
+[171] [172]
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+<Images/FourierImages/Convolution.png, id=2824, 291.0875pt x 174.6525pt>
+File: Images/FourierImages/Convolution.png Graphic file (type png)
+<use Images/FourierImages/Convolution.png>
+Package pdftex.def Info: Images/FourierImages/Convolution.png  used on input line 45.
 (pdftex.def)             Requested size: 232.8703pt x 139.72218pt.
- [174 <./FourierImages/Convolution.png (PNG copy)>] [175] [176] [177] [178] [179]
-Underfull \hbox (badness 10000) in paragraph at lines 6123--6125
+[173] [174 <./Images/FourierImages/Convolution.png (PNG copy)>] [175] [176] [177] [178] [179]
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
-[180] [181]
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6189
+) (./Sections/Series_and_Transforms/Fourier_Series.tex [180]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Overfull \hbox (39.29933pt too wide) detected at line 6199
+Overfull \hbox (39.29933pt too wide) detected at line 35
 []
  []
 
 
-Overfull \hbox (41.73265pt too wide) detected at line 6206
+Overfull \hbox (41.73265pt too wide) detected at line 42
 []
+ []
+
+[181]
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
  []
 
 [182]
-Underfull \hbox (badness 10000) in paragraph at lines 6230--6232
-
- []
-
-<FourierImages/SeriesEx2.png, id=2873, 268.6035pt x 146.949pt>
-File: FourierImages/SeriesEx2.png Graphic file (type png)
-<use FourierImages/SeriesEx2.png>
-Package pdftex.def Info: FourierImages/SeriesEx2.png  used on input line 6237.
+<Images/FourierImages/SeriesEx2.png, id=2868, 268.6035pt x 146.949pt>
+File: Images/FourierImages/SeriesEx2.png Graphic file (type png)
+<use Images/FourierImages/SeriesEx2.png>
+Package pdftex.def Info: Images/FourierImages/SeriesEx2.png  used on input line 73.
 (pdftex.def)             Requested size: 268.60284pt x 146.94864pt.
-[183]
-Underfull \hbox (badness 10000) in paragraph at lines 6250--6252
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
-[184 <./FourierImages/SeriesEx2.png>] [185]
-<FourierImages/SeriesEx1.png, id=2888, 196.3335pt x 137.91525pt>
-File: FourierImages/SeriesEx1.png Graphic file (type png)
-<use FourierImages/SeriesEx1.png>
-Package pdftex.def Info: FourierImages/SeriesEx1.png  used on input line 6299.
+[183 <./Images/FourierImages/SeriesEx2.png>] [184]
+<Images/FourierImages/SeriesEx1.png, id=2878, 196.3335pt x 137.91525pt>
+File: Images/FourierImages/SeriesEx1.png Graphic file (type png)
+<use Images/FourierImages/SeriesEx1.png>
+Package pdftex.def Info: Images/FourierImages/SeriesEx1.png  used on input line 135.
 (pdftex.def)             Requested size: 215.9675pt x 151.70723pt.
- [186 <./FourierImages/SeriesEx1.png>] [187]
-Underfull \hbox (badness 10000) in paragraph at lines 6333--6336
+ [185 <./Images/FourierImages/SeriesEx1.png>] [186]
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-<FourierImages/FourierTransformDerivation.png, id=2899, 323.40825pt x 68.6565pt>
-File: FourierImages/FourierTransformDerivation.png Graphic file (type png)
-<use FourierImages/FourierTransformDerivation.png>
-Package pdftex.def Info: FourierImages/FourierTransformDerivation.png  used on input line 6346.
+<Images/FourierImages/FourierTransformDerivation.png, id=2888, 323.40825pt x 68.6565pt>
+File: Images/FourierImages/FourierTransformDerivation.png Graphic file (type png)
+<use Images/FourierImages/FourierTransformDerivation.png>
+Package pdftex.def Info: Images/FourierImages/FourierTransformDerivation.png  used on input line 182.
 (pdftex.def)             Requested size: 323.40744pt x 68.65631pt.
-[188 <./FourierImages/FourierTransformDerivation.png>]
-<FourierImages/DTSincEx1.png, id=2905, 230.66174pt x 165.61874pt>
-File: FourierImages/DTSincEx1.png Graphic file (type png)
-<use FourierImages/DTSincEx1.png>
-Package pdftex.def Info: FourierImages/DTSincEx1.png  used on input line 6353.
+[187 <./Images/FourierImages/FourierTransformDerivation.png>]
+<Images/FourierImages/DTSincEx1.png, id=2895, 230.66174pt x 165.61874pt>
+File: Images/FourierImages/DTSincEx1.png Graphic file (type png)
+<use Images/FourierImages/DTSincEx1.png>
+Package pdftex.def Info: Images/FourierImages/DTSincEx1.png  used on input line 189.
 (pdftex.def)             Requested size: 230.66116pt x 165.61833pt.
-<FourierImages/CTSincEx1.png, id=2906, 221.02576pt x 155.3805pt>
-File: FourierImages/CTSincEx1.png Graphic file (type png)
-<use FourierImages/CTSincEx1.png>
-Package pdftex.def Info: FourierImages/CTSincEx1.png  used on input line 6357.
+<Images/FourierImages/CTSincEx1.png, id=2896, 221.02576pt x 155.3805pt>
+File: Images/FourierImages/CTSincEx1.png Graphic file (type png)
+<use Images/FourierImages/CTSincEx1.png>
+Package pdftex.def Info: Images/FourierImages/CTSincEx1.png  used on input line 193.
 (pdftex.def)             Requested size: 221.0252pt x 155.3801pt.
-<FourierImages/convergingSinc.png, id=2907, 303.534pt x 216.20775pt>
-File: FourierImages/convergingSinc.png Graphic file (type png)
-<use FourierImages/convergingSinc.png>
-Package pdftex.def Info: FourierImages/convergingSinc.png  used on input line 6364.
+<Images/FourierImages/convergingSinc.png, id=2897, 303.534pt x 216.20775pt>
+File: Images/FourierImages/convergingSinc.png Graphic file (type png)
+<use Images/FourierImages/convergingSinc.png>
+Package pdftex.def Info: Images/FourierImages/convergingSinc.png  used on input line 200.
 (pdftex.def)             Requested size: 303.53325pt x 216.20721pt.
- [189 <./FourierImages/DTSincEx1.png> <./FourierImages/CTSincEx1.png>] [190 <./FourierImages/convergingSinc.png>] [191] [192] [193]
-Underfull \hbox (badness 10000) in paragraph at lines 6488--6490
+ [188 <./Images/FourierImages/DTSincEx1.png> <./Images/FourierImages/CTSincEx1.png>] [189 <./Images/FourierImages/convergingSinc.png>] [190] [191] [192]
+Underfull \hbox (badness 10000) in paragraph at lines 324--326
 
  []
 
-[194] [195] [196] [197] [198]
-Overfull \hbox (2.90556pt too wide) detected at line 6661
+[193]) (./Sections/Series_and_Transforms/Laplace_Transform.tex [194] [195] [196] [197]
+Overfull \hbox (2.90556pt too wide) detected at line 126
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6661--6663
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
-[199] [200]
-Underfull \hbox (badness 10000) in paragraph at lines 6763--6767
+[198] [199])) (./Sections/Mathematical_Proof.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-[201] [202]
-Underfull \hbox (badness 10000) in paragraph at lines 6813--6820
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6821--6822
+(./Sections/Mathematical_Proof/Logic.tex [200] [201]
+Underfull \hbox (badness 10000) in paragraph at lines 46--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6823--6824
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6825--6836
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6837--6850
+Underfull \hbox (badness 10000) in paragraph at lines 58--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--83
+
+ []
+
+[202]) (./Sections/Mathematical_Proof/Introduction_to_Proofs.tex
+Underfull \hbox (badness 10000) in paragraph at lines 104--1
 
  []
 
 [203]
-Underfull \hbox (badness 10000) in paragraph at lines 6871--6891
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--33
+
+ []
+
+)) (./Sections/Linear_Algebra.tex (./Sections/Linear_Algebra/Vectors_and_Geometry.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
 [204]
-Underfull \hbox (badness 10000) in paragraph at lines 6910--6911
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6919--6925
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 6979--6982
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6982--6986
-
- []
-
-[205]
-Underfull \hbox (badness 10000) in paragraph at lines 6986--6992
-
- []
-
-<LinearAlgebraPictures/VectorAddition.png, id=2984, 1875.005pt x 1010.77625pt>
-File: LinearAlgebraPictures/VectorAddition.png Graphic file (type png)
-<use LinearAlgebraPictures/VectorAddition.png>
-Package pdftex.def Info: LinearAlgebraPictures/VectorAddition.png  used on input line 7000.
+<Images/LinearAlgebraPictures/VectorAddition.png, id=2973, 1875.005pt x 1010.77625pt>
+File: Images/LinearAlgebraPictures/VectorAddition.png Graphic file (type png)
+<use Images/LinearAlgebraPictures/VectorAddition.png>
+Package pdftex.def Info: Images/LinearAlgebraPictures/VectorAddition.png  used on input line 25.
 (pdftex.def)             Requested size: 374.99435pt x 202.15166pt.
-<LinearAlgebraPictures/VectorSubtraction.png, id=2985, 1204.5pt x 871.255pt>
-File: LinearAlgebraPictures/VectorSubtraction.png Graphic file (type png)
-<use LinearAlgebraPictures/VectorSubtraction.png>
-Package pdftex.def Info: LinearAlgebraPictures/VectorSubtraction.png  used on input line 7004.
+<Images/LinearAlgebraPictures/VectorSubtraction.png, id=2974, 1204.5pt x 871.255pt>
+File: Images/LinearAlgebraPictures/VectorSubtraction.png Graphic file (type png)
+<use Images/LinearAlgebraPictures/VectorSubtraction.png>
+Package pdftex.def Info: Images/LinearAlgebraPictures/VectorSubtraction.png  used on input line 29.
 (pdftex.def)             Requested size: 180.6672pt x 130.6826pt.
-[206 <./LinearAlgebraPictures/VectorAddition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7012--7015
+[205 <./Images/LinearAlgebraPictures/VectorAddition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
-<LinearAlgebraPictures/DotProductProof.png, id=2991, 287.0725pt x 271.0125pt>
-File: LinearAlgebraPictures/DotProductProof.png Graphic file (type png)
-<use LinearAlgebraPictures/DotProductProof.png>
-Package pdftex.def Info: LinearAlgebraPictures/DotProductProof.png  used on input line 7018.
+<Images/LinearAlgebraPictures/DotProductProof.png, id=2981, 287.0725pt x 271.0125pt>
+File: Images/LinearAlgebraPictures/DotProductProof.png Graphic file (type png)
+<use Images/LinearAlgebraPictures/DotProductProof.png>
+Package pdftex.def Info: Images/LinearAlgebraPictures/DotProductProof.png  used on input line 43.
 (pdftex.def)             Requested size: 229.65831pt x 216.81029pt.
-[207 <./LinearAlgebraPictures/VectorSubtraction.png> <./LinearAlgebraPictures/DotProductProof.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7054--7058
+[206 <./Images/LinearAlgebraPictures/VectorSubtraction.png> <./Images/LinearAlgebraPictures/DotProductProof.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
 
  []
 
-[208]
-Overfull \hbox (0.75551pt too wide) detected at line 7058
+[207]
+Overfull \hbox (0.75551pt too wide) detected at line 83
 [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 a[] [] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 a[]b[]c[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 a[]b[]c[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 a[]b[]c[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 a[]b[]c[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 a[]b[]c[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 a[]b[]c[]
  []
 
-[209] [210] [211]
-Underfull \hbox (badness 10000) in paragraph at lines 7165--7171
+[208] [209] [210]
+Underfull \hbox (badness 10000) in paragraph at lines 190--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7177--7179
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
-[212]
-Underfull \hbox (badness 10000) in paragraph at lines 7195--7199
+[211]
+Underfull \hbox (badness 10000) in paragraph at lines 220--224
 
  []
 
-[213] [214] [215]
-<LinearAlgebraPictures/ResisterNetworksEx.png, id=3048, 321.2pt x 240.9pt>
-File: LinearAlgebraPictures/ResisterNetworksEx.png Graphic file (type png)
-<use LinearAlgebraPictures/ResisterNetworksEx.png>
-Package pdftex.def Info: LinearAlgebraPictures/ResisterNetworksEx.png  used on input line 7323.
+) (./Sections/Linear_Algebra/Linear_Systems.tex [212] [213] [214]
+<Images/LinearAlgebraPictures/ResisterNetworksEx.png, id=3038, 321.2pt x 240.9pt>
+File: Images/LinearAlgebraPictures/ResisterNetworksEx.png Graphic file (type png)
+<use Images/LinearAlgebraPictures/ResisterNetworksEx.png>
+Package pdftex.def Info: Images/LinearAlgebraPictures/ResisterNetworksEx.png  used on input line 99.
 (pdftex.def)             Requested size: 256.96034pt x 192.72025pt.
- [216] [217 <./LinearAlgebraPictures/ResisterNetworksEx.png>] [218] [219] [220] [221] [222] [223] [224] [225] [226] [227] [228] [229] [230] [231]
-Underfull \hbox (badness 10000) in paragraph at lines 7781--7787
+ [215] [216 <./Images/LinearAlgebraPictures/ResisterNetworksEx.png>] [217]) (./Sections/Linear_Algebra/Matrices.tex [218] [219] [220] [221] [222] [223] [224] [225] [226]) (./Sections/Linear_Algebra/Orthogonality.tex [227] [228] [229] [230]
+Underfull \hbox (badness 10000) in paragraph at lines 104--110
 
  []
 
-[232]
-Overfull \hbox (58.00368pt too wide) in paragraph at lines 7823--7826
+[231]
+Overfull \hbox (58.00368pt too wide) in paragraph at lines 146--149
 \OT1/cmr/m/n/10.95 Def: If $\OML/cmm/m/it/10.95 U \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R[]$ \OT1/cmr/m/n/10.95 is a sub-space, then the \OT1/cmr/m/it/10.95 or-thog-o-nal com-ple-ment \OT1/cmr/m/n/10.95 of $\OML/cmm/m/it/10.95 U$ \OT1/cmr/m/n/10.95 is the set $\OML/cmm/m/it/10.95 U[] \OT1/cmr/m/n/10.95 = []$
  []
 
-[233] [234] [235] [236] [237] [238] [239] [240] [241] [242]
-Overfull \hbox (14.67339pt too wide) detected at line 8109
+[232] [233] [234] [235] [236] [237] [238] [239] [240] [241]) (./Sections/Linear_Algebra/Eigen-Analysis.tex
+Overfull \hbox (14.67339pt too wide) detected at line 27
 []
  []
 
-[243] [244] [245] [246] [247] [248] [249] [250] [251] [252]
-Underfull \hbox (badness 10000) in paragraph at lines 8358--8359
+[242] [243] [244] [245] [246] [247] [248] [249] [250] [251]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-[253] [254] [255]
-Underfull \hbox (badness 10000) in paragraph at lines 8483--8485
+) (./Sections/Linear_Algebra/Complex_Vector_Spaces.tex [252] [253] [254]
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-[256]
-Underfull \hbox (badness 10000) in paragraph at lines 8501--8503
+[255]
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-[257]
-Underfull \hbox (badness 10000) in paragraph at lines 8563--8564
+[256])) (./Sections/Multivariable_Calculus.tex (./Sections/Multivariable_Calculus/Functions_of_Multiple_Variables.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<Math217Pictures/planeGraph.png, id=3231, 523.35526pt x 393.26926pt>
-File: Math217Pictures/planeGraph.png Graphic file (type png)
-<use Math217Pictures/planeGraph.png>
-Package pdftex.def Info: Math217Pictures/planeGraph.png  used on input line 8569.
+<Images/Math217Pictures/planeGraph.png, id=3221, 523.35526pt x 393.26926pt>
+File: Images/Math217Pictures/planeGraph.png Graphic file (type png)
+<use Images/Math217Pictures/planeGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/planeGraph.png  used on input line 10.
 (pdftex.def)             Requested size: 261.67697pt x 196.63414pt.
-[258]
-<Math217Pictures/sphereGraph.png, id=3237, 511.31026pt x 337.26pt>
-File: Math217Pictures/sphereGraph.png Graphic file (type png)
-<use Math217Pictures/sphereGraph.png>
-Package pdftex.def Info: Math217Pictures/sphereGraph.png  used on input line 8572.
+[257]
+<Images/Math217Pictures/sphereGraph.png, id=3227, 511.31026pt x 337.26pt>
+File: Images/Math217Pictures/sphereGraph.png Graphic file (type png)
+<use Images/Math217Pictures/sphereGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/sphereGraph.png  used on input line 13.
 (pdftex.def)             Requested size: 255.6545pt x 168.62958pt.
-<Math217Pictures/cylinderGraph.png, id=3238, 686.565pt x 478.78876pt>
-File: Math217Pictures/cylinderGraph.png Graphic file (type png)
-<use Math217Pictures/cylinderGraph.png>
-Package pdftex.def Info: Math217Pictures/cylinderGraph.png  used on input line 8575.
+<Images/Math217Pictures/cylinderGraph.png, id=3228, 686.565pt x 478.78876pt>
+File: Images/Math217Pictures/cylinderGraph.png Graphic file (type png)
+<use Images/Math217Pictures/cylinderGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/cylinderGraph.png  used on input line 16.
 (pdftex.def)             Requested size: 274.62112pt x 191.5121pt.
- [259 <./Math217Pictures/planeGraph.png> <./Math217Pictures/sphereGraph.png>]
-<Math217Pictures/coneGraph.png, id=3248, 624.3325pt x 653.44125pt>
-File: Math217Pictures/coneGraph.png Graphic file (type png)
-<use Math217Pictures/coneGraph.png>
-Package pdftex.def Info: Math217Pictures/coneGraph.png  used on input line 8578.
+ [258 <./Images/Math217Pictures/planeGraph.png> <./Images/Math217Pictures/sphereGraph.png>]
+<Images/Math217Pictures/coneGraph.png, id=3237, 624.3325pt x 653.44125pt>
+File: Images/Math217Pictures/coneGraph.png Graphic file (type png)
+<use Images/Math217Pictures/coneGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/coneGraph.png  used on input line 19.
 (pdftex.def)             Requested size: 249.72858pt x 261.37187pt.
-<Math217Pictures/parabaloidGraph.png, id=3249, 346.896pt x 323.40825pt>
-File: Math217Pictures/parabaloidGraph.png Graphic file (type png)
-<use Math217Pictures/parabaloidGraph.png>
-Package pdftex.def Info: Math217Pictures/parabaloidGraph.png  used on input line 8581.
+<Images/Math217Pictures/parabaloidGraph.png, id=3238, 346.896pt x 323.40825pt>
+File: Images/Math217Pictures/parabaloidGraph.png Graphic file (type png)
+<use Images/Math217Pictures/parabaloidGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/parabaloidGraph.png  used on input line 22.
 (pdftex.def)             Requested size: 208.13919pt x 194.04643pt.
- [260 <./Math217Pictures/cylinderGraph.png> <./Math217Pictures/coneGraph.png>]
-<Math217Pictures/saddleGraph.png, id=3258, 433.01775pt x 301.125pt>
-File: Math217Pictures/saddleGraph.png Graphic file (type png)
-<use Math217Pictures/saddleGraph.png>
-Package pdftex.def Info: Math217Pictures/saddleGraph.png  used on input line 8584.
+ [259 <./Images/Math217Pictures/cylinderGraph.png> <./Images/Math217Pictures/coneGraph.png>]
+<Images/Math217Pictures/saddleGraph.png, id=3248, 433.01775pt x 301.125pt>
+File: Images/Math217Pictures/saddleGraph.png Graphic file (type png)
+<use Images/Math217Pictures/saddleGraph.png>
+Package pdftex.def Info: Images/Math217Pictures/saddleGraph.png  used on input line 25.
 (pdftex.def)             Requested size: 216.50833pt x 150.56212pt.
-<Math217Pictures/contourPlot.png, id=3259, 388.45125pt x 189.1065pt>
-File: Math217Pictures/contourPlot.png Graphic file (type png)
-<use Math217Pictures/contourPlot.png>
-Package pdftex.def Info: Math217Pictures/contourPlot.png  used on input line 8594.
+<Images/Math217Pictures/contourPlot.png, id=3249, 388.45125pt x 189.1065pt>
+File: Images/Math217Pictures/contourPlot.png Graphic file (type png)
+<use Images/Math217Pictures/contourPlot.png>
+Package pdftex.def Info: Images/Math217Pictures/contourPlot.png  used on input line 35.
 (pdftex.def)             Requested size: 310.76141pt x 151.2854pt.
-<Math217Pictures/levelCurves.png, id=3260, 366.168pt x 232.4685pt>
-File: Math217Pictures/levelCurves.png Graphic file (type png)
-<use Math217Pictures/levelCurves.png>
-Package pdftex.def Info: Math217Pictures/levelCurves.png  used on input line 8597.
+<Images/Math217Pictures/levelCurves.png, id=3250, 366.168pt x 232.4685pt>
+File: Images/Math217Pictures/levelCurves.png Graphic file (type png)
+<use Images/Math217Pictures/levelCurves.png>
+Package pdftex.def Info: Images/Math217Pictures/levelCurves.png  used on input line 38.
 (pdftex.def)             Requested size: 292.93478pt x 185.97504pt.
- [261 <./Math217Pictures/parabaloidGraph.png> <./Math217Pictures/saddleGraph.png>] [262 <./Math217Pictures/contourPlot.png> <./Math217Pictures/levelCurves.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8645--8652
+) (./Sections/Multivariable_Calculus/Partial_Derivatives.tex [260 <./Images/Math217Pictures/parabaloidGraph.png> <./Images/Math217Pictures/saddleGraph.png>] [261 <./Images/Math217Pictures/contourPlot.png> <./Images/Math217Pictures/levelCurves.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--41
+
+ []
+
+[262]
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
 [263]
-Underfull \hbox (badness 10000) in paragraph at lines 8656--8658
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 [264]
-Underfull \hbox (badness 10000) in paragraph at lines 8695--8696
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
 [265]
-Underfull \hbox (badness 10000) in paragraph at lines 8715--8720
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
-[266]
-Underfull \hbox (badness 10000) in paragraph at lines 8759--8762
-
- []
-
-[267] [268] [269]
-<PreCalcPictures/PolarGraph1.png, id=3304, 340.27126pt x 331.2375pt>
-File: PreCalcPictures/PolarGraph1.png Graphic file (type png)
-<use PreCalcPictures/PolarGraph1.png>
-Package pdftex.def Info: PreCalcPictures/PolarGraph1.png  used on input line 8855.
+[266]) (./Sections/Multivariable_Calculus/Multiple_Integrals.tex [267] [268]
+<Images/PreCalcPictures/PolarGraph1.png, id=3294, 340.27126pt x 331.2375pt>
+File: Images/PreCalcPictures/PolarGraph1.png Graphic file (type png)
+<use Images/PreCalcPictures/PolarGraph1.png>
+Package pdftex.def Info: Images/PreCalcPictures/PolarGraph1.png  used on input line 64.
 (pdftex.def)             Requested size: 238.18825pt x 231.86465pt.
-<PreCalcPictures/PolarGraph2.png, id=3305, 352.31625pt x 381.67593pt>
-File: PreCalcPictures/PolarGraph2.png Graphic file (type png)
-<use PreCalcPictures/PolarGraph2.png>
-Package pdftex.def Info: PreCalcPictures/PolarGraph2.png  used on input line 8857.
+<Images/PreCalcPictures/PolarGraph2.png, id=3295, 352.31625pt x 381.67593pt>
+File: Images/PreCalcPictures/PolarGraph2.png Graphic file (type png)
+<use Images/PreCalcPictures/PolarGraph2.png>
+Package pdftex.def Info: Images/PreCalcPictures/PolarGraph2.png  used on input line 66.
 (pdftex.def)             Requested size: 246.61969pt x 267.17133pt.
- [270 <./PreCalcPictures/PolarGraph1.png>]
-Overfull \hbox (3.60547pt too wide) detected at line 8878
+ [269 <./Images/PreCalcPictures/PolarGraph1.png>]
+Overfull \hbox (3.60547pt too wide) detected at line 87
 []
  []
 
-[271 <./PreCalcPictures/PolarGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8881--8883
+[270 <./Images/PreCalcPictures/PolarGraph2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-<Math217Pictures/cylindricalCoordinates.png, id=3317, 662.475pt x 825.0825pt>
-File: Math217Pictures/cylindricalCoordinates.png Graphic file (type png)
-<use Math217Pictures/cylindricalCoordinates.png>
-Package pdftex.def Info: Math217Pictures/cylindricalCoordinates.png  used on input line 8908.
+<Images/Math217Pictures/cylindricalCoordinates.png, id=3306, 662.475pt x 825.0825pt>
+File: Images/Math217Pictures/cylindricalCoordinates.png Graphic file (type png)
+<use Images/Math217Pictures/cylindricalCoordinates.png>
+Package pdftex.def Info: Images/Math217Pictures/cylindricalCoordinates.png  used on input line 117.
 (pdftex.def)             Requested size: 198.74403pt x 247.52666pt.
-[272]
-<Math217Pictures/sphericalCoordinates.png, id=3322, 1104.125pt x 962.59625pt>
-File: Math217Pictures/sphericalCoordinates.png Graphic file (type png)
-<use Math217Pictures/sphericalCoordinates.png>
-Package pdftex.def Info: Math217Pictures/sphericalCoordinates.png  used on input line 8923.
+[271]
+<Images/Math217Pictures/sphericalCoordinates.png, id=3312, 1104.125pt x 962.59625pt>
+File: Images/Math217Pictures/sphericalCoordinates.png Graphic file (type png)
+<use Images/Math217Pictures/sphericalCoordinates.png>
+Package pdftex.def Info: Images/Math217Pictures/sphericalCoordinates.png  used on input line 132.
 (pdftex.def)             Requested size: 331.24005pt x 288.7811pt.
- [273 <./Math217Pictures/cylindricalCoordinates.png>] [274 <./Math217Pictures/sphericalCoordinates.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8988--8996
+ [272 <./Images/Math217Pictures/cylindricalCoordinates.png>] [273 <./Images/Math217Pictures/sphericalCoordinates.png>])) (./Sections/Vector_Calculus.tex (./Sections/Vector_Calculus/Parameterizations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--18
 
  []
 
-[275] [276] [277]
-<Math217Pictures/vectorFieldEx1.png, id=3346, 417.9615pt x 418.56375pt>
-File: Math217Pictures/vectorFieldEx1.png Graphic file (type png)
-<use Math217Pictures/vectorFieldEx1.png>
-Package pdftex.def Info: Math217Pictures/vectorFieldEx1.png  used on input line 9115.
+[274] [275] [276] [277]) (./Sections/Vector_Calculus/Integrals_in_the_Plane.tex
+<Images/Math217Pictures/vectorFieldEx1.png, id=3340, 417.9615pt x 418.56375pt>
+File: Images/Math217Pictures/vectorFieldEx1.png Graphic file (type png)
+<use Images/Math217Pictures/vectorFieldEx1.png>
+Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx1.png  used on input line 5.
 (pdftex.def)             Requested size: 250.77882pt x 251.14018pt.
-<Math217Pictures/vectorFieldEx2.png, id=3347, 377.0085pt x 376.40625pt>
-File: Math217Pictures/vectorFieldEx2.png Graphic file (type png)
-<use Math217Pictures/vectorFieldEx2.png>
-Package pdftex.def Info: Math217Pictures/vectorFieldEx2.png  used on input line 9117.
+<Images/Math217Pictures/vectorFieldEx2.png, id=3341, 377.0085pt x 376.40625pt>
+File: Images/Math217Pictures/vectorFieldEx2.png Graphic file (type png)
+<use Images/Math217Pictures/vectorFieldEx2.png>
+Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx2.png  used on input line 7.
 (pdftex.def)             Requested size: 226.20683pt x 225.84547pt.
- [278] [279 <./Math217Pictures/vectorFieldEx1.png> <./Math217Pictures/vectorFieldEx2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 9128--9130
+ [278 <./Images/Math217Pictures/vectorFieldEx1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9130--9136
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
-[280]
-Underfull \hbox (badness 10000) in paragraph at lines 9164--9166
+[279 <./Images/Math217Pictures/vectorFieldEx2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
-[281] [282] [283] [284] [285]
-<Math217Pictures/divergenceThmEx.png, id=3383, 410.7345pt x 330.63525pt>
-File: Math217Pictures/divergenceThmEx.png Graphic file (type png)
-<use Math217Pictures/divergenceThmEx.png>
-Package pdftex.def Info: Math217Pictures/divergenceThmEx.png  used on input line 9322.
+[280] [281] [282]) (./Sections/Vector_Calculus/Integrals_in_Space.tex [283] [284]
+<Images/Math217Pictures/divergenceThmEx.png, id=3373, 410.7345pt x 330.63525pt>
+File: Images/Math217Pictures/divergenceThmEx.png Graphic file (type png)
+<use Images/Math217Pictures/divergenceThmEx.png>
+Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx.png  used on input line 66.
 (pdftex.def)             Requested size: 205.36674pt x 165.31721pt.
- [286 <./Math217Pictures/divergenceThmEx.png>]
-<Math217Pictures/divergenceThmEx2.png, id=3389, 330.63525pt x 284.86424pt>
-File: Math217Pictures/divergenceThmEx2.png Graphic file (type png)
-<use Math217Pictures/divergenceThmEx2.png>
-Package pdftex.def Info: Math217Pictures/divergenceThmEx2.png  used on input line 9338.
+ [285]
+<Images/Math217Pictures/divergenceThmEx2.png, id=3378, 330.63525pt x 284.86424pt>
+File: Images/Math217Pictures/divergenceThmEx2.png Graphic file (type png)
+<use Images/Math217Pictures/divergenceThmEx2.png>
+Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx2.png  used on input line 82.
 (pdftex.def)             Requested size: 165.31721pt x 142.43176pt.
- [287 <./Math217Pictures/divergenceThmEx2.png>]
-<Math217Pictures/stokesThmEx.png, id=3396, 359.54324pt x 441.44925pt>
-File: Math217Pictures/stokesThmEx.png Graphic file (type png)
-<use Math217Pictures/stokesThmEx.png>
-Package pdftex.def Info: Math217Pictures/stokesThmEx.png  used on input line 9352.
+ [286 <./Images/Math217Pictures/divergenceThmEx.png>]
+<Images/Math217Pictures/stokesThmEx.png, id=3384, 359.54324pt x 441.44925pt>
+File: Images/Math217Pictures/stokesThmEx.png Graphic file (type png)
+<use Images/Math217Pictures/stokesThmEx.png>
+Package pdftex.def Info: Images/Math217Pictures/stokesThmEx.png  used on input line 96.
 (pdftex.def)             Requested size: 179.77118pt x 220.72408pt.
- [288 <./Math217Pictures/stokesThmEx.png>]
-Overfull \hbox (1.80794pt too wide) detected at line 9394
+ [287 <./Images/Math217Pictures/divergenceThmEx2.png>] [288 <./Images/Math217Pictures/stokesThmEx.png>]
+Overfull \hbox (1.80794pt too wide) detected at line 138
 []
  []
 
-[289]
-Underfull \hbox (badness 10000) in paragraph at lines 9482--9483
+[289])) (./Sections/ODEs.tex (./Sections/ODEs/First_Oder_ODEs.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
 [290]
-Underfull \hbox (badness 10000) in paragraph at lines 9495--9505
+Underfull \hbox (badness 10000) in paragraph at lines 17--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9495--9505
+Underfull \hbox (badness 10000) in paragraph at lines 17--27
 
  []
 
-[291] [292] [293]
-Overfull \hbox (22.2627pt too wide) detected at line 9611
+[291] [292]
+Overfull \hbox (22.2627pt too wide) detected at line 133
 []
  []
 
-[294]
-<ODEPictures/PhaseLineStable.png, id=3427, 98.3675pt x 136.51pt>
-File: ODEPictures/PhaseLineStable.png Graphic file (type png)
-<use ODEPictures/PhaseLineStable.png>
-Package pdftex.def Info: ODEPictures/PhaseLineStable.png  used on input line 9623.
+[293]
+<Images/ODEPictures/PhaseLineStable.png, id=3417, 98.3675pt x 136.51pt>
+File: Images/ODEPictures/PhaseLineStable.png Graphic file (type png)
+<use Images/ODEPictures/PhaseLineStable.png>
+Package pdftex.def Info: Images/ODEPictures/PhaseLineStable.png  used on input line 145.
 (pdftex.def)             Requested size: 98.36723pt x 136.50966pt.
-<ODEPictures/PhaseLineUnstable.png, id=3428, 103.38625pt x 136.51pt>
-File: ODEPictures/PhaseLineUnstable.png Graphic file (type png)
-<use ODEPictures/PhaseLineUnstable.png>
-Package pdftex.def Info: ODEPictures/PhaseLineUnstable.png  used on input line 9623.
+<Images/ODEPictures/PhaseLineUnstable.png, id=3418, 103.38625pt x 136.51pt>
+File: Images/ODEPictures/PhaseLineUnstable.png Graphic file (type png)
+<use Images/ODEPictures/PhaseLineUnstable.png>
+Package pdftex.def Info: Images/ODEPictures/PhaseLineUnstable.png  used on input line 145.
 (pdftex.def)             Requested size: 103.38599pt x 136.50966pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9632--9636
-
- []
-
-[295 <./ODEPictures/PhaseLineStable.png> <./ODEPictures/PhaseLineUnstable.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 9640--9644
+ [294]
+Underfull \hbox (badness 10000) in paragraph at lines 154--158
 
  []
 
-[296]
-Underfull \hbox (badness 10000) in paragraph at lines 9714--9717
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
+
+ []
+
+) (./Sections/ODEs/Second_Order_ODEs.tex [295 <./Images/ODEPictures/PhaseLineStable.png> <./Images/ODEPictures/PhaseLineUnstable.png>] [296]
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
 [297] [298]
-Underfull \hbox (badness 10000) in paragraph at lines 9787--9792
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
 
  []
 
 [299] [300] [301] [302]
-Underfull \hbox (badness 10000) in paragraph at lines 9907--9911
+Underfull \hbox (badness 10000) in paragraph at lines 237--241
 
  []
 
-<ODEPictures/resonance.png, id=3465, 339.669pt x 245.11575pt>
-File: ODEPictures/resonance.png Graphic file (type png)
-<use ODEPictures/resonance.png>
-Package pdftex.def Info: ODEPictures/resonance.png  used on input line 9914.
+<Images/ODEPictures/resonance.png, id=3459, 339.669pt x 245.11575pt>
+File: Images/ODEPictures/resonance.png Graphic file (type png)
+<use Images/ODEPictures/resonance.png>
+Package pdftex.def Info: Images/ODEPictures/resonance.png  used on input line 244.
 (pdftex.def)             Requested size: 271.73557pt x 196.09285pt.
-[303]
-<ODEPictures/Beats.png, id=3470, 331.83975pt x 243.91125pt>
-File: ODEPictures/Beats.png Graphic file (type png)
-<use ODEPictures/Beats.png>
-Package pdftex.def Info: ODEPictures/Beats.png  used on input line 9918.
+<Images/ODEPictures/Beats.png, id=3460, 331.83975pt x 243.91125pt>
+File: Images/ODEPictures/Beats.png Graphic file (type png)
+<use Images/ODEPictures/Beats.png>
+Package pdftex.def Info: Images/ODEPictures/Beats.png  used on input line 248.
 (pdftex.def)             Requested size: 265.47215pt x 195.12926pt.
-<ODEPictures/steadyStateResponse.png, id=3471, 333.6465pt x 242.70676pt>
-File: ODEPictures/steadyStateResponse.png Graphic file (type png)
-<use ODEPictures/steadyStateResponse.png>
-Package pdftex.def Info: ODEPictures/steadyStateResponse.png  used on input line 9922.
+[303 <./Images/ODEPictures/resonance.png>]
+<Images/ODEPictures/steadyStateResponse.png, id=3466, 333.6465pt x 242.70676pt>
+File: Images/ODEPictures/steadyStateResponse.png Graphic file (type png)
+<use Images/ODEPictures/steadyStateResponse.png>
+Package pdftex.def Info: Images/ODEPictures/steadyStateResponse.png  used on input line 252.
 (pdftex.def)             Requested size: 266.91756pt x 194.16565pt.
- [304 <./ODEPictures/resonance.png> <./ODEPictures/Beats.png>]
-<ODEPictures/steadyStateAmplitude.png, id=3478, 337.26pt x 242.70676pt>
-File: ODEPictures/steadyStateAmplitude.png Graphic file (type png)
-<use ODEPictures/steadyStateAmplitude.png>
-Package pdftex.def Info: ODEPictures/steadyStateAmplitude.png  used on input line 9938.
+ [304 <./Images/ODEPictures/Beats.png> <./Images/ODEPictures/steadyStateResponse.png>]
+<Images/ODEPictures/steadyStateAmplitude.png, id=3473, 337.26pt x 242.70676pt>
+File: Images/ODEPictures/steadyStateAmplitude.png Graphic file (type png)
+<use Images/ODEPictures/steadyStateAmplitude.png>
+Package pdftex.def Info: Images/ODEPictures/steadyStateAmplitude.png  used on input line 268.
 (pdftex.def)             Requested size: 269.80836pt x 194.16565pt.
- [305 <./ODEPictures/steadyStateResponse.png>] [306 <./ODEPictures/steadyStateAmplitude.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 9965--9967
+ [305 <./Images/ODEPictures/steadyStateAmplitude.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
-[307] [308] [309]
-Overfull \hbox (60.06061pt too wide) detected at line 10107
+[306] [307]) (./Sections/ODEs/Series_Solutions.tex [308]
+Overfull \hbox (60.06061pt too wide) detected at line 58
 []
  []
 
-[310] [311] [312] [313]
-Overfull \hbox (8.23164pt too wide) detected at line 10225
+[309] [310] [311] [312]
+Overfull \hbox (8.23164pt too wide) detected at line 176
 []
  []
 
-[314] [315]
-Overfull \hbox (31.16747pt too wide) detected at line 10269
+[313] [314]
+Overfull \hbox (31.16747pt too wide) detected at line 220
 []
  []
 
-[316] [317]
-Underfull \hbox (badness 10000) in paragraph at lines 10326--10327
+[315] [316] [317]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-[318]
-Overfull \hbox (52.15689pt too wide) detected at line 10339
+
+Overfull \hbox (52.15689pt too wide) detected at line 290
 []
  []
 
-[319] [320] [321]
-Overfull \hbox (19.3202pt too wide) in paragraph at lines 10431--10432
+[318]) (./Sections/ODEs/First_Order_Systems_of_ODEs.tex [319] [320]
+Overfull \hbox (19.3202pt too wide) in paragraph at lines 46--47
 []\OT1/cmr/m/n/10.95 If imag-i-nary, ex-press con-ju-gate pairs as $\OML/cmm/m/it/10.95 c[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 c[][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )$ where $[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 < []$
  []
 
-[322] [323] [324]
-<LinearAlgebraPictures/LCRcircuitEx.jpg, id=3574, 382.42876pt x 181.67876pt>
-File: LinearAlgebraPictures/LCRcircuitEx.jpg Graphic file (type jpg)
-<use LinearAlgebraPictures/LCRcircuitEx.jpg>
-Package pdftex.def Info: LinearAlgebraPictures/LCRcircuitEx.jpg  used on input line 10506.
+[321] [322] [323]
+<Images/LinearAlgebraPictures/LCRcircuitEx.jpg, id=3564, 382.42876pt x 181.67876pt>
+File: Images/LinearAlgebraPictures/LCRcircuitEx.jpg Graphic file (type jpg)
+<use Images/LinearAlgebraPictures/LCRcircuitEx.jpg>
+Package pdftex.def Info: Images/LinearAlgebraPictures/LCRcircuitEx.jpg  used on input line 121.
 (pdftex.def)             Requested size: 305.9434pt x 145.34319pt.
- [325 <./LinearAlgebraPictures/LCRcircuitEx.jpg>]
-<ODEPictures/phasePortrait1.png, id=3585, 343.2825pt x 254.75175pt>
-File: ODEPictures/phasePortrait1.png Graphic file (type png)
-<use ODEPictures/phasePortrait1.png>
-Package pdftex.def Info: ODEPictures/phasePortrait1.png  used on input line 10543.
+ [324 <./Images/LinearAlgebraPictures/LCRcircuitEx.jpg>] [325]
+<Images/ODEPictures/phasePortrait1.png, id=3579, 343.2825pt x 254.75175pt>
+File: Images/ODEPictures/phasePortrait1.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait1.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait1.png  used on input line 158.
 (pdftex.def)             Requested size: 274.62636pt x 203.80167pt.
-<ODEPictures/phasePortrait2.png, id=3586, 337.26pt x 254.1495pt>
-File: ODEPictures/phasePortrait2.png Graphic file (type png)
-<use ODEPictures/phasePortrait2.png>
-Package pdftex.def Info: ODEPictures/phasePortrait2.png  used on input line 10545.
+<Images/ODEPictures/phasePortrait2.png, id=3580, 337.26pt x 254.1495pt>
+File: Images/ODEPictures/phasePortrait2.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait2.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait2.png  used on input line 160.
 (pdftex.def)             Requested size: 269.80836pt x 203.31987pt.
-<ODEPictures/phasePortrait3.png, id=3587, 337.26pt x 254.75175pt>
-File: ODEPictures/phasePortrait3.png Graphic file (type png)
-<use ODEPictures/phasePortrait3.png>
-Package pdftex.def Info: ODEPictures/phasePortrait3.png  used on input line 10548.
+<Images/ODEPictures/phasePortrait3.png, id=3581, 337.26pt x 254.75175pt>
+File: Images/ODEPictures/phasePortrait3.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait3.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait3.png  used on input line 163.
 (pdftex.def)             Requested size: 269.80836pt x 203.80167pt.
-<ODEPictures/phasePortrait4.png, id=3588, 334.24875pt x 250.536pt>
-File: ODEPictures/phasePortrait4.png Graphic file (type png)
-<use ODEPictures/phasePortrait4.png>
-Package pdftex.def Info: ODEPictures/phasePortrait4.png  used on input line 10551.
+<Images/ODEPictures/phasePortrait4.png, id=3582, 334.24875pt x 250.536pt>
+File: Images/ODEPictures/phasePortrait4.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait4.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait4.png  used on input line 166.
 (pdftex.def)             Requested size: 267.39935pt x 200.42905pt.
-<ODEPictures/phasePortrait5.png, id=3589, 337.26pt x 252.945pt>
-File: ODEPictures/phasePortrait5.png Graphic file (type png)
-<use ODEPictures/phasePortrait5.png>
-Package pdftex.def Info: ODEPictures/phasePortrait5.png  used on input line 10553.
+<Images/ODEPictures/phasePortrait5.png, id=3583, 337.26pt x 252.945pt>
+File: Images/ODEPictures/phasePortrait5.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait5.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait5.png  used on input line 168.
 (pdftex.def)             Requested size: 269.80836pt x 202.35626pt.
- [326] [327 <./ODEPictures/phasePortrait1.png> <./ODEPictures/phasePortrait2.png>] [328 <./ODEPictures/phasePortrait3.png> <./ODEPictures/phasePortrait4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 10568--10570
+ [326 <./Images/ODEPictures/phasePortrait1.png> <./Images/ODEPictures/phasePortrait2.png>] [327 <./Images/ODEPictures/phasePortrait3.png> <./Images/ODEPictures/phasePortrait4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 
-Overfull \hbox (6.39296pt too wide) detected at line 10595
+Overfull \hbox (6.39296pt too wide) detected at line 210
 []
  []
 
-[329 <./ODEPictures/phasePortrait5.png>]
-Overfull \hbox (16.27583pt too wide) in paragraph at lines 10597--10599
+[328 <./Images/ODEPictures/phasePortrait5.png>]
+Overfull \hbox (16.27583pt too wide) in paragraph at lines 212--214
 \OT1/cmr/m/n/10.95 We can de-fine the fun-da-men-tal ma-trix $\OML/cmm/m/it/10.95 X$ \OT1/cmr/m/n/10.95 to be com-prised of the com-ple-men-tary so-lu-tion $[]$.
  []
 
-[330]
-Overfull \hbox (6.39296pt too wide) detected at line 10628
+[329]
+Overfull \hbox (6.39296pt too wide) detected at line 243
 []
  []
 
-[331] [332]
-<ODEPictures/phasePortrait6.png, id=3624, 293.29575pt x 218.61674pt>
-File: ODEPictures/phasePortrait6.png Graphic file (type png)
-<use ODEPictures/phasePortrait6.png>
-Package pdftex.def Info: ODEPictures/phasePortrait6.png  used on input line 10661.
+[330] [331]
+<Images/ODEPictures/phasePortrait6.png, id=3614, 293.29575pt x 218.61674pt>
+File: Images/ODEPictures/phasePortrait6.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait6.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait6.png  used on input line 276.
 (pdftex.def)             Requested size: 234.6369pt x 174.89362pt.
-<ODEPictures/phasePortrait7.png, id=3625, 290.88675pt x 218.0145pt>
-File: ODEPictures/phasePortrait7.png Graphic file (type png)
-<use ODEPictures/phasePortrait7.png>
-Package pdftex.def Info: ODEPictures/phasePortrait7.png  used on input line 10665.
+<Images/ODEPictures/phasePortrait7.png, id=3615, 290.88675pt x 218.0145pt>
+File: Images/ODEPictures/phasePortrait7.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait7.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait7.png  used on input line 280.
 (pdftex.def)             Requested size: 232.7097pt x 174.41182pt.
-<ODEPictures/phasePortrait8.png, id=3626, 331.2375pt x 253.54726pt>
-File: ODEPictures/phasePortrait8.png Graphic file (type png)
-<use ODEPictures/phasePortrait8.png>
-Package pdftex.def Info: ODEPictures/phasePortrait8.png  used on input line 10667.
+<Images/ODEPictures/phasePortrait8.png, id=3616, 331.2375pt x 253.54726pt>
+File: Images/ODEPictures/phasePortrait8.png Graphic file (type png)
+<use Images/ODEPictures/phasePortrait8.png>
+Package pdftex.def Info: Images/ODEPictures/phasePortrait8.png  used on input line 282.
 (pdftex.def)             Requested size: 298.11098pt x 228.1904pt.
- [333 <./ODEPictures/phasePortrait6.png>] [334 <./ODEPictures/phasePortrait7.png> <./ODEPictures/phasePortrait8.png>] [335] [336]
-Overfull \hbox (3.48082pt too wide) detected at line 10856
+)) (./Sections/PDEs.tex
+Underfull \hbox (badness 10000) in paragraph at lines 279--1
+
+ []
+
+[332 <./Images/ODEPictures/phasePortrait6.png>] [333 <./Images/ODEPictures/phasePortrait7.png> <./Images/ODEPictures/phasePortrait8.png>] (./Sections/PDEs/Heat_Equation.tex [334] [335]
+Overfull \hbox (3.48082pt too wide) detected at line 99
 []
  []
 
-[337] [338]
-Underfull \hbox (badness 10000) in paragraph at lines 10935--10936
+[336] [337]
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-[339] [340]
-Underfull \hbox (badness 10000) in paragraph at lines 10992--10994
+[338] [339]
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
 
-Overfull \hbox (39.29933pt too wide) detected at line 11004
-[]
- []
-
-[341]
-Overfull \hbox (41.73265pt too wide) detected at line 11011
-[]
- []
-
-[342] [343] [344] [345]
-Underfull \hbox (badness 10000) in paragraph at lines 11134--11137
-
- []
-
-[346]
-Overfull \hbox (33.92264pt too wide) detected at line 11167
-[]
- []
-
-[347]
-Overfull \hbox (4.53198pt too wide) detected at line 11215
-[]
- []
-
-[348] [349] [350] [351]
-Underfull \hbox (badness 10000) in paragraph at lines 11356--11358
-
- []
-
-[352] [353]
-Overfull \hbox (18.24812pt too wide) detected at line 11402
+Overfull \hbox (39.29933pt too wide) detected at line 247
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11405--11406
-
- []
-
-[354] [355] [356]
-Overfull \hbox (25.31111pt too wide) detected at line 11527
+Overfull \hbox (41.73265pt too wide) detected at line 254
 []
  []
 
-[357] [358] [359] [360] [361]
-Overfull \hbox (60.5833pt too wide) detected at line 11685
+[340] [341] [342] [343] [344]
+Underfull \hbox (badness 10000) in paragraph at lines 377--380
+
+ []
+
+
+Overfull \hbox (33.92264pt too wide) detected at line 410
 []
  []
 
+[345] [346]
+Overfull \hbox (4.53198pt too wide) detected at line 458
+[]
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 11690--11693
+[347] [348] [349] [350]
+Underfull \hbox (badness 10000) in paragraph at lines 599--601
 
  []
 
-[362]
-<PDEPictures/laplace.png, id=3790, 953.81343pt x 530.73282pt>
-File: PDEPictures/laplace.png Graphic file (type png)
-<use PDEPictures/laplace.png>
-Package pdftex.def Info: PDEPictures/laplace.png  used on input line 11694.
+[351]
+Overfull \hbox (18.24812pt too wide) detected at line 645
+[]
+ []
+
+[352]
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
+
+[353]) (./Sections/PDEs/Wave_Equation.tex [354] [355]
+Overfull \hbox (25.31111pt too wide) detected at line 64
+[]
+ []
+
+[356] [357] [358] [359] [360]
+Overfull \hbox (60.5833pt too wide) detected at line 222
+[]
+ []
+
+) (./Sections/PDEs/Laplace_Equation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+[361]
+<Images/PDEPictures/laplace.png, id=3780, 953.81343pt x 530.73282pt>
+File: Images/PDEPictures/laplace.png Graphic file (type png)
+<use Images/PDEPictures/laplace.png>
+Package pdftex.def Info: Images/PDEPictures/laplace.png  used on input line 7.
 (pdftex.def)             Requested size: 398.33858pt x 221.65102pt.
- [363 <./PDEPictures/laplace.png (PNG copy)>] [364] [365]
-Overfull \hbox (4.14424pt too wide) detected at line 11826
+ [362 <./Images/PDEPictures/laplace.png (PNG copy)>] [363] [364]
+Overfull \hbox (4.14424pt too wide) detected at line 139
 []
  []
 
-[366]
-Overfull \hbox (61.18217pt too wide) detected at line 11831
+[365]
+Overfull \hbox (61.18217pt too wide) detected at line 144
 []
  []
 
-[367] [368] [369] [370] [371] (./MathNotes.aux)
+[366] [367] [368] [369])) (./Sections/Bibliography.tex) [370] (./MathNotes.aux)
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: C8B7C54A441B76F30F980F90FE36A0FB;54003.
+(rerunfilecheck)             Checksum: BF05E35ECB86FACB6D0B53A1FAD6F602;54002.
  ) 
 Here is how much of TeX's memory you used:
- 23122 strings out of 476093
- 434960 string characters out of 5795582
+ 23579 strings out of 476093
+ 456453 string characters out of 5795582
  1891787 words of memory out of 5000000
- 42179 multiletter control sequences out of 15000+600000
+ 42357 multiletter control sequences out of 15000+600000
  524008 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,23n,104p,745b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,23n,104p,820b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes.pdf (371 pages, 6314501 bytes).
+Output written on MathNotes.pdf (370 pages, 6314234 bytes).
 PDF statistics:
- 4162 PDF objects out of 4296 (max. 8388607)
- 3520 compressed objects within 36 object streams
- 840 named destinations out of 1000 (max. 500000)
- 3048 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4152 PDF objects out of 4296 (max. 8388607)
+ 3511 compressed objects within 36 object streams
+ 838 named destinations out of 1000 (max. 500000)
+ 3040 words of extra memory for PDF output out of 10000 (max. 10000000)
 
