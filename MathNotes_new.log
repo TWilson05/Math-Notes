@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  13 JUL 2023 01:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  13 JUL 2023 02:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,130 +621,78 @@ File: uesint.fd
 \tf@toc=\write5
 \openout5 = `MathNotes_new.toc'.
 
- (./Sections/Multivariable_Calculus.tex (./Sections/Multivariable_Calculus/Functions_of_Multiple_Variables.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+ (./Sections/Vector_Calculus.tex (./Sections/Vector_Calculus/Parameterizations.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--18
 
  []
 
-<Images/Math217Pictures/planeGraph.png, id=97, 523.35526pt x 393.26926pt>
-File: Images/Math217Pictures/planeGraph.png Graphic file (type png)
-<use Images/Math217Pictures/planeGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/planeGraph.png  used on input line 10.
-(pdftex.def)             Requested size: 261.67697pt x 196.63414pt.
 [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Images/Math217Pictures/sphereGraph.png, id=112, 511.31026pt x 337.26pt>
-File: Images/Math217Pictures/sphereGraph.png Graphic file (type png)
-<use Images/Math217Pictures/sphereGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/sphereGraph.png  used on input line 13.
-(pdftex.def)             Requested size: 255.6545pt x 168.62958pt.
-<Images/Math217Pictures/cylinderGraph.png, id=113, 686.565pt x 478.78876pt>
-File: Images/Math217Pictures/cylinderGraph.png Graphic file (type png)
-<use Images/Math217Pictures/cylinderGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/cylinderGraph.png  used on input line 16.
-(pdftex.def)             Requested size: 274.62112pt x 191.5121pt.
- [2 <./Images/Math217Pictures/planeGraph.png> <./Images/Math217Pictures/sphereGraph.png>]
-<Images/Math217Pictures/coneGraph.png, id=123, 624.3325pt x 653.44125pt>
-File: Images/Math217Pictures/coneGraph.png Graphic file (type png)
-<use Images/Math217Pictures/coneGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/coneGraph.png  used on input line 19.
-(pdftex.def)             Requested size: 249.72858pt x 261.37187pt.
-<Images/Math217Pictures/parabaloidGraph.png, id=124, 346.896pt x 323.40825pt>
-File: Images/Math217Pictures/parabaloidGraph.png Graphic file (type png)
-<use Images/Math217Pictures/parabaloidGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/parabaloidGraph.png  used on input line 22.
-(pdftex.def)             Requested size: 208.13919pt x 194.04643pt.
- [3 <./Images/Math217Pictures/cylinderGraph.png> <./Images/Math217Pictures/coneGraph.png>]
-<Images/Math217Pictures/saddleGraph.png, id=134, 433.01775pt x 301.125pt>
-File: Images/Math217Pictures/saddleGraph.png Graphic file (type png)
-<use Images/Math217Pictures/saddleGraph.png>
-Package pdftex.def Info: Images/Math217Pictures/saddleGraph.png  used on input line 25.
-(pdftex.def)             Requested size: 216.50833pt x 150.56212pt.
-<Images/Math217Pictures/contourPlot.png, id=135, 388.45125pt x 189.1065pt>
-File: Images/Math217Pictures/contourPlot.png Graphic file (type png)
-<use Images/Math217Pictures/contourPlot.png>
-Package pdftex.def Info: Images/Math217Pictures/contourPlot.png  used on input line 35.
-(pdftex.def)             Requested size: 310.76141pt x 151.2854pt.
-<Images/Math217Pictures/levelCurves.png, id=136, 366.168pt x 232.4685pt>
-File: Images/Math217Pictures/levelCurves.png Graphic file (type png)
-<use Images/Math217Pictures/levelCurves.png>
-Package pdftex.def Info: Images/Math217Pictures/levelCurves.png  used on input line 38.
-(pdftex.def)             Requested size: 292.93478pt x 185.97504pt.
-) (./Sections/Multivariable_Calculus/Partial_Derivatives.tex [4 <./Images/Math217Pictures/parabaloidGraph.png> <./Images/Math217Pictures/saddleGraph.png>] [5 <./Images/Math217Pictures/contourPlot.png> <./Images/Math217Pictures/levelCurves.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]) (./Sections/Vector_Calculus/Integrals_in_the_Plane.tex
+<Images/Math217Pictures/vectorFieldEx1.png, id=136, 417.9615pt x 418.56375pt>
+File: Images/Math217Pictures/vectorFieldEx1.png Graphic file (type png)
+<use Images/Math217Pictures/vectorFieldEx1.png>
+Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx1.png  used on input line 5.
+(pdftex.def)             Requested size: 250.77882pt x 251.14018pt.
+<Images/Math217Pictures/vectorFieldEx2.png, id=138, 377.0085pt x 376.40625pt>
+File: Images/Math217Pictures/vectorFieldEx2.png Graphic file (type png)
+<use Images/Math217Pictures/vectorFieldEx2.png>
+Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx2.png  used on input line 7.
+(pdftex.def)             Requested size: 226.20683pt x 225.84547pt.
+ [5] [6 <./Images/Math217Pictures/vectorFieldEx1.png> <./Images/Math217Pictures/vectorFieldEx2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 104--109
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-[10]) (./Sections/Multivariable_Calculus/Multiple_Integrals.tex [11] [12]
-<Images/PreCalcPictures/PolarGraph1.png, id=187, 340.27126pt x 331.2375pt>
-File: Images/PreCalcPictures/PolarGraph1.png Graphic file (type png)
-<use Images/PreCalcPictures/PolarGraph1.png>
-Package pdftex.def Info: Images/PreCalcPictures/PolarGraph1.png  used on input line 64.
-(pdftex.def)             Requested size: 238.18825pt x 231.86465pt.
-<Images/PreCalcPictures/PolarGraph2.png, id=188, 352.31625pt x 381.67593pt>
-File: Images/PreCalcPictures/PolarGraph2.png Graphic file (type png)
-<use Images/PreCalcPictures/PolarGraph2.png>
-Package pdftex.def Info: Images/PreCalcPictures/PolarGraph2.png  used on input line 66.
-(pdftex.def)             Requested size: 246.61969pt x 267.17133pt.
- [13 <./Images/PreCalcPictures/PolarGraph1.png>]
-Overfull \hbox (3.60547pt too wide) detected at line 87
+[8] [9] [10]) (./Sections/Vector_Calculus/Integrals_in_Space.tex [11] [12]
+<Images/Math217Pictures/divergenceThmEx.png, id=178, 410.7345pt x 330.63525pt>
+File: Images/Math217Pictures/divergenceThmEx.png Graphic file (type png)
+<use Images/Math217Pictures/divergenceThmEx.png>
+Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx.png  used on input line 66.
+(pdftex.def)             Requested size: 205.36674pt x 165.31721pt.
+<Images/Math217Pictures/divergenceThmEx2.png, id=179, 330.63525pt x 284.86424pt>
+File: Images/Math217Pictures/divergenceThmEx2.png Graphic file (type png)
+<use Images/Math217Pictures/divergenceThmEx2.png>
+Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx2.png  used on input line 82.
+(pdftex.def)             Requested size: 165.31721pt x 142.43176pt.
+ [13 <./Images/Math217Pictures/divergenceThmEx.png>]
+<Images/Math217Pictures/stokesThmEx.png, id=186, 359.54324pt x 441.44925pt>
+File: Images/Math217Pictures/stokesThmEx.png Graphic file (type png)
+<use Images/Math217Pictures/stokesThmEx.png>
+Package pdftex.def Info: Images/Math217Pictures/stokesThmEx.png  used on input line 96.
+(pdftex.def)             Requested size: 179.77118pt x 220.72408pt.
+ [14 <./Images/Math217Pictures/divergenceThmEx2.png>] [15 <./Images/Math217Pictures/stokesThmEx.png>]
+Overfull \hbox (1.80794pt too wide) detected at line 138
 []
  []
 
-[14 <./Images/PreCalcPictures/PolarGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-<Images/Math217Pictures/cylindricalCoordinates.png, id=201, 662.475pt x 825.0825pt>
-File: Images/Math217Pictures/cylindricalCoordinates.png Graphic file (type png)
-<use Images/Math217Pictures/cylindricalCoordinates.png>
-Package pdftex.def Info: Images/Math217Pictures/cylindricalCoordinates.png  used on input line 117.
-(pdftex.def)             Requested size: 198.74403pt x 247.52666pt.
-[15]
-<Images/Math217Pictures/sphericalCoordinates.png, id=206, 1104.125pt x 962.59625pt>
-File: Images/Math217Pictures/sphericalCoordinates.png Graphic file (type png)
-<use Images/Math217Pictures/sphericalCoordinates.png>
-Package pdftex.def Info: Images/Math217Pictures/sphericalCoordinates.png  used on input line 132.
-(pdftex.def)             Requested size: 331.24005pt x 288.7811pt.
- [16 <./Images/Math217Pictures/cylindricalCoordinates.png>] [17 <./Images/Math217Pictures/sphericalCoordinates.png>])) [18] (./MathNotes_new.aux)
+[16])) [17] (./MathNotes_new.aux)
 Package rerunfilecheck Info: File `MathNotes_new.out' has not changed.
-(rerunfilecheck)             Checksum: 2E50DDE2D9C24BEC517CE85E06EDBFFA;2778.
+(rerunfilecheck)             Checksum: 93135BC0769965FDF864F054540A7C86;2643.
  ) 
 Here is how much of TeX's memory you used:
- 21412 strings out of 476093
- 399436 string characters out of 5795582
- 1874787 words of memory out of 5000000
- 41340 multiletter control sequences out of 15000+600000
- 522143 words of font info for 75 fonts, out of 8000000 for 9000
+ 21357 strings out of 476093
+ 397164 string characters out of 5795582
+ 1875787 words of memory out of 5000000
+ 41300 multiletter control sequences out of 15000+600000
+ 522489 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,104p,779b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes_new.pdf (18 pages, 850536 bytes).
+ 99i,15n,104p,687b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on MathNotes_new.pdf (17 pages, 671043 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
+ 296 PDF objects out of 1000 (max. 8388607)
  226 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 35 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
