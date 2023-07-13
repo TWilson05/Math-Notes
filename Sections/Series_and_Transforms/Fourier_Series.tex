@@ -70,7 +70,7 @@ Ex: Find the Fourier series of a square wave defined by
 \begin{align*}
     &f(x)=\eqnsystem{1 & 0<t<\pi\\ -1 & \pi<t<2\pi}
 \end{align*}
-\centerline{\includegraphics[scale=1]{FourierImages/SeriesEx2.png}}
+\centerline{\includegraphics[scale=1]{Images/FourierImages/SeriesEx2.png}}
 The odd extension is drawn above and given that this is an odd function we can express it using only sine terms.
 \begin{align*}
     &2L=2\pi\Ra L=\pi\\
@@ -132,7 +132,7 @@ Case: $k=m$:
 And so we get the coefficients as
 $$\boxed{c_k=\frac{1}{T}\int_T x(t)e^{-ik\omega t}dt}$$
 Ex: Find the Fourier series of $e^{-t}$ for $-1\leq t\leq 1$\\
-\centerline{\includegraphics[scale=1.1]{FourierImages/SeriesEx1.png}}
+\centerline{\includegraphics[scale=1.1]{Images/FourierImages/SeriesEx1.png}}
 \begin{align*}
     &T=2,\ \omega=\frac{2\pi}{T}=\pi\\
     &c_k=\frac{1}{2}\int_{-1}^1 e^{-t}e^{-ik\pi t}dt\\
@@ -179,25 +179,25 @@ $$\boxed{c_k=\frac{1}{N}\sum_{n=0}^{N-1}x[n]e^{-i\frac{2\pi n}{N}}}$$
 So far we have found a nice way of expressing periodic functions using the Fourier series but what if we wanted to generalize this to aperiodic functions. We can make use of a powerful tool called the Fourier transform. It is a generalization of the Fourier series. Let's look at this through an example.\\
 The following function is described by
 \[ x(t)=\eqnsystem{1 & |t|<T_1\\ 0 & T_1<|t|<\frac{T}{2}} \]
-\centerline{\includegraphics[scale=1]{FourierImages/FourierTransformDerivation.png}}
+\centerline{\includegraphics[scale=1]{Images/FourierImages/FourierTransformDerivation.png}}
 We can compute its Fourier coefficients as
 \begin{align*}
     &c_k=\frac{1}{T}\int_{-T/2}^{T/2}x(t)e^{-i\omega kt}dt\\
     &c_k=\frac{1}{T}\int_{-T_1}^{T_1}e^{-ik\omega t}dt=-\frac{e^{-ik\omega t}}{ik\omega}\eval_{-T_1}^{T_1}=\frac{1}{ik\omega}\brround{e^{ik\omega T_1}-e^{-ik\omega T_1}}\\
     &c_k=\frac{2\sin(k\omega T_1)}{k\omega T}
 \end{align*}
-\centerline{\includegraphics[scale=1]{FourierImages/DTSincEx1.png}}
+\centerline{\includegraphics[scale=1]{Images/FourierImages/DTSincEx1.png}}
 The Fourier coefficients (plotted above) output the discrete case of what is commonly called the sinc function which is proportional to
 $$\mathrm{sinc}(x)=\frac{\sin(x)}{x}$$
 Right now we only have information about integer values of $k$ but what if we extrapolate this graph
-\centerline{\includegraphics[scale=1]{FourierImages/CTSincEx1.png}}
+\centerline{\includegraphics[scale=1]{Images/FourierImages/CTSincEx1.png}}
 This gives us a continuous function of the $k$ values
 \[ f(k\omega)=\eqnsystem{1 & k=0\\ \frac{\sin(k\omega T_1)}{k\omega} & k\neq 0} \]
 We can then express the $c_k$ values as
 \[ c_k=\frac{2}{T}f(k\omega) \]
 Now what if we take our periodic square wave and make $T$ very large. This would have the effect of separating and isolating each periodic part of the function so that it resembles an apeariodic function.\\
 We know $\omega=\frac{2\pi}{T}$ so as $T$ grows, $\omega$ will become very small. This will have the effect of squishing the $k\omega$ steps closer and closer together.\\
-\centerline{\includegraphics[scale=1]{FourierImages/convergingSinc.png}}
+\centerline{\includegraphics[scale=1]{Images/FourierImages/convergingSinc.png}}
 This gives rise to the following relation
 \begin{align*}
     &x(t)=\sum_{k=-\infty}^\infty c_ke^{ik\omega t}\\
