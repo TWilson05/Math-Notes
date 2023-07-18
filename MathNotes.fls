@@ -1732,6 +1732,14 @@ INPUT ./Images/PDEPictures/laplace.png
 INPUT Images/PDEPictures/laplace.png
 INPUT ./Images/PDEPictures/laplace.png
 INPUT ./Images/PDEPictures/laplace.png
+INPUT ./Sections/Complex_Analysis.tex
+INPUT Sections/Complex_Analysis.tex
+INPUT ./Sections/Complex_Analysis.tex
+INPUT Sections/Complex_Analysis.tex
+INPUT ./Sections/Complex_Analysis/Complex_Algebra.tex
+INPUT Sections/Complex_Analysis/Complex_Algebra.tex
+INPUT ./Sections/Complex_Analysis/Complex_Algebra.tex
+INPUT Sections/Complex_Analysis/Complex_Algebra.tex
 INPUT ./Sections/Bibliography.tex
 INPUT Sections/Bibliography.tex
 INPUT ./Sections/Bibliography.tex

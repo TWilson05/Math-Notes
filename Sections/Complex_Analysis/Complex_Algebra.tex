@@ -1,0 +1,188 @@
+\subsection{Complex Algebra}
+Complex numbers arise from the roots of polynomials.\\
+Ex: $x^2+1=0\Ra x^2=-1 \Ra x=\pm\sqrt{-1}$. This polynomial has no real roots, however, we can introduce an imaginary number $i$ such that $i^2=-1$. Then we will have the solution $x=\pm i$\\
+We can introduce \textit{complex numbers} which are numbers in the form $z=x+iy$, where $x$ is the real part of $z$, $\Re(z)$, and $y$ is the imaginary part of $z$, $\Im(z)$. 
+These numbers can also be expressed in vector notation along the complex plane.
+
+
+\subsubsection{Complex Arithmetic}
+Addition, subtraction, and multiplication work the same, just with the addition of the fact $i^2=-1$. For division, we require what is called the conjugate.\\
+The conjugate of a complex number is the same number, just with the sign of the imaginary component flipped.
+$$\overline{z}=x-yi$$
+where $\overline{z}$ is the conjugate of $z$.\\
+Similarly to vectors, we can also define the modulus (length) of a complex number
+$$|z|^2=x^2+y^2=z\cdot\overline{z}$$
+Using this, we can define the division of a complex number and also define the real and imaginary components of a complex number.\\
+The general expression for division is:
+\begin{align*}
+    &\frac{u}{z}=\frac{s+it}{x+iy}=\frac{(s+it)(x-iy)}{(x+iy)(x-iy)}=\frac{u\overline{z}}{x^2+y^2}=\frac{u\overline{z}}{|z|^2}
+\end{align*}
+The real and imaginary components can be computed as
+\begin{align*}
+    &z=x+iy\\
+    &\overline{z}=x-iy\\
+    &\Re(z)=\frac{z+\overline{z}}{2}\\
+    &\Im(z)=\frac{z-\overline{z}}{2i}
+\end{align*}
+Ex1: Simplify $(1+2i)(3+i)(2-3i)$
+\begin{align*}
+    &(1+2i)(3+i)(2-3i)=(3+i+6i-2)(2-3i)=(1+7i)(2-3i)\\
+    &=2-3i+14i+21\\
+    &=23+11i
+\end{align*}
+Ex2: Simplify $\bfrac{2+i}{1+i}^2$
+\begin{align*}
+    &\bfrac{2+i}{1+i}^2=\brround{\frac{(2+i)(1-i)}{(1+i)(1-i)}}^2=\bfrac{2+i-2i+1}{2}^2=\bfrac{3-i}{2}^2=\frac{9-6i-1}{4}\\
+    &=2-\frac{3}{2}i
+\end{align*}
+Ex3: Simplify $(1+2i)^5$
+\begin{align*}
+    &(1+2i)^5=1^5+5(1)^4(2i)+10(1)^3(2i)^2+10(1)^2(2i)^3+5(1)(2i)^4+(2i)^5\\
+    &=1+10i+10(-4)+10(-8i)+5(16)+32i\\
+    &=1+10i-40-80i+80+32i\\
+    &=41-38i
+\end{align*}
+Ex4: Prove
+\[ \text{if }|z|=1\text{ then }\Re\bfrac{1}{1+z}=\frac{1}{2} \]
+\begin{proof}
+\begin{align*}
+    &\Re(w)=\frac{w+\overline{w}}{2}\\
+    &\overline{\frac{1}{1+z}}=\frac{1}{1+\overline{z}}\\
+    &\Re\bfrac{1}{1+z}=\frac{\frac{1}{1+z}+\frac{1}{1+\overline{z}}}{2}=\frac{1+\overline{z}+1+z}{2(1+z)(1+\overline{z})}=\frac{2+z+\overline{z}}{2(1+z+\overline{z}+|z|^2)}\\
+    &|z|=1\Ra \Re\bfrac{1}{1+z}=\frac{2+z+\overline{z}}{2(2+z+\overline{z})}=\frac{1}{2}
+\end{align*}
+\end{proof}
+Some properties of $\overline{z}$:
+\begin{itemize}
+    \item $\overline{\overline{z}}=z$
+    \item $\overline{z_1z_2}=\overline{z}_1\overline{z}_2$
+    \item $|z_1z_2|=|z_1||z_2|$
+\end{itemize}
+Some common inequalities come from the triangle inequality:\\
+$|z_1+z_2|\leq |z_1|+|z_2|$
+\begin{proof}
+\begin{align*}
+    &|z_1+z_2|\leq |z_1|+|z_2|\\
+    &|z_1+z_2|=\sqrt{(x_1+x_2)^2+(y_1+y_2)^2}\\
+    &\sqrt{(x_1+x_2)^2+(y_1+y_2)^2}\leq \sqrt{x_1^2+y_1^2}+\sqrt{x_2^2+y_2^2}\\
+    &|z_1+z_2|\leq |z_1|+|z_2|
+\end{align*}
+\end{proof}
+\[
+\Ra |z_1\pm z_2|\geq ||z_1|-|z_2||
+\]
+This leads to a general upper and lower bound that can be derived from these inequalities:
+$$||z_1|-|z_2||\leq|z_1\pm z_2|\leq |z_1|+|z_2|$$
+
+
+Another way to represent complex numbers is through polar form. To use this we must first introduce Euler's identity:
+$$e^{i\varphi}=\cos\varphi+i\sin\varphi$$
+This then helps us with the equation for the polar form
+$$z=a+ib=|z|(\cos\varphi+i\sin\varphi)=|z|e^{i\varphi}$$
+For $z=re^{i\varphi}$ We call $r$ the magnitude of the complex number and $\varphi$ is the argument. This can be especially useful for simplifying some complex numbers.\\
+Ex:
+\begin{align*}
+    &\brvertical{\frac{(1+\sqrt{3}i)^{100}}{(\sqrt{3}-i)^{100}}}=\frac{|1+\sqrt{3}i|^{100}}{|\sqrt{3}-i|^{100}}=\frac{2^{100}}{2^{100}}=1
+\end{align*}
+Note that because sinusoidal functions are periodic every $2\pi$ this means that there infinite ways to express a function in polar coordinates. 
+\[
+e^{i2\pi k}=1,\ k\in\Z\Ra z=re^{i(\varphi+2\pi k)}
+\]
+To get around the issue of having infinite possible polar forms for every complex number we define what's called the principal argument to be
+$$\Arg(z)=\varphi\in(-\pi,\pi]$$
+We define the regular argument to be
+$$\arg(z)=\Arg(z)+2k\pi,\ k\in\Z$$
+Note that $\Arg(z)$ is singular valued while $\arg(z)$ is multi-valued.\\
+We can define $\Arg(z)$ in terms of the real and imaginary parts ($x$ and $y$) as
+$$\Arg(z)=\arctan(\tfrac{y}{x})\pm k\pi$$
+What it is specifically depends on what quadrant of the complex plane the point lies in.
+\begin{itemize}
+    \item QI: $\Arg(z)=\arctan(\tfrac{y}{x})$
+    \item QII: $\Arg(z)=\arctan(\tfrac{y}{x})+\pi$
+    \item QIII: $\Arg(z)=\arctan(\tfrac{y}{x})-\pi$
+    \item QIV: $\Arg(z)=\arctan(\tfrac{y}{x})$
+\end{itemize}
+Ex:
+\begin{align*}
+    &\Arg(-1-\sqrt{3}i)=\arctan(\sqrt{3})-\pi=-\frac{2\pi}{3}
+\end{align*}
+Ex2:
+\begin{align*}
+    &\arg(1-\sqrt{3}i)\\
+    &\Arg(1-\sqrt{3}i)=-\frac{\pi}{3}\\
+    &\arg(1-\sqrt{3})=-\frac{\pi}{3}+2k\pi,\ k\in\Z
+\end{align*}
+Ex3:
+\begin{align*}
+    &\arg(-1+2i)\\
+    &\Arg(-1+2i)=\arctan(-2)+\pi\\
+    &\arg(-1+2i)=\pi-\arctan(2)+2k\pi
+\end{align*}
+Ex4: Simplify
+\begin{align*}
+    &z=-3+3i\\
+    &\Arg(z)=\arctan\bfrac{3}{-3}+\pi=\frac{3\pi}{4}\\
+    &|z|=3\sqrt{2}\\
+    &z=3\sqrt{2}e^{\frac{3\pi}{4}i}
+\end{align*}
+Ex5: Simplify
+\begin{align*}
+    &z=-3-3i\\
+    &\Arg(z)=\arctan\bfrac{-3}{-3}-\pi=-\frac{3\pi}{4}\\
+    &|z|=3\sqrt{2}\\
+    &z=3\sqrt{2}e^{-\frac{3\pi}{4}i}
+\end{align*}
+Ex6: Simplify
+\begin{align*}
+    &z=\frac{1-i}{-\sqrt{3}+i}=\frac{u}{v}\\
+    &\arg(z)=\arg(u)-\arg(v)=\arctan\bfrac{-1}{1}-\brround{\arctan\bfrac{1}{-\sqrt{3}}+\pi}+2k\pi\\
+    &=-\frac{\pi}{4}-\frac{5\pi}{6}+2k\pi=-\frac{13\pi}{12}+2k\pi\\
+    &\Arg(z)=\frac{11\pi}{12}\\
+    &|z|=\frac{|u|}{|v|}=\frac{\sqrt{2}}{2}=\frac{1}{\sqrt{2}}\\
+    &z=\frac{e^{\frac{11\pi}{12}i}}{\sqrt{2}}
+\end{align*}
+Ex7: Simplify
+\begin{align*}
+    &z=(\sqrt{3}-i)^2=w^2\\
+    &\arg(w)=\arctan\bfrac{-1}{\sqrt{3}}+2k\pi=-\frac{\pi}{6}\\
+    &\Ra \arg(z)=2\arg(w)=-\frac{\pi}{3}+4k\pi\\
+    &\Arg(z)=-\frac{\pi}{3}\\
+    &|w|=2\Ra |z|=|w|^2=4\\
+    &z=4e^{-\frac{\pi}{3}i}
+\end{align*}
+
+Properties of $\Arg(z)$ and $\arg(z)$
+\begin{itemize}
+    \item $\Arg(z_1z_2)\neq\Arg(z_1)+\Arg(z_2)$
+\begin{proof}
+Proof by contradiction: assume that $\Arg(z_1z_2)=\Arg(z_1)+\Arg(z_2)$ is true.\\
+Take $z_1=z_2=-1$.
+\begin{align*}
+    &\Arg(z_1)=\Arg(z_2)=\pi\\
+    &\Ra \Arg(z_1)+\Arg(z_2)=2\pi\\
+    &\Arg(z_1z_2)=\Arg(1)=0\\
+    &\Arg(z_1z_2)\neq\Arg(z_1)+\Arg(z_2)\ \forall z_1,z_2\neq0\in\C
+\end{align*}
+\end{proof}
+\item $\arg(z_1z_2)=\arg(z_1)+\arg(z_2)$
+\item $ \Arg(\overline{z})\neq-\Arg(z) $
+\begin{proof}
+Proof by contradiction: assume that $\Arg(\overline{z})=-\Arg(z)$ is true.\\
+Take $z=-1$
+\begin{align*}
+    &\overline{z}=z=-1\\
+    &\Arg(z)=\pi\\
+    &\Arg(\overline{z})=\pi\\
+    &-\Arg(z)=-\pi\\
+    &\Ra \Arg(\overline{z})\neq-\Arg(z)\ \forall z\in\C
+\end{align*}
+\end{proof}
+\item $ \arg(z)=-\arg(\overline{z}) $
+\begin{proof}
+\begin{align*}
+    &z=|z|e^{i\arg(z)}\ \forall z\in\C\\
+    &\overline{z}=|z|e^{-i\arg(z)}\\
+    &\Ra \arg(\overline{z})=-\arg(z)
+\end{align*}
+\end{proof}
+\end{itemize}
