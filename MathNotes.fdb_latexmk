@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1689678367 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1689678383 0
+["pdflatex"] 1690084684 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1690084700 0
   "Images/DifferentialCalculusPictures/Concavity.png" 1689245177 10402 80577835fd5b07a6bed5a068b676cb66 ""
   "Images/DifferentialCalculusPictures/InscribedCylinder.png" 1689245177 3005 5b5fd80a8c31f947b3e7ad7c754d68a5 ""
   "Images/DifferentialCalculusPictures/MVTImage.png" 1689245177 13099 c29deb603fb0f21b46053cf8eb8c54ed ""
@@ -95,13 +95,13 @@
   "Images/PreCalcPictures/SinxandCosx.jpg" 1689245177 123272 84846cf91bbb644776807dc0459e1690 ""
   "Images/PreCalcPictures/TriangleInvTrig.png" 1689245177 3233 f29bf7e860503cae2677315b612e1b2b ""
   "Images/PreCalcPictures/tanx.png" 1689245177 6097 efa54ffe3ca70f2330ca5431764dd671 ""
-  "MathNotes.aux" 1689678382 44612 ebc6c523f34d924e8177bb219c5cf5e8 "pdflatex"
-  "MathNotes.out" 1689678382 54434 bda358f59ab2b73a787736c32b6a5afd "pdflatex"
+  "MathNotes.aux" 1690084699 45048 55b7d23b7b0fb4e8cc3b8d23633bf043 "pdflatex"
+  "MathNotes.out" 1690084699 55042 139f27137009adf6d34d88bfc307fb82 "pdflatex"
   "MathNotes.tex" 1689678324 1254 cb9a519ca16402926483e684a99cfcd6 ""
-  "MathNotes.toc" 1689678382 30610 9a148868341d9fcc0012dd56a91c460e "pdflatex"
+  "MathNotes.toc" 1690084699 30923 add41ec8e5a0e8d22465a35e8c5fecfc "pdflatex"
   "Sections/Bibliography.tex" 1689245177 1499 71b0d7ec0c057ea4273959a76e19499a ""
   "Sections/Complex_Analysis.tex" 1689678272 81 72e402499b8dd2cbf6361a37d5f15f0c ""
-  "Sections/Complex_Analysis/Complex_Algebra.tex" 1689678261 7481 250e98ec77f2d34740e695098c2789f4 ""
+  "Sections/Complex_Analysis/Complex_Algebra.tex" 1690084667 18925 b00ee09265619803eab3cdfda8222d37 ""
   "Sections/Differential_Calculus.tex" 1689245177 402 39ef107b71f572f9bc8d0bfb71079e9b ""
   "Sections/Differential_Calculus/Applications_of_Derivatives.tex" 1689245177 4396 64bc860c01943012728f5b58c352b85a ""
   "Sections/Differential_Calculus/Approximations.tex" 1689245177 7526 aaa0cdc152fb7201b4840ec2592bd7d2 ""
@@ -367,7 +367,7 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1671865898 4662777 6d30ebd1f2949ad7a3d8a3b5cd0d9f7d ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671866077 7874780 abc809e35257333a6d31dd99a03d1709 ""
   "c:/texlive/2022/texmf.cnf" 1671865872 713 e69b156964470283e0530f5060668171 ""
-  "fizztex.sty" 1689678298 3367 a547d6b1481b607d9dab6bc81100d816 ""
+  "fizztex.sty" 1690084662 3438 e20f47783f2a331bec6bcb3d9e769291 ""
   (generated)
   "MathNotes.aux"
   "MathNotes.log"

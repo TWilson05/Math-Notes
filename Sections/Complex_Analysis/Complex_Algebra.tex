@@ -186,3 +186,247 @@ Take $z=-1$
 \end{align*}
 \end{proof}
 \end{itemize}
+
+
+
+
+
+
+
+
+\subsubsection{De Moirre's Formula}
+Using Euler's identity we can derive a powerful formula called De Moirre's Formula as follows:
+\begin{align*}
+    &e^{iN\varphi}=\cos(N\varphi)+i\sin(N\varphi)\\
+    &e^{iN\varphi}=(e^{i\varphi})^N=(\cos\varphi+i\sin\varphi)^N\\
+    &(\cos\varphi+i\sin\varphi)^N=\cos(N\varphi)+i\sin(N\varphi)
+\end{align*}
+Applications of De Moirre's Formula:\\
+Binomial expansion:
+\begin{align*}
+    &N=2:\\
+    &\cos(2\theta)=\cos^2\theta-\sin^2\theta\\
+    &\sin(2\theta)=2\cos\theta\sin\theta\\
+    &N=3:\\
+    &(\cos\theta+i\sin\theta)^3=\cos^3\theta+3\cos^2\theta(i\sin\theta)+3\cos\theta(i\sin\theta)^2+(i\sin\theta)^3\\
+    &\cos(3\theta)=\cos^3\theta-3\cos\theta\sin^2\theta\\
+    &\sin(3\theta)=3\cos^2\theta\sin\theta-\sin^3\theta
+\end{align*}
+Ex: Prove
+\[ \sin(3\theta)=3\sin\theta-4\sin^3\theta \]
+\begin{proof}
+Using De Moivre's formula with $N=3$
+\begin{align*}
+    &(\cos\theta+i\sin\theta)^3=\cos(3\theta)+i\sin(3\theta)\\
+    &(\cos\theta)^3+3(\cos\theta)^2(i\sin\theta)+3\cos\theta(i\sin\theta)^2+(i\sin\theta)^3=\cos(3\theta)+i\sin(3\theta)\\
+    &\cos^3\theta-3\cos\theta\sin^2\theta+i(3\cos^2\theta\sin\theta-\sin^3\theta)=\cos(3\theta)+i\sin(3\theta)\\
+    &\Im\brcurly{\cos^3\theta-3\cos\theta\sin^2\theta+i(3\cos^2\theta\sin\theta-\sin^3\theta)}=\Im\brcurly{\cos(3\theta)+i\sin(3\theta)}\\
+    &3\cos^2\theta\sin\theta-\sin^3\theta=\sin(3\theta)\\
+    &\sin^2\theta+\cos^2\theta=1\Ra \cos^2\theta=1-\sin^2\theta\\
+    &3(1-\sin^2\theta)\sin\theta-\sin^3\theta=\sin(3\theta)\\
+    &3\sin\theta-3\sin^3\theta-\sin^3\theta=\sin(3\theta)\\
+    &3\sin\theta-4\sin^3\theta=\sin(3\theta)
+\end{align*}
+\end{proof}
+Computing trigonometric integrals:\\
+Ex:
+\begin{align*}
+    &\int_0^{2\pi}\cos^8\varphi d\varphi\\
+    &e^{i\varphi}=\cos\varphi+i\sin\varphi\\
+    &e^{-i\varphi}=\cos\varphi-i\sin\varphi\\
+    &\cos\varphi=\frac{e^{i\varphi}+e^{-i\varphi}}{2}\\
+    &\sin\varphi=\frac{e^{i\varphi}-e^{-i\varphi}}{2i}\\
+    &\int_0^{2\pi}\brround{\frac{e^{i\varphi}+e^{-i\varphi}}{2}}^8d\varphi=\frac{1}{2^8}\int_0^{2\pi}\brround{e^{i\varphi}+e^{-i\varphi}}^8d\varphi\\
+    &=\frac{1}{2^8}\int_0^{2\pi}\brround{e^{i8\varphi}+\comb{1}{8}e^{i7\varphi}e^{-i\varphi}+\cdots+\comb{7}{8}e^{i\varphi}e^{-i7\varphi}+e^{-i8\varphi}}d\varphi\\
+    &=\frac{1}{2^8}\brround{0+\cdots+\comb{4}{8}2\pi+\cdots+0}=\frac{\comb{4}{8}}{2^7}\pi
+\end{align*}
+Ex2:
+\begin{align*}
+    &\cos\theta=\frac{e^{i\theta}+e^{-i\theta}}{2}\\
+    &\int_0^{2\pi}\cos^6\theta d\theta=\int_0^{2\pi}\brround{\frac{e^{i\theta}+e^{-i\theta}}{2}}\\
+    &=\frac{1}{2^6}\int_0^{2\pi}\sum_{k=0}^6\combm{k}{6}e^{i\theta k}e^{-i\theta(6-k)}d\theta\\
+    &=\frac{1}{2^6}\sum_{k=0}^6\combm{k}{6}\int_0^{2\pi}e^{i\theta(2k-6)}d\theta\\
+    &\int_0^{2\pi}e^{ik\theta}d\theta=\frac{e^{ik\theta}}{ik}\eval_0^{2\pi}=\frac{e^{2\pi ik}-1}{ik}\\
+    &e^{2\pi ik}=1,\ k\in\Z\Ra \int_0^{2\pi}e^{ik\theta}d\theta=0,\ k\neq0\in\Z\\
+    &\Ra \int_0^{2\pi}\cos^6\theta d\theta=\frac{1}{2^6}\combm{3}{6}\int_0^{2\pi}d\theta=\frac{(20)(2\pi)}{2^6}=\frac{5\pi}{8}
+\end{align*}
+Ex3:
+\begin{align*}
+    &\int_0^{2\pi}\sin^6(2\theta)d\theta\\
+    &\sin(2\theta)=\frac{e^{2i\theta}-e^{-2i\theta}}{2i}\\
+    &\int_0^{2\pi}\sin^6(2\theta)d\theta=\int_0^{2\pi}\brround{\frac{e^{2i\theta}-e^{-2i\theta}}{2i}}^6d\theta\\
+    &=\frac{1}{(2i)^6}\int_0^{2\pi}\sum_{k=0}^6\combm{k}{6}(-1)^{6-k}e^{2ik\theta}e^{-2i\theta(6-k)}d\theta\\
+    &=-\frac{1}{2^6}\sum_{k=0}^6\combm{k}{6}(-1)^{6-k}\int_0^{2\pi}e^{i\theta(4k-12)}d\theta\\
+    &\int_0^{2\pi}e^{ik\theta}d\theta=\frac{e^{ik\theta}}{ik}\eval_0^{2\pi}=\frac{e^{2\pi ik}-1}{ik}\\
+    &e^{2\pi ik}=1,\ k\in\Z\Ra \int_0^{2\pi}e^{ik\theta}d\theta=0,\ k\neq0\in\Z\\
+    &\Ra \int_0^{2\pi}\sin^6(2\theta)d\theta=-\frac{1}{2^6}\combm{3}{6}(-1)^3\int_0^{2\pi} d\theta\\
+    &=\frac{5\pi}{8}
+\end{align*}
+Ex4: Prove
+\[ \sum_{k=0}^n\cos(k\theta)=\frac{1}{2}+\frac{\sin\brround{\brround{n+\frac{1}{2}}\theta}}{2\sin\brround{\frac{\theta}{2}}} \]
+\begin{proof}
+De Moivre's formula states
+\[ (\cos\theta+i\sin\theta)^n=\cos(n\theta)+i\sin(n\theta) \]
+If we take the conjugate of both sides we get
+\[ (\cos\theta-i\sin\theta)^n=\cos(n\theta)-i\sin(n\theta) \]
+Summing these two equations gives
+\begin{align*}
+    &(\cos\theta+i\sin\theta)^k+(\cos\theta-i\sin\theta)^k=2\cos(k\theta)\\
+    &\cos\theta\pm i\sin\theta=e^{\pm i\theta}\\
+    &2\cos(k\theta)=(e^{i\theta})^k+(e^{-i\theta})^k
+\end{align*}
+We can sum both sides of this to get
+\[ 2\sum_{k=0}^n\cos(k\theta)=\sum_{k=0}^n(e^{i\theta})^k+\sum_{k=0}^n(e^{-i\theta})^k \]
+The formula for the geometric sum is
+\[ \sum_{k=0}^n z^k=\frac{1-z^{n+1}}{1-z} \]
+Applying this we get
+\begin{align*}
+    &2\sum_{k=0}^n\cos(k\theta)=\frac{1-(e^{i\theta})^{n+1}}{1-e^{i\theta}}+\frac{1-(e^{-i\theta})^{n+1}}{1-e^{-i\theta}}\\
+    &2\sum_{k=0}^n\cos(k\theta)=\frac{(1-e^{i\theta(n+1)})(1-e^{-i\theta})+(1-e^{-i\theta(n+1)})(1-e^{i\theta})}{(1-e^{i\theta})(1-e^{-i\theta})}\\
+    &2\sum_{k=0}^n\cos(k\theta)=\frac{1-e^{i\theta(n+1)}-e^{i\theta}+e^{i\theta n}+1-e^{-i\theta(n+1)}-e^{-i\theta}+e^{-i\theta n}}{1-e^{i\theta}-e^{-i\theta}+1}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{e^{i\theta n}+e^{-i\theta n}-e^{i\theta(n+1)}-e^{-i\theta(n+1)}}{2-e^{i\theta}-e^{-i\theta}}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{e^{i\frac{\theta}{2}}\brround{e^{-i\theta(n+\frac{1}{2})}-e^{i\theta(n+\frac{1}{2})}}+e^{-i\frac{\theta}{2}}\brround{e^{i\theta(n+\frac{1}{2})}-e^{i\theta(n+\frac{1}{2})}}}{e^{i\frac{\theta}{2}}\brround{e^{-i\frac{\theta}{2}}-e^{i\frac{\theta}{2}}}+e^{-i\frac{\theta}{2}}\brround{e^{i\frac{\theta}{2}}-e^{-i\frac{\theta}{2}}}}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{\brround{e^{-i\frac{\theta}{2}}-e^{i\frac{\theta}{2}}}\brround{e^{i\theta(n+\frac{1}{2})}-e^{-i\theta(n+\frac{1}{2})}}}{-\brround{e^{-i\frac{\theta}{2}}-e^{i\frac{\theta}{2}}}^2}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{e^{i\theta(n+\frac{1}{2})}-e^{-i\theta(n+\frac{1}{2})}}{e^{i\frac{\theta}{2}}-e^{-i\frac{\theta}{2}}}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{\frac{1}{2i}\brround{e^{i\theta(n+\frac{1}{2})}-e^{-i\theta(n+\frac{1}{2})}}}{\frac{1}{2i}\brround{e^{i\frac{\theta}{2}}-e^{-i\frac{\theta}{2}}}}\\
+    &\sin(x)=\frac{e^{ix}-e^{-ix}}{2i}\\
+    &2\sum_{k=0}^n\cos(k\theta)=1+\frac{\sin\brround{\theta(n+\frac{1}{2})}}{\sin\brround{\frac{\theta}{2}}}\\
+    &\sum_{k=0}^n\cos(k\theta)=\frac{1}{2}+\frac{\sin\brround{\brround{n+\frac{1}{2}}\theta}}{2\sin\brround{\frac{\theta}{2}}}
+\end{align*}
+\end{proof}
+
+
+
+\subsubsection{Geometry in the Complex Plane}
+Using the notation such that $z=x+iy$ where $\Re(z)=x$ and $\Im(z)=y$ we can define a circle in the complex plane as
+\[
+(x-x_0)^2+(y-y_0)^2=r_0^2
+\]
+This is analogous to writing
+\[
+|z-z_0|=r_0
+\]
+The two can be related as follows:
+\begin{align*}
+    &|z-z_0|=r_0\\
+    &|x+iy-x_0-iy_0|=r_0\\
+    &\sqrt{(x-x_0)^2+(y-y_0)^2}=r_0\\
+    &(x-x_0)^2+(y-y_0)^2=r_0^2
+\end{align*}
+Ex: describe the circle formed by $2|z|=|z+1|$
+\begin{align*}
+    &2|z|=|z+1|\\
+    &4|z|^2=|z+1|^2\\
+    &4x^2+4y^2=(x+1)^2+y^2\\
+    &4x^2+4y^2=x^2+2x+1+y^2\\
+    &3x^2+3y^2-2x-1=0\\
+    &3x^2-2x+\frac{1}{3}+3y^2-\frac{4}{3}=0\\
+    &3\brround{x-\frac{1}{3}}^2+3y^2=\frac{4}{3}\\
+    &\brround{x-\frac{1}{3}}^2+y^2=\frac{4}{9}
+\end{align*}
+A line in the complex plane can be written as
+\[
+ax+by=c \longleftrightarrow a\frac{z+\overline{z}}{2}+b\frac{z-\overline{z}}{2i}=c
+\]
+Ex: describe the line formed by $|z-1+i|=|z-2i|$
+\begin{align*}
+    &|z-1+i|=|z-2i|\\
+    &|z-1+i|^2=|z-2i|^2\\
+    &(x-1)^2+(y+1)^2=x^2+(y-2)^2\\
+    &x^2-2x+1+y^2+2y+1=x^2+y^2-4y+4\\
+    &-2x+2+2y=-4y+4\\
+    &6y=2x+2\\
+    &y=\frac{1}{3}(x+1)
+\end{align*}
+
+We can define an ellipse in the complex plane as
+\[
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+\]
+If we have $a>b$ then we will have a horizontal ellipse and if $b>a$ then we will have a vertical ellipse.\\
+Assuming that $a>b$ then we can define the foci points to be at
+\begin{align*}
+    &+F=(\sqrt{a^2-b^2}, 0)\\
+    &-F=(-\sqrt{a^2-b^2}, 0)
+\end{align*}
+The equation of an ellipse can also be described by
+\[
+|z-F|+|z+F|=2a
+\]
+Ex: describe the ellipse formed by $|z-1|+|z+1|=4$
+\begin{align*}
+    &|z-1|+|z+1|=4\\
+    &|z-F|+|z+F|=2a\Ra 2a=4\Ra a=2\\
+    &F=\sqrt{a^2-b^2}=1\Ra 1=4-b^2\Ra b^2=3\\
+    &\frac{x^2}{4}+\frac{y^2}{3}=1
+\end{align*}
+Ex2: describe the ellipse formed by $|z-1|+|z+3|=6$
+\begin{align*}
+    &|z-1|+|z+3|=6\\
+    &\text{note that this ellipse is not centered at the origin so we need to shift it}\\
+    &|z+1-2|+|z+1+2|=6\\
+    &2a=6\Ra a=3\\
+    &F=2=\sqrt{a^2-b^2}\Ra 4=9-b^2\Ra b^2=5\\
+    &\frac{(x+1)^2}{9}+\frac{y^2}{5}=1
+\end{align*}
+
+\subsubsection{Roots of a Complex Number}
+Given $z_0=r_0e^{i\varphi_0}$, what is $z_0^\frac{1}{n}$?\\
+If we let $w=z_0^\frac{1}{n}$ then $w^n=z_0$
+\begin{align*}
+    &w=re^{i\varphi},\ w_n=r^ne^{in\varphi}\\
+    &w^n=z_0\Ra r^ne^{in\varphi}=r_0e^{i\varphi_0}\\
+    &\Ra r^n=r_0\Ra r_0^\frac{1}{n}\\
+    &e^{in\varphi}=e^{i\varphi_0}\Ra n\varphi=\varphi_0+2k\pi\\
+    &\varphi=\frac{\varphi}{n}+\frac{2k\pi}{n}
+\end{align*}
+So all solutions to $w^n=z_0$ are given by
+\[
+w=r_0^\frac{1}{n}e^{i\brround{\frac{\varphi_0}{n}+\frac{2k\pi}{n}}},\ k\in\Z
+\]
+If we normalize $\varphi_0=\Arg(z_0)$ then $k$ will be in the range $k\in\brcurly{0,1,\ldots,n-1}$.\\
+Note that the expression
+\[
+w=r_0^\frac{1}{n}e^{i\brround{\frac{\varphi_0}{n}+\frac{2k\pi}{n}}},\ k\in\Z
+\]
+is multi-valued. If we want to avoid this, we can take what's called the principal value which is the value when $k=0$:
+\[
+z_0^\frac{1}{n}=r_0^\frac{1}{n}e^{i\frac{\varphi_0}{n}}
+\]
+Ex: Compute $(-1)^\frac{1}{2}$
+\begin{align*}
+    &z_0=-1=1^{\frac{1}{2}}e^{i(\frac{\pi}{2}+\frac{2k\pi}{2})}=e^{i(\frac{\pi}{2}+k\pi)}=\brcurly{\ldots,e^{-i\frac{3\pi}{2}},e^{-i\frac{\pi}{2}},e^{i\frac{\pi}{2}},e^{i\frac{3\pi}{2}},e^{i\frac{5\pi}{2}},\ldots}\\
+    &\text{note that there are only 2 unique values}\\
+    &(-1)^\frac{1}{2}=e^{i(\frac{\pi}{2}+k\pi)},\ k\in\brcurly{0,1}
+\end{align*}
+The principal value (when $k=0$) of this equation works out to be $i$.\\
+Ex2: Find all solutions to
+\begin{align*}
+    &z^7=i-1\\
+    &z^7=\sqrt{2}e^{i(\frac{3\pi}{4}+2\pi k)}\\
+    &z=2^{1/14}e^{i(\frac{3\pi}{28}+\frac{2\pi}{7} k)},\ k\in\brcurly{0,1,2,3,4,5,6}
+\end{align*}
+Ex3: Find all solutions to
+\begin{align*}
+    &z^5=\frac{2i}{-1-\sqrt{3}i}\\
+    &z^5=\frac{2e^{i\frac{\pi}{2}}}{2e^{-i\frac{2\pi}{3}}}=e^{i\frac{7\pi}{6}}=e^{-i(\frac{5\pi}{6}+2\pi k)}\\
+    &z=e^{-i(\frac{\pi}{6}+\frac{2\pi}{5}k)},\ k\in\brcurly{0,1,2,3,4}
+\end{align*}
+Ex4: Find all solutions to
+\begin{align*}
+    &\bfrac{z}{z+1}^2=i\\
+    &\bfrac{z}{z+1}^2=e^{i(\frac{\pi}{2}+2\pi k)}\\
+    &\frac{z}{z+1}=e^{i(\frac{\pi}{4}+\pi k)},\ k\in\brcurly{0,1}\\
+    &e^{i(\frac{\pi}{4}+\pi k)}=\brcurly{\frac{1}{\sqrt{2}}(1+i),\frac{1}{\sqrt{2}}(-1-i)}\\
+    &z=e^{i(\frac{\pi}{4}+k\pi)}(z+1)\\
+    &z=\frac{e^{i(\frac{\pi}{4}+k\pi)}}{1-e^{i(\frac{\pi}{4}+k\pi)}}=\brcurly{\frac{1+i}{\sqrt{2}-1-i},\frac{-1-i}{\sqrt{2}+1+i}}
+\end{align*}
+Ex5: Find all solutions to
+\begin{align*}
+    &z^2+4iz+1=0\\
+    &(z^2+4iz-4)+4+1=0\\
+    &(z+2i)^2+5=0\\
+    &(z+2i)^2=-5=5e^{i(\pi+2\pi k)}\\
+    &z+2i=\sqrt{5}e^{i(\frac{\pi}{2}+\pi k)}=\brcurly{\sqrt{5}i,-\sqrt{5}i}\\
+    &z=\brcurly{(\sqrt{5}-2)i,-(\sqrt{5}+2)i}
+\end{align*}
