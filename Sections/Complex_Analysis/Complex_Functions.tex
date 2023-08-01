@@ -1,3 +1,4 @@
+\subsection{Complex Functions}
 \subsubsection{Mapping Properties of Simple Functions}
 Similar to how functions with real variables map values to a different set of values, complex functions do the same. The main difference is that with complex functions we're mapping a 2 dimensional set of inputs to a 2 dimensional set of outputs.
 \[
@@ -135,6 +136,7 @@ In the case where $a=0$, we have a line. In the case where $a\neq0$, we have a c
 If we have a linear transformation of the form $az+b$ it corresponds to the scaling and translation of the set only. A line will map to a line and a circle will map to a circle.\\
 We can combine this with the $w=\frac{1}{z}$ transformation property to get a more general transformation. We call this the \textit{Mobius transformation}:
 $$f(z)=\frac{az+b}{cz+d}=\frac{a}{c}+\frac{b-\tfrac{ad}{c}}{cz+d}$$
+where $a,b,c,d\in\C$
 
 Ex: Find the mapping of $f(z)=\frac{1}{z+1}$ on the set $S=\brcurly{\Re(z)>0}$ 
 \begin{align*}
@@ -160,8 +162,19 @@ Ex2: Find the mapping of $f(z)=\frac{z-i}{z+i}$ on $S=\brcurly{|z|<3}$
     &S'=\brcurly{w=u+iv\Bigg\vert\brround{u-\frac{5}{4}}^2+v^2>\bfrac{3}{4}^2}
 \end{align*}
 
+Another common mapping is the $f(z)=z^2$ or more generally $f(z)=z^n$ mapping.
+For $w=z^2$,
+\[w=z^2=r^2e^{2i\varphi}\Ra \eqnsystem{|w|=|z|^2\\ \arg(w)=2\arg(z)}\]
+This mapping scales the magnitude but more notably, it doubles the argument. This means that the mapping of a half circle will now be a full circle.\\
 
-Ex3: Find the mapping of $f(z)=-2z^5$ on $S=\brcurly{|z|<1,0<\Arg(z)<\frac{\pi}{2}}$
+Ex: Find the mapping of $f(z)=z^2$ on $S=\brcurly{0\leq \Re(z)\leq1,\Im(z)=1}$
+\begin{align*}
+    &w=x^2+i2xy-y^2\\
+    &u=x^2-y^2=x^2-1\Ra -1\leq u\leq 0\\
+    &v=2xy=2x\Ra 0\leq v\leq 2\\
+    &S'=\brcurly{w=u+iv|-1\leq u\leq 0,\ 0\leq v\leq 2}
+\end{align*}
+Ex2: Find the mapping of $f(z)=-2z^5$ on $S=\brcurly{|z|<1,0<\Arg(z)<\frac{\pi}{2}}$
 \begin{align*}
     &z^5=-\frac{w}{2}\Ra |z|^5=\frac{|w|}{2}<1\Ra |w|<2\\
     &5\arg(z)=\arg(w)\pm\pi \\
@@ -169,3 +182,118 @@ Ex3: Find the mapping of $f(z)=-2z^5$ on $S=\brcurly{|z|<1,0<\Arg(z)<\frac{\pi}{
     &-\pi<\arg(w)<\frac{3\pi}{2}\\
     &S'=\brcurly{|w|<2}
 \end{align*}
+
+Another common mapping is the $f(z)=e^z$ mapping.
+\begin{align*}
+    &w=e^z=e^{x+iy}=e^xe^{iy}\\
+    &\eqnsystem{|w|=e^x\\ \arg(w)=y}
+\end{align*}
+This mapping has the property that the magnitude is only dependent on $x$ and the argument is exactly $y$.\\
+Ex: Find the mapping of $f(z)=e^z$ on $S=\brcurly{\Re(z)=1}$
+\begin{align*}
+    &w=e^xe^{iy}\\
+    &|w|=e,\ \arg(w)=y\\
+    &S'=\brcurly{|w|=e}
+\end{align*}
+Ex2: Find the mapping of $f(z)=e^z$ on $S=\brcurly{0\leq \Im(z)\leq\frac{\pi}{4}}$
+\begin{align*}
+    &|w|=x\\
+    &\arg(w)=y\Ra 0\leq \arg(w)\leq \frac{\pi}{4}\\
+    &S'=\brcurly{0\leq \Arg(w)\leq \frac{\pi}{4}}
+\end{align*}
+Ex3: Prove 
+\[ |e^{-z^3}|\leq 1\ \forall \brcurly{z\Bigg\vert-\frac{\pi}{6}\leq\Arg(z)\leq\frac{\pi}{6}} \]
+\begin{proof}
+We can express $-z^3$ as some complex number $a+ib$ where $a=\Re(-z^3)$ and $b=\Im(-z^3)$. Taking the magnitude gives
+\[ |e^{-z^3}|=|e^{a+ib}|=|e^ae^{ib}|=|e^a||e^{ib}|=|e^a|=|e^{\Re(-z^3)}| \]
+$z$ can be written as
+\begin{align*}
+    &z=|z|e^{i\Arg(z)}\\
+    &z^3=|z|^3e^{i3\Arg(z)}=|z|^3\brround{\cos(3\Arg(z))+i\sin(3\Arg(z))}\\
+    &-z^3=-|z|^3\brround{\cos(3\Arg(z))+i\sin(3\Arg(z))}\\
+    &\Re(-z^3)=-|z|^3\cos(3\Arg(z))\\
+    &\Arg(z)\in\brsquare{-\frac{\pi}{6},\frac{\pi}{6}}\\
+    &\Ra 3\Arg(z)\in\brsquare{-\frac{\pi}{2},\frac{\pi}{2}}\\
+    &\cos(3\Arg(z))\in\brsquare{0,1}\\
+    &|z|^3\in\brcurly{x\in\R|x\geq0}\\
+    &\Re(-z^3)=-|z|^3\cos(3\Arg(z))\in\brcurly{x\in\R|x\leq0}\\
+    &e^{\Re(-z^3)}\in[0,1]\\
+    &\Ra |e^{-z^3}|\leq1
+\end{align*}
+\end{proof}
+
+\subsubsection{Calculus of Complex Functions}
+We define the limit of a complex function to be
+\begin{align*}
+    &w=f(z)=u+iv\\
+    &\lim_{z\to z_0}f(z)=\lim_{(x,y)\to(x_0,y_0)}u(x,y)+i\lim_{(x,y)\to(x_0,y_0)}v(x,y)
+\end{align*}
+Note that the notation $(x,y)\to(x_0,y_0)$ means that the limit is taken as $(x,y)$ approaches $(x_0,y_0)$ along \textit{any} path.\\
+The usual limit arithmetic rules are able to be applied as with real numbers.\\
+In order for
+$\lim\limits_{z\to z_0}f(z)$
+to exist, we require that both $\lim\limits_{(x,y)\to(x_0,y_0)}u(x,y)$ and $\lim\limits_{(x,y)\to(x_0,y_0)}v(x,y)$ exist.\\
+If we define $z_0=x_0+iy_0$ then we can define the derivative of a complex function as
+$$f'(z_0)=\lim_{z\to z_0}\frac{f(z)-f(z_0)}{z-z_0}=\lim_{\Delta z\to0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}$$
+If this limit exists then the function is said to be differentiable at $z_0$.\\
+Ex: $f(z)=z$
+\begin{align*}
+    &f'(z_0)=\lim_{\Delta z\to0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}=\frac{z_0+\Delta z-z_0}{\Delta z}=1\\
+    &\Ra f'(z_0)=1
+\end{align*}
+Ex2: $f(z)=\bar{z}$
+\begin{align*}
+    &f'(z)=\lim_{\Delta z\to0}\frac{f(z+\Delta z)-f(z)}{\Delta z}=\lim_{\Delta z\to0}\frac{\overline{\Delta z}}{\Delta z}\\
+    &\Delta z=h_1+ih_2\Ra \overline{\Delta z}=h_1-ih_2\\
+    &h_2=0:\ \lim_{\Delta z\to0}\frac{\overline{\Delta z}}{\Delta z}=\lim_{h_1\to0}\frac{h_1}{h_1}=1\\
+    &h_1=0:\ \lim_{\Delta z\to0}\frac{\overline{\Delta z}}{\Delta z}=\lim_{h_2\to0}\frac{-ih_2}{ih_2}=-1\\
+    &\lim_{h_1\to0}\frac{h_1}{h_1}\neq\lim_{h_2\to0}\frac{-ih_2}{ih_2}\ \therefore\text{ the derivative does not exist}
+\end{align*}
+An easy way to determine if a function is differentiable is to use the Cauchy-Riemann equations.\\
+Any path that can be taken to approach $z_0$ can be written as a linear combination of the paths $\Delta z=\Delta x$ and $\Delta z = i\Delta y$ so the derivative must satisfy both of these paths.
+\begin{align*}
+    &f'(z_0)=\lim_{\Delta z\to0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}\\
+    &f(z_0)=u(x_0,y_0)+iv(x_0,y_0)\\
+    &\text{Define }\Delta z=\Delta x\\
+    &f'(z_0)=\lim_{\Delta x\to 0}\frac{u(x_0+\Delta x, y_0)+iv(x_0+\Delta x, y_0)-u(x_0,y_0)-iv(x_0,y_0)}{\Delta x}\\
+    &f'(z_0)=\lim_{\Delta x\to 0}\frac{u(x_0+\Delta x, y_0)-u(x_0,y_0)}{\Delta x}+i\lim_{\Delta x\to 0}\frac{v(x_0+\Delta x, y_0)-v(x_0,y_0)}{\Delta x}\\
+    &f'(z_0)=\pdx[u]{x}(x_0,y_0)+i\pdx[v]{x}(x_0,y_0)\\
+    &\text{Define }\Delta z=i\Delta y\\
+    &f'(z_0)=\lim_{\Delta y\to 0}\frac{u(x_0, y_0+\Delta y)+iv(x_0, y_0+\Delta y)-u(x_0,y_0)-iv(x_0,y_0)}{i\Delta y}\\
+    &f'(z_0)=\lim_{\Delta y\to 0}\frac{u(x_0, y_0+\Delta y)-u(x_0,y_0)}{i\Delta y}+i\lim_{\Delta y\to 0}\frac{v(x_0, y_0+\Delta y)-v(x_0,y_0)}{i\Delta y}\\
+    &f'(z_0)=-i\pdx[u]{y}(x_0,y_0)+\pdx[v]{y}(x_0,y_0)\\
+    &\Ra\pdx[u]{x}(x_0,y_0)+i\pdx[v]{x}(x_0,y_0)=-i\pdx[u]{y}(x_0,y_0)+\pdx[v]{y}(x_0,y_0)
+\end{align*}
+Splitting the real and imaginary parts we get that the Cauchy-Riemann equations are
+$$\eqnsystem{u_x=v_y\\ u_y=-v_x}$$
+If the Cauchy-Riemann equations are satisfied and the partial derivatives are continuous then the function is differentiable.\\
+Some functions are not differentiable everywhere, but are differentiable at a point or a set of points.\\
+\begin{itemize}
+    \item If $f(z)$ is differentiable everywhere in the complex plane then it is said to be \textbf{entire}.
+    \item If $f(z)$ is differentiable in some region $R$ then it is said to be \textbf{analytic} in $R$.\\
+    (note that this region cannot be a single point, as the Cauchy-Riemann equations require the partial derivatives to be continuous)
+\end{itemize}
+Ex: Show using the Cauchy-Riemann equations that $f(z)=\bar{z}$ is not differentiable anywhere.
+\begin{align*}
+    &\overline{z}=x-iy\\
+    &u_x=1\neq v_y=-1
+\end{align*}
+Ex2: Show that $f(z)=z^2$ is entire
+\begin{align*}
+    &f(z)=z^2=(x+iy)^2=x^2-y^2+2ixy\\
+    &u(x,y)=x^2-y^2\\
+    &v(x,y)=2xy\\
+    &u_x=2x=v_y\\
+    &u_y=-2y=-v_x
+\end{align*}
+Ex3: Show that $f(z)=\bar{z}$ is differentiable but not analytic at $z_0=0$
+\begin{align*}
+    &|z|^2+2z=x^2+2x+y^2+i2y\\
+    &u_x=2x+2=v_y=2\Ra x=0\\
+    &u_y=2y=-v_x=0\Ra y=0\\
+    &\text{differentiable but not analytic on }z=\brcurly{0}
+\end{align*}
+
+\subsection{Conformal Mappings}
+
+
