@@ -74,7 +74,7 @@ $|z_1+z_2|\leq |z_1|+|z_2|$
 This leads to a general upper and lower bound that can be derived from these inequalities:
 $$||z_1|-|z_2||\leq|z_1\pm z_2|\leq |z_1|+|z_2|$$
 
-
+\subsubsection{Polar Form of Complex Numbers}
 Another way to represent complex numbers is through polar form. To use this we must first introduce Euler's identity:
 $$e^{i\varphi}=\cos\varphi+i\sin\varphi$$
 This then helps us with the equation for the polar form
@@ -149,6 +149,12 @@ Ex7: Simplify
     &\Arg(z)=-\frac{\pi}{3}\\
     &|w|=2\Ra |z|=|w|^2=4\\
     &z=4e^{-\frac{\pi}{3}i}
+\end{align*}
+Ex8: Solve for all values of $z$
+\begin{align*}
+    &e^z=-1-\sqrt{3}i\\
+    &e^z=2e^{-i\frac{2\pi}{3}+2\pi ik}=e^{\ln 2-i\frac{2\pi}{3}+2\pi ik}\\
+    &z=\ln2-i\frac{2\pi}{3}+2\pi ik,\ \forall k\in\Z
 \end{align*}
 
 Properties of $\Arg(z)$ and $\arg(z)$
@@ -429,4 +435,10 @@ Ex5: Find all solutions to
     &(z+2i)^2=-5=5e^{i(\pi+2\pi k)}\\
     &z+2i=\sqrt{5}e^{i(\frac{\pi}{2}+\pi k)}=\brcurly{\sqrt{5}i,-\sqrt{5}i}\\
     &z=\brcurly{(\sqrt{5}-2)i,-(\sqrt{5}+2)i}
+\end{align*}
+Ex6: Find all solutions to $(z+1)^4=(1-i)z^4$
+\begin{align*}
+    &(1-i)z^4=\sqrt{2}e^{-i\frac{\pi}{4}+2\pi ki}z^4\\
+    &z+1=2^{1/8}e^{-i\frac{\pi}{16}+i\frac{\pi k}{2}}z\\
+    &z=\frac{-2^{1/8}}{1-e^{-i\frac{\pi}{16}+i\frac{\pi k}{2}}},\ k\in\brcurly{0,1,2,3}
 \end{align*}

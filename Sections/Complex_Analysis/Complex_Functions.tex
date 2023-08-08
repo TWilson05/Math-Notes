@@ -497,3 +497,68 @@ The most notable difference between the real and complex versions of these funct
     &\sin z = \frac{e^{-y}\brround{\cos x+i\sin x}-e^y\brround{\cos x-i\sin x}}{2i}=\frac{e^{-y}-e^y}{2}\cos x+\frac{e^{-y}+e^y}{2i}\sin x\\
     &\sin z = \sin x\cosh y+i\cos x\sinh y
 \end{align*}
+Ex: Find all solutions to $\sin z=4i$
+\begin{align*}
+    &\sin(z)=4i=\sin x\cosh y+i\cos x\sinh y\\
+    &\sin x\cosh y=0\Ra \sin x=0\Ra x=n\pi\\
+    &\text{Case 1: }n=2k:\ \cos x=1\\
+    &4=\cos(2k\pi)\sinh(y)=\sinh y\\
+    &\text{Case 2: }n=2k+1:\ \cos x=-1\\
+    &4=\cos((2k+1)\pi)\sinh y=-\sinh y\\
+    &\sinh y=\frac{e^{y}-e^{-y}}{2}\\
+    &2\sinh y=e^y-e^{-y}\\
+    &e^{2y}-2\sinh y e^{y}-1=0\\
+    &e^y=\frac{2\sinh y\pm\sqrt{4\sinh^2y+4}}{2}=\sinh y\pm \sqrt{\sinh^2y+1}\\
+    &n=2k:\\
+    &y=\ln\brround{4\pm\sqrt{17}}=\ln\brround{4+\sqrt{17}}\\
+    &n=2k+1:\\
+    &y=\ln\brround{-4\pm\sqrt{17}}=\ln\brround{\sqrt{17}-4}\\
+    &z=\brcurly{(x,y)\Bigg\vert\brround{2k\pi,\ln\brround{4+\sqrt{17}}},\brround{(2k+1)\pi,\ln\brround{\sqrt{17}-4},k\in\Z}}
+\end{align*}
+Ex2: Find all solutions to $\cos z=0$
+\begin{align*}
+    &\cos(z^4)=0\\
+    &z^4=\pi n+\frac{\pi}{2}=\brround{\pi n+\frac{\pi}{2}}e^{2\pi il}\\
+    &z=\brround{\pi n+\frac{\pi}{2}}^{1/4}e^{i\frac{\pi l}{2}},\ l=\brcurly{0,1,2,3},\ n\in\Z
+\end{align*}
+
+\textbf{Mapping properties of $\sin z$}\\
+$\sin z$ will map the box $-\frac{\pi}{2}\leq x\leq\frac{\pi}{2},\ 0\leq y<\infty$ to the half plane $v>0$.\\
+\centerline{\includegraphics[width=0.95\textwidth]{Images/ComplexAnalysisPictures/SinMapping.png}}
+Ex: Find the mapping of $\sin z$ on $S=\brcurly{-\frac{\pi}{2}<x<\frac{\pi}{2},0<y<1}$
+\begin{align*}
+    &u=\sin x\cosh y\\
+    &\sin x\in(-1,1)\\
+    &\cosh y \in (0,\cosh(1))\\
+    &u\in (-\cosh(1),\cosh(1))\\
+    &v=\cos x\sinh y\\
+    &\cos x\in (0,1]\\
+    &\sinh y\in (0,\sinh(1))\\
+    &v\in(0,\sinh(1))\\
+    &S'=\brcurly{(u,v)|-\cosh(1)<u<\cosh(1),0<v<\sinh(1)}
+\end{align*}
+If the box is offcenter we can also apply a composition of mappings to shift it into the usual form.\\
+\centerline{\includegraphics[width=0.85\textwidth]{Images/ComplexAnalysisPictures/TranslateSinMap.png}}
+Ex2: Find the mapping of $\sin z$ on $S=\brcurly{-1<x<1,y>0}$
+\begin{align*}
+    &u=\sin x\cosh y\\
+    &\sin x \in(-\sin(1),\sin(1))\\
+    &\cosh y\in (1,\infty)\\
+    &u\in \R\\
+    &v=\cos x\sinh y\\
+    &\cos x\in (\cos(1),1]\\
+    &\sinh y \in (0,\infty)\\
+    &v\in (0,\infty)\\
+    &S'=\brcurly{(u,v)|v>0}
+\end{align*}
+Ex3: Solve the Laplace equation $\nabla^2u=0$ in the region $S=\brcurly{0\leq x\leq 2,0\leq y<\infty}$ with boundary conditions $\phi=0$ on $x=0$ and $\phi=1$ on $y=0$ and $\phi=-2$ on $x=2$.
+\begin{align*}
+    &\text{Map to the half plane using }w=\sin\brround{\frac{\pi}{2}(z-1)}\\
+    &\phi(z)=\Phi(w)=A_1\Arg(w+1)+A_2\Arg(w-1)+A_3\\
+    &u>1:\ \Phi=-2=A_3\\
+    &-1<u<1:\ \Phi=1=A_2\pi-2\Ra A_2=\frac{3}{\pi}\\
+    &u<-1:\ \Phi=0=A_1\pi+\frac{3}{\pi}\pi-2\Ra A_1=-\frac{1}{\pi}\\
+    &\phi(z)=-\frac{1}{\pi}\Arg\brround{\sin\brround{\frac{\pi}{2}(z-1)}+1}+\frac{3}{\pi}\Arg\brround{\sin\brround{\frac{\pi}{2}(z-1)}-1}-2
+\end{align*}
+
+\subsubsection{Logarithmic Functions}
