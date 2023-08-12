@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  5 AUG 2023 03:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  12 AUG 2023 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--169
  []
 
 [17]
-<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=181, 776.9025pt x 274.02374pt>
+<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=187, 776.9025pt x 274.02374pt>
 File: Images/ComplexAnalysisPictures/ExponentialMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialMapping.png  used on input line 191.
@@ -684,52 +684,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--388
  []
 
 [23] [24]
-<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=214, 588.39825pt x 259.56975pt>
+<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=220, 588.39825pt x 259.56975pt>
 File: Images/ComplexAnalysisPictures/ArgumentLaplacian.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ArgumentLaplacian.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ArgumentLaplacian.png  used on input line 441.
 (pdftex.def)             Requested size: 375.80544pt x 165.7874pt.
  [25 <./Images/ComplexAnalysisPictures/ArgumentLaplacian.png>]
-<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=221, 853.9905pt x 278.84175pt>
+<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=227, 853.9905pt x 278.84175pt>
 File: Images/ComplexAnalysisPictures/JoukowskiMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiMap.png  used on input line 461.
 (pdftex.def)             Requested size: 446.26582pt x 145.71333pt.
  [26 <./Images/ComplexAnalysisPictures/JoukowskiMap.png>]
-<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=227, 966.61125pt x 154.176pt>
+<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=233, 966.61125pt x 154.176pt>
 File: Images/ComplexAnalysisPictures/JoukowskiShift.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiShift.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiShift.png  used on input line 474.
 (pdftex.def)             Requested size: 446.26582pt x 71.18059pt.
  [27 <./Images/ComplexAnalysisPictures/JoukowskiShift.png>]
-<Images/ComplexAnalysisPictures/SinMapping.png, id=234, 981.6675pt x 264.99pt>
+<Images/ComplexAnalysisPictures/SinMapping.png, id=240, 981.6675pt x 264.99pt>
 File: Images/ComplexAnalysisPictures/SinMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SinMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SinMapping.png  used on input line 527.
 (pdftex.def)             Requested size: 446.26582pt x 120.46146pt.
  [28]
-<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=239, 579.96675pt x 373.99725pt>
+<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=245, 579.96675pt x 373.99725pt>
 File: Images/ComplexAnalysisPictures/TranslateSinMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/TranslateSinMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/TranslateSinMap.png  used on input line 541.
 (pdftex.def)             Requested size: 399.29463pt x 257.49911pt.
- [29 <./Images/ComplexAnalysisPictures/SinMapping.png> <./Images/ComplexAnalysisPictures/TranslateSinMap.png>])) [30] (./MathNotes.aux)
+ [29 <./Images/ComplexAnalysisPictures/SinMapping.png> <./Images/ComplexAnalysisPictures/TranslateSinMap.png>] [30]
+<Images/ComplexAnalysisPictures/BranchCut.png, id=256, 364.36125pt x 239.09325pt>
+File: Images/ComplexAnalysisPictures/BranchCut.png Graphic file (type png)
+<use Images/ComplexAnalysisPictures/BranchCut.png>
+Package pdftex.def Info: Images/ComplexAnalysisPictures/BranchCut.png  used on input line 622.
+(pdftex.def)             Requested size: 281.85587pt x 184.9597pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 621--624
+[]
+ []
+
+[31] [32 <./Images/ComplexAnalysisPictures/BranchCut.png>] [33])) [34] (./MathNotes.aux)
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: BD240EA8DD09208EC3E7073CCD50518E;2693.
+(rerunfilecheck)             Checksum: D7EFC46446616049C7070C5BA0B6FFA9;2819.
  ) 
 Here is how much of TeX's memory you used:
- 24128 strings out of 476093
- 462661 string characters out of 5795582
+ 24143 strings out of 476093
+ 463044 string characters out of 5795582
  1871787 words of memory out of 5000000
- 44027 multiletter control sequences out of 15000+600000
+ 44036 multiletter control sequences out of 15000+600000
  521613 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,104p,535b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes.pdf (30 pages, 531990 bytes).
+Output written on MathNotes.pdf (34 pages, 559174 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

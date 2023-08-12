@@ -562,3 +562,165 @@ Ex3: Solve the Laplace equation $\nabla^2u=0$ in the region $S=\brcurly{0\leq x\
 \end{align*}
 
 \subsubsection{Logarithmic Functions}
+$\log z$ is defined as the inverse of $e^z$.
+\begin{align*}
+    &e^w=z\Ra w=\log z\\
+    &w=u+iv\\
+    &z=re^{i\Arg(z)}\\
+    &e^ue^{iv}=re^{i\Arg(z)}\\
+    &e^u=r\Ra u=\ln r\\
+    &e^{iv}=e^{i\Arg(z)}\Ra v=\Arg(z)+2k\pi\\
+    &\log(z)=w=\ln r+i(\Arg z+2k\pi),\ k\in\Z\\
+    &\log(z)=\brcurly{w|e^w=z}=\ln r+i(\Arg z+2k\pi)=\ln r+i\arg z\\
+    &\Log(z)=\ln r+i\Arg z
+\end{align*}
+Note that $\log(z)=\ln r+i\arg z$ is a multi-valued function and $\Log(z)=\ln r+i\Arg z$ is the principal value of $\log z$.\\
+Ex: Find all values for $\log 2$ and $\Log 2$.
+\begin{align*}
+    &z=2=2e^{i0}\\
+    &\log 2=\ln 2+i(0+2k\pi)=\ln 2+2k\pi i,\ k\in\Z\\
+    &\Log 2=\ln 2+i(0)=\ln 2
+\end{align*}
+Ex2: Find all values for $\log(-1-\sqrt{3}i)$ and $\Log(-1-\sqrt{3}i)$.
+\begin{align*}
+    &z=-1-\sqrt{3}i=2e^{i\frac{2\pi}{3}}\\
+    &\log(-1-\sqrt{3}i)=\ln 2+i\brround{-\frac{2\pi}{3}+2k\pi},\ k\in\Z\\
+    &\Log(-1-\sqrt{3}i)=\ln 2+i\brround{-\frac{2\pi}{3}}
+\end{align*}
+Ex3: Find all values for $\log(e^{1+5i})$ and $\Log(e^{1+5i})$.
+\begin{align*}
+    &z=e^{1+5i}=ee^{5i}=ee^{i(5+2k\pi)}\\
+    &5+2k\pi\in(-\pi,\pi]\Ra k=-1\\
+    &\Arg(e^{1+5i})=5-2\pi\\
+    &\log(e^{1+5i})=\ln e+i(5-2\pi+2k\pi)=1+i(5-2\pi+2k\pi),\ k\in\Z\\
+    &\Log(e^{1+5i})=\ln e+i(5-2\pi)=1+i(5-2\pi)
+\end{align*}
+Ex4: Find all values for $\log(-i)$ and $\Log(-i)$.
+\begin{align*}
+    &-i=e^{-i\frac{\pi}{2}}\\
+    &\arg(-i)=-\frac{\pi}{2}+2\pi k\\
+    &\log(-i)=-i\frac{\pi}{2}+i2\pi k\\
+    &\Log(-i)=-i\frac{\pi}{2}
+\end{align*}
+
+Properties of $\log z$ and $\Log z$:
+\begin{itemize}
+    \item $\log(z_1z_2)=\log z_1+\log z_2$\\
+    $\Log(z_1z_2)\neq\Log z_1+\Log z_2$ (same as why $\Arg(z_1z_2)\neq\Arg(z_1)+\Arg(z_2)$)
+    \item $e^{\log z}=z$ and $e^{\Log z}=z$\\
+    but $\log(e^z)\neq z$ and $\Log(e^z)\neq z$\\
+    Ex: $z=0$: $\log(e^0)=\log(1)=\ln1+i(0+2k\pi)=i2k\pi\neq0$\\
+    $\Log(e^{5i})=i(5-2\pi)\neq 5i$\\
+    rather $z\in\log(e^z)$
+    \item $\log z^n\neq n\log z$
+    \begin{align*}
+        &z=1,\ n=2:\ \log z^2=\log 1=i2k\pi\\
+        &2\log z=2\log 1=2i(2k')\pi
+    \end{align*}
+    but $\log z^\frac{1}{n}=\frac{1}{n}\log z$
+    \item $\Log z$ is analytic in $\C\backslash(-\infty,0]$\\
+    \centerline{\includegraphics[width=0.6\textwidth]{Images/ComplexAnalysisPictures/BranchCut.png}}
+    $\Log z=\ln|z|+i\Arg z,\ -\pi<\Arg z<\pi$
+\end{itemize}
+Ex: Find all solutions to $e^z=-1-i$
+\begin{align*}
+    &z=\log(-1-i)\\
+    &-1-i=\sqrt{2}e^{-i\frac{3\pi}{4}}\\
+    &z=\frac{1}{2}\ln(2)-i\frac{3\pi}{4}+i2\pi k
+\end{align*}
+Ex2: Find the principal value of $(1+i)^i=e^{i\Log(1+i)}$
+\begin{align*}
+    &1+i=\sqrt{2}e^{i\frac{\pi}{4}}\\
+    &\Log(1+i)=\frac{1}{2}\ln(2)+i\frac{\pi}{4}\\
+    &(1+i)^i=e^{-\frac{\pi}{4}+i\frac{1}{2}\ln(2)}
+\end{align*}
+Ex3: Find the principle value of $z^i=1+i$
+\begin{align*}
+    &1+i=\sqrt{2}e^{i\frac{\pi}{4}+i2\pi k}=e^{\ln(\sqrt{2})+i\frac{\pi}{4}+i2\pi k}\\
+    &z=(1+i)^{1/i}=(1+i)^{-i}=e^{\frac{\pi}{4}+2\pi k}e^{-i\ln(\sqrt{2})}\\
+    &z=e^{\frac{\pi}{4}}e^{-i\frac{1}{2}\ln(2)}
+\end{align*}
+Ex4: Find the principal value of $i^i$.
+\begin{align*}
+    &i^i=(e^{i\frac{\pi}{2}+i2\pi k})^i=e^{-\frac{\pi}{2}-2\pi k}=e^{-\frac{\pi}{2}}
+\end{align*}
+Ex5: Find all solutions to $\Log(z^2-1)=\frac{i\pi}{2}$
+\begin{align*}
+    &z^2-1=e^{i\frac{\pi}{2}}=i\\
+    &z^2=i+1=\sqrt{2}e^{i\frac{\pi}{4}+i2\pi k}\\
+    &z=2^{1/4}e^{i\frac{\pi}{8}+i\pi k}
+\end{align*}
+Ex6: Find all solutions to $e^{2z}+e^z+1=0$
+\begin{align*}
+    &e^z=\frac{-1\pm\sqrt{1-4}}{2}=-\frac{1}{2}\pm i\frac{\sqrt{3}}{2}\\
+    &e^z=e^{i\pi\pm i\frac{\pi}{3}+i2\pi k}\\
+    &z=i\pi\pm i\frac{\pi}{3}+i2\pi k\\
+    &z=\pm i\frac{2\pi}{3}+i2\pi k
+\end{align*}
+
+\textit{Derivative of $\log z$ and $\Log z$}
+\begin{align*}
+    &(\Log z)'=\frac{1}{z}\\
+    &\Log z=\ln\sqrt{x^2+y^2}+i\Arg z=u+iv\\
+    &(\Log z)'=u_x+iv_x\\
+    &\Log z=\ln|z|+i\varphi,\ -\pi<\varphi<\pi
+\end{align*}
+
+\subsubsection{Branch Cuts}
+There are many different analytic functions for $\log z$ depending on the branch cut we choose. For example we can choose:
+\begin{align*}
+    &\Log z=\ln r +i\varphi,\ -\pi<\varphi<\pi,\ \C\backslash(-\infty,0]\\
+    &\log z=\ln r +i\varphi,\ 0<\varphi<2\pi,\ \C\backslash[0,\infty)\\
+    &\log z=\ln r +i\varphi,\ -\frac{\pi}{2}<\varphi<\frac{5\pi}{2},\ \C\backslash i[0,\infty)
+\end{align*}
+Ex: Specify a branch cut for $\log z$ such that it is analytic at $z=-1,-i,1$
+\[\log z=\ln r+i\varphi,\ \frac{\pi}{2}<\varphi<\frac{5\pi}{2}\]
+
+The reason we have branch cuts is so that we can define a single-valued analytic function. This is important for functions such as $\sqrt{z}$ and $\log z$ as one input can correspond to multiple outputs. For example, $\sqrt{1}=1$ and $\sqrt{1}=-1$. This is why we need to specify a branch cut for $\sqrt{z}$ and $\log z$.
+Ex: Construct $f(z)=z^{1/2}$ such that it is analytic in $\C\backslash(-\infty,0]$ and $f(1)=-1$.
+\begin{align*}
+    &z^\frac{1}{2}=e^{\frac{1}{2}\log z}=e^{\frac{1}{2}\ln r+i\frac{1}{2}\varphi}=r^\frac{1}{2}e^{i\frac{\varphi}{2}},\ -\pi<\varphi<\pi\\
+    &f(1)=r^\frac{1}{2}e^{i\frac{\varphi}{2}}=1e^{i0}=1\\
+    &z^\frac{1}{2}=r^\frac{1}{2}e^{i\frac{\varphi}{2}},\ \pi<\varphi<3\pi\\
+    &\to f(1)=1^\frac{1}{2}e^{\frac{2\pi}{2}}=-1
+\end{align*}
+Ex2: Find all solutions to $z^{1/2}+1-i=0$ where $z^{1/2}$ is the principal branch of $z^{1/2}$.
+\begin{align*}
+    &z^{1/2}=|z|^{1/2}e^{i\frac{\varphi}{2}}=i-1=\sqrt{2}e^{i\frac{3\pi}{4}+i2\pi k}\\
+    &|z|e^{i\varphi}=2e^{i\frac{3\pi}{2}+i4\pi k}\\
+    &|z|=2\\
+    &\varphi=\frac{3\pi}{2}+4\pi k\not\in(-\pi,\pi]\\
+    &\therefore\text{ no solutions}
+\end{align*}
+Ex3: Find all solutions to $z^{1/2}+1-i=0$
+\begin{align*}
+    &\\
+    &z^{1/2}=|z|^{1/2}e^{i\frac{\varphi}{2}+i\pi k_1}i-1=\sqrt{2}e^{i\frac{3\pi}{4}+i2\pi k_2}\\
+    &|z|e^{i\varphi+i2\pi k_1}=2e^{i\frac{3\pi}{2}+i4\pi k_2}\\
+    &|z|=2\\
+    &\varphi+2\pi k_1=\frac{3\pi}{2}+4\pi k_2\\
+    &\varphi=\frac{3\pi}{2}+2\pi k_3\\
+    &z=2e^{-i\frac{\pi}{2}}=-2i
+\end{align*}
+Ex4: Find where $\Log(1+z^2)$ is analytic
+\begin{align*}
+    &w=1+z^2\\
+    &\text{not analytic on }\Re(w)\leq0\ \wedge \Im(w)=0\\
+    &x^2-y^2+1\leq0\\
+    &2xy=0\Ra x=0 \vee y=0\\
+    &y=0:\ x^2+1\leq 0\Ra \nexists x\in\R\text{ s.t. }x^2\leq-1\\
+    &x=0:\ y^2\geq 1\Ra |y|\geq 1
+\end{align*}
+Analytic on the domain
+\[ \C\backslash\brcurly{(x,y):x=0,|y|\geq1} \]
+Ex5: Find where $\Log\bfrac{1-z}{1+z}$ is analytic
+\begin{align*}
+    &w=\frac{1-z}{1+z}\\
+    &\text{not analytic on }\Re(w)\leq 0\ \wedge\Im(w)=0\\
+    &w=\frac{(1-z)(1+\overline{z})}{(1+z)(1+\overline{z})}=\frac{1-|z|^2-z+\overline{z}}{1+|z|^2+z+\overline{z}}=\frac{1-x^2-y^2-2iy}{1+x^2+y^2+2x}\\
+    &y=0\\
+    &\frac{1-x^2}{1+x^2+2x}\leq0\Ra 1\leq x^2\Ra |x|\geq 1
+\end{align*}
+Analytic on
+\[ \C\backslash\brcurly{(x,y):y=0,|x|\geq1} \]
+
