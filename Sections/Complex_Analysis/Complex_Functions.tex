@@ -723,4 +723,31 @@ Ex5: Find where $\Log\bfrac{1-z}{1+z}$ is analytic
 \end{align*}
 Analytic on
 \[ \C\backslash\brcurly{(x,y):y=0,|x|\geq1} \]
-
+Ex6: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=\sqrt{2}$
+\begin{align*}
+    &\sqrt{z(z-1)}=|z|^{1/2}e^{i\frac{\varphi_1}{2}}|z-1|^{1/2}e^{i\frac{\varphi_2}{2}}=(|z||z-1|)^{1/2}e^{i\frac{\varphi_1+\varphi_2}{2}}\\
+    &\varphi_1\in(-\pi,\pi),\ \varphi_2\in(-\pi,\pi)\\
+    &\lim_{\varphi_1\to\pi}\lim_{\varphi_2\to\pi}e^{i\frac{\varphi_1+\varphi_2}{2}}=e^{\pi i}\\
+    &\lim_{\varphi_1\to-\pi}\lim_{\varphi_2\to-\pi}e^{i\frac{\varphi_1+\varphi_2}{2}}=e^{-\pi i}=e^{\pi i}\\
+    &\therefore \text{ continuous for }\brcurly{(x,y)|y=0,x<0}\\
+    &z=2:\ \varphi_1=0,\ \varphi_2=0\Ra \sqrt{z(z-1)}=\sqrt{2}
+\end{align*}
+Ex7: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=-\sqrt{2}$
+\begin{align*}
+    &\sqrt{z(z-1)}=|z|^{1/2}e^{i\frac{\varphi_1}{2}}|z-1|^{1/2}e^{i\frac{\varphi_2}{2}}=(|z||z-1|)^{1/2}e^{i\frac{\varphi_1+\varphi_2}{2}}\\
+    &\varphi_1\in(-\pi,\pi),\ \varphi_2\in(-3\pi,-\pi)\\
+    &\lim_{\varphi_1\to\pi}\lim_{\varphi_2\to-\pi}e^{i\frac{\varphi_1+\varphi_2}{2}}=e^{-2\pi i}\\
+    &\lim_{\varphi_1\to-\pi}\lim_{\varphi_2\to-3\pi}e^{i\frac{\varphi_1+\varphi_2}{2}}=e^{0}=e^{-2\pi i}\\
+    &\therefore \text{ continuous for }\brcurly{(x,y)|y=0,x<0}\\
+    &z=2:\ \varphi_1=0,\ \varphi_2=-2\pi\Ra \sqrt{z(z-1)}=\sqrt{2}e^{-i\pi}=-\sqrt{2}
+\end{align*}
+Ex8: Find a branch cut for $f(z)=\log(z^2+2z+2)$ such that it is analytic for $\brcurly{(x,y)|x>-1}$ such that $\ddx{z}f(-1)=0$
+\begin{align*}
+    &\log(z^2+2z+2)\\
+    &z=\frac{-2\pm\sqrt{4-8}}{2}=-1\pm i\\
+    &\log(z^2+2z+2)=\ln(|z-z_1||z-z_2|)+i(\varphi_1+\varphi_2)\\
+    &-\pi<\varphi_1<\pi,\ -\pi<\varphi_2<\pi\\
+    &z=-1:\ \varphi_1=-\frac{\pi}{2},\ \varphi_2=\frac{\pi}{2}\\
+    &\log(z^2+2z+2)\eval_{z=-1}=0+i\brround{-\frac{\pi}{2}+\frac{\pi}{2}}=0\\
+    &\ddx{z}\log(z^2+2z+2)\eval_{z=-1}=\frac{2z+2}{z^2+2z+2}\eval_{z=-1}=0
+\end{align*}
