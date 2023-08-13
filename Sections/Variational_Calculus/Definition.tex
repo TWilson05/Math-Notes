@@ -1,0 +1,102 @@
+\subsection{Variational Derivatives}
+\subsubsection{Definition of the Variational Derivative}
+
+An action is a function of a function called a functional. This is best seen by example.\\
+Using variational calculus we can prove that the shortest distance between two points is a straight line.\\
+Let us define two points in $\R^2$, $(x_1,y_1)$ and $(x_2,y_2)$ and some function $f(x)$ that connects these points. This can be generalized to higher dimensions, but for simplicity we will stick to two dimensions for now.\\
+\begin{center}
+\begin{tikzpicture}
+\draw[->] (-1,0) -- (5,0) node[right] {$x$};
+\draw[->] (0,-1) -- (0,5) node[above] {$y$};
+\draw[thick] (0,0) -- (4,4);
+\node[right] at (2,2) {$f(x)$};
+\draw[fill] (0,0) circle [radius=0.05] node[below] {$(x_1,y_1)$};
+\draw[fill] (4,4) circle [radius=0.05] node[above] {$(x_2,y_2)$};
+\end{tikzpicture}
+\end{center}
+We can define an infinite possible functions that connect these two points. We want to find the specific function that minimizes the distance between these two points. So we will want a function with a minimum arc length.
+\begin{center}
+\begin{tikzpicture}
+\draw (0,0) -- (3,0);
+\node[below] at (1.5,0) {$dx$};
+\draw (0,0) -- (3,3);
+\node[above] at (1.2,1.5) {$f(x)$};
+\draw (3,0) -- (3,3);
+\node[right] at (3,1.5) {$dy$};
+\end{tikzpicture}
+\end{center}
+We can use the Pythagorean theorem to find the arc length of this function.
+\begin{align*}
+    &\frac{dy}{dx}=f'(x)\Ra dy=f'(x)dx\\
+    &ds^2=dx^2+dy^2\\
+    &ds=\sqrt{dx^2+dy^2}\\
+    &ds=\sqrt{dx^2+(f'(x)dx)^2}\\
+    &ds=\sqrt{1+f'(x)^2}dx\\
+    &S=\int_{x_1}^{x_2}dx\sqrt{1+f'(x)^2},\ \eqnsystem{f(x_1)=y_1\\ f(x_2)=y_2}
+\end{align*}
+We define $S$, the arc length, as the action that we wish to minimize. It is also considered a functional as it is defiend as $S(f(x))$.\\
+We define $\delta f(x)$ as some small change (or wiggle) in the function $f(x)$. It is important to note that $\delta f(x)$ is not some opperation on the original function $f(x)$ but is rather some new function of $x$ we call $\delta f(x)$ that contains very slight variations. We can then define the variation of the action as follows.\\
+Recall that for a regular function $f(x)$, the derivative is defined as
+\begin{align*}
+    &\frac{df(x)}{dx}=\lim_{\Delta x\to0}\frac{\Delta y}{\Delta x}=\lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
+\end{align*}
+We can define the variational derivative in a similar manner.
+\begin{align*}
+    &\frac{\delta S}{\delta f(x)}=\lim_{\delta f(x)\to0}\frac{S(f(x)+\delta f(x))-S(f(x))}{\delta f(x)}
+\end{align*}
+Note that we usually just deal with the numerator of this expression and call it $\delta S$. We can also introduce a small parameter $\epsilon$ to make the expression easier to follow.
+\begin{align*}
+    &\delta S=\lim_{\epsilon\to0} \frac{S(f(x)+\epsilon\delta f(x))-S(f(x))}{\epsilon}
+\end{align*}
+We can now use this definition to find the variation of the action for our example.
+\begin{align*}
+    &\delta S=\lim_{\epsilon\to0} \frac{1}{\epsilon}\int_{x_1}^{x_2}dx\sqrt{1+(f'(x)+\epsilon\delta f'(x))^2}-\int_{x_1}^{x_2}dx\sqrt{1+f'(x)^2}\\
+    &\delta S=\lim_{\epsilon\to0} \frac{1}{\epsilon}\int_{x_1}^{x_2}dx\left(\sqrt{1+(f'(x)+\epsilon\delta f'(x))^2}-\sqrt{1+f'(x)^2}\right)\\
+    &\delta S=\lim_{\epsilon\to0} \frac{1}{\epsilon}\int_{x_1}^{x_2}dx\left(\sqrt{1+f'(x)^2+2f'(x)\epsilon\delta f'(x)+\epsilon^2\delta f'(x)^2}-\sqrt{1+f'(x)^2}\right)\\
+\end{align*}
+Because $\epsilon$ is a very small we can perform a Taylor expansion on the square root.
+\begin{align*}
+    &\sqrt{1+x}\eval_{x\approx0}=1+\frac{x}{2}+\mathcal{O}(x^2)\\
+    &\sqrt{1+f'(x)^2+2f'(x)\epsilon \delta f(x)+\epsilon^2f'(x)^2}=\sqrt{1+f'(x)^2}\sqrt{1+\frac{2f'(x)\epsilon \delta f(x)+\epsilon^2f'(x)^2}{1+f'(x)^2}}\\
+    &=\sqrt{1+f'(x)^2}\brround{1+\frac{1}{2}\frac{2f'(x)\epsilon \delta f(x)+\epsilon^2f'(x)^2}{1+f'(x)^2}}+\mathcal{O}\brround{\brround{\frac{2f'(x)\epsilon \delta f(x)+\epsilon^2f'(x)^2}{1+f'(x)^2}}^2}\\
+    &=\sqrt{1+f'(x)^2}\brround{1+\epsilon\frac{f'(x)\delta f(x)}{1+f'(x)^2}+\mathcal{O}(\epsilon^2)}\\
+    &=\sqrt{1+f'(x)^2}+\epsilon\frac{f'(x)\delta f(x)}{\sqrt{1+f'(x)^2}}+\mathcal{O}(\epsilon^2)\\
+\end{align*}
+Plugging this back into the original expression we get
+\begin{align*}
+    &\delta S=\lim_{\epsilon\to0}\frac{1}{\epsilon} \int_{x_1}^{x_2}dx\left(\sqrt{1+f'(x)^2}+\epsilon\frac{f'(x)\delta f'(x)}{\sqrt{1+f'(x)^2}}+\mathcal{O}(\epsilon^2)-\sqrt{1+f'(x)^2}\right)\\
+    &\delta S=\lim_{\epsilon\to0}\frac{1}{\epsilon} \int_{x_1}^{x_2}dx\left(\epsilon\frac{f'(x)\delta f'(x)}{\sqrt{1+f'(x)^2}}+\mathcal{O}(\epsilon^2)\right)\\
+    &\delta S=\lim_{\epsilon\to0}\int_{x_1}^{x_2}dx\brround{\frac{f'(x)\delta f'(x)}{\sqrt{1+f'(x)^2}}+\mathcal{O}(\epsilon)}\\
+    &\delta S=\lim_{\epsilon\to0}\int_{x_1}^{x_2}dx\frac{f'(x)\delta f'(x)}{\sqrt{1+f'(x)^2}}+\lim_{\epsilon\to0}\int_{x_1}^{x_2}dx\mathcal{O}(\epsilon)
+\end{align*}
+If we take the limit as $\epsilon\to0$ then the $\mathcal{O}(\epsilon)$ term goes to zero and we are left with
+\begin{align*}
+    &\delta S=\int_{x_1}^{x_2}dx\frac{f'(x)\delta f'(x)}{\sqrt{1+f'(x)^2}}
+\end{align*}
+Using integration by parts we can rewrite this as
+\begin{align*}
+    &\delta S=\delta f(x)\frac{f'(x)}{\sqrt{1+f'(x)^2}}\eval_{x_1}^{x_2}-\int_{x_1}^{x_2}dx\delta x\brround{\frac{f'(x)}{\sqrt{1+f'(x)^2}}}'
+\end{align*}
+Note that the first term goes to zero because $\delta f(x_1)=\delta f(x_2)=0$ as we cannot have any variation in the start and end points. We can then rewrite this as
+\begin{align*}
+    &\delta S=-\int_{x_1}^{x_2}dx\delta x\brround{\frac{f'(x)}{\sqrt{1+f'(x)^2}}}'
+\end{align*}
+Because we are trying to find a minimum for the action, we can set $\delta S=0$ which gives us
+\begin{align*}
+    &\int_{x_1}^{x_2}dx\delta x\brround{\frac{f'(x)}{\sqrt{1+f'(x)^2}}}'=0\\
+    &\ddx{x}\brround{\frac{f'(x)}{\sqrt{1+f'(x)^2}}}=0
+\end{align*}
+We now have an expression only in terms of $f(x)$ which we can use to solve for the function that minimizes the action $S$.
+\begin{align*}
+    &\frac{f'(x)}{\sqrt{1+f'(x)^2}}=C\\
+    &f'(x)=C\sqrt{1+f'(x)^2}\\
+    &f'(x)^2=C^2(1+f'(x)^2)\\
+    &f'(x)^2-C^2f'(x)^2=C^2\\
+    &(1-C^2)f'(x)^2=C^2\\
+    &f'(x)=\pm\frac{C}{\sqrt{1-C^2}}=C_1\\
+    &f(x)=C_1x+C_2
+\end{align*}
+And so we have proved that $f(x)$ is a linear function and so the shortest path between two points in $\R^2$ is a straight line.
+
+\subsubsection{Functions of Many Variables}
+Intuitively the previous example should hold in higher dimensions as well (we know this to be true in $\R^3$). To show this we will use the same method as before but with a function of many variables. We will start with the action
