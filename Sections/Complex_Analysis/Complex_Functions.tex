@@ -497,7 +497,22 @@ The most notable difference between the real and complex versions of these funct
     &\sin z = \frac{e^{-y}\brround{\cos x+i\sin x}-e^y\brround{\cos x-i\sin x}}{2i}=\frac{e^{-y}-e^y}{2}\cos x+\frac{e^{-y}+e^y}{2i}\sin x\\
     &\sin z = \sin x\cosh y+i\cos x\sinh y
 \end{align*}
-Ex: Find all solutions to $\sin z=4i$
+Ex: Show that if $|z|<1$ then $|\sin z|<2$.
+\begin{proof}
+    \[ |\sin z|<2,\ |z|<1 \]
+    \begin{align*}
+        &\sin z=\sin x\cosh y+i\cos x\sinh y\\
+        &|\sin z|=\sqrt{\sin^2x\cosh^2y+\cos^2x\sinh^2y}\\
+        &\cosh^2y-\sinh^2y=1\Ra \sinh^2y=\cosh^2y-1\\
+        &|\sin z|=\sqrt{\sin^2x\cosh^2y+\cos^2x(\cosh^2y-1)}\\
+        &|\sin z|=\sqrt{\sin^2x\cosh^2y+\cos^2x\cosh^2y-\cos^2x}\\
+        &|\sin z|=\sqrt{\cosh^2y-\cos^2x}\leq \cosh y\\
+        &|z|=\sqrt{x^2+y^2}<1\Ra y<1\\
+        &\cosh y<\cosh 1=\frac{e+e^{-1}}{2}\approx 1.54<2\\
+        &|\sin z|<2
+    \end{align*}
+\end{proof}
+Ex2: Find all solutions to $\sin z=4i$
 \begin{align*}
     &\sin(z)=4i=\sin x\cosh y+i\cos x\sinh y\\
     &\sin x\cosh y=0\Ra \sin x=0\Ra x=n\pi\\
@@ -515,7 +530,7 @@ Ex: Find all solutions to $\sin z=4i$
     &y=\ln\brround{-4\pm\sqrt{17}}=\ln\brround{\sqrt{17}-4}\\
     &z=\brcurly{(x,y)\Bigg\vert\brround{2k\pi,\ln\brround{4+\sqrt{17}}},\brround{(2k+1)\pi,\ln\brround{\sqrt{17}-4},k\in\Z}}
 \end{align*}
-Ex2: Find all solutions to $\cos z=0$
+Ex3: Find all solutions to $\cos z=0$
 \begin{align*}
     &\cos(z^4)=0\\
     &z^4=\pi n+\frac{\pi}{2}=\brround{\pi n+\frac{\pi}{2}}e^{2\pi il}\\
@@ -723,7 +738,20 @@ Ex5: Find where $\Log\bfrac{1-z}{1+z}$ is analytic
 \end{align*}
 Analytic on
 \[ \C\backslash\brcurly{(x,y):y=0,|x|\geq1} \]
-Ex6: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=\sqrt{2}$
+Ex6: Find where $f(z)=\Log(1-z^3)$ is analytic
+\begin{align*}
+    &\Re(1-z^3)\leq 0\quad\quad\Im(1-z^3)=0\\
+    &z^3=r^3e^{3i\varphi}=r^3=r^3\brround{\cos(3\varphi)+i\sin(3\varphi)}\\
+    &\Im(1-z^3)=r^3\sin(3\varphi)=0\Ra 3\varphi=n\pi\\
+    &\varphi=\frac{n\pi}{3}\\
+    &\Re(1-z^3)=1-r^3\cos(3\varphi)\leq0\\
+    &n=2k:\ \cos(3\varphi)=1\Ra 1-r^3\leq0\Ra 1\leq r\\
+    &n=2k+1:\ \cos(3\varphi)=-1\Ra 1+r^3\leq 0\Ra 1\leq -r\Ra -1\geq r\\
+    &\text{can't have }r\leq -1\text{ so can't have }n=2k+1\\
+    &\Ra \varphi=\frac{2k\pi}{3},\ 1\leq r\\
+    &\text{Analytic in }\C\backslash\brcurly{|z|\geq 1,\ \arg(z)=\frac{2k\pi}{3},\ k\in\Z}
+\end{align*}
+Ex7: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=\sqrt{2}$
 \begin{align*}
     &\sqrt{z(z-1)}=|z|^{1/2}e^{i\frac{\varphi_1}{2}}|z-1|^{1/2}e^{i\frac{\varphi_2}{2}}=(|z||z-1|)^{1/2}e^{i\frac{\varphi_1+\varphi_2}{2}}\\
     &\varphi_1\in(-\pi,\pi),\ \varphi_2\in(-\pi,\pi)\\
@@ -732,7 +760,7 @@ Ex6: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\b
     &\therefore \text{ continuous for }\brcurly{(x,y)|y=0,x<0}\\
     &z=2:\ \varphi_1=0,\ \varphi_2=0\Ra \sqrt{z(z-1)}=\sqrt{2}
 \end{align*}
-Ex7: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=-\sqrt{2}$
+Ex8: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\brcurly{(x,y)|y=0,x<0}$ such that $f(2)=-\sqrt{2}$
 \begin{align*}
     &\sqrt{z(z-1)}=|z|^{1/2}e^{i\frac{\varphi_1}{2}}|z-1|^{1/2}e^{i\frac{\varphi_2}{2}}=(|z||z-1|)^{1/2}e^{i\frac{\varphi_1+\varphi_2}{2}}\\
     &\varphi_1\in(-\pi,\pi),\ \varphi_2\in(-3\pi,-\pi)\\
@@ -741,7 +769,7 @@ Ex7: Find a branch cut for $f(z)=\sqrt{z(z-1)}$ such that it is analytic for $\b
     &\therefore \text{ continuous for }\brcurly{(x,y)|y=0,x<0}\\
     &z=2:\ \varphi_1=0,\ \varphi_2=-2\pi\Ra \sqrt{z(z-1)}=\sqrt{2}e^{-i\pi}=-\sqrt{2}
 \end{align*}
-Ex8: Find a branch cut for $f(z)=\log(z^2+2z+2)$ such that it is analytic for $\brcurly{(x,y)|x>-1}$ such that $\ddx{z}f(-1)=0$
+Ex9: Find a branch cut for $f(z)=\log(z^2+2z+2)$ such that it is analytic for $\brcurly{(x,y)|x>-1}$ such that $\ddx{z}f(-1)=0$
 \begin{align*}
     &\log(z^2+2z+2)\\
     &z=\frac{-2\pm\sqrt{4-8}}{2}=-1\pm i\\
@@ -750,4 +778,204 @@ Ex8: Find a branch cut for $f(z)=\log(z^2+2z+2)$ such that it is analytic for $\
     &z=-1:\ \varphi_1=-\frac{\pi}{2},\ \varphi_2=\frac{\pi}{2}\\
     &\log(z^2+2z+2)\eval_{z=-1}=0+i\brround{-\frac{\pi}{2}+\frac{\pi}{2}}=0\\
     &\ddx{z}\log(z^2+2z+2)\eval_{z=-1}=\frac{2z+2}{z^2+2z+2}\eval_{z=-1}=0
+\end{align*}
+If we have a function such as $f(z)=\sqrt{z^2-1}$ then we will have two branch points at $z=\pm1$. If two of these branch cuts overlap then they have the property of cancelling out. Note that if we have a cube root then we require three overlapping branch cuts to cancel out. For an $n$th root we require $n$ overlapping branch cuts to cancel out.\\
+Ex: Find a branch cut for $f(z)=\sqrt{4+z^2}$ such that it is analytic for $\C\backslash\brcurly{x=0,-2\leq y\leq 2}$.
+\begin{align*}
+    &(4+z^2)^{1/2},\ \C\backslash\brcurly{x=0,-2\leq y\leq 2}\\
+    &4+z^2=0\Ra z=\pm2i\\
+    &(4+z^2)^{1/2}=|z+2i|^{1/2}|z-2i|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2}{2}}
+\end{align*}
+\centerline{\includegraphics[scale=0.7]{Images/ComplexAnalysisPictures/2a.png}}
+Choose $\frac{\pi}{2}<\varphi_1<\frac{5\pi}{2}$ and $\frac{\pi}{2}<\varphi_2<\frac{5\pi}{2}$\\
+Check continuity at $y>2$:\\
+\begin{tabular}{c|ccc}
+     & $\varphi_1$ & $\varphi_2$ & $e^{i\bfrac{\varphi_1+\varphi_2}{2}}$\\
+     \hline
+     A & $\frac{5\pi}{2}$ & $\frac{5\pi}{2}$ & $e^{i\frac{5\pi}{2}}=i$\\
+     A' & $\frac{\pi}{2}$ & $\frac{\pi}{2}$ & $e^{i\frac{\pi}{2}}=i$
+\end{tabular}
+
+Ex2: Find a branch cut for $f(z)=(z^4-1)^{1/2}$ such that it is analytic for $|z|>1$.
+\begin{align*}
+    &(z^4-1)^{1/2},\ \brcurly{|z|>1}\\
+    &z^4-1=0\Ra z=\pm1,\pm i\\
+    &(z^4-1)^{1/2}=|z+1|^{1/2}|z-1|^{1/2}|z+i|^{1/2}|z-i|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2+\varphi_3+\varphi_4}{2}}
+\end{align*}
+\centerline{\includegraphics[scale=0.7]{Images/ComplexAnalysisPictures/2b.png}}\\
+Choose $-\pi<\varphi_1<\pi$, $\frac{\pi}{2}<\varphi_2<\frac{5\pi}{2}$, $-\pi<\varphi_3<\pi$, and $\frac{\pi}{2}<\varphi_4<\frac{5\pi}{2}$\\
+Check continuity at $y>1$:\\
+\begin{tabular}{c|ccc}
+     & $\varphi_2$ & $\varphi_4$ & $e^{i\bfrac{\varphi_1+\varphi_2+\varphi_3+\varphi_4}{2}}$\\
+     \hline
+     A & $\frac{5\pi}{2}$ & $\frac{5\pi}{2}$ & $e^{i\frac{5\pi}{2}}e^{i\bfrac{\varphi_1+\varphi_3}{2}}=ie^{i\bfrac{\varphi_1+\varphi_3}{2}}$\\
+     A' & $\frac{\pi}{2}$ & $\frac{\pi}{2}$ & $e^{i\frac{\pi}{2}}e^{i\bfrac{\varphi_1+\varphi_3}{2}}=ie^{i\bfrac{\varphi_1+\varphi_3}{2}}$
+\end{tabular}\\
+Check continuity at $x<1$:\\
+\begin{tabular}{c|ccc}
+     & $\varphi_1$ & $\varphi_3$ & $e^{i\bfrac{\varphi_1+\varphi_2+\varphi_3+\varphi_4}{2}}$\\
+     \hline
+     B & $\pi$ & $\pi$ & $e^{i\pi}e^{i\bfrac{\varphi_2+\varphi_4}{2}}=-e^{i\bfrac{\varphi_2+\varphi_4}{2}}$\\
+     B' & $-\pi$ & $-\pi$ & $e^{-i\pi}=-e^{i\bfrac{\varphi_2+\varphi_4}{2}}$
+\end{tabular}
+
+\subsubsection{Inverse Functions}
+To get a one-to-one function we often need to restrict the domain of the function.\\
+Inverse of $e^z$ is $z=\Log(w)$ or a branch cut of $\log(w)$\\
+\centerline{\includegraphics[width=0.9\textwidth]{Images/ComplexAnalysisPictures/ExponentialInverse.png}}
+\begin{align*}
+    &e^z:\ \brcurly{-\pi<y<\pi}\to\C\backslash(-\infty,0]\\
+    &\Log(z):\ \C\backslash(-\infty,0]\to\brcurly{-\pi<v<\pi}
+\end{align*}
+The inverse of $e^z$ over $\brcurly{0<y<2\pi}$ is $\log z=\ln r+i\varphi,\ 0<\varphi<2\pi$.\\
+\centerline{\includegraphics[width=0.9\textwidth]{Images/ComplexAnalysisPictures/ExponentialInverse2.png}}
+The inverse function for $z^2$ over $\brcurly{x>0}$ is $z^\frac{1}{2}=e^{\frac{1}{2}\Log(z)}$\\
+\centerline{\includegraphics[width=0.9\textwidth]{Images/ComplexAnalysisPictures/QuadraticInverse.png}}
+\begin{align*}
+    &z^2:\ \brcurly{x>0}\to\C\backslash(-\infty,0]
+\end{align*}
+The inverse function for $z^2$ over $\brcurly{y>0}$ is $z^\frac{1}{2}=e^{\frac{1}{2}\log(z)},\ 0<\varphi<2\pi$\\
+\centerline{\includegraphics[width=0.9\textwidth]{Images/ComplexAnalysisPictures/QuadraticInverse2.png}}
+\begin{align*}
+    &z^2:\ \brcurly{y>0}\to\C\backslash[0,\infty)
+\end{align*}
+Ex: Find the inverse function of $e^z$ on the domain $\brcurly{\frac{\pi}{4}<y<\frac{9\pi}{4}}$
+\begin{align*}
+    &w=e^{x}e^{iy}\\
+    &\log(w)=\ln(e^x)+iy=x+iy=z\\
+    &\log(w)\\
+    &f^{-1}(z)=\log(z),\ \brcurly{\frac{\pi}{4}<\arg(z)<\frac{9\pi}{4}}
+\end{align*}
+Ex2: Find the inverse function of $z^4$ on the domain $\brcurly{x>0,y>0}$
+\begin{align*}
+    &z=w^{1/4}=|w|^{1/4}e^{i\frac{\arg(w)}{4}}\\
+    &0<\arg(z)<\frac{\pi}{2}\Ra 0<\frac{\arg(w)}{4}<\frac{\pi}{2}\Ra 0<\arg(w)<2\pi\\
+    &f^{-1}(z)=z^{1/4},\ \brcurly{0<\arg(z)<2\pi}
+\end{align*}
+The inverse of $\sin z$ is a little bit less obvious. Let us find all inverse functions for $\sin z$.
+\begin{align*}
+    &\sin w=z\\
+    &\frac{e^{iw}-e^{-iw}}{2i}=z\\
+    &e^{iw}-e^{-iw}=2iz\\
+    &e^{2iw}-2ize^{iw}-1=0\\
+    &e^{iw}=\frac{2iz\pm\sqrt{(-2iz)^2+4}}{2}\\
+    &e^{iw}=iz\pm\sqrt{1-z^2}\\
+    &e^{iw}=iz+i(z^2-1)^\frac{1}{2}\\
+    &iw=\log\brround{iz+i(z^2-1)^\frac{1}{2}}\\
+    &w=-i\log\brround{iz+i(z^2-1)^\frac{1}{2}}
+\end{align*}
+The general solutions to $\sin w=z$ are given by the above expression. This expression contains two multivalued parts, $\log$ and $(z^2-1)^\frac{1}{2}$.\\
+Ex: Find all solutions to $\sin w=-i$
+\begin{align*}
+    &\sin(w)=-i\\
+    &\sin x\cosh y+i\cos x\sinh y=-i\\
+    &\sin x\cosh y=0\Ra x=n\pi\\
+    &\cos x\sinh y =-1\\
+    &n=2k:\\
+    &\sinh y =-1\\
+    &n=2k+1:\\
+    &-\sinh y=-1\Ra \sinh y=1\\
+    &\sinh y=\frac{e^y-e^{-y}}{2}\\
+    &e^{2y}-2\sinh y e^y-1=0\\
+    &e^{y}=\frac{2\sinh y\pm\sqrt{4\sinh^2y+4}}{2}=\sinh y\pm \sqrt{\sinh^2y+1}\\
+    &y=\ln\brround{\sinh y\pm\sqrt{\sinh^2 y+1}}\\
+    &n=2k:\\
+    &y=\ln\brround{-1\pm\sqrt{2}}=\ln\brround{\sqrt{2}-1}\\
+    &n=2k+1:\\
+    &y=\ln\brround{1\pm\sqrt{2}}=\ln\brround{1+\sqrt{2}}\\
+    &w=\brcurly{2k_1\pi+i\ln\brround{\sqrt{2}-1},(2k_2+1)\pi+i\ln\brround{1+\sqrt{2}},k_1,k_2\in\Z}
+\end{align*}
+Ex2: Find all solutions to $\cos w=-i$
+\begin{align*}
+    &\cos(w)=-i\\
+    &\cos(w)=\cos x\cosh y-i\sin x\sinh y\\
+    &\cos x\cosh y=0\Ra x=\frac{\pi}{2}+n\pi\\
+    &n=2k:\\
+    &-\sinh y=-1\Ra \sinh y=1\\
+    &n=2k+1:\\
+    &\sinh y=-1\\
+    &\sinh y=\frac{e^y-e^{-y}}{2}\\
+    &e^{2y}-2\sinh ye^y-1=0\\
+    &e^y=\frac{2\sinh y\pm\sqrt{4\sinh^2 y+4}}{2}=\sinh y\pm\sqrt{\sinh^2y+1}\\
+    &y=\ln\brround{\sinh y\pm\sqrt{\sinh^2y+1}}\\
+    &n=2k:\\
+    &y=\ln\brround{1\pm\sqrt{2}}=\ln\brround{1+\sqrt{2}}\\
+    &n=2k+1:\\
+    &y=\ln\brround{-1\pm\sqrt{2}}=\ln\brround{\sqrt{2}-1}\\
+    &z=\brcurly{\frac{\pi}{2}+2k_1\pi+i\ln\brround{1+\sqrt{2}},\frac{\pi}{2}+(2k_2+1)\pi+i\ln\brround{\sqrt{2}-1},\ k_1,k_2\in\Z}
+\end{align*}
+The principal value of the inverse function of $\sin z$ is called $f(z)=\arcsin z$ and is defined such that $f(0)=0$.\\
+The principal value of the inverse function of $\cos z$ is called $f(z)=\arccos z$ and is defined such that $f(0)=\frac{\pi}{2}$.\\
+These functions are defined as
+\begin{align*}
+    &\arcsin z=-i\Log\brround{iz+i(z^2-1)^\frac{1}{2}}\\
+    &\text{where }(z^2-1)^\frac{1}{2}=|z-1|^\frac{1}{2}|z+1|^\frac{1}{2}e^{i\frac{\arg(z-1)+\arg(z+1)}{2}}\\
+    &\text{such that }0<\arg(z-1)<2\pi\text{ and }\pi<\arg(z+1)<3\pi\\
+    &\arccos z=-i\Log\brround{z+(z^2-1)^\frac{1}{2}}\\
+    &\text{where }(z^2-1)^\frac{1}{2}=|z-1|^\frac{1}{2}|z+1|^\frac{1}{2}e^{i\frac{\arg(z-1)+\arg(z+1)}{2}}\\
+\end{align*}
+Ex: Find all solutions to $w=\arcsin(-i)$
+\begin{align*}
+    &w=\arcsin(-i)\\
+    &\arcsin(z)=-i\Log(iz+i(z^2-1)^{1/2})\\
+    &(z^2-1)^{1/2}=|z+1|^{1/2}|z-1|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2}{2}},\ \varphi_1\in(0,2\pi),\ \varphi_2\in(\pi,3\pi)\\
+    &(z^2-1)^{1/2}\eval_{z=-i}\Ra \varphi_1=\frac{5\pi}{4},\ \varphi_2=\frac{3\pi}{4}+\pi\\
+    &(z^2-1)^{1/2}\eval_{z=-i}=\sqrt{2}e^{i\frac{3\pi}{2}}=-\sqrt{2}i\\
+    &\arcsin(-i)=-i\Log(1+i(-\sqrt{2}i))=-i\Log(1+\sqrt{2})\\
+    &\arcsin(-i)=-i\ln\brround{1+\sqrt{2}}
+\end{align*}
+Ex2: Find all solutions to $w=\arccos(-i)$
+\begin{align*}
+    &w=\arccos(-i)\\
+    &w=-i\Log(z+(z^2-1)^{1/2})\\
+    &(z^2-1)^{1/2}=|z+1|^{1/2}|z-1|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2}{2}},\ \varphi_1\in(0,2\pi),\ \varphi_2\in(-\pi,\pi)\\
+    &(z^2-1)^{1/2}\eval_{z=-i}\Ra \varphi_1=\frac{5\pi}{4},\ \varphi_2=-\frac{\pi}{4}\\
+    &(z^2-1)^{1/2}\eval_{z=-i}=\sqrt{2}e^{i\frac{\pi}{2}}=\sqrt{2}i\\
+    &w=-i\Log(-i+\sqrt{2}i)=-i\Log((\sqrt{2}-1)e^{i\frac{\pi}{2}})=-i\brround{\ln(\sqrt{2}-1)+i\frac{\pi}{2}}\\
+    &w=\frac{\pi}{2}-i\ln\brround{\sqrt{2}-1}
+\end{align*}
+Mapping properties of $\sin z$ and $\arcsin z$:\\
+\centerline{\includegraphics[width=0.9\textwidth]{Images/ComplexAnalysisPictures/SineInverse.png}}
+We can also apply this mapping to solve Laplace's equation.\\
+Ex:
+\begin{align*}
+    &\Delta \phi=0,\ \brcurly{x>0,y>0}\\
+    &\mathrm{BCs}:\ \eqnsystem{\phi=1 & x=0,y>0\\ \phi_y=0 & 0<x<1,y=0\\ \phi=2 & x>1,y=0}\\
+    &w=\arcsin(z)\\
+    &\Phi=Au+B\\
+    &\Phi(u=0)=1\Ra B=1\\
+    &\Phi\brround{u=\frac{\pi}{2}}=2=A\frac{\pi}{2}+1\Ra A=\frac{2}{\pi}\\
+    &\Phi=\frac{2}{\pi}u+1\\
+    &u+iv=\arcsin(x+iy)\\
+    &\sin(u+iv)=x+iy\\
+    &\eqnsystem{x=\sin u\cosh v\\y=\cos u\sinh v}\Ra\eqnsystem{\cosh v=\frac{x}{\sin u}\\ \sinh v=\frac{y}{\cos u}}\Ra \cosh^2v-\sinh^2v=\frac{x^2}{\sin^2u}-\frac{y^2}{\cos^2u}=1\\
+    &t=\sin^2u\\
+    &\sin^2u+\cos^2u=1\Ra \cos^2u=1-t\\
+    &\frac{x^2}{t}-\frac{y^2}{1-t}=1\\
+    &t(1-t)=(1-t)x^2-ty^2\\
+    &t-t^2=x^2-tx^2-ty^2\\
+    &t^2+t(-x^2-y^2-1)+x^2\\
+    &t=\frac{x^2+y^2+1\pm\sqrt{(x^2+y^2+1)^2-4x^2}}{2}\\
+    &0\leq\sin^2 u\leq1\Ra 0\leq t\leq1\Ra t=\frac{x^2+y^2+1-\sqrt{(x^2+y^2+1)^2-4x^2}}{2}\\
+    &\sin^2 u=\frac{x^2+y^2+1-\sqrt{(x^2+y^2+1)^2-4x^2}}{2}\\
+    &0<u<\frac{\pi}{2}\Ra 0<\sin u<1\\
+    &\sin u=\sqrt{\frac{x^2+y^2+1-\sqrt{(x^2+y^2+1)^2-4x^2}}{2}}\\
+    &u=\arcsin\brround{\sqrt{\frac{x^2+y^2+1-\sqrt{(x^2+y^2+1)^2-4x^2}}{2}}}\\
+    &\phi=\frac{2}{\pi}\arcsin\brround{\sqrt{\frac{x^2+y^2+1-\sqrt{(x^2+y^2+1)^2-4x^2}}{2}}}+1
+\end{align*}
+We can also define inverse functions for $\sinh z$ and $\cosh z$ using the same method as for $\sin z$ and $\cos z$.\\
+Ex: Find the inverse of $\sinh(z)$ such that $f^{-1}(0)=\ln(1)$.
+\begin{align*}
+    &w=\sinh(z)=\frac{e^z-e^{-z}}{2}\\
+    &2w=e^z-e^{-z}\\
+    &e^{2z}-2we^z-1\\
+    &e^z=\frac{2w\pm\sqrt{4w^2+4}}{2}=w\pm\sqrt{w^2+1}\\
+    &|e^z|>0\Ra |w\pm\sqrt{w^2+1}|\\
+    &\log(e^z)=\ln(e^x)+i(y+2\pi k)=\log\brround{w\pm(w^2+1)^{1/2}}\\
+    &z=\log\brround{w+(w^2+1)^{1/2}}\\
+    &(w^2+1)^{1/2}=|w+i|^{1/2}|w-i|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2}{2}},\ \varphi_1\in\brround{\frac{\pi}{2},\frac{5\pi}{2}},\ \varphi_2\in\brround{\frac{3\pi}{2},\frac{7\pi}{2}}\\
+    &(w^2+1)^{1/2}\eval_{w=0}\Ra \varphi_1=\frac{3\pi}{2},\ \varphi_2=\frac{5\pi}{2}\\
+    &(w^2+1)^{1/2}\eval_{w=0}=e^{i2\pi}=1\\
+    &0=\log(1)=\ln(1)+i2\pi k\\
+    &f^{-1}(z)=\Log\brround{z+|z+i|^{1/2}|z-i|^{1/2}e^{i\bfrac{\varphi_1+\varphi_2}{2}}},\ \varphi_1\in\brround{\frac{\pi}{2},\frac{5\pi}{2}},\ \varphi_2\in\brround{\frac{3\pi}{2},\frac{7\pi}{2}}
 \end{align*}
