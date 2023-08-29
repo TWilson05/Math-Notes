@@ -458,3 +458,18 @@ Now to compute the integral we can use the inequality formula
     &\brvertical{\int_{|z|=R}\frac{z+1}{z^3+z+3}dz}\leq\max_{|z|=R}\brvertical{\frac{z+1}{z^3+z+3}}2\pi R=\frac{(R+1)2\pi R}{R^3-R-3}\to0\\
     &\int_{|z|=2}\frac{z+1}{z^3+z+3}dz=0
 \end{align*}
+A more general extension of this trick can be seen with the example
+\[\int_{|z|=2}\frac{dz}{(z-3)(z^7+z+1)}\]
+\centerline{\includegraphics[width=0.5\textwidth]{Images/ComplexAnalysisPictures/DeformationOfPathEx.png}}
+\begin{align*}
+    &\text{ assume }|z^7+z+1|>0\text{ on }|z|>2\\
+    &|z^7+z+1|\geq||z|^7-|z|-1|>|128-2-1|=125\\
+    &\therefore\ \text{all 0s from $z^7+z+1$ inside region}\\
+    &\lim_{R\to\infty}\int_{|z|=R}\frac{dz}{(z-3)(z^7+z+1)}=\int_{|z|=2}\frac{dz}{(z-3)(z^7+z+1)}+\lim_{r\to0}\int_{|z-3|=r}\frac{dz}{(z-3)(z^7+z+1)}\\
+    &\int_{|z|=2}\frac{dz}{(z-3)(z^7+z+1)}=\lim_{R\to\infty}\int_{|z|=R}\frac{dz}{(z-3)(z^7+z+1)}-\lim_{r\to0}\int_{|z-3|=r}\frac{dz}{(z-3)(z^7+z+1)}\\
+    &\lim_{r\to0}\int_{|z-3|=r}\frac{dz}{(z-3)(z^7+z+1)}=\lim_{r\to0}\int_{|z-3|=r}\frac{1}{z-3}f_1(3)dz\\
+    &f_1(z)=\frac{1}{z^7+z+1}\Ra f_1(3)=\frac{1}{2191}\\
+    &\lim_{r\to0}\int_{|z-3|=r}\frac{dz}{(z-3)(z^7+z+1)}=\frac{2\pi i}{2191}\\
+    &\brvertical{\int_{|z|=R}\frac{dz}{(z-3)(z^7+z+1)}}\leq\max_{|z|=R}\brvertical{\frac{1}{(z-3)(z^7+z+1)}}2\pi R=\frac{2\pi R}{(R-3)(R^7-R-1)}\to0\\
+    &\int_{|z|=2}\frac{dz}{(z-3)(z^7+z+1)}=-\frac{2\pi i}{2191}
+\end{align*}
