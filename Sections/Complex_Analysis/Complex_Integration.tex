@@ -1,0 +1,460 @@
+\subsection{Integration of Complex Functions}
+\subsubsection{Path Integrals}
+Given that complex functions exist in a two-dimensional space, it is natural to consider integration over a path in the complex plane.\\
+We can come up with a parameterization to express this path as a function of a real variable $t$:
+\[w(t) = x(t) + iy(t)\]
+\[\int_a^b w(t)dt=\int_a^b x(t)dt+i\int_a^b y(t)dt\]
+Complex integrals will have the same properties as real integrals, such as linearity. One new property for complex integrals is:
+\[\brvertical{\int_a^bw(t)dt}\leq\brvertical{\int_a^b|w(t)|dt}\]
+\begin{proof}
+\begin{align*}
+    &\int_a^b w(t)dt=\rho e^{i\varphi}\\
+    &\rho =\brvertical{\int_a^bw(t)dt}\\
+    &\rho=e^{-i\varphi}\int_a^bw(t)dt=\int_a^bw(t)e^{-i\varphi}dt\\
+    &\rho=\brvertical{\int_a^bw(t)dt}=\int_a^be^{-it}w(t)dt=\Re\brround{\int_a^be^{-i\varphi}w(t)dt}\\
+    &\rho=\int_a^b\Re\brround{e^{-i\varphi}w(t)}dt\leq\int_a^b\brvertical{e^{-i\varphi}w(t)}dt=\int_a^b|w(t)|dt
+\end{align*}
+\end{proof}
+A path or contour $C$ is a piecewise smooth curve in the complex plane.
+\[C=z(t)=x(t)+iy(t),\ a\leq t\leq b\]
+A path also has a direction, which is the direction of increasing $t$.
+\[\int_C f(z)dz=\int_a^b f(z(t))z'(t)dt\]
+\[dz=z'(t)dt=(x'(t)+iy'(t))dt\]
+Ex: $f(x,y)=x-2xyi$
+\begin{align*}
+    &\int_C (x-2xyi)dz,\ C=\brcurly{y=x^2,0\leq x\leq 1}\cup\brcurly{y=1,-1\leq x\leq1}\\
+    &f_1=x-2x^3i\\
+    &z=x+iy=x+ix^2\Ra dz=(1+2xi)dx\\
+    &\int_0^1(x-2x^3i)(1+2xi)dx=\int_0^1(x+2x^2i-2x^3i+4x^4)dx=\frac{1}{2}+\frac{2}{3}i-\frac{2}{4}i+\frac{4}{5}\\
+    &f_2=x-2xi\\
+    &z=x+iy=x+i\Ra dz=dx\\
+    &\int_{-1}^1(x-2xi)dx=\brsquare{\frac{x^2}{2}-x^2i}_{-1}^1=0\\
+    &\int_C (x-2xyi)dz=\frac{13}{10}+\frac{1}{6}i
+\end{align*}
+A closed path (has the same start and end points) is called a contour. It is the same as a path integral but we will see later that contours have special properties with complex functions.\\
+Ex2: $f(z)=\bar{z}^2$ on the contour $C$ that is the box with vertices $0,1,1+i,i,0$ in the counterclockwise direction.
+\begin{align*}
+    &\overline{z}^2=(x-iy)^2=x^2-2xyi-y^2\\
+    &y=0:\ f_1=x^2\\
+    &z=x+iy=x\Ra dz=dx\\
+    &\int_{C_1}f_1dz=\int_0^1 x^2dx=\frac{1}{3}\\
+    &x=1:\ f_2=1-2yi-y^2\\
+    &z=x+iy=1+iy\Ra dz=idy\\
+    &\int_{C_2}f_2dz=\int_0^1(1-2yi-y^2)idy=\brsquare{iy+y^2-\frac{y^3}{3}i}_0^1=i+1-\frac{i}{3}=\frac{2}{3}i+1\\
+    &y=1:\ f_3=x^2-2xi-1\\
+    &z=x+iy=x+i\Ra dz=dx\\
+    &\int_{C_3}f_3dz=-\int_0^1(x^2-2xi-1)dx=-\frac{1}{3}+i+1=i+\frac{2}{3}\\
+    &x=0:\ f_4=-y^2\\
+    &z=x+iy=iy\Ra dz=idy\\
+    &\int_{C_4}f_4dz=-\int_0^1(-y^2)idy=\frac{i}{3}\\
+    &\int_C\overline{z}^2dz=2+2i
+\end{align*}
+Ex3: $f(z)=\Log(z)$
+\begin{align*}
+    &C=\brcurly{|z|=1,\Re(z)\geq0}\\
+    &z=e^{it},\ -\frac{\pi}{2}\leq t\leq \frac{\pi}{2}\\
+    &dz=ie^{it}dt\\
+    &\int_C\Log(z)dz=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\Log(e^{it})\brround{ie^{it}}dt=-\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}te^{it}dt\\
+    &=-\frac{te^{it}}{i}\eval_{-\frac{\pi}{2}}^{\frac{\pi}{2}}+\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\frac{e^{it}}{i}dt=-e^{it}\eval_{-\frac{\pi}{2}}^{\frac{\pi}{2}}=-2i
+\end{align*}
+\subsubsection{Fundamental Theorem of Calculus}
+A neat property of complex integrals is that they are path independent. This means that the value of the integral is the same for any path between the start and end points. This is not true for real integrals.\\
+Ex: Given the function $f(z)=z^2+1$ we will compute three different integrals between the points $z_1=-i$ and $z_2=1$ and show that they are all equal.\\
+Path 1:
+\begin{align*}
+    &C=\brcurly{y=x-1}\\
+    &z^2+1=(x+iy)^2+1=x^2+2xyi-y^2+1\\
+    &\int_C(x^2-y^2+1+2xyi)dz\\
+    &z=x+iy=x+i(x-1)\Ra dz=(1+i)dx\\
+    &\int_0^1(x^2-(x-1)^2+1+2x(x-1)i)(1+i)dx\\
+    &=\int_0^1(2x+2x^2i-2xi)(1+i)dx=\brsquare{x^2+\frac{2x^3}{3}i-x^2i}_0^1(1+i)\\
+    &=\brround{1-\frac{i}{3}}(1+i)=\frac{4}{3}+\frac{2}{3}i
+\end{align*}
+Path 2:
+\begin{align*}
+    &C=\brcurly{x=0,-1\leq y\leq 0}\cup\brcurly{y=0,0\leq x\leq 1}\\
+    &C_1:\ \int_{-1}^0(-y^2+1)idy=\brsquare{y-\frac{y^3}{3}}_{-1}^0i=\frac{2}{3}i\\
+    &C_2:\ \int_0^1(x^2+1)dx=\brsquare{\frac{x^3}{3}+x}_0^1=\frac{4}{3}\\
+    &\int_C(z^2+1)dz=\frac{4}{3}+\frac{2}{3}i
+\end{align*}
+Path 3:
+\begin{align*}
+    &z=e^{it},\ -\frac{\pi}{2}\leq t\leq 0\\
+    &z^2+1=e^{2it}+1\\
+    &dz=ie^{it}dt\\
+    &\int_{-\frac{\pi}{2}}^0\brround{e^{2it}+1}ie^{it}dt=i\int_{-\frac{\pi}{2}}^0\brround{e^{3it}+e^{it}}dt=i\brsquare{\frac{e^{3it}}{3i}+\frac{e^{it}}{i}}_{-\frac{\pi}{2}}^0=\frac{4}{3}-\frac{e^{-i\frac{3\pi}{2}}}{3}-e^{-i\frac{\pi}{2}}\\
+    &=\frac{4}{3}+\frac{2}{3}i
+\end{align*}
+This finding leads us to the Fundamental Theorem of Calculus for complex integrals.
+$$\int_C f(z)dz=F(z_2)-F(z_1)$$
+where $F'(z)=f(z)$.\\
+When an antiderivative of $f(z)$ exits it becomes far easier to compute the integral.\\
+Ex:
+\begin{align*}
+    &\int_C\sin zdz,\ C:\ e^{it},\ -\frac{\pi}{2}\leq t\leq \frac{5\pi}{4}\\
+    &\int_C\sin z dz= -\cos z_1+\cos z_0\\
+    &z_0=e^{-i\frac{\pi}{2}}=-i\\
+    &z_1=e^{i\frac{5\pi}{4}}=-\frac{1}{\sqrt{2}}-\frac{1}{\sqrt{2}}i\\
+    &\cos(z)=\cos(x)\cosh(y)-i\sin(x)\sinh(y)\\
+    &\cos(z_0)=\cosh(1)\\
+    &\cos(z_1)=\cos\bfrac{1}{\sqrt{2}}\cosh\bfrac{1}{\sqrt{2}}-i\sin\bfrac{1}{\sqrt{2}}\sinh\bfrac{1}{\sqrt{2}}\\
+    &\int_C\sin zdz=\cos(-i)-\cos\brround{-\frac{1}{\sqrt{2}-\frac{1}{\sqrt{2}}i}}=\cosh(1)-\cos\bfrac{1}{\sqrt{2}}\cosh\bfrac{1}{\sqrt{2}}+i\sin\bfrac{1}{\sqrt{2}}\sinh\bfrac{1}{\sqrt{2}}
+\end{align*}
+Ex2:
+\begin{align*}
+    &\int_C\frac{dz}{z},\ C:\ \frac{x^2}{4}+y^2=1,\ y\geq0\\
+    &\int_C\frac{dz}{z}=\log^*(z)=\ln|z|+i\varphi\eval_{z_0}^{z_1},\ \varphi\in\brround{-\frac{\pi}{2},\frac{3\pi}{2}}\\
+    &y=0:\ \frac{x^2}{4}=1\Ra x=\pm2\\
+    &z_0=2,\ z_1=-2\\
+    &\int_C\frac{dz}{z}=\ln2+\pi i-\ln2=\pi i
+\end{align*}
+Ex3:
+\begin{align*}
+    &\int_C\frac{dz}{z^2},\ C:\ \frac{x^2}{4}+y^2=1,\ y\geq0\\
+    &\int_C\frac{dz}{z^2}=-\frac{1}{z_1}+\frac{1}{z_0}\\
+    &z_0=2,\ z_1=-2\\
+    &\int_C\frac{dz}{z^2}=\frac{1}{2}+\frac{1}{2}=1
+\end{align*}
+Ex4:
+\begin{align*}
+    &\int_C\frac{dz}{z},\ C:\ z=e^{it},\ 0\leq t\leq \frac{3\pi}{2}\\
+    &\int_C\frac{dz}{z}=\ln|z|+i\varphi\eval_{z_0}^{z_1},\ \varphi\in\brround{-\frac{\pi}{4},\frac{7\pi}{4}}\\
+    &z_0=e^{0}=1\\
+    &z_1=e^{i\frac{3\pi}{2}}=-i\\
+    &\int_C\frac{dz}{z}=\brround{\ln(1)+\frac{3\pi}{2}i}-\brround{\ln(1)+0}=\frac{3\pi}{2}i
+\end{align*}
+Ex5:
+\begin{align*}
+    &\int_C z^{1/3}dz,\ C:\ r=2\cos\bfrac{\theta}{2},\ -\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}\\
+    &\int_Cz^{1/3}dz=\frac{3}{4}z^{4/3}\eval_{z_0}^{z_1}=\frac{3}{4}|z|^{4/3}e^{i\varphi}\eval_{z_0}^{z_1},\ \varphi\in\brround{-\pi,\pi}\\
+    &r\brround{\pm\frac{\pi}{2}}=2\cos\bfrac{\pi}{4}=\frac{2}{\sqrt{2}}=\sqrt{2}\\
+    &z_0=-\sqrt{2}i,\ z_1=\sqrt{2}i\\
+    &\int_C z^{1/3}dz=\frac{3}{4}(\sqrt{2})^{4/3}\brround{e^{i\frac{2\pi}{3}}-e^{-i\frac{2\pi}{3}}}\\
+    &\int_C z^{1/3}dz=\frac{3}{2^{1/3}}\frac{i}{2i}\brround{e^{i\frac{2\pi}{3}}-e^{-i\frac{2\pi}{3}}}=\frac{3i}{2^{1/3}}\sin\bfrac{2\pi}{3}
+\end{align*}
+Ex6:
+\begin{align*}
+    &\int_C\Log(z)dz,\ C:\ r=2\cos\bfrac{\theta}{2},\ -\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}\\
+    &z_0=-\sqrt{2}i,\ z_1=\sqrt{2}i\\
+    &\int_C\Log zdz=\brsquare{z\Log z-z}_{-\sqrt{2}i}^{\sqrt{2}i}=\sqrt{2}i\brround{\ln\sqrt{2}+i\frac{\pi}{2}-1}+\sqrt{2}i\brround{\ln\sqrt{2}-i\frac{\pi}{2}-1}\\
+    &=\brround{2\sqrt{2}\ln\sqrt{2}-2\sqrt{2}}i
+\end{align*}
+Another property of complex integrals we will make use of often is the inequality
+\[\brvertical{\int_C f(z)dz}\leq \max_{z\in C}|f(z)|\cdot\text{Length}(C)\]
+\begin{proof}
+\begin{align*}
+    \brvertical{\int_C f(z)dz}&=\brvertical{\int_a^b f(z(t))z'(t)dt}\\
+    &\leq\brvertical{\int_a^b |f(z(t))||z'(t)|dt}\\
+    &\leq\max_{a\leq t\leq b}|f(z(t))|\cdot\int_a^b\sqrt{x^2+y^2}dt\\
+    &\leq\max_{z\in C}|f(z)|\cdot\text{Length}(C)
+\end{align*}
+\end{proof}
+Ex: Prove the inequality
+\[
+\brvertical{\int_C\frac{dz}{z^2+i}}\leq\frac{3\pi}{4}
+\]
+$C$ is the circle $|z|=3$ traversed once
+\begin{proof}
+    \begin{align*}
+        &\brvertical{\int_Cf(z)dz}\leq\max_{z\in C}|f(z)|\mathrm{Length}(C)\\
+        &\mathrm{Length}(C)=6\pi\\
+        &\brvertical{\int_C\frac{dz}{z^2+i}}\leq6\pi\max_{z\in C}\brvertical{\frac{1}{z^2+i}}\\
+        &\max_{z\in C}\brvertical{\frac{1}{z^2+i}}=\frac{1}{\min\limits_{z\in C}|z^2+i|}\\
+        &|z^2+i|\geq\brvertical{|z^2|-|i|}=|9-1|=8\\
+        &\min_{z\in C}|z^2+i|=8\\
+        &\max_{z\in C}\brvertical{\frac{1}{z^2+i}}=\frac{1}{8}\\
+        &\brvertical{\int_C\frac{dz}{z^2+i}}\leq\frac{6\pi}{8}=\frac{3\pi}{4}
+    \end{align*}
+\end{proof}
+Ex2: Prove the inequality
+\[
+\brvertical{\int_C\Log(z)dz}\leq\frac{\pi^2}{2}
+\]
+where $C$ is described by $e^{it},\ -\frac{\pi}{2}\leq t\leq\frac{\pi}{2}$
+\begin{proof}
+Note that the curve is a semicircle of radius 1 where $x\geq0$.
+\begin{align*}
+    &\brvertical{\int_Cf(z)dz}\leq\max_{z\in C}|f(z)|\mathrm{Length}(C)\\
+    &\mathrm{Length}(C)=\pi\\
+    &f(z)=\Log z=\ln|z|+i\varphi,\ \varphi\in\brround{-\pi,\pi}\\
+    &\max_{z\in C}|f(z)|=\max_{z\in C}|\Log z|=\max_{z\in C}|\ln|z|+i\varphi|\\
+    &z=e^{it}\\
+    &|z|=1\\
+    &\varphi=t\\
+    &\max_{z\in C}|f(z)|=\max_{-\frac{\pi}{2}\leq t\leq\frac{\pi}{2}}|it|=\max_{-\frac{\pi}{2}\leq t\leq\frac{\pi}{2}}|t|=\frac{\pi}{2}\\
+    &\brvertical{\int_C\Log(z)dz}\leq\frac{\pi}{2}\cdot \pi=\frac{\pi^2}{2}
+\end{align*}
+\end{proof}
+Ex3: Prove the inequality
+\[
+\brvertical{\int_C\frac{e^{3z}}{e^z+1}dz}\leq\frac{2\pi e^{3R}}{e^R-1}
+\]
+where $C$ is the vertical line segment from $z=R$ to $z=R+2\pi i$ such that $R\in\R$ and $R>0$.
+\begin{proof}
+\begin{align*}
+    &\brvertical{\int_Cf(z)dz}\leq\max_{z\in C}|f(z)|\mathrm{Length}(C)\\
+    &\mathrm{Length}(C)=2\pi\\
+    &f(z)=\frac{e^{3z}}{e^z+1}
+\end{align*}
+Let us describe $C$ by
+\begin{align*}
+    &C:\ z=R+it,\ 0\leq t\leq 2\pi\\
+    &\max_{z\in C}|f(z)|=\max_{z\in C}\brvertical{\frac{e^{3z}}{e^z+1}}=\max_{0\leq t\leq 2\pi}\brvertical{\frac{e^{3R}e^{3it}}{e^Re^{it}+1}}=\max_{0\leq t\leq 2\pi}\frac{e^{3R}}{|e^Re^{it}+1|}\\
+    &\max_{0\leq t\leq 2\pi}\frac{1}{|e^Re^{it}+1|}=\frac{1}{\min\limits_{0\leq t\leq 2\pi}|e^Re^{it}+1|}\\
+    &\min_{0\leq t\leq 2\pi}|e^Re^{it}+1|=\min_{0\leq t\leq 2\pi}|e^R\brround{\cos(t)+i\sin(t)}+1|=\min_{0\leq t\leq 2\pi}\sqrt{(e^R\cos(t)+1)^2+e^{2R}\sin^2(t)}\\
+    &=\min_{0\leq t\leq 2\pi}\sqrt{e^{2R}\cos^2t+e^{2R}\sin^2t+2e^R\cos t+1}=\min_{0\leq t\leq 2\pi}\sqrt{e^{2R}+2e^R\cos t+1}\\
+    &\min_{0\leq t\leq 2\pi}\cos t=-1\\
+    &\min_{0\leq t\leq 2\pi}|e^Re^{it}+1|=\sqrt{e^{2R}-2e^R+1}=\sqrt{(e^R-1)^2}=|e^R-1|\\
+    &R>0\Ra e^R>1\Ra |e^R-1|=e^R-1\\
+    &\max_{z\in C}\brvertical{\frac{e^{3z}}{e^z+1}}=\frac{e^{3R}}{e^R-1}\\
+    &\brvertical{\int_C \frac{e^{3z}}{e^z+1}dz}\leq\frac{2\pi e^{3R}}{e^R-1}
+\end{align*}
+\end{proof}
+
+\subsubsection{Loop Integrals}
+A loop, $C$, is a path such that $z_2=z_1$ (the start and end points are the same).\\
+A simple closed loop is a loop with no other intersections. For example, a figure 8 is not a simple closed loop.\\
+Using the FTC (Fundamental Theorem of Calculus) we can see that if $f(z)$ is continuous and has an antiderivative $F(z)$ in $\mathcal{D}$ then
+\[\int_C f(z)dz=0\]
+for any loops in $\mathcal{D}$.\\
+Ex:
+\begin{align*}
+    &f(z)=\frac{\cos z}{z^2+6z+10}\\
+    &z=\frac{-6\pm\sqrt{36-40}}{2}=-3\pm i
+\end{align*}
+$f(z)$ is analytic on $|z|\leq 2$
+\[
+\therefore\ \int_{|z|=2}f(z)dz=0
+\]
+Ex2:
+\begin{align*}
+    &f(z)=\Log(2z+5)\\
+    &w=2z+5\\
+    &\text{not analytic where }\Re(w)<0,\ \Im(w)=0\\
+    &w=2x+5+iy\\
+    &y=0\\
+    &2x+5<0\Ra x<-\frac{5}{2}
+\end{align*}
+$f(z)$ is analytic on $|z|\leq 2$
+\[
+\therefore\ \int_{|z|=2}f(z)dz=0
+\]
+Ex3:
+\begin{align*}
+    &f(z)=\arcsin\bfrac{z}{3}\\
+    &w=\frac{z}{3}\\
+    &\text{not analytic where }|\Re(w)|>1,\ \Im(w)=0\\
+    &w=\frac{x}{3}+i\frac{y}{3}\\
+    &y=0\\
+    &\frac{|x|}{3}>1\Ra |x|>3
+\end{align*}
+$f(z)$ is analytic on $|z|\leq 2$
+\[
+\therefore\ \int_{|z|=2}f(z)dz=0
+\]
+Ex4:
+\begin{align*}
+    &f(z)=\tan\bfrac{z}{2}=\frac{\sin\bfrac{z}{2}}{\cos\bfrac{z}{2}}\\
+    &\cos\bfrac{z}{2}= 0\\
+    &\frac{z}{2}=\frac{\pi}{2}+n\pi,\ n\in\Z\\
+    &z=\pi+2\pi n=\brcurly{\cdots,-\pi,\pi,\cdots}
+\end{align*}
+$f(z)$ is analytic on $|z|\leq 2$
+\[
+\therefore\ \int_{|z|=2}f(z)dz=0
+\]
+Let us look at the slightly more general case of
+\[\int_C (z-z_0)^ndz\]
+where $C$ is a simple closed loop and $z_0$ is a point inside $C$.\\
+\begin{center}
+\begin{tikzpicture}
+    % Point z_0
+    \coordinate (z0) at (1.5,1);
+    \fill (z0) circle (2pt);
+    \node[above right] at (z0) {$z_0$};
+
+    % Circle around z_0
+    \draw (z0) circle (1.5);
+
+    % Arrow pointing to z_0
+    \draw[->, thick] (3,1);
+    \node[right] at (3,1) {$C$};
+\end{tikzpicture}
+\end{center}
+If $n\geq 0$,
+\begin{align*}
+    &\brround{\frac{1}{n+1}(z-z_0)^{n+1}}'=(z-z_0)^n\\
+    &\Ra\int_C(z-z_0)^ndz=0
+\end{align*}
+If $n<0$ and $n\neq-1$,
+\begin{align*}
+    &\brround{\frac{1}{n+1}(z-z_0)^{n+1}}'=(z-z_0)^n\\
+    &\Ra\int_C(z-z_0)^ndz=0
+\end{align*}
+If $n=-1$,
+\begin{align*}
+    &\int_C\frac{dz}{z-z_0}
+\end{align*}
+Let us assume that $z_0=0$ by shifting everything over by $z_0$.\\
+$C=C_1\cup C_2$ where $C_1$ is the big loop from $z_1$ to $z_2$ and $C_2$ is the small line segment from $z_2$ to $z_1$.\\
+\centerline{\includegraphics[width=0.3\textwidth]{Images/ComplexAnalysisPictures/LoopIntegralContinuity.png}}
+\begin{align*}
+    &\int_{C_1}\frac{dz}{z}=\Log(z_2)-\Log(z_1)\\
+    &\brvertical{\int_{C_2}\frac{dz}{z}}\leq\max_{z\in C_2}\frac{1}{|z|}\cdot\text{Length}(C_2)\to0\text{ as $z_1=z_2$}\\
+    &\Log z_2=\ln|z_2|+i\varphi_2\to \ln|z_0|+i\pi\\
+    &\Log z_1=\ln|z_1|+i\varphi_1\to \ln|z_0|-i\pi\\
+    &\int_C\frac{dz}{z}=\int_{C_1}\frac{dz}{z}+\int_{C_2}\frac{dz}{z}\to2 i\pi+0\\
+    &\int_C\frac{dz}{z}=2\pi i
+\end{align*}
+And so we get
+\[\int_C(z-z_0)^ndz=\eqnsystem{0 & \text{if $z_0$ is outside $C$}\\ 2\pi i & \text{if $z_0$ is inside $C$ and $n=-1$}\\ 0 & \text{if $z_0$ is inside $C$ and $n\neq-1$}}\]
+This means that the result of a loop integral will only be nonzero if there is some singularity inside the loop.
+
+\subsubsection{Deformation of Path}
+Suppose $f(z)$ is analytic in $D$ then we can show
+\[\int_C f(z)dz=\int_{C_0}f(z)dz\]
+\centerline{\includegraphics[width=0.4\textwidth]{Images/ComplexAnalysisPictures/DeformationOfPath.png}}
+To show this, we will need a simply connected domain. We can construct the following contour:\\
+\centerline{\includegraphics[width=0.3\textwidth]{Images/ComplexAnalysisPictures/SimplyConnectedDomain.png}}
+We can define a new path, $C_\epsilon=\Gamma_1\cup\Gamma_2\cup\Gamma_3\cup\Gamma_4$.\\
+Assuming that the function is well defined in the region $D$ then we get
+\begin{align*}
+    &\int_{C_\epsilon}f(z)dz=\int_{\Gamma_1}f(z)dz+\int_{\Gamma_2}f(z)dz+\int_{\Gamma_3}f(z)dz+\int_{\Gamma_4}f(z)dz=0
+\end{align*}
+In the limiting case we can see that
+\begin{align*}
+    &\int_{\Gamma_1}f(z)dz\to\int_{C}f(z)dz\\
+    &\int_{\Gamma_3}f(z)dz\to-\int_{C_0}f(z)dz\\
+    &\int_{\Gamma_2}f(z)dz+\int_{\Gamma_4}f(z)dz\to0
+\end{align*}
+And so we are left with
+\begin{align*}
+    &\int_{C_\epsilon}f(z)dz=\int_Cf(z)dz-\int_{C_0}f(z)dz=0\\
+    &\Ra \int_Cf(z)dz=\int_{C_0}f(z)dz
+\end{align*}
+This means that any integral over a closed path is equal to the sum of closed path integrals around any singularities in the domain.\\
+\centerline{\includegraphics[width=0.6\textwidth]{Images/ComplexAnalysisPictures/MultipleSingularities.png}}
+\[\int_Cf(z)dz=\sum_{j=1}^N\int_{C_j}f(z)dz\]
+Ex:
+\begin{align*}
+    &\int_{|z|=2}\frac{dz}{z(z-1)}\\
+    &C_1:\ |z-0|=r\\
+    &C_2:\ |z-1|=r,\ \text{$r$ is small}\\
+    &I=\int_{|z|=2}f(z)dz=\int_{|z-0|=r}\frac{dz}{z(z-1)}+\int_{|z-1|=r}\frac{dz}{z(z-1)}\\
+    &\frac{1}{z(z-1)}=\frac{A}{z}+\frac{B}{z-1}=\frac{A(z-1)+Bz}{z(z-1)}=\frac{(A+B)z-A}{z(z-1)}\\
+    &\eqnsystem{A+B=0\\ -A=1}\Ra\eqnsystem{A=-1\\ B=1}\\
+    &\int_{|z-0|=r}\frac{dz}{z(z-1)}=\int_{|z-0|=r}\brround{-\frac{1}{z}+\frac{1}{z-1}}dz=-\int_{|z-0|=r}\frac{dz}{z}+\int_{|z-0|=r}\frac{dz}{z-1}\\
+    &=-\int_{|z-0|=r}\frac{dz}{z}+0=-2\pi i\\
+    &\int_{|z-1|=r}\frac{dz}{z(z-1)}=\int_{|z-1|=r}\brround{-\frac{1}{z}+\frac{1}{z-1}}dz=0+\int_{|z-1|=r}\frac{dz}{z-1}=0+2\pi i\\
+    &I=-2\pi i+2\pi i=0
+\end{align*}
+\subsubsection{Cauchy Integral Formula}
+Here we relied on using partial fractions. This is a useful technique, however, we are able to develop slightly more general techniques in defining the Cauchy Integral Formula.\\
+If $f(z)$ is analytic on $C$ and inside $C$ then
+\[\int_C\frac{f(z)}{z-z_0}=2\pi if(z_0)\]
+\begin{proof}
+\[g(z)=\frac{f(z)}{z-z_0}\]
+is analytic except at $z=z_0$.\\
+By Cauchy Therorm:
+\begin{align*}
+    &\int_Cg(z)dz=\int_{|z-z_0|=\epsilon}g(z)dz\\
+    &\int_{|z-z_0|=\epsilon}\frac{f(z)}{z-z_0}dz=\int_{|z-z_0|=\epsilon}\frac{f(z)-f(z_0)}{z-z_0}dz+\int_{|z-z_0|=\epsilon}\frac{f(z_0)}{z-z_0}dz\\
+    &=\int_{|z-z_0|=\epsilon}\frac{f(z)-f(z_0)}{z-z_0}dz+2\pi if(z_0)\\
+    &\brvertical{\int_{|z-z_0|=\epsilon}\frac{f(z)-f(z_0)}{z-z_0}dz}\leq\max_{|z-z_0|=\epsilon}\brvertical{\frac{f(z)-f(z_0)}{z-z_0}}2\pi\epsilon=\max_{|z-z_0|=\epsilon}|f(z)-f(z_0)|\frac{1}{\epsilon}2\pi\epsilon\\
+    &\brvertical{\int_{|z-z_0|=\epsilon}\frac{f(z)-f(z_0)}{z-z_0}dz}\leq2\pi\max_{|z-z_0|=\epsilon}|f(z)-f(z_0)|\to0\text{ as $\epsilon\to0$}\\
+    &\lim_{\epsilon\to0}\int_{|z-z_0|=\epsilon}\frac{f(z)-f(z_0)}{z-z_0}dz=0\\
+    &\Ra \int_{|z-z_0|=\epsilon}\frac{f(z)}{z-z_0}dz=2\pi if(z_0)
+\end{align*}
+\end{proof}
+Ex:
+\[
+C:\ \frac{x^2}{4}+y^2=1
+\]
+\begin{align*}
+    &\int_C\frac{dz}{(z-1)^2}\\
+    &z=1\\
+    &\int_C\frac{dz}{(z-1)^2}=\lim_{r\to0}\underset{|z-1|=r}{\int}\frac{dz}{(z-1)^2}=-\frac{1}{z-1}\eval_{|z-1|=r}=0
+\end{align*}
+Ex2:
+\[
+C:\ \frac{x^2}{4}+y^2=1
+\]
+\begin{align*}
+    &\int_C\frac{e^z}{z(z-1)}dz\\
+    &z=0,\ 1\\
+    &\int_C\frac{e^z}{z(z-1)}dz=\int_{|z|=r}\frac{e^z}{z(z-1)}dz+\int_{|z-1|=r}\frac{e^z}{z(z-1)}dz\\
+    &\int_{|z|=r}\frac{e^z}{z(z-1)}dz=\int_{|z|=r}\frac{1}{z}f_1(z)dz,\ f_1(z)=\frac{e^z}{z-1}\\
+    &f(0)=\frac{e^0}{0-1}=-1\\
+    &\int_{|z|=r}\frac{1}{z}f_1(z)dz=2\pi if_1(0)=-2\pi i\\
+    &\int_{|z-1|=r}\frac{e^z}{z(z-1)}dz=\int_{|z-1|=r}\frac{1}{z-1}f_2(z)dz,\ f_2(z)=\frac{e^z}{z}\\
+    &f_2(1)=e\\
+    &\int_{|z-1|=r}\frac{1}{z-1}f_2(z)dz=2\pi ie\\
+    &\int_C\frac{e^z}{z(z-1)}dz=-2\pi i+2\pi ei=2\pi i(e-1)
+\end{align*}
+Ex3:
+\[
+C:\ \frac{x^2}{4}+y^2=1
+\]
+\begin{align*}
+    &\int_C\frac{dz}{z(z^2-1)}\\
+    &z=0,\ \pm1\\
+    &\int_C\frac{dz}{z(z^2-1)}=\int_{|z|=r}\frac{1}{z}f_1(z)dz+\int_{|z+1|}\frac{1}{z+1}f_2(z)dz+\int_{|z-1|=r}\frac{1}{z-1}f_3(z)dz\\
+    &f_1(z)=\frac{1}{z^2-1}\Ra f_1(0)=-1\\
+    &f_2(z)=\frac{1}{z(z-1)}\Ra f_2(-1)=\frac{1}{-(-2)}=\frac{1}{2}\\
+    &f_3(z)=\frac{1}{z(z+1)}\Ra f_3(1)=\frac{1}{2}\\
+    &\int_C\frac{dz}{z(z^2-1)}=-2\pi i+\frac{1}{2}2\pi i+\frac{1}{2}2\pi i=0
+\end{align*}
+Ex4:
+\[
+C:\ \frac{x^2}{4}+y^2=1
+\]
+\begin{align*}
+    &\int_C\frac{dz}{2z^2+1}\\
+    &z=\pm\frac{i}{\sqrt{2}}\\
+    &\int_C\frac{dz}{2z^2+1}=\int_{|z+\frac{i}{\sqrt{2}}|}\frac{1}{z+\frac{i}{\sqrt{2}}}f_1(z)dz+\int_{|z-\frac{i}{\sqrt{2}}|}\frac{1}{z-\frac{i}{\sqrt{2}}}f_2(z)dz\\
+    &f_1(z)=\frac{2}{z-\frac{i}{\sqrt{2}}}\Ra f_1\brround{-\tfrac{i}{\sqrt{2}}}=\frac{2}{-\frac{2i}{\sqrt{2}}}=\sqrt{2}i\\
+    &f_2(z)=\frac{2}{z+\frac{i}{\sqrt{2}}}\Ra f_2\brround{\tfrac{i}{\sqrt{2}}}=\frac{2}{\frac{2i}{\sqrt{2}}}=-\sqrt{2}i\\
+    &\int_C\frac{dz}{2z^2+1}=2\pi i\sqrt{2}i-2\pi i\sqrt{2}i=0
+\end{align*}
+Ex5:
+\begin{align*}
+    &\int_{|z|=2}\frac{dz}{z^2+2z+2}\\
+    &z=\frac{-2\pm\sqrt{4-8}}{2}=-1\pm i\\
+    &C_1:\ \lim_{r\to0}|z-(-1+i)|=r\\
+    &C_2:\ \lim_{r\to0}|z-(-1-i)|=r\\
+    &\int_{|z|=2}\frac{dz}{z^2-2z+3}=\int_{C_1}\frac{1}{z-(-1+i)}f_1(-1+i)dz+\int_{C_2}\frac{1}{z-(-1-i)}f_2(-1-i)dz\\
+    &f_1(z)=\frac{1}{z-(-1-i)}\Ra f_1(-1+i)=\frac{1}{2i}\\
+    &f_2(z)=\frac{1}{z-(-1+i)}\Ra f_2(-1-i)=\frac{1}{-2i}\\
+    &\int_{|z|=2}\frac{dz}{z^2+2z+2}=2\pi i\frac{1}{2i}-2\pi i\frac{1}{2i}=0
+\end{align*}
+Ex6:
+\begin{align*}
+    &\int_{|z|=2}\frac{dz}{z^2-2z-3}\\
+    &z^2-2z-3=(z-3)(z+1)\Ra z=3,\ -1\\
+    &C_1:\ \lim_{r\to0}|z+1|=r\\
+    &\int_{|z|=2}\frac{dz}{z^2-2z-3}=\int_{C_1}\frac{1}{z+1}f_1(-1)dz\\
+    &f_1(z)=\frac{1}{z-3}\Ra f_1(-1)=-\frac{1}{4}\\
+    &\int_{|z|=2}\frac{dz}{z^2-2z-3}=2\pi i\brround{-\frac{1}{4}}=-\frac{\pi}{2}i
+\end{align*}
+So, from deformation of path, we got the Formula
+\[\int_Cf(z)dz=\sum_{j=1}^N\int_{C_j}f(z)dz\]
+where $C$ is a closed path and $C_j$ are closed paths around singularities.\\
+Now, using the Cauchy Integral Formula, we can get the following formula, assuming that $f(z)=\frac{1}{z-z_j}f_j(z)$ and $f(z)$ has singularities $z_1,\ldots,z_m$
+\[\int_C f(z)dz=2\pi i\sum_{j=1}^m f_j(z_j)\]
+In some cases, it may be hard to find all the singularities. Take the example
+\[\int_{|z|=2}\frac{z+1}{z^3+z+3}dz\]
+Finding the roots of $z^3+z+3$ is not easy, however, if we can show that all of the zeros are inside some region, then we can use the deformation of path and compute the intergral
+\[\lim_{R\to\infty}\int_{|z|=R}\frac{z+1}{z^3+z+3}dz\]
+instead and it will give the same result.\\
+Giving this a try we get
+\begin{align*}
+    &\text{assume }|z^3+z+3|>0\text{ on }|z|> 2\\
+    &|z^3+z+3|\geq ||z|^3-|z|-3|>|8-2-3|=3\\
+    &\therefore\ \text{all 0s inside region}\\
+    &\int_{|z|=2}\frac{z+1}{z^3+z+3}dz=\lim_{R\to\infty}\int_{|z|=R}\frac{z+1}{z^3+z+3}dz
+\end{align*}
+Now to compute the integral we can use the inequality formula
+\begin{align*}
+    &\brvertical{\int_{|z|=R}\frac{z+1}{z^3+z+3}dz}\leq\max_{|z|=R}\brvertical{\frac{z+1}{z^3+z+3}}2\pi R=\frac{(R+1)2\pi R}{R^3-R-3}\to0\\
+    &\int_{|z|=2}\frac{z+1}{z^3+z+3}dz=0
+\end{align*}
