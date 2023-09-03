@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  29 AUG 2023 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  3 SEP 2023 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--169
  []
 
 [17]
-<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=241, 776.9025pt x 274.02374pt>
+<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=247, 776.9025pt x 274.02374pt>
 File: Images/ComplexAnalysisPictures/ExponentialMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialMapping.png  used on input line 191.
@@ -684,37 +684,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--388
  []
 
 [24]
-<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=274, 588.39825pt x 259.56975pt>
+<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=280, 588.39825pt x 259.56975pt>
 File: Images/ComplexAnalysisPictures/ArgumentLaplacian.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ArgumentLaplacian.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ArgumentLaplacian.png  used on input line 441.
 (pdftex.def)             Requested size: 375.80544pt x 165.7874pt.
  [25]
-<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=280, 853.9905pt x 278.84175pt>
+<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=286, 853.9905pt x 278.84175pt>
 File: Images/ComplexAnalysisPictures/JoukowskiMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiMap.png  used on input line 461.
 (pdftex.def)             Requested size: 446.26582pt x 145.71333pt.
  [26 <./Images/ComplexAnalysisPictures/ArgumentLaplacian.png>]
-<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=286, 966.61125pt x 154.176pt>
+<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=292, 966.61125pt x 154.176pt>
 File: Images/ComplexAnalysisPictures/JoukowskiShift.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiShift.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiShift.png  used on input line 474.
 (pdftex.def)             Requested size: 446.26582pt x 71.18059pt.
  [27 <./Images/ComplexAnalysisPictures/JoukowskiMap.png> <./Images/ComplexAnalysisPictures/JoukowskiShift.png>] [28]
-<Images/ComplexAnalysisPictures/SinMapping.png, id=298, 981.6675pt x 264.99pt>
+<Images/ComplexAnalysisPictures/SinMapping.png, id=305, 981.6675pt x 264.99pt>
 File: Images/ComplexAnalysisPictures/SinMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SinMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SinMapping.png  used on input line 542.
 (pdftex.def)             Requested size: 446.26582pt x 120.46146pt.
  [29]
-<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=303, 579.96675pt x 373.99725pt>
+<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=310, 579.96675pt x 373.99725pt>
 File: Images/ComplexAnalysisPictures/TranslateSinMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/TranslateSinMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/TranslateSinMap.png  used on input line 556.
 (pdftex.def)             Requested size: 399.29463pt x 257.49911pt.
  [30 <./Images/ComplexAnalysisPictures/SinMapping.png> <./Images/ComplexAnalysisPictures/TranslateSinMap.png>] [31]
-<Images/ComplexAnalysisPictures/BranchCut.png, id=316, 364.36125pt x 239.09325pt>
+<Images/ComplexAnalysisPictures/BranchCut.png, id=322, 364.36125pt x 239.09325pt>
 File: Images/ComplexAnalysisPictures/BranchCut.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/BranchCut.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/BranchCut.png  used on input line 637.
@@ -725,40 +725,40 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 636--639
  []
 
 [32] [33 <./Images/ComplexAnalysisPictures/BranchCut.png>] [34] [35] [36]
-<Images/ComplexAnalysisPictures/2a.png, id=338, 514.3215pt x 351.714pt>
+<Images/ComplexAnalysisPictures/2a.png, id=344, 514.3215pt x 351.714pt>
 File: Images/ComplexAnalysisPictures/2a.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/2a.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/2a.png  used on input line 789.
 (pdftex.def)             Requested size: 360.0226pt x 246.19812pt.
  [37 <./Images/ComplexAnalysisPictures/2a.png>]
-<Images/ComplexAnalysisPictures/2b.png, id=346, 284.262pt x 280.04625pt>
+<Images/ComplexAnalysisPictures/2b.png, id=352, 284.262pt x 280.04625pt>
 File: Images/ComplexAnalysisPictures/2b.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/2b.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/2b.png  used on input line 805.
 (pdftex.def)             Requested size: 198.98203pt x 196.03102pt.
-<Images/ComplexAnalysisPictures/ExponentialInverse.png, id=347, 988.8945pt x 290.88675pt>
+<Images/ComplexAnalysisPictures/ExponentialInverse.png, id=353, 988.8945pt x 290.88675pt>
 File: Images/ComplexAnalysisPictures/ExponentialInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialInverse.png  used on input line 825.
 (pdftex.def)             Requested size: 422.77664pt x 124.3598pt.
  [38 <./Images/ComplexAnalysisPictures/2b.png>]
-<Images/ComplexAnalysisPictures/ExponentialInverse2.png, id=353, 967.2135pt x 256.5585pt>
+<Images/ComplexAnalysisPictures/ExponentialInverse2.png, id=359, 967.2135pt x 256.5585pt>
 File: Images/ComplexAnalysisPictures/ExponentialInverse2.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialInverse2.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialInverse2.png  used on input line 831.
 (pdftex.def)             Requested size: 422.77664pt x 112.1462pt.
-<Images/ComplexAnalysisPictures/QuadraticInverse.png, id=354, 625.1355pt x 197.538pt>
+<Images/ComplexAnalysisPictures/QuadraticInverse.png, id=360, 625.1355pt x 197.538pt>
 File: Images/ComplexAnalysisPictures/QuadraticInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/QuadraticInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/QuadraticInverse.png  used on input line 833.
 (pdftex.def)             Requested size: 422.77664pt x 133.59462pt.
-<Images/ComplexAnalysisPictures/QuadraticInverse2.png, id=355, 659.46375pt x 212.59425pt>
+<Images/ComplexAnalysisPictures/QuadraticInverse2.png, id=361, 659.46375pt x 212.59425pt>
 File: Images/ComplexAnalysisPictures/QuadraticInverse2.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/QuadraticInverse2.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/QuadraticInverse2.png  used on input line 838.
 (pdftex.def)             Requested size: 422.77664pt x 136.29665pt.
  [39 <./Images/ComplexAnalysisPictures/ExponentialInverse.png> <./Images/ComplexAnalysisPictures/ExponentialInverse2.png> <./Images/ComplexAnalysisPictures/QuadraticInverse.png>] [40 <./Images/ComplexAnalysisPictures/QuadraticInverse2.png>] [41] [42]
-<Images/ComplexAnalysisPictures/SineInverse.png, id=376, 849.77475pt x 281.853pt>
+<Images/ComplexAnalysisPictures/SineInverse.png, id=382, 849.77475pt x 281.853pt>
 File: Images/ComplexAnalysisPictures/SineInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SineInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SineInverse.png  used on input line 938.
@@ -775,97 +775,97 @@ Package pdftex.def Info: Images/ComplexAnalysisPictures/SineInverse.png  used on
 )
 \tikz@lib@dec@box=\box122
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) [44] [45] [46] [47]
-Overfull \hbox (53.78186pt too wide) detected at line 104
+Overfull \hbox (53.78186pt too wide) detected at line 105
 []
  []
 
 [48] [49] [50] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
-<Images/ComplexAnalysisPictures/LoopIntegralContinuity.png, id=420, 261.97874pt x 181.8795pt>
+<Images/ComplexAnalysisPictures/LoopIntegralContinuity.png, id=426, 261.97874pt x 181.8795pt>
 File: Images/ComplexAnalysisPictures/LoopIntegralContinuity.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/LoopIntegralContinuity.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/LoopIntegralContinuity.png  used on input line 302.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/LoopIntegralContinuity.png  used on input line 303.
 (pdftex.def)             Requested size: 140.92793pt x 97.84157pt.
 [53]
-<Images/ComplexAnalysisPictures/DeformationOfPath.png, id=425, 337.86224pt x 311.9655pt>
+<Images/ComplexAnalysisPictures/DeformationOfPath.png, id=431, 337.86224pt x 311.9655pt>
 File: Images/ComplexAnalysisPictures/DeformationOfPath.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/DeformationOfPath.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPath.png  used on input line 318.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPath.png  used on input line 319.
 (pdftex.def)             Requested size: 187.89914pt x 173.49515pt.
-<Images/ComplexAnalysisPictures/SimplyConnectedDomain.png, id=426, 296.307pt x 339.06676pt>
+<Images/ComplexAnalysisPictures/SimplyConnectedDomain.png, id=432, 296.307pt x 339.06676pt>
 File: Images/ComplexAnalysisPictures/SimplyConnectedDomain.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SimplyConnectedDomain.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/SimplyConnectedDomain.png  used on input line 320.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/SimplyConnectedDomain.png  used on input line 321.
 (pdftex.def)             Requested size: 140.92793pt x 161.26532pt.
  [54 <./Images/ComplexAnalysisPictures/LoopIntegralContinuity.png>]
-<Images/ComplexAnalysisPictures/MultipleSingularities.png, id=432, 472.76625pt x 425.79076pt>
+<Images/ComplexAnalysisPictures/MultipleSingularities.png, id=438, 472.76625pt x 425.79076pt>
 File: Images/ComplexAnalysisPictures/MultipleSingularities.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/MultipleSingularities.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/MultipleSingularities.png  used on input line 338.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/MultipleSingularities.png  used on input line 339.
 (pdftex.def)             Requested size: 281.85587pt x 253.85216pt.
  [55 <./Images/ComplexAnalysisPictures/DeformationOfPath.png> <./Images/ComplexAnalysisPictures/SimplyConnectedDomain.png>] [56 <./Images/ComplexAnalysisPictures/MultipleSingularities.png>] [57] [58] [59]
-<Images/ComplexAnalysisPictures/DeformationOfPathEx.png, id=457, 487.8225pt x 449.88075pt>
+<Images/ComplexAnalysisPictures/DeformationOfPathEx.png, id=464, 487.8225pt x 449.88075pt>
 File: Images/ComplexAnalysisPictures/DeformationOfPathEx.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/DeformationOfPathEx.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPathEx.png  used on input line 465.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPathEx.png  used on input line 466.
 (pdftex.def)             Requested size: 234.8775pt x 216.61304pt.
 
-Overfull \hbox (5.1016pt too wide) detected at line 477
+Overfull \hbox (5.1016pt too wide) detected at line 478
 []
  []
 
 [60]
-Overfull \hbox (36.4045pt too wide) detected at line 489
+Overfull \hbox (36.4045pt too wide) detected at line 490
 []
  []
 
 [61 <./Images/ComplexAnalysisPictures/DeformationOfPathEx.png>] [62] [63]
-Overfull \hbox (12.48592pt too wide) detected at line 574
+Overfull \hbox (12.48592pt too wide) detected at line 575
 []
  []
 
 [64] [65] [66] [67] [68] [69]
-Overfull \hbox (35.97879pt too wide) detected at line 731
+Overfull \hbox (35.97879pt too wide) detected at line 732
 []
  []
 
 [70] [71] [72] [73]
-<Images/ComplexAnalysisPictures/Q5.png, id=519, 528.17325pt x 372.1905pt>
+<Images/ComplexAnalysisPictures/Q5.png, id=525, 528.17325pt x 372.1905pt>
 File: Images/ComplexAnalysisPictures/Q5.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q5.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/Q5.png  used on input line 892.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/Q5.png  used on input line 893.
 (pdftex.def)             Requested size: 264.08597pt x 186.09479pt.
  [74 <./Images/ComplexAnalysisPictures/Q5.png>]
-<Images/ComplexAnalysisPictures/Q6.png, id=525, 425.1885pt x 310.15875pt>
+<Images/ComplexAnalysisPictures/Q6.png, id=531, 425.1885pt x 310.15875pt>
 File: Images/ComplexAnalysisPictures/Q6.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q6.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/Q6.png  used on input line 915.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/Q6.png  used on input line 916.
 (pdftex.def)             Requested size: 212.59372pt x 155.079pt.
-<Images/ComplexAnalysisPictures/Q7.png, id=526, 406.51875pt x 290.88675pt>
+<Images/ComplexAnalysisPictures/Q7.png, id=532, 406.51875pt x 290.88675pt>
 File: Images/ComplexAnalysisPictures/Q7.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q7.png>
-Package pdftex.def Info: Images/ComplexAnalysisPictures/Q7.png  used on input line 938.
+Package pdftex.def Info: Images/ComplexAnalysisPictures/Q7.png  used on input line 939.
 (pdftex.def)             Requested size: 203.25887pt x 145.44301pt.
- [75 <./Images/ComplexAnalysisPictures/Q6.png>])) [76 <./Images/ComplexAnalysisPictures/Q7.png>] (./MathNotes.aux)
+ [75 <./Images/ComplexAnalysisPictures/Q6.png>] [76 <./Images/ComplexAnalysisPictures/Q7.png>] [77] [78] [79] [80])) [81] (./MathNotes.aux)
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: AFD55081173C99E07DFC242792217375;4513.
+(rerunfilecheck)             Checksum: A9184226391005F1DFC32B11344EE7B1;4697.
  ) 
 Here is how much of TeX's memory you used:
- 24845 strings out of 476093
- 485955 string characters out of 5795582
- 1873787 words of memory out of 5000000
- 44654 multiletter control sequences out of 15000+600000
+ 24855 strings out of 476093
+ 486041 string characters out of 5795582
+ 1875787 words of memory out of 5000000
+ 44658 multiletter control sequences out of 15000+600000
  522489 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,104p,535b,992s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes.pdf (76 pages, 1174241 bytes).
+Output written on MathNotes.pdf (81 pages, 1191647 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 677 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

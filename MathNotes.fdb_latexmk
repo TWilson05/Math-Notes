@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1693373852 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1693373855 0
+["pdflatex"] 1693784177 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1693784180 0
   "Images/ComplexAnalysisPictures/2a.png" 1691965635 22558 a92d8f03792c2b0c3872b678ba0e7b23 ""
   "Images/ComplexAnalysisPictures/2b.png" 1691965642 31625 8b43b8afe5e02f23151192ae0d67968d ""
   "Images/ComplexAnalysisPictures/ArgumentLaplacian.png" 1690967534 55382 8188a60e1b52c890314a89ed91e6007b ""
@@ -22,14 +22,14 @@
   "Images/ComplexAnalysisPictures/SinMapping.png" 1691231473 54984 676809332b484d108624ae7a1c126b65 ""
   "Images/ComplexAnalysisPictures/SineInverse.png" 1691970586 73912 6c8431771db1a6fbe4867ccb28a4ae4c ""
   "Images/ComplexAnalysisPictures/TranslateSinMap.png" 1691231739 68434 4dc5539c1492bd55af64acd64d942b53 ""
-  "MathNotes.aux" 1693373855 3889 e231731c2a80a1e6a1ac7c019f0010b0 "pdflatex"
-  "MathNotes.out" 1693373855 4513 afd55081173c99e07dfc242792217375 "pdflatex"
+  "MathNotes.aux" 1693784180 4029 1d59048e500c425d3344a705cd6c4014 "pdflatex"
+  "MathNotes.out" 1693784180 4697 a9184226391005f1dfc32b11344ee7b1 "pdflatex"
   "MathNotes.tex" 1691899325 1351 71ab814110ba828c327ff14fed0c8c01 ""
-  "MathNotes.toc" 1693373855 2350 d3bf651b4e9423caaeb6618c43439886 "pdflatex"
+  "MathNotes.toc" 1693784180 2449 cea65f8d36154ad0b10764e9bb75f31c "pdflatex"
   "Sections/Complex_Analysis.tex" 1691972014 195 c79ef8364a366e4e75abc802ff32851f ""
   "Sections/Complex_Analysis/Complex_Algebra.tex" 1691229839 19469 f67fbb13519c55b7b9b9947180ea1ded ""
   "Sections/Complex_Analysis/Complex_Functions.tex" 1691971747 47957 3f05b383816331c49288887f19d4dbce ""
-  "Sections/Complex_Analysis/Complex_Integration.tex" 1693373848 44355 91d9692219e2a6ef128de1a116405a39 ""
+  "Sections/Complex_Analysis/Complex_Integration.tex" 1693784172 52147 5fc0427873ce53c0f57f95b41b270d12 ""
   "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1691899325 1351 71ab814110ba828c327ff14fed0c8c01 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1671857571 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1671859246 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -227,7 +227,7 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1671865898 4662777 6d30ebd1f2949ad7a3d8a3b5cd0d9f7d ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671866077 7874780 abc809e35257333a6d31dd99a03d1709 ""
   "c:/texlive/2022/texmf.cnf" 1671865872 713 e69b156964470283e0530f5060668171 ""
-  "fizztex.sty" 1691866906 3471 da8a335e765cc312536d0fc72368ea6b ""
+  "fizztex.sty" 1693783985 3504 3978ea80cc89923a6aa06928826917ff ""
   (generated)
   "MathNotes.aux"
   "MathNotes.log"

@@ -1,4 +1,5 @@
 \usetikzlibrary{decorations.markings}
+\newcommand{\bigO}{\mathcal{O}}
 
 \subsection{Integration of Complex Functions}
 \subsubsection{Path Integrals}
@@ -942,3 +943,136 @@ Ex3: Find the number of zeros of $z^3+z^2+4z+1$ in $\Re(z)>0$
 \end{align*}
 
 \subsubsection{Laurent Series}
+Recall the Taylor series of a function is defined by
+\[f(z)=\sum_{n=0}^\infty\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n\]
+The Taylor series will converge if $|z-z_0|<r$ where $r$ is the radius of convergence. The radius of convergence can be found to be
+\[r=\min|z_0-\text{other singularities of }f(z)|\]
+Some common Taylor series are
+\begin{align*}
+    &e^z=\sum_{n=0}^\infty\frac{z^n}{n!}\\
+    &\sin z=\sum_{n=0}^\infty\frac{(-1)^nz^{2n+1}}{(2n+1)!}\\
+    &\cos z=\sum_{n=0}^\infty\frac{(-1)^nz^{2n}}{(2n)!}\\
+    &\frac{1}{1-z}=\sum_{n=0}^\infty z^n,\ |z|<1\\
+    &\Log(1+z)=\sum_{n=1}^\infty\frac{(-1)^{n-1}z^n}{n},\ |z|<1
+\end{align*}
+The Laurent series is a generalization of the Taylor series that extends the Taylor series to negative exponentials in the series. If we compare the two we get,\\
+\textit{Taylor Series:}\\
+$f$ is analytic in $|z-z_0|<r$
+\[f(z)=\sum_{n=0}^\infty a_n(z-z_0)^n\]
+\[a_n=\frac{f^{(n)}(z_0)}{n!}=\frac{1}{2\pi i}\int_{|z-z_0|=r}\frac{f(\eta)}{(\eta-z_0)^{n+1}}d\eta\]
+\textit{Laurent Series:}\\
+$f$ is analytic in $r_1<|z-z_0|<r_2$
+\[f(z)=\sum_{n=-\infty}^\infty a_n(z-z_0)^n\]
+\[a_n=\frac{1}{2\pi i}\int_{|z-z_0|=r}\frac{f(\eta)}{(\eta-z_0)^{n+1}}d\eta\]
+Ex: Find the Laurent series of $f(z)=\frac{z}{(z+1)(z-2)}$ in each of $|z|<1$, $1<|z|<2$, and $|z|>2$
+\begin{align*}
+    &f(z)=\frac{z}{(z+1)(z-2)}\\
+    &f(z)=\frac{A}{z+1}+\frac{B}{z-2}\\
+    &A+B=1\\
+    &-2A+B=0\Ra 2A=B\\
+    &3A=1\Ra A=\frac{1}{3}\Ra B=\frac{2}{3}\\
+    &f(z)=\frac{1}{3}\brround{\frac{1}{z+1}+\frac{2}{z-2}}
+\end{align*}
+\begin{align*}
+    &|z|<1\\
+    &\frac{1}{1+z}=1-z+z^2-z^3+\cdots=\sum_{n=0}^\infty(-1)^nz^n\\
+    &\frac{1}{1-z}=1+z+z^2+z^3+\cdots=\sum_{n=0}^\infty z^n\\
+    &f(z)=\frac{1}{3}\brround{\frac{1}{z+1}-\frac{1}{1-\frac{z}{2}}}\\
+    &f(z)=\frac{1}{3}\sum_{n=0}^\infty\brround{(-1)^n-\frac{1}{2^n}}z^n
+\end{align*}
+\begin{align*}
+    &|z|>2\\
+    &\frac{1}{z+1}=\frac{1}{z}\frac{1}{1-(-\frac{1}{z})}=\frac{1}{z}\sum_{n=0}^\infty\bfrac{-1}{z}^n\\
+    &\frac{1}{z-2}=\frac{1}{z}\frac{1}{1-\frac{2}{z}}=\frac{1}{z}\sum_{n=0}^\infty\bfrac{2}{z}^n\\
+    &f(z)=\frac{1}{3}\sum_{n=0}^\infty\brround{(-1)^n+2^{n+1}}\frac{1}{z^{n+1}}
+\end{align*}
+\begin{align*}
+    &1<|z|<2\\
+    &\frac{1}{z+1}=\frac{1}{z}\frac{1}{1-(-\frac{1}{z})}=\frac{1}{z}\sum_{n=0}^\infty\bfrac{-1}{z}^n\\
+    &\frac{1}{z-2}=-\frac{1}{2}\frac{1}{1-\frac{z}{2}}=-\frac{1}{2}\sum_{n=0}^\infty\bfrac{z}{2}^n\\
+    &f(z)=\frac{1}{3}\sum_{n=0}^\infty\brround{\frac{(-1)^n}{z^{n+1}}-\frac{z^n}{2^{n}}}
+\end{align*}
+Big O Notation:\\
+When $n$ gets very large then $\mathcal{O}(n)$ determines how fast the function grows.
+\[\mathcal{O}(n)\Leftrightarrow |\mathcal{O}(n)|\leq C|n|\]
+When $n$ gets very small then $o(n)$ determines how fast the function shrinks.
+\[o(n)\Leftrightarrow \frac{o(n)}{n}\to 0\text{ as }n\to 0\]
+Ex2: Find the first few terms of the Laurent series for $f(z)=\frac{z}{\Log z},\ |z-1|<1$
+\begin{align*}
+    &f(z)=\frac{z}{\Log z},\ |z-1|<1\\
+    &\Log(z)=\Log(z-1+1)\\
+    &w=z-1\\
+    &\Log(z)=\Log(w+1)=w-\frac{w^2}{2}+\frac{w^3}{3}-\mathcal{O}(w^4)=w\brround{1-\frac{w}{2}+\frac{w^2}{3}-\mathcal{O}(w^3)}\\
+    &\frac{1}{\Log(z)}=\frac{1}{w}\frac{1}{1-\frac{w}{2}+\frac{w^2}{3}-\mathcal{O}(w^3)}\\
+    &w_1=\frac{w}{2}-\frac{w^2}{3}+\mathcal{O}(w^3)\\
+    &\frac{1}{1-w_1}=1+w_1+w_1^2+\mathcal{O}(w_1^3)\\
+    &\frac{1}{1-w_1}=1+\frac{w}{2}-\frac{w^2}{3}+\frac{w^2}{4}+\mathcal{O}(w^3)=1+\frac{w}{2}-\frac{w^2}{12}+\mathcal{O}(w^3)\\
+    &\frac{1}{\Log(z)}=\frac{1}{w}+\frac{1}{2}-\frac{w}{12}+\mathcal{O}(w^2)\\
+    &\frac{z}{\Log(z)}=(w+1)\brround{\frac{1}{w}+\frac{1}{2}-\frac{w}{12}+\mathcal{O}(w^2)}\\
+    &\frac{z}{\Log(z)}=\frac{1}{w}+\frac{1}{2}-\frac{w}{12}+1+\frac{w}{2}+\mathcal{O}(w^2)=\frac{1}{w}+\frac{3}{2}+\frac{5}{12}w+\mathcal{O}(w^2)\\
+    &\frac{z}{\Log(z)}=\frac{1}{z-1}+\frac{3}{2}+\frac{5}{12}(z-1)+\mathcal{O}((z-1)^2)
+\end{align*}
+Ex3: Find the Laurent series for $f(z)=\frac{1}{z(z-2)},\ 1<|z+1|<3$
+\begin{align*}
+    &f(z)=\frac{1}{z(z-2)},\ 1<|z+1|<3\\
+    &f(z)=\frac{1}{(z+1-1)(z+1-3)}\\
+    &w=z+1\\
+    &f(z)=\frac{1}{(w-1)(w-3)}\\
+    &=\frac{A}{w-1}+\frac{B}{w-3}\\
+    &A+B=0\Ra A=-B\\
+    &-3A-B=1\Ra 3B-B=1\Ra 2B=1\Ra B=\frac{1}{2}\Ra A=-\frac{1}{2}\\
+    &f(z)=\frac{1}{2}\brround{\frac{1}{w-3}-\frac{1}{w-1}}\\
+    &=\frac{1}{2}\brround{-\frac{1}{3}\frac{1}{1-\frac{w}{3}}-\frac{1}{w}\frac{1}{1-\frac{1}{w}}}\\
+    &=-\frac{1}{2}\brround{\frac{1}{3}\sum_{n=0}^\infty\bfrac{w}{3}^n+\frac{1}{w}\sum_{n=0}^\infty\bfrac{1}{w}^n}\\
+    &=-\frac{1}{6}-\frac{1}{2}\sum_{n=1}^\infty\brround{\frac{w^n}{3^{n+1}}+\frac{1}{w^n}}\\
+    &f(z)=-\frac{1}{6}-\frac{1}{2}\sum_{n=1}^\infty\brround{\frac{(z+1)^n}{3^{n+1}}+\frac{1}{(z+1)^n}}
+\end{align*}
+Ex4: Find the Laurent series for $f(z)=\frac{1}{z^2+1},\ |z-i|>2$
+\begin{align*}
+    &f(z)=\frac{z}{z^2+1},\ |z-i|>2\\
+    &z^2+1=(z+i)(z-i)=(z-i+2i)(z-i)\\
+    &f(z)=\frac{z-i+i}{(z-i)(z-i+2i)}\\
+    &w=z-i\\
+    &f(z)=\frac{w+i}{w(w+2i)}=\frac{1}{w+2i}+\frac{i}{w}\frac{1}{w+2i}\\
+    &\frac{1}{w+2i}=\frac{1}{w}\frac{1}{1+\frac{2i}{w}}=\frac{1}{w}\sum_{n=0}^\infty\bfrac{-2i}{w}^n\\
+    &f(z)=\sum_{n=0}^\infty\brround{\frac{(-2i)^n}{w^{n+1}}+\frac{(-1)^n2^ni^{n+1}}{w^{n+2}}}\\
+    &=\frac{1}{w}+\sum_{n=0}^\infty\brround{\frac{(-2i)^{n+1}}{w^{n+2}}+\frac{(-1)^n2^ni^{n+1}}{w^{n+2}}}=\frac{1}{w}+\sum_{n=0}^\infty\frac{2^ni^{n+1}}{w^{n+2}}(-2+1)\\
+    &f(z)=\frac{1}{z-i}-\sum_{n=0}^\infty\frac{(-2)^ni^{n+1}}{(z-i)^{n+2}}
+\end{align*}
+Ex5: Find the Laurent series for $\sqrt{z}$ about $z_0=1$
+\begin{align*}
+    &\sqrt{z},\ z_0=1\\
+    &w=z-z_0=z-1\\
+    &\sqrt{z}=\sqrt{z+1-1}=\sqrt{w+1}\\
+    &(1+w)^r=\sum_{n=0}^\infty\combm{r}{n}w^n\\
+    &\sqrt{w+1}=\sum_{n=0}^\infty\combm{\frac{1}{2}}{n}w^n\\
+    &\sqrt{z}=\sum_{n=0}^\infty\combm{\frac{1}{2}}{n}(z-1)^n\approx 1+\frac{1}{2}(z-1)+\frac{\frac{1}{2}(\frac{1}{2}-1)}{2!}(z-1)^2+\frac{\frac{1}{2}(\frac{1}{2}-1)(\frac{1}{2}-2)}{3!}(z-1)^3+\cdots
+\end{align*}
+Ex6: Find the Laurent series for $f(z)=\frac{e^z}{1-z}$ about $z_0=0$
+\begin{align*}
+    &\frac{e^z}{1-z},\ z_0=0\\
+    &e^z=\sum_{n=0}^\infty\frac{z^n}{n!}\\
+    &\frac{1}{1-z}=\sum_{n=0}^\infty z^n\\
+    &f(z)=\sum_{m=0}^\infty z^m\sum_{n=0}^\infty\frac{z^n}{n!}=(1+z+z^2+\mathcal{O}(z^3))\brround{1+z+\frac{z^2}{2!}+\mathcal{O}(z^3)}\\
+    &f(z)=\sum_{n=0}^\infty\brround{\sum_{m=0}^n\frac{1}{m!}}z^n\approx1+\brround{1+\frac{1}{1!}}z+\brround{1+\frac{1}{1!}+\frac{1}{2!}}z^2+\cdots
+\end{align*}
+\subsubsection{Cauchy Residue Theorem}
+Classification of Singularities:\\
+For a Laurent series of $f(z)$ in $r_1<|z-z_0|<r_2$ with $f(z)=a_0+a_1(z-z_0)+\cdots+a_n(z-z_0)^n+a_{-1}(z-z_0)^{-1}+\cdots+a_{-n}(z-z_0)^{-n}$ we can classify singularities as follows:
+\begin{itemize}
+    \item If $a_{-1}=a_{-2}=\cdots=a_{-n}=0$ (all negative terms) then $z_0$ is a removable singularity
+    \item If $a_{-n}=0,\ n\geq m+1$ (finite negative terms) then $z_0$ is a pole of order $m$\\
+    If $m=1$ then it is called a simple pole
+    \item If $a_{-n}\neq0$ for all $n$ then $z_0$ is an essential singularity
+\end{itemize}
+The \textit{residue} of $f(z)$ at $z_0$ is defined to be the $a_{-1}$ coefficient of the Laurent series of $f(z)$ about $z_0$.
+\[a_{-1}=\Res(f;z_0)\]
+Ex: Find the residue of $f(z)=\frac{1+2z^2}{z^5+z^3}$ about $z_0=0$
+\begin{align*}
+    &f(z)=\frac{1+2z^2}{z^5+z^3},\ z_0=0\\
+    &f(z)=\frac{1}{z^3}\brround{1+2z^2}\brround{z^2+1}^{-1}\\
+    &(z^2+1)^{-1}=1-z^2+\frac{-1(-1-1)}{2}z^4+\bigO(z^6)\\
+    &f(z)=\frac{1}{z^3}\brround{1+2z^2}\brround{1-z^2+z^4+\bigO(z^6)}=\frac{1}{z^3}\brround{1-z^2+z^4+2z^2-2z^4+\bigO(z^6)}\\
+    &f(z)=\frac{1}{z^3}+\frac{1}{z}-z+\bigO(z^3)\\
+    &\Res\brround{f(z);0}=1
+\end{align*}
