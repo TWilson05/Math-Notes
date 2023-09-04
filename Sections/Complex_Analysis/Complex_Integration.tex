@@ -1076,3 +1076,83 @@ Ex: Find the residue of $f(z)=\frac{1+2z^2}{z^5+z^3}$ about $z_0=0$
     &f(z)=\frac{1}{z^3}+\frac{1}{z}-z+\bigO(z^3)\\
     &\Res\brround{f(z);0}=1
 \end{align*}
+The Cauchy Residue Theorem states that if $f(z)$ is analytic in $r_1<|z-z_0|<r_2$ except for isolated singularities at $z_1,z_2,\cdots,z_n$ then
+\[\oint_Cf(z)dz=2\pi i\sum_{k=1}^N\Res\brround{f(z);z_k}\]
+\begin{proof}
+Recall the path integral is the sum of the integrals about the singularities
+\[\oint_C f(z)dz=\sum_{j=1}^N\oint_{|z-z_j|=r}f(z)dz\]
+If we replace $f(z)$ with the Laurent series expansion of $f(z)$ about $z_0$ we get
+\begin{align*}
+    &\oint_{|z-z_0|=r}f(z)dz=\oint_{|z-z_0|=r}\brround{\sum_{n=-\infty}^\infty a_n(z-z_0)^n}dz
+\end{align*}
+The only term that doesn't go to zero in the sum is the $a_{-1}$ term becasue of the $(z-z_0)^{-1}$ dependency. So we are left with
+\begin{align*}
+    &\oint_{|z-z_0|=r}f(z)dz=\oint_{|z-z_0|=r}a_{-1}(z-z_0)^{-1}dz=2\pi i a_{-1}=2\pi i\Res(f(z);z_0)\\
+    &\oint_C f(z)dz=2\pi i\sum_{k=1}^N\Res(f(z);z_k)
+\end{align*}
+\end{proof}
+To go about using this theorem we first need to find and identify the singularities. Depending on the types of the singularities, we can use different methods to find the residue.\\
+\textbf{Removable Singularities:}\\
+If $z_0$ is a removable singularity then $a_{-1}=0$ and so $\Res(f(z);z_0)=0$\\
+\textbf{Simple Poles:}\\
+If $z_0$ is a pole of order $m$ then $a_{-1}\neq0$ but $a_{-k}=0,\ k<-1$\\
+\textit{Method 1:}\\
+We can express $f(z)$ as the quotient of two functions $P(z)$ and $Q(z)$ where $P(z)$ is analytic and $Q(z)$ has a simple zero at $z_0$ so we have $f(z)=\frac{P(z)}{Q(z)}$ with $Q(z_0)=0$ and $Q'(z_0)\neq 0$. Then we can use the following formula to find the residue
+\[\Res(f(z);z_0)=\frac{P(z_0)}{Q'(z_0)}\]
+\textit{Method 2:}\\
+We can use the Cauchy Integral Formula to find the residue
+\begin{align*}
+    &f^{(m-1)}(z_0)=\frac{(m-1)!}{2\pi i}\oint_C\frac{f(z)}{(z-z_0)^m}dz\\
+    &\oint\frac{f(z)}{(z-z_0)^m}dz=2\pi i\frac{f^{(m-1)}}{(m-1)!}\\
+    &\Res\brround{\frac{f(z)}{(z-z_0)^m};z_0}=\frac{f^{(m-1)}}{(m-1)!}
+\end{align*}
+Note that to apply this formula it must match the form written above with the pole coming from a polynomial in the denominator.\\
+\textit{Method 3}:\\
+We can use the Laurent series to find the residue by writing the Laurent series of $f(z)$ about $z_0$ and taking the $a_{-1}$ term.\\
+\textbf{Pole of Order $m\geq2$:}\\
+For these types of singularities we must use either method 2 or 3 above.\\
+\textbf{Essential Singularities:}\\
+If $z_0$ is an essential singularity then $a_{-n}\neq0$ for all $n$. The only way to find the residue in this case is to use method 3 above.\\
+\textit{Note that using method 3 will always work for any type of singularity.}\\
+Ex:
+\begin{align*}
+    &\int_{|z|=3}\frac{e^z}{(z-1)^2z^3}dz\\
+    &z=0,\ z=1\\
+    &z=0:\\
+    &f(z)=\frac{1}{z^3}\brround{1+z+\frac{z^2}{2}+\bigO(z^3)}\brround{z-1}^{-2}\\
+    &(z-1)^{-2}=(1-z)^{-2}=1-2(-z)+\frac{-2(-2-1)}{2}z^2+\frac{-2(-2-1)(-2-2)}{6}(-z)^3+\bigO(z^4)\\
+    &(z-1)^{-2}=1+2z+3z^2+4z^3+\bigO(z^4)\\
+    &f(z)=\frac{1}{z^3}\brround{1+z+\frac{z^2}{2}+\bigO(z^3)}\brround{1+2z+3z^2+4z^3+\bigO(z^4)}\\
+    &f(z)=\frac{1}{z^3}\brround{1+2z+3z^2+z+2z^2+\frac{z^2}{2}+\bigO(z^3)}\\
+    &f(z)=\frac{1}{z^3}\brround{1+3z+\frac{11}{2}z^2+\bigO(z^3)}\\
+    &\Res(f(z);0)=\frac{11}{2}\\
+    &z=1:\\
+    &f_1(z)=\frac{e^z}{(z-1)^2}\Ra f_1'(z)=\frac{e^z}{z^3}-\frac{3e^z}{z^4}\\
+    &f_1'(1)=e\brround{1-3}=-2e\\
+    &\Res(f(z);1)=-2e\\
+    &I=\pi i(11-4e)
+\end{align*}
+Ex2:
+\begin{align*}
+    &\int_{|z|=2}\frac{dz}{z^2\sin z}\\
+    &z=0:\\
+    &f(z)=\frac{1}{z^2}\frac{1}{z-\frac{z^3}{6}+\bigO(z^5)}=\frac{1}{z^3}\brround{1-\frac{z^2}{6}+\bigO(z^4)}^{-1}\\
+    &f(z)=\frac{1}{z^3}\brround{1+\frac{z^2}{6}+\bigO(z^4)}\\
+    &\Res(f(z);0)=\frac{1}{6}\\
+    &I=\frac{\pi i}{3}
+\end{align*}
+Ex3:
+\begin{align*}
+    &\int_{|z|=1}e^{\frac{1}{z}}\cos(z)dz\\
+    &f(z)=\brround{1+\frac{1}{z}+\frac{1}{2!z^2}+o\brround{\tfrac{1}{z^3}}}\brround{1-\frac{z^2}{2!}+\frac{z^4}{4!}+\bigO(z^6)}\\
+    &\Res(f(z);0)=1-\frac{1}{3!}\frac{1}{2!}+\frac{1}{5!}\frac{1}{4!}\cdots=\sum_{n=0}^\infty\frac{(-1)^n}{(2n)!(2n+1)!}\\
+    &I=2\pi i\sum_{n=0}^\infty\frac{(-1)^n}{(2n)!(2n+1)!}\approx 5.762i
+\end{align*}
+Ex4:
+\begin{align*}
+    &\int_{|z|=1}\frac{e^z}{\sin^3z}dz\\
+    &f(z)=\brround{1+z+\frac{z^2}{2}+\bigO(z^3)}\brround{z-\frac{z^3}{3!}+\bigO(z^5)}^{-3}\\
+    &f(z)=\frac{1}{z^3}\brround{1+z+\frac{z^2}{2}+\bigO(z^3)}\brround{1+\frac{z^2}{2}+\bigO(z^4)}=\frac{1}{z^3}\brround{1+\frac{z^2}{2}+z+\frac{z^2}{2}}\\
+    &\Res(f(z);0)=1\\
+    &I=2\pi i
+\end{align*}
