@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  4 SEP 2023 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  24 SEP 2023 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,12 +708,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
@@ -728,24 +728,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--1
 
  []
 
-[13]) (./Sections/Foundations/NegativeNumbers.tex [14]) (./Sections/Foundations/OrderOfOperations.tex
+[13]) (./Sections/Foundations/NegativeNumbers.tex [14]) (./Sections/Foundations/OrderOfOperations.tex [15]
 Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
  []
 
-[15]) (./Sections/Foundations/Shapes.tex [16] [17] [18]
-<Images/FundamentalsPictures/CircleGeometry.jpg, id=2230, 868.24374pt x 861.2175pt>
+) (./Sections/Foundations/Shapes.tex [16] [17] [18]
+<Images/FundamentalsPictures/CircleGeometry.jpg, id=2236, 868.24374pt x 861.2175pt>
 File: Images/FundamentalsPictures/CircleGeometry.jpg Graphic file (type jpg)
 <use Images/FundamentalsPictures/CircleGeometry.jpg>
 Package pdftex.def Info: Images/FundamentalsPictures/CircleGeometry.jpg  used on input line 76.
 (pdftex.def)             Requested size: 147.59947pt x 146.40503pt.
  [19 <./Images/FundamentalsPictures/CircleGeometry.jpg>]) (./Sections/Foundations/VariableArithmetic.tex [20]) (./Sections/Foundations/TrigonometricRatios.tex [21]
-<Images/FundamentalsPictures/TrigRatios.jpg, id=2244, 1003.75pt x 628.3475pt>
+<Images/FundamentalsPictures/TrigRatios.jpg, id=2250, 1003.75pt x 628.3475pt>
 File: Images/FundamentalsPictures/TrigRatios.jpg Graphic file (type jpg)
 <use Images/FundamentalsPictures/TrigRatios.jpg>
 Package pdftex.def Info: Images/FundamentalsPictures/TrigRatios.jpg  used on input line 4.
 (pdftex.def)             Requested size: 301.12732pt x 188.50569pt.
-<Images/FundamentalsPictures/SpecialTriangles.png, id=2245, 752.8125pt x 385.44pt>
+<Images/FundamentalsPictures/SpecialTriangles.png, id=2251, 752.8125pt x 385.44pt>
 File: Images/FundamentalsPictures/SpecialTriangles.png Graphic file (type png)
 <use Images/FundamentalsPictures/SpecialTriangles.png>
 Package pdftex.def Info: Images/FundamentalsPictures/SpecialTriangles.png  used on input line 12.
@@ -756,7 +756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--13
  []
 
 [22 <./Images/FundamentalsPictures/TrigRatios.jpg>]
-<Images/FundamentalsPictures/SineLawTriangle.png, id=2251, 469.755pt x 186.6975pt>
+<Images/FundamentalsPictures/SineLawTriangle.png, id=2257, 469.755pt x 186.6975pt>
 File: Images/FundamentalsPictures/SineLawTriangle.png Graphic file (type png)
 <use Images/FundamentalsPictures/SineLawTriangle.png>
 Package pdftex.def Info: Images/FundamentalsPictures/SineLawTriangle.png  used on input line 15.
@@ -771,12 +771,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Images/FundamentalsPictures/barGraph.png, id=2267, 272.81924pt x 245.718pt>
+<Images/FundamentalsPictures/barGraph.png, id=2273, 272.81924pt x 245.718pt>
 File: Images/FundamentalsPictures/barGraph.png Graphic file (type png)
 <use Images/FundamentalsPictures/barGraph.png>
 Package pdftex.def Info: Images/FundamentalsPictures/barGraph.png  used on input line 16.
 (pdftex.def)             Requested size: 190.97217pt x 172.00142pt.
-<Images/FundamentalsPictures/histogram.png, id=2268, 319.79475pt x 226.446pt>
+<Images/FundamentalsPictures/histogram.png, id=2274, 319.79475pt x 226.446pt>
 File: Images/FundamentalsPictures/histogram.png Graphic file (type png)
 <use Images/FundamentalsPictures/histogram.png>
 Package pdftex.def Info: Images/FundamentalsPictures/histogram.png  used on input line 36.
@@ -791,7 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-<Images/FundamentalsPictures/boxPlot.png, id=2280, 220.4235pt x 90.3375pt>
+<Images/FundamentalsPictures/boxPlot.png, id=2286, 220.4235pt x 90.3375pt>
 File: Images/FundamentalsPictures/boxPlot.png Graphic file (type png)
 <use Images/FundamentalsPictures/boxPlot.png>
 Package pdftex.def Info: Images/FundamentalsPictures/boxPlot.png  used on input line 74.
@@ -832,22 +832,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--96
  []
 
 [31]
-<Images/FundamentalsPictures/PascalTriangle.jpg, id=2299, 670.505pt x 492.84125pt>
+<Images/FundamentalsPictures/PascalTriangle.jpg, id=2305, 670.505pt x 492.84125pt>
 File: Images/FundamentalsPictures/PascalTriangle.jpg Graphic file (type jpg)
 <use Images/FundamentalsPictures/PascalTriangle.jpg>
 Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangle.jpg  used on input line 105.
 (pdftex.def)             Requested size: 335.25168pt x 246.42001pt.
-<Images/FundamentalsPictures/PascalTriangleComb.png, id=2300, 1284.8pt x 1009.7725pt>
+<Images/FundamentalsPictures/PascalTriangleComb.png, id=2306, 1284.8pt x 1009.7725pt>
 File: Images/FundamentalsPictures/PascalTriangleComb.png Graphic file (type png)
 <use Images/FundamentalsPictures/PascalTriangleComb.png>
 Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangleComb.png  used on input line 107.
 (pdftex.def)             Requested size: 256.95544pt x 201.95091pt.
-<Images/FundamentalsPictures/PascalTrianglePathway.png, id=2301, 360.34625pt x 346.29375pt>
+<Images/FundamentalsPictures/PascalTrianglePathway.png, id=2307, 360.34625pt x 346.29375pt>
 File: Images/FundamentalsPictures/PascalTrianglePathway.png Graphic file (type png)
 <use Images/FundamentalsPictures/PascalTrianglePathway.png>
 Package pdftex.def Info: Images/FundamentalsPictures/PascalTrianglePathway.png  used on input line 112.
 (pdftex.def)             Requested size: 198.19104pt x 190.46214pt.
-<Images/FundamentalsPictures/PathwayEx.png, id=2302, 493.845pt x 307.1475pt>
+<Images/FundamentalsPictures/PathwayEx.png, id=2308, 493.845pt x 307.1475pt>
 File: Images/FundamentalsPictures/PathwayEx.png Graphic file (type png)
 <use Images/FundamentalsPictures/PathwayEx.png>
 Package pdftex.def Info: Images/FundamentalsPictures/PathwayEx.png  used on input line 117.
@@ -1547,7 +1547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-<Images/Phil120Pictures/image1.png, id=2471, 157.7895pt x 76.48575pt>
+<Images/Phil120Pictures/image1.png, id=2477, 157.7895pt x 76.48575pt>
 File: Images/Phil120Pictures/image1.png Graphic file (type png)
 <use Images/Phil120Pictures/image1.png>
 Package pdftex.def Info: Images/Phil120Pictures/image1.png  used on input line 35.
@@ -1598,7 +1598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--140
  []
 
 [67]
-<Images/Phil120Pictures/image2.png, id=2486, 438.438pt x 489.62926pt>
+<Images/Phil120Pictures/image2.png, id=2492, 438.438pt x 489.62926pt>
 File: Images/Phil120Pictures/image2.png Graphic file (type png)
 <use Images/Phil120Pictures/image2.png>
 Package pdftex.def Info: Images/Phil120Pictures/image2.png  used on input line 151.
@@ -1663,7 +1663,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--208
 
  []
 
-<Images/Phil120Pictures/image3.png, id=2496, 427.5975pt x 176.45924pt>
+<Images/Phil120Pictures/image3.png, id=2502, 427.5975pt x 176.45924pt>
 File: Images/Phil120Pictures/image3.png Graphic file (type png)
 <use Images/Phil120Pictures/image3.png>
 Package pdftex.def Info: Images/Phil120Pictures/image3.png  used on input line 210.
@@ -1673,7 +1673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--220
 
  []
 
-<Images/Phil120Pictures/image4.png, id=2497, 225.2415pt x 98.16675pt>
+<Images/Phil120Pictures/image4.png, id=2503, 225.2415pt x 98.16675pt>
 File: Images/Phil120Pictures/image4.png Graphic file (type png)
 <use Images/Phil120Pictures/image4.png>
 Package pdftex.def Info: Images/Phil120Pictures/image4.png  used on input line 227.
@@ -1699,7 +1699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--241
  []
 
 )) (./Sections/Pre-Calculus.tex (./Sections/Pre-Calculus/Functions_and_Coordinates.tex
-<Images/PreCalcPictures/Cartesian Coordinate system.jpg, id=2504, 1204.5pt x 803.0pt>
+<Images/PreCalcPictures/Cartesian Coordinate system.jpg, id=2510, 1204.5pt x 803.0pt>
 File: Images/PreCalcPictures/Cartesian Coordinate system.jpg Graphic file (type jpg)
 <use Images/PreCalcPictures/Cartesian Coordinate system.jpg>
 Package pdftex.def Info: Images/PreCalcPictures/Cartesian Coordinate system.jpg  used on input line 5.
@@ -1709,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
 
-<Images/PreCalcPictures/LinearSystemIntersection.png, id=2513, 409.53pt x 153.9351pt>
+<Images/PreCalcPictures/LinearSystemIntersection.png, id=2519, 409.53pt x 153.9351pt>
 File: Images/PreCalcPictures/LinearSystemIntersection.png Graphic file (type png)
 <use Images/PreCalcPictures/LinearSystemIntersection.png>
 Package pdftex.def Info: Images/PreCalcPictures/LinearSystemIntersection.png  used on input line 41.
@@ -1720,7 +1720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--49
  []
 
 [73] [74 <./Images/PreCalcPictures/LinearSystemIntersection.png>]
-<Images/PreCalcPictures/LinearInequalities.jpg, id=2524, 1532.72626pt x 687.56876pt>
+<Images/PreCalcPictures/LinearInequalities.jpg, id=2530, 1532.72626pt x 687.56876pt>
 File: Images/PreCalcPictures/LinearInequalities.jpg Graphic file (type jpg)
 <use Images/PreCalcPictures/LinearInequalities.jpg>
 Package pdftex.def Info: Images/PreCalcPictures/LinearInequalities.jpg  used on input line 88.
@@ -1731,7 +1731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--1
  []
 
 [75 <./Images/PreCalcPictures/LinearInequalities.jpg>]
-<Images/PreCalcPictures/ParabolaSolutions.png, id=2529, 561.09625pt x 211.79124pt>
+<Images/PreCalcPictures/ParabolaSolutions.png, id=2535, 561.09625pt x 211.79124pt>
 File: Images/PreCalcPictures/ParabolaSolutions.png Graphic file (type png)
 <use Images/PreCalcPictures/ParabolaSolutions.png>
 Package pdftex.def Info: Images/PreCalcPictures/ParabolaSolutions.png  used on input line 12.
@@ -1756,17 +1756,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--82
 
  []
 
-<Images/PreCalcPictures/Inequality1.png, id=2539, 469.755pt x 25.59563pt>
+<Images/PreCalcPictures/Inequality1.png, id=2545, 469.755pt x 25.59563pt>
 File: Images/PreCalcPictures/Inequality1.png Graphic file (type png)
 <use Images/PreCalcPictures/Inequality1.png>
 Package pdftex.def Info: Images/PreCalcPictures/Inequality1.png  used on input line 95.
 (pdftex.def)             Requested size: 469.75386pt x 25.59555pt.
-<Images/PreCalcPictures/Inequality2.png, id=2540, 469.755pt x 24.84282pt>
+<Images/PreCalcPictures/Inequality2.png, id=2546, 469.755pt x 24.84282pt>
 File: Images/PreCalcPictures/Inequality2.png Graphic file (type png)
 <use Images/PreCalcPictures/Inequality2.png>
 Package pdftex.def Info: Images/PreCalcPictures/Inequality2.png  used on input line 97.
 (pdftex.def)             Requested size: 469.75386pt x 24.84274pt.
-<Images/PreCalcPictures/Inequality3.png, id=2541, 469.755pt x 21.07875pt>
+<Images/PreCalcPictures/Inequality3.png, id=2547, 469.755pt x 21.07875pt>
 File: Images/PreCalcPictures/Inequality3.png Graphic file (type png)
 <use Images/PreCalcPictures/Inequality3.png>
 Package pdftex.def Info: Images/PreCalcPictures/Inequality3.png  used on input line 99.
@@ -1816,7 +1816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-<Images/PreCalcPictures/ReciprocalEx.png, id=2558, 469.755pt x 345.54094pt>
+<Images/PreCalcPictures/ReciprocalEx.png, id=2564, 469.755pt x 345.54094pt>
 File: Images/PreCalcPictures/ReciprocalEx.png Graphic file (type png)
 <use Images/PreCalcPictures/ReciprocalEx.png>
 Package pdftex.def Info: Images/PreCalcPictures/ReciprocalEx.png  used on input line 82.
@@ -1852,7 +1852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--157
  []
 
 [83]) (./Sections/Pre-Calculus/Conic_Sections.tex
-<Images/PreCalcPictures/ConicSections.png, id=2572, 803.0pt x 329.23pt>
+<Images/PreCalcPictures/ConicSections.png, id=2578, 803.0pt x 329.23pt>
 File: Images/PreCalcPictures/ConicSections.png Graphic file (type png)
 <use Images/PreCalcPictures/ConicSections.png>
 Package pdftex.def Info: Images/PreCalcPictures/ConicSections.png  used on input line 3.
@@ -1863,7 +1863,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
  []
 
 [84 <./Images/PreCalcPictures/ConicSections.png>]
-<Images/PreCalcPictures/ParabolaConic.png, id=2579, 182.96202pt x 136.61165pt>
+<Images/PreCalcPictures/ParabolaConic.png, id=2585, 182.96202pt x 136.61165pt>
 File: Images/PreCalcPictures/ParabolaConic.png Graphic file (type png)
 <use Images/PreCalcPictures/ParabolaConic.png>
 Package pdftex.def Info: Images/PreCalcPictures/ParabolaConic.png  used on input line 29.
@@ -1874,7 +1874,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--33
  []
 
 [85 <./Images/PreCalcPictures/ParabolaConic.png (PNG copy)>]
-<Images/PreCalcPictures/HyperbolaGraph.png, id=2585, 1095.09125pt x 881.2925pt>
+<Images/PreCalcPictures/HyperbolaGraph.png, id=2591, 1095.09125pt x 881.2925pt>
 File: Images/PreCalcPictures/HyperbolaGraph.png Graphic file (type png)
 <use Images/PreCalcPictures/HyperbolaGraph.png>
 Package pdftex.def Info: Images/PreCalcPictures/HyperbolaGraph.png  used on input line 47.
@@ -1905,34 +1905,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--35
  []
 
 [89] [90]) (./Sections/Pre-Calculus/Trig_Functions.tex
-<Images/PreCalcPictures/ReferenceAngle.png, id=2608, 2738.23pt x 2354.7975pt>
+<Images/PreCalcPictures/ReferenceAngle.png, id=2614, 2738.23pt x 2354.7975pt>
 File: Images/PreCalcPictures/ReferenceAngle.png Graphic file (type png)
 <use Images/PreCalcPictures/ReferenceAngle.png>
 Package pdftex.def Info: Images/PreCalcPictures/ReferenceAngle.png  used on input line 7.
 (pdftex.def)             Requested size: 355.98239pt x 306.13441pt.
  [91]
-<Images/PreCalcPictures/SinxandCosx.jpg, id=2614, 234.6366pt x 212.9556pt>
+<Images/PreCalcPictures/SinxandCosx.jpg, id=2620, 234.6366pt x 212.9556pt>
 File: Images/PreCalcPictures/SinxandCosx.jpg Graphic file (type jpg)
 <use Images/PreCalcPictures/SinxandCosx.jpg>
 Package pdftex.def Info: Images/PreCalcPictures/SinxandCosx.jpg  used on input line 22.
 (pdftex.def)             Requested size: 281.5625pt x 255.54543pt.
  [92 <./Images/PreCalcPictures/ReferenceAngle.png>] [93 <./Images/PreCalcPictures/SinxandCosx.jpg>]
-<Images/PreCalcPictures/tanx.png, id=2624, 380.42125pt x 248.93pt>
+<Images/PreCalcPictures/tanx.png, id=2630, 380.42125pt x 248.93pt>
 File: Images/PreCalcPictures/tanx.png Graphic file (type png)
 <use Images/PreCalcPictures/tanx.png>
 Package pdftex.def Info: Images/PreCalcPictures/tanx.png  used on input line 41.
 (pdftex.def)             Requested size: 342.37595pt x 224.03491pt.
-<Images/PreCalcPictures/Cscx.png, id=2625, 372.64218pt x 368.87813pt>
+<Images/PreCalcPictures/Cscx.png, id=2631, 372.64218pt x 368.87813pt>
 File: Images/PreCalcPictures/Cscx.png Graphic file (type png)
 <use Images/PreCalcPictures/Cscx.png>
 Package pdftex.def Info: Images/PreCalcPictures/Cscx.png  used on input line 48.
 (pdftex.def)             Requested size: 149.05423pt x 147.54863pt.
-<Images/PreCalcPictures/Secx.png, id=2626, 371.13657pt x 368.87813pt>
+<Images/PreCalcPictures/Secx.png, id=2632, 371.13657pt x 368.87813pt>
 File: Images/PreCalcPictures/Secx.png Graphic file (type png)
 <use Images/PreCalcPictures/Secx.png>
 Package pdftex.def Info: Images/PreCalcPictures/Secx.png  used on input line 49.
 (pdftex.def)             Requested size: 148.45198pt x 147.54863pt.
-<Images/PreCalcPictures/Cotx.png, id=2627, 370.38374pt x 368.87813pt>
+<Images/PreCalcPictures/Cotx.png, id=2633, 370.38374pt x 368.87813pt>
 File: Images/PreCalcPictures/Cotx.png Graphic file (type png)
 <use Images/PreCalcPictures/Cotx.png>
 Package pdftex.def Info: Images/PreCalcPictures/Cotx.png  used on input line 50.
@@ -1943,13 +1943,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
  []
 
 [97]
-<Images/PreCalcPictures/InverseTrigGraphs.png, id=2649, 939.51pt x 678.535pt>
+<Images/PreCalcPictures/InverseTrigGraphs.png, id=2655, 939.51pt x 678.535pt>
 File: Images/PreCalcPictures/InverseTrigGraphs.png Graphic file (type png)
 <use Images/PreCalcPictures/InverseTrigGraphs.png>
 Package pdftex.def Info: Images/PreCalcPictures/InverseTrigGraphs.png  used on input line 175.
 (pdftex.def)             Requested size: 469.75385pt x 339.26666pt.
  [98]
-<Images/PreCalcPictures/TriangleInvTrig.png, id=2654, 313.9228pt x 190.46156pt>
+<Images/PreCalcPictures/TriangleInvTrig.png, id=2660, 313.9228pt x 190.46156pt>
 File: Images/PreCalcPictures/TriangleInvTrig.png Graphic file (type png)
 <use Images/PreCalcPictures/TriangleInvTrig.png>
 Package pdftex.def Info: Images/PreCalcPictures/TriangleInvTrig.png  used on input line 202.
@@ -1960,13 +1960,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
  []
 
 [101] [102]
-<Images/DifferentialCalculusPictures/limitTriangle.png, id=2672, 333.49594pt x 288.3272pt>
+<Images/DifferentialCalculusPictures/limitTriangle.png, id=2678, 333.49594pt x 288.3272pt>
 File: Images/DifferentialCalculusPictures/limitTriangle.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/limitTriangle.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/limitTriangle.png  used on input line 64.
 (pdftex.def)             Requested size: 200.09909pt x 172.99763pt.
  [103] [104 <./Images/DifferentialCalculusPictures/limitTriangle.png>]) (./Sections/Differential_Calculus/Differentiation.tex
-<Images/DifferentialCalculusPictures/Tangent.png, id=2683, 469.755pt x 304.13625pt>
+<Images/DifferentialCalculusPictures/Tangent.png, id=2689, 469.755pt x 304.13625pt>
 File: Images/DifferentialCalculusPictures/Tangent.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/Tangent.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/Tangent.png  used on input line 5.
@@ -2007,25 +2007,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--29
  []
 
 [120]
-<Images/DifferentialCalculusPictures/RollesTheorem.png, id=2760, 298.11375pt x 286.06876pt>
+<Images/DifferentialCalculusPictures/RollesTheorem.png, id=2766, 298.11375pt x 286.06876pt>
 File: Images/DifferentialCalculusPictures/RollesTheorem.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/RollesTheorem.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/RollesTheorem.png  used on input line 60.
 (pdftex.def)             Requested size: 178.86963pt x 171.64258pt.
  [121 <./Images/DifferentialCalculusPictures/RollesTheorem.png>]
-<Images/DifferentialCalculusPictures/MVTImage.png, id=2767, 383.93437pt x 355.3275pt>
+<Images/DifferentialCalculusPictures/MVTImage.png, id=2773, 383.93437pt x 355.3275pt>
 File: Images/DifferentialCalculusPictures/MVTImage.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/MVTImage.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/MVTImage.png  used on input line 90.
 (pdftex.def)             Requested size: 230.3624pt x 213.19814pt.
  [122 <./Images/DifferentialCalculusPictures/MVTImage.png>] [123] [124]
-<Images/DifferentialCalculusPictures/Concavity.png, id=2781, 543.53062pt x 240.14719pt>
+<Images/DifferentialCalculusPictures/Concavity.png, id=2787, 543.53062pt x 240.14719pt>
 File: Images/DifferentialCalculusPictures/Concavity.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/Concavity.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/Concavity.png  used on input line 185.
 (pdftex.def)             Requested size: 380.46883pt x 168.10187pt.
  [125] [126 <./Images/DifferentialCalculusPictures/Concavity.png>] [127]
-<Images/DifferentialCalculusPictures/SketchingEx1.png, id=2804, 469.755pt x 297.36093pt>
+<Images/DifferentialCalculusPictures/SketchingEx1.png, id=2810, 469.755pt x 297.36093pt>
 File: Images/DifferentialCalculusPictures/SketchingEx1.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/SketchingEx1.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/SketchingEx1.png  used on input line 267.
@@ -2041,13 +2041,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--1
  []
 
 [128 <./Images/DifferentialCalculusPictures/SketchingEx1.png>]
-<Images/DifferentialCalculusPictures/OptimizationEx.png, id=2815, 376.40625pt x 234.1247pt>
+<Images/DifferentialCalculusPictures/OptimizationEx.png, id=2821, 376.40625pt x 234.1247pt>
 File: Images/DifferentialCalculusPictures/OptimizationEx.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/OptimizationEx.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/OptimizationEx.png  used on input line 28.
 (pdftex.def)             Requested size: 301.1254pt x 187.3pt.
  [129 <./Images/DifferentialCalculusPictures/OptimizationEx.png>]
-<Images/DifferentialCalculusPictures/InscribedCylinder.png, id=2822, 240.9pt x 225.09094pt>
+<Images/DifferentialCalculusPictures/InscribedCylinder.png, id=2828, 240.9pt x 225.09094pt>
 File: Images/DifferentialCalculusPictures/InscribedCylinder.png Graphic file (type png)
 <use Images/DifferentialCalculusPictures/InscribedCylinder.png>
 Package pdftex.def Info: Images/DifferentialCalculusPictures/InscribedCylinder.png  used on input line 43.
@@ -2062,7 +2062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
-<Images/IntegralCalcPictures/RiemannSums.png, id=2832, 877.2775pt x 320.19624pt>
+<Images/IntegralCalcPictures/RiemannSums.png, id=2838, 877.2775pt x 320.19624pt>
 File: Images/IntegralCalcPictures/RiemannSums.png Graphic file (type png)
 <use Images/IntegralCalcPictures/RiemannSums.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/RiemannSums.png  used on input line 18.
@@ -2093,7 +2093,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--132
  []
 
 [136]
-<Images/IntegralCalcPictures/AreaOfBellCurve.png, id=2856, 469.755pt x 268.00125pt>
+<Images/IntegralCalcPictures/AreaOfBellCurve.png, id=2862, 469.755pt x 268.00125pt>
 File: Images/IntegralCalcPictures/AreaOfBellCurve.png Graphic file (type png)
 <use Images/IntegralCalcPictures/AreaOfBellCurve.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/AreaOfBellCurve.png  used on input line 155.
@@ -2103,17 +2103,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
-<Images/IntegralCalcPictures/TrigSubTan.png, id=2891, 343.2825pt x 197.98969pt>
+<Images/IntegralCalcPictures/TrigSubTan.png, id=2897, 343.2825pt x 197.98969pt>
 File: Images/IntegralCalcPictures/TrigSubTan.png Graphic file (type png)
 <use Images/IntegralCalcPictures/TrigSubTan.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubTan.png  used on input line 226.
 (pdftex.def)             Requested size: 240.2961pt x 138.59183pt.
-<Images/IntegralCalcPictures/TrigSubSin.png, id=2892, 324.46219pt x 202.50656pt>
+<Images/IntegralCalcPictures/TrigSubSin.png, id=2898, 324.46219pt x 202.50656pt>
 File: Images/IntegralCalcPictures/TrigSubSin.png Graphic file (type png)
 <use Images/IntegralCalcPictures/TrigSubSin.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubSin.png  used on input line 228.
 (pdftex.def)             Requested size: 227.12196pt x 141.7536pt.
-<Images/IntegralCalcPictures/TrigSubSec.png, id=2893, 391.4625pt x 201.00093pt>
+<Images/IntegralCalcPictures/TrigSubSec.png, id=2899, 391.4625pt x 201.00093pt>
 File: Images/IntegralCalcPictures/TrigSubSec.png Graphic file (type png)
 <use Images/IntegralCalcPictures/TrigSubSec.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/TrigSubSec.png  used on input line 230.
@@ -2138,25 +2138,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png, id=2931, 371.13657pt x 348.55219pt>
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png, id=2937, 371.13657pt x 348.55219pt>
 File: Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png Graphic file (type png)
 <use Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png  used on input line 7.
 (pdftex.def)             Requested size: 185.56783pt x 174.27565pt.
 [153]
-<Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png, id=2936, 377.15906pt x 433.62pt>
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png, id=2942, 377.15906pt x 433.62pt>
 File: Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png Graphic file (type png)
 <use Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png  used on input line 19.
 (pdftex.def)             Requested size: 188.57907pt x 216.80946pt.
  [154 <./Images/IntegralCalcPictures/AreaBetweenCurvesEx1.png> <./Images/IntegralCalcPictures/AreaBetweenCurvesEx2.png>]
-<Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png, id=2943, 417.05812pt x 405.01312pt>
+<Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png, id=2950, 417.05812pt x 405.01312pt>
 File: Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png Graphic file (type png)
 <use Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png  used on input line 35.
 (pdftex.def)             Requested size: 208.52855pt x 202.50606pt.
  [155 <./Images/IntegralCalcPictures/AreaBetweenCurvesEx3.png>] [156]
-<Images/IntegralCalcPictures/ArcLengthTriangle.png, id=2954, 280.04625pt x 264.99pt>
+<Images/IntegralCalcPictures/ArcLengthTriangle.png, id=2960, 280.04625pt x 264.99pt>
 File: Images/IntegralCalcPictures/ArcLengthTriangle.png Graphic file (type png)
 <use Images/IntegralCalcPictures/ArcLengthTriangle.png>
 Package pdftex.def Info: Images/IntegralCalcPictures/ArcLengthTriangle.png  used on input line 98.
@@ -2211,7 +2211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-<Images/FourierImages/Convolution.png, id=3027, 291.0875pt x 174.6525pt>
+<Images/FourierImages/Convolution.png, id=3033, 291.0875pt x 174.6525pt>
 File: Images/FourierImages/Convolution.png Graphic file (type png)
 <use Images/FourierImages/Convolution.png>
 Package pdftex.def Info: Images/FourierImages/Convolution.png  used on input line 45.
@@ -2242,7 +2242,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
  []
 
 [183]
-<Images/FourierImages/SeriesEx2.png, id=3072, 268.6035pt x 146.949pt>
+<Images/FourierImages/SeriesEx2.png, id=3078, 268.6035pt x 146.949pt>
 File: Images/FourierImages/SeriesEx2.png Graphic file (type png)
 <use Images/FourierImages/SeriesEx2.png>
 Package pdftex.def Info: Images/FourierImages/SeriesEx2.png  used on input line 73.
@@ -2253,7 +2253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
  []
 
 [184 <./Images/FourierImages/SeriesEx2.png>] [185]
-<Images/FourierImages/SeriesEx1.png, id=3082, 196.3335pt x 137.91525pt>
+<Images/FourierImages/SeriesEx1.png, id=3088, 196.3335pt x 137.91525pt>
 File: Images/FourierImages/SeriesEx1.png Graphic file (type png)
 <use Images/FourierImages/SeriesEx1.png>
 Package pdftex.def Info: Images/FourierImages/SeriesEx1.png  used on input line 135.
@@ -2263,23 +2263,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-<Images/FourierImages/FourierTransformDerivation.png, id=3093, 323.40825pt x 68.6565pt>
+<Images/FourierImages/FourierTransformDerivation.png, id=3099, 323.40825pt x 68.6565pt>
 File: Images/FourierImages/FourierTransformDerivation.png Graphic file (type png)
 <use Images/FourierImages/FourierTransformDerivation.png>
 Package pdftex.def Info: Images/FourierImages/FourierTransformDerivation.png  used on input line 182.
 (pdftex.def)             Requested size: 323.40744pt x 68.65631pt.
 [188 <./Images/FourierImages/FourierTransformDerivation.png>]
-<Images/FourierImages/DTSincEx1.png, id=3099, 230.66174pt x 165.61874pt>
+<Images/FourierImages/DTSincEx1.png, id=3105, 230.66174pt x 165.61874pt>
 File: Images/FourierImages/DTSincEx1.png Graphic file (type png)
 <use Images/FourierImages/DTSincEx1.png>
 Package pdftex.def Info: Images/FourierImages/DTSincEx1.png  used on input line 189.
 (pdftex.def)             Requested size: 230.66116pt x 165.61833pt.
-<Images/FourierImages/CTSincEx1.png, id=3100, 221.02576pt x 155.3805pt>
+<Images/FourierImages/CTSincEx1.png, id=3106, 221.02576pt x 155.3805pt>
 File: Images/FourierImages/CTSincEx1.png Graphic file (type png)
 <use Images/FourierImages/CTSincEx1.png>
 Package pdftex.def Info: Images/FourierImages/CTSincEx1.png  used on input line 193.
 (pdftex.def)             Requested size: 221.0252pt x 155.3801pt.
-<Images/FourierImages/convergingSinc.png, id=3101, 303.534pt x 216.20775pt>
+<Images/FourierImages/convergingSinc.png, id=3107, 303.534pt x 216.20775pt>
 File: Images/FourierImages/convergingSinc.png Graphic file (type png)
 <use Images/FourierImages/convergingSinc.png>
 Package pdftex.def Info: Images/FourierImages/convergingSinc.png  used on input line 200.
@@ -2344,7 +2344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--33
 
  []
 
-)) (./Sections/Linear_Algebra.tex (./Sections/Linear_Algebra/Vectors_and_Geometry.tex
+)) (./Sections/Probability.tex (./Sections/Probability/Foundations.tex)) (./Sections/Linear_Algebra.tex (./Sections/Linear_Algebra/Vectors_and_Geometry.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
@@ -2359,12 +2359,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
-<Images/LinearAlgebraPictures/VectorAddition.png, id=3177, 1875.005pt x 1010.77625pt>
+<Images/LinearAlgebraPictures/VectorAddition.png, id=3183, 1875.005pt x 1010.77625pt>
 File: Images/LinearAlgebraPictures/VectorAddition.png Graphic file (type png)
 <use Images/LinearAlgebraPictures/VectorAddition.png>
 Package pdftex.def Info: Images/LinearAlgebraPictures/VectorAddition.png  used on input line 25.
 (pdftex.def)             Requested size: 374.99435pt x 202.15166pt.
-<Images/LinearAlgebraPictures/VectorSubtraction.png, id=3178, 1204.5pt x 871.255pt>
+<Images/LinearAlgebraPictures/VectorSubtraction.png, id=3184, 1204.5pt x 871.255pt>
 File: Images/LinearAlgebraPictures/VectorSubtraction.png Graphic file (type png)
 <use Images/LinearAlgebraPictures/VectorSubtraction.png>
 Package pdftex.def Info: Images/LinearAlgebraPictures/VectorSubtraction.png  used on input line 29.
@@ -2374,7 +2374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
-<Images/LinearAlgebraPictures/DotProductProof.png, id=3184, 287.0725pt x 271.0125pt>
+<Images/LinearAlgebraPictures/DotProductProof.png, id=3190, 287.0725pt x 271.0125pt>
 File: Images/LinearAlgebraPictures/DotProductProof.png Graphic file (type png)
 <use Images/LinearAlgebraPictures/DotProductProof.png>
 Package pdftex.def Info: Images/LinearAlgebraPictures/DotProductProof.png  used on input line 43.
@@ -2405,7 +2405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--224
  []
 
 ) (./Sections/Linear_Algebra/Linear_Systems.tex [213] [214] [215]
-<Images/LinearAlgebraPictures/ResisterNetworksEx.png, id=3241, 321.2pt x 240.9pt>
+<Images/LinearAlgebraPictures/ResisterNetworksEx.png, id=3247, 321.2pt x 240.9pt>
 File: Images/LinearAlgebraPictures/ResisterNetworksEx.png Graphic file (type png)
 <use Images/LinearAlgebraPictures/ResisterNetworksEx.png>
 Package pdftex.def Info: Images/LinearAlgebraPictures/ResisterNetworksEx.png  used on input line 99.
@@ -2445,45 +2445,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<Images/Math217Pictures/planeGraph.png, id=3425, 523.35526pt x 393.26926pt>
+<Images/Math217Pictures/planeGraph.png, id=3431, 523.35526pt x 393.26926pt>
 File: Images/Math217Pictures/planeGraph.png Graphic file (type png)
 <use Images/Math217Pictures/planeGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/planeGraph.png  used on input line 10.
 (pdftex.def)             Requested size: 261.67697pt x 196.63414pt.
 [258]
-<Images/Math217Pictures/sphereGraph.png, id=3431, 511.31026pt x 337.26pt>
+<Images/Math217Pictures/sphereGraph.png, id=3437, 511.31026pt x 337.26pt>
 File: Images/Math217Pictures/sphereGraph.png Graphic file (type png)
 <use Images/Math217Pictures/sphereGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/sphereGraph.png  used on input line 13.
 (pdftex.def)             Requested size: 255.6545pt x 168.62958pt.
-<Images/Math217Pictures/cylinderGraph.png, id=3432, 686.565pt x 478.78876pt>
+<Images/Math217Pictures/cylinderGraph.png, id=3438, 686.565pt x 478.78876pt>
 File: Images/Math217Pictures/cylinderGraph.png Graphic file (type png)
 <use Images/Math217Pictures/cylinderGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/cylinderGraph.png  used on input line 16.
 (pdftex.def)             Requested size: 274.62112pt x 191.5121pt.
  [259 <./Images/Math217Pictures/planeGraph.png> <./Images/Math217Pictures/sphereGraph.png>]
-<Images/Math217Pictures/coneGraph.png, id=3442, 624.3325pt x 653.44125pt>
+<Images/Math217Pictures/coneGraph.png, id=3448, 624.3325pt x 653.44125pt>
 File: Images/Math217Pictures/coneGraph.png Graphic file (type png)
 <use Images/Math217Pictures/coneGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/coneGraph.png  used on input line 19.
 (pdftex.def)             Requested size: 249.72858pt x 261.37187pt.
-<Images/Math217Pictures/parabaloidGraph.png, id=3443, 346.896pt x 323.40825pt>
+<Images/Math217Pictures/parabaloidGraph.png, id=3449, 346.896pt x 323.40825pt>
 File: Images/Math217Pictures/parabaloidGraph.png Graphic file (type png)
 <use Images/Math217Pictures/parabaloidGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/parabaloidGraph.png  used on input line 22.
 (pdftex.def)             Requested size: 208.13919pt x 194.04643pt.
  [260 <./Images/Math217Pictures/cylinderGraph.png> <./Images/Math217Pictures/coneGraph.png>]
-<Images/Math217Pictures/saddleGraph.png, id=3452, 433.01775pt x 301.125pt>
+<Images/Math217Pictures/saddleGraph.png, id=3458, 433.01775pt x 301.125pt>
 File: Images/Math217Pictures/saddleGraph.png Graphic file (type png)
 <use Images/Math217Pictures/saddleGraph.png>
 Package pdftex.def Info: Images/Math217Pictures/saddleGraph.png  used on input line 25.
 (pdftex.def)             Requested size: 216.50833pt x 150.56212pt.
-<Images/Math217Pictures/contourPlot.png, id=3453, 388.45125pt x 189.1065pt>
+<Images/Math217Pictures/contourPlot.png, id=3459, 388.45125pt x 189.1065pt>
 File: Images/Math217Pictures/contourPlot.png Graphic file (type png)
 <use Images/Math217Pictures/contourPlot.png>
 Package pdftex.def Info: Images/Math217Pictures/contourPlot.png  used on input line 35.
 (pdftex.def)             Requested size: 310.76141pt x 151.2854pt.
-<Images/Math217Pictures/levelCurves.png, id=3454, 366.168pt x 232.4685pt>
+<Images/Math217Pictures/levelCurves.png, id=3460, 366.168pt x 232.4685pt>
 File: Images/Math217Pictures/levelCurves.png Graphic file (type png)
 <use Images/Math217Pictures/levelCurves.png>
 Package pdftex.def Info: Images/Math217Pictures/levelCurves.png  used on input line 38.
@@ -2514,12 +2514,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--151
  []
 
 [267]) (./Sections/Multivariable_Calculus/Multiple_Integrals.tex [268] [269]
-<Images/PreCalcPictures/PolarGraph1.png, id=3497, 340.27126pt x 331.2375pt>
+<Images/PreCalcPictures/PolarGraph1.png, id=3503, 340.27126pt x 331.2375pt>
 File: Images/PreCalcPictures/PolarGraph1.png Graphic file (type png)
 <use Images/PreCalcPictures/PolarGraph1.png>
 Package pdftex.def Info: Images/PreCalcPictures/PolarGraph1.png  used on input line 64.
 (pdftex.def)             Requested size: 238.18825pt x 231.86465pt.
-<Images/PreCalcPictures/PolarGraph2.png, id=3498, 352.31625pt x 381.67593pt>
+<Images/PreCalcPictures/PolarGraph2.png, id=3504, 352.31625pt x 381.67593pt>
 File: Images/PreCalcPictures/PolarGraph2.png Graphic file (type png)
 <use Images/PreCalcPictures/PolarGraph2.png>
 Package pdftex.def Info: Images/PreCalcPictures/PolarGraph2.png  used on input line 66.
@@ -2534,13 +2534,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-<Images/Math217Pictures/cylindricalCoordinates.png, id=3510, 662.475pt x 825.0825pt>
+<Images/Math217Pictures/cylindricalCoordinates.png, id=3516, 662.475pt x 825.0825pt>
 File: Images/Math217Pictures/cylindricalCoordinates.png Graphic file (type png)
 <use Images/Math217Pictures/cylindricalCoordinates.png>
 Package pdftex.def Info: Images/Math217Pictures/cylindricalCoordinates.png  used on input line 117.
 (pdftex.def)             Requested size: 198.74403pt x 247.52666pt.
 [272]
-<Images/Math217Pictures/sphericalCoordinates.png, id=3515, 1104.125pt x 962.59625pt>
+<Images/Math217Pictures/sphericalCoordinates.png, id=3521, 1104.125pt x 962.59625pt>
 File: Images/Math217Pictures/sphericalCoordinates.png Graphic file (type png)
 <use Images/Math217Pictures/sphericalCoordinates.png>
 Package pdftex.def Info: Images/Math217Pictures/sphericalCoordinates.png  used on input line 132.
@@ -2551,12 +2551,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--18
  []
 
 [275] [276] [277] [278]) (./Sections/Vector_Calculus/Integrals_in_the_Plane.tex
-<Images/Math217Pictures/vectorFieldEx1.png, id=3543, 417.9615pt x 418.56375pt>
+<Images/Math217Pictures/vectorFieldEx1.png, id=3549, 417.9615pt x 418.56375pt>
 File: Images/Math217Pictures/vectorFieldEx1.png Graphic file (type png)
 <use Images/Math217Pictures/vectorFieldEx1.png>
 Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx1.png  used on input line 5.
 (pdftex.def)             Requested size: 250.77882pt x 251.14018pt.
-<Images/Math217Pictures/vectorFieldEx2.png, id=3544, 377.0085pt x 376.40625pt>
+<Images/Math217Pictures/vectorFieldEx2.png, id=3550, 377.0085pt x 376.40625pt>
 File: Images/Math217Pictures/vectorFieldEx2.png Graphic file (type png)
 <use Images/Math217Pictures/vectorFieldEx2.png>
 Package pdftex.def Info: Images/Math217Pictures/vectorFieldEx2.png  used on input line 7.
@@ -2577,19 +2577,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
  []
 
 [281] [282] [283]) (./Sections/Vector_Calculus/Integrals_in_Space.tex [284] [285]
-<Images/Math217Pictures/divergenceThmEx.png, id=3577, 410.7345pt x 330.63525pt>
+<Images/Math217Pictures/divergenceThmEx.png, id=3583, 410.7345pt x 330.63525pt>
 File: Images/Math217Pictures/divergenceThmEx.png Graphic file (type png)
 <use Images/Math217Pictures/divergenceThmEx.png>
 Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx.png  used on input line 66.
 (pdftex.def)             Requested size: 205.36674pt x 165.31721pt.
  [286]
-<Images/Math217Pictures/divergenceThmEx2.png, id=3582, 330.63525pt x 284.86424pt>
+<Images/Math217Pictures/divergenceThmEx2.png, id=3588, 330.63525pt x 284.86424pt>
 File: Images/Math217Pictures/divergenceThmEx2.png Graphic file (type png)
 <use Images/Math217Pictures/divergenceThmEx2.png>
 Package pdftex.def Info: Images/Math217Pictures/divergenceThmEx2.png  used on input line 82.
 (pdftex.def)             Requested size: 165.31721pt x 142.43176pt.
  [287 <./Images/Math217Pictures/divergenceThmEx.png>]
-<Images/Math217Pictures/stokesThmEx.png, id=3588, 359.54324pt x 441.44925pt>
+<Images/Math217Pictures/stokesThmEx.png, id=3594, 359.54324pt x 441.44925pt>
 File: Images/Math217Pictures/stokesThmEx.png Graphic file (type png)
 <use Images/Math217Pictures/stokesThmEx.png>
 Package pdftex.def Info: Images/Math217Pictures/stokesThmEx.png  used on input line 96.
@@ -2620,12 +2620,12 @@ Overfull \hbox (22.2627pt too wide) detected at line 133
  []
 
 [294]
-<Images/ODEPictures/PhaseLineStable.png, id=3620, 98.3675pt x 136.51pt>
+<Images/ODEPictures/PhaseLineStable.png, id=3626, 98.3675pt x 136.51pt>
 File: Images/ODEPictures/PhaseLineStable.png Graphic file (type png)
 <use Images/ODEPictures/PhaseLineStable.png>
 Package pdftex.def Info: Images/ODEPictures/PhaseLineStable.png  used on input line 145.
 (pdftex.def)             Requested size: 98.36723pt x 136.50966pt.
-<Images/ODEPictures/PhaseLineUnstable.png, id=3621, 103.38625pt x 136.51pt>
+<Images/ODEPictures/PhaseLineUnstable.png, id=3627, 103.38625pt x 136.51pt>
 File: Images/ODEPictures/PhaseLineUnstable.png Graphic file (type png)
 <use Images/ODEPictures/PhaseLineUnstable.png>
 Package pdftex.def Info: Images/ODEPictures/PhaseLineUnstable.png  used on input line 145.
@@ -2655,24 +2655,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--241
 
  []
 
-<Images/ODEPictures/resonance.png, id=3662, 339.669pt x 245.11575pt>
+<Images/ODEPictures/resonance.png, id=3668, 339.669pt x 245.11575pt>
 File: Images/ODEPictures/resonance.png Graphic file (type png)
 <use Images/ODEPictures/resonance.png>
 Package pdftex.def Info: Images/ODEPictures/resonance.png  used on input line 244.
 (pdftex.def)             Requested size: 271.73557pt x 196.09285pt.
-<Images/ODEPictures/Beats.png, id=3663, 331.83975pt x 243.91125pt>
+<Images/ODEPictures/Beats.png, id=3669, 331.83975pt x 243.91125pt>
 File: Images/ODEPictures/Beats.png Graphic file (type png)
 <use Images/ODEPictures/Beats.png>
 Package pdftex.def Info: Images/ODEPictures/Beats.png  used on input line 248.
 (pdftex.def)             Requested size: 265.47215pt x 195.12926pt.
 [304 <./Images/ODEPictures/resonance.png>]
-<Images/ODEPictures/steadyStateResponse.png, id=3669, 333.6465pt x 242.70676pt>
+<Images/ODEPictures/steadyStateResponse.png, id=3676, 333.6465pt x 242.70676pt>
 File: Images/ODEPictures/steadyStateResponse.png Graphic file (type png)
 <use Images/ODEPictures/steadyStateResponse.png>
 Package pdftex.def Info: Images/ODEPictures/steadyStateResponse.png  used on input line 252.
 (pdftex.def)             Requested size: 266.91756pt x 194.16565pt.
  [305 <./Images/ODEPictures/Beats.png> <./Images/ODEPictures/steadyStateResponse.png>]
-<Images/ODEPictures/steadyStateAmplitude.png, id=3677, 337.26pt x 242.70676pt>
+<Images/ODEPictures/steadyStateAmplitude.png, id=3683, 337.26pt x 242.70676pt>
 File: Images/ODEPictures/steadyStateAmplitude.png Graphic file (type png)
 <use Images/ODEPictures/steadyStateAmplitude.png>
 Package pdftex.def Info: Images/ODEPictures/steadyStateAmplitude.png  used on input line 268.
@@ -2713,33 +2713,33 @@ Overfull \hbox (19.3202pt too wide) in paragraph at lines 46--47
  []
 
 [322] [323] [324]
-<Images/LinearAlgebraPictures/LCRcircuitEx.jpg, id=3767, 382.42876pt x 181.67876pt>
+<Images/LinearAlgebraPictures/LCRcircuitEx.jpg, id=3773, 382.42876pt x 181.67876pt>
 File: Images/LinearAlgebraPictures/LCRcircuitEx.jpg Graphic file (type jpg)
 <use Images/LinearAlgebraPictures/LCRcircuitEx.jpg>
 Package pdftex.def Info: Images/LinearAlgebraPictures/LCRcircuitEx.jpg  used on input line 121.
 (pdftex.def)             Requested size: 305.9434pt x 145.34319pt.
  [325 <./Images/LinearAlgebraPictures/LCRcircuitEx.jpg>] [326]
-<Images/ODEPictures/phasePortrait1.png, id=3782, 343.2825pt x 254.75175pt>
+<Images/ODEPictures/phasePortrait1.png, id=3788, 343.2825pt x 254.75175pt>
 File: Images/ODEPictures/phasePortrait1.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait1.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait1.png  used on input line 158.
 (pdftex.def)             Requested size: 274.62636pt x 203.80167pt.
-<Images/ODEPictures/phasePortrait2.png, id=3783, 337.26pt x 254.1495pt>
+<Images/ODEPictures/phasePortrait2.png, id=3789, 337.26pt x 254.1495pt>
 File: Images/ODEPictures/phasePortrait2.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait2.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait2.png  used on input line 160.
 (pdftex.def)             Requested size: 269.80836pt x 203.31987pt.
-<Images/ODEPictures/phasePortrait3.png, id=3784, 337.26pt x 254.75175pt>
+<Images/ODEPictures/phasePortrait3.png, id=3790, 337.26pt x 254.75175pt>
 File: Images/ODEPictures/phasePortrait3.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait3.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait3.png  used on input line 163.
 (pdftex.def)             Requested size: 269.80836pt x 203.80167pt.
-<Images/ODEPictures/phasePortrait4.png, id=3785, 334.24875pt x 250.536pt>
+<Images/ODEPictures/phasePortrait4.png, id=3791, 334.24875pt x 250.536pt>
 File: Images/ODEPictures/phasePortrait4.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait4.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait4.png  used on input line 166.
 (pdftex.def)             Requested size: 267.39935pt x 200.42905pt.
-<Images/ODEPictures/phasePortrait5.png, id=3786, 337.26pt x 252.945pt>
+<Images/ODEPictures/phasePortrait5.png, id=3792, 337.26pt x 252.945pt>
 File: Images/ODEPictures/phasePortrait5.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait5.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait5.png  used on input line 168.
@@ -2765,17 +2765,17 @@ Overfull \hbox (6.39296pt too wide) detected at line 243
  []
 
 [331] [332]
-<Images/ODEPictures/phasePortrait6.png, id=3818, 293.29575pt x 218.61674pt>
+<Images/ODEPictures/phasePortrait6.png, id=3824, 293.29575pt x 218.61674pt>
 File: Images/ODEPictures/phasePortrait6.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait6.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait6.png  used on input line 276.
 (pdftex.def)             Requested size: 234.6369pt x 174.89362pt.
-<Images/ODEPictures/phasePortrait7.png, id=3819, 290.88675pt x 218.0145pt>
+<Images/ODEPictures/phasePortrait7.png, id=3825, 290.88675pt x 218.0145pt>
 File: Images/ODEPictures/phasePortrait7.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait7.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait7.png  used on input line 280.
 (pdftex.def)             Requested size: 232.7097pt x 174.41182pt.
-<Images/ODEPictures/phasePortrait8.png, id=3820, 331.2375pt x 253.54726pt>
+<Images/ODEPictures/phasePortrait8.png, id=3826, 331.2375pt x 253.54726pt>
 File: Images/ODEPictures/phasePortrait8.png Graphic file (type png)
 <use Images/ODEPictures/phasePortrait8.png>
 Package pdftex.def Info: Images/ODEPictures/phasePortrait8.png  used on input line 282.
@@ -2856,7 +2856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
  []
 
 [362]
-<Images/PDEPictures/laplace.png, id=3983, 953.81343pt x 530.73282pt>
+<Images/PDEPictures/laplace.png, id=3989, 953.81343pt x 530.73282pt>
 File: Images/PDEPictures/laplace.png Graphic file (type png)
 <use Images/PDEPictures/laplace.png>
 Package pdftex.def Info: Images/PDEPictures/laplace.png  used on input line 7.
@@ -2897,7 +2897,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--169
  []
 
 [394]
-<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=4133, 776.9025pt x 274.02374pt>
+<Images/ComplexAnalysisPictures/ExponentialMapping.png, id=4139, 776.9025pt x 274.02374pt>
 File: Images/ComplexAnalysisPictures/ExponentialMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialMapping.png  used on input line 191.
@@ -2913,36 +2913,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--388
  []
 
 [400] [401]
-<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=4164, 588.39825pt x 259.56975pt>
+<Images/ComplexAnalysisPictures/ArgumentLaplacian.png, id=4170, 588.39825pt x 259.56975pt>
 File: Images/ComplexAnalysisPictures/ArgumentLaplacian.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ArgumentLaplacian.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ArgumentLaplacian.png  used on input line 441.
 (pdftex.def)             Requested size: 375.80544pt x 165.7874pt.
  [402 <./Images/ComplexAnalysisPictures/ArgumentLaplacian.png>]
-<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=4170, 853.9905pt x 278.84175pt>
+<Images/ComplexAnalysisPictures/JoukowskiMap.png, id=4176, 853.9905pt x 278.84175pt>
 File: Images/ComplexAnalysisPictures/JoukowskiMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiMap.png  used on input line 461.
 (pdftex.def)             Requested size: 446.26582pt x 145.71333pt.
  [403 <./Images/ComplexAnalysisPictures/JoukowskiMap.png>]
-<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=4177, 966.61125pt x 154.176pt>
+<Images/ComplexAnalysisPictures/JoukowskiShift.png, id=4183, 966.61125pt x 154.176pt>
 File: Images/ComplexAnalysisPictures/JoukowskiShift.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/JoukowskiShift.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/JoukowskiShift.png  used on input line 474.
 (pdftex.def)             Requested size: 446.26582pt x 71.18059pt.
  [404 <./Images/ComplexAnalysisPictures/JoukowskiShift.png>] [405]
-<Images/ComplexAnalysisPictures/SinMapping.png, id=4187, 981.6675pt x 264.99pt>
+<Images/ComplexAnalysisPictures/SinMapping.png, id=4194, 981.6675pt x 264.99pt>
 File: Images/ComplexAnalysisPictures/SinMapping.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SinMapping.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SinMapping.png  used on input line 542.
 (pdftex.def)             Requested size: 446.26582pt x 120.46146pt.
-<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=4188, 579.96675pt x 373.99725pt>
+<Images/ComplexAnalysisPictures/TranslateSinMap.png, id=4195, 579.96675pt x 373.99725pt>
 File: Images/ComplexAnalysisPictures/TranslateSinMap.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/TranslateSinMap.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/TranslateSinMap.png  used on input line 556.
 (pdftex.def)             Requested size: 399.29463pt x 257.49911pt.
  [406 <./Images/ComplexAnalysisPictures/SinMapping.png>] [407 <./Images/ComplexAnalysisPictures/TranslateSinMap.png>] [408]
-<Images/ComplexAnalysisPictures/BranchCut.png, id=4204, 364.36125pt x 239.09325pt>
+<Images/ComplexAnalysisPictures/BranchCut.png, id=4210, 364.36125pt x 239.09325pt>
 File: Images/ComplexAnalysisPictures/BranchCut.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/BranchCut.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/BranchCut.png  used on input line 637.
@@ -2953,41 +2953,41 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 636--639
  []
 
 [409 <./Images/ComplexAnalysisPictures/BranchCut.png>] [410] [411] [412]
-<Images/ComplexAnalysisPictures/2a.png, id=4223, 514.3215pt x 351.714pt>
+<Images/ComplexAnalysisPictures/2a.png, id=4229, 514.3215pt x 351.714pt>
 File: Images/ComplexAnalysisPictures/2a.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/2a.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/2a.png  used on input line 789.
 (pdftex.def)             Requested size: 360.0226pt x 246.19812pt.
  [413]
-<Images/ComplexAnalysisPictures/2b.png, id=4228, 284.262pt x 280.04625pt>
+<Images/ComplexAnalysisPictures/2b.png, id=4234, 284.262pt x 280.04625pt>
 File: Images/ComplexAnalysisPictures/2b.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/2b.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/2b.png  used on input line 805.
 (pdftex.def)             Requested size: 198.98203pt x 196.03102pt.
  [414 <./Images/ComplexAnalysisPictures/2a.png> <./Images/ComplexAnalysisPictures/2b.png>]
-<Images/ComplexAnalysisPictures/ExponentialInverse.png, id=4235, 988.8945pt x 290.88675pt>
+<Images/ComplexAnalysisPictures/ExponentialInverse.png, id=4241, 988.8945pt x 290.88675pt>
 File: Images/ComplexAnalysisPictures/ExponentialInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialInverse.png  used on input line 825.
 (pdftex.def)             Requested size: 422.77664pt x 124.3598pt.
-<Images/ComplexAnalysisPictures/ExponentialInverse2.png, id=4236, 967.2135pt x 256.5585pt>
+<Images/ComplexAnalysisPictures/ExponentialInverse2.png, id=4242, 967.2135pt x 256.5585pt>
 File: Images/ComplexAnalysisPictures/ExponentialInverse2.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/ExponentialInverse2.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/ExponentialInverse2.png  used on input line 831.
 (pdftex.def)             Requested size: 422.77664pt x 112.1462pt.
-<Images/ComplexAnalysisPictures/QuadraticInverse.png, id=4237, 625.1355pt x 197.538pt>
+<Images/ComplexAnalysisPictures/QuadraticInverse.png, id=4243, 625.1355pt x 197.538pt>
 File: Images/ComplexAnalysisPictures/QuadraticInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/QuadraticInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/QuadraticInverse.png  used on input line 833.
 (pdftex.def)             Requested size: 422.77664pt x 133.59462pt.
  [415 <./Images/ComplexAnalysisPictures/ExponentialInverse.png> <./Images/ComplexAnalysisPictures/ExponentialInverse2.png>]
-<Images/ComplexAnalysisPictures/QuadraticInverse2.png, id=4245, 659.46375pt x 212.59425pt>
+<Images/ComplexAnalysisPictures/QuadraticInverse2.png, id=4251, 659.46375pt x 212.59425pt>
 File: Images/ComplexAnalysisPictures/QuadraticInverse2.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/QuadraticInverse2.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/QuadraticInverse2.png  used on input line 838.
 (pdftex.def)             Requested size: 422.77664pt x 136.29665pt.
  [416 <./Images/ComplexAnalysisPictures/QuadraticInverse.png> <./Images/ComplexAnalysisPictures/QuadraticInverse2.png>] [417] [418]
-<Images/ComplexAnalysisPictures/SineInverse.png, id=4260, 849.77475pt x 281.853pt>
+<Images/ComplexAnalysisPictures/SineInverse.png, id=4266, 849.77475pt x 281.853pt>
 File: Images/ComplexAnalysisPictures/SineInverse.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SineInverse.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SineInverse.png  used on input line 938.
@@ -3014,30 +3014,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--272
  []
 
 [429]
-<Images/ComplexAnalysisPictures/LoopIntegralContinuity.png, id=4308, 261.97874pt x 181.8795pt>
+<Images/ComplexAnalysisPictures/LoopIntegralContinuity.png, id=4314, 261.97874pt x 181.8795pt>
 File: Images/ComplexAnalysisPictures/LoopIntegralContinuity.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/LoopIntegralContinuity.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/LoopIntegralContinuity.png  used on input line 303.
 (pdftex.def)             Requested size: 140.92793pt x 97.84157pt.
  [430 <./Images/ComplexAnalysisPictures/LoopIntegralContinuity.png>]
-<Images/ComplexAnalysisPictures/DeformationOfPath.png, id=4314, 337.86224pt x 311.9655pt>
+<Images/ComplexAnalysisPictures/DeformationOfPath.png, id=4320, 337.86224pt x 311.9655pt>
 File: Images/ComplexAnalysisPictures/DeformationOfPath.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/DeformationOfPath.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPath.png  used on input line 319.
 (pdftex.def)             Requested size: 187.89914pt x 173.49515pt.
-<Images/ComplexAnalysisPictures/SimplyConnectedDomain.png, id=4315, 296.307pt x 339.06676pt>
+<Images/ComplexAnalysisPictures/SimplyConnectedDomain.png, id=4321, 296.307pt x 339.06676pt>
 File: Images/ComplexAnalysisPictures/SimplyConnectedDomain.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/SimplyConnectedDomain.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/SimplyConnectedDomain.png  used on input line 321.
 (pdftex.def)             Requested size: 140.92793pt x 161.26532pt.
  [431 <./Images/ComplexAnalysisPictures/DeformationOfPath.png> <./Images/ComplexAnalysisPictures/SimplyConnectedDomain.png>]
-<Images/ComplexAnalysisPictures/MultipleSingularities.png, id=4322, 472.76625pt x 425.79076pt>
+<Images/ComplexAnalysisPictures/MultipleSingularities.png, id=4328, 472.76625pt x 425.79076pt>
 File: Images/ComplexAnalysisPictures/MultipleSingularities.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/MultipleSingularities.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/MultipleSingularities.png  used on input line 339.
 (pdftex.def)             Requested size: 281.85587pt x 253.85216pt.
  [432 <./Images/ComplexAnalysisPictures/MultipleSingularities.png>] [433] [434] [435]
-<Images/ComplexAnalysisPictures/DeformationOfPathEx.png, id=4341, 487.8225pt x 449.88075pt>
+<Images/ComplexAnalysisPictures/DeformationOfPathEx.png, id=4348, 487.8225pt x 449.88075pt>
 File: Images/ComplexAnalysisPictures/DeformationOfPathEx.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/DeformationOfPathEx.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/DeformationOfPathEx.png  used on input line 466.
@@ -3063,19 +3063,19 @@ Overfull \hbox (35.97879pt too wide) detected at line 732
  []
 
 [446] [447] [448] [449]
-<Images/ComplexAnalysisPictures/Q5.png, id=4402, 528.17325pt x 372.1905pt>
+<Images/ComplexAnalysisPictures/Q5.png, id=4408, 528.17325pt x 372.1905pt>
 File: Images/ComplexAnalysisPictures/Q5.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q5.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/Q5.png  used on input line 893.
 (pdftex.def)             Requested size: 264.08597pt x 186.09479pt.
  [450 <./Images/ComplexAnalysisPictures/Q5.png>]
-<Images/ComplexAnalysisPictures/Q6.png, id=4408, 425.1885pt x 310.15875pt>
+<Images/ComplexAnalysisPictures/Q6.png, id=4414, 425.1885pt x 310.15875pt>
 File: Images/ComplexAnalysisPictures/Q6.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q6.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/Q6.png  used on input line 916.
 (pdftex.def)             Requested size: 212.59372pt x 155.079pt.
  [451 <./Images/ComplexAnalysisPictures/Q6.png>]
-<Images/ComplexAnalysisPictures/Q7.png, id=4415, 406.51875pt x 290.88675pt>
+<Images/ComplexAnalysisPictures/Q7.png, id=4421, 406.51875pt x 290.88675pt>
 File: Images/ComplexAnalysisPictures/Q7.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Q7.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/Q7.png  used on input line 939.
@@ -3090,7 +3090,7 @@ Overfull \hbox (22.7113pt too wide) detected at line 41
 []
  []
 
-<Images/ComplexAnalysisPictures/HalfMoon.png, id=4454, 351.11176pt x 275.22826pt>
+<Images/ComplexAnalysisPictures/HalfMoon.png, id=4460, 351.11176pt x 275.22826pt>
 File: Images/ComplexAnalysisPictures/HalfMoon.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/HalfMoon.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/HalfMoon.png  used on input line 46.
@@ -3101,7 +3101,7 @@ Overfull \hbox (1.80713pt too wide) detected at line 60
  []
 
 [461] [462 <./Images/ComplexAnalysisPictures/HalfMoon.png>]
-<Images/ComplexAnalysisPictures/Pizza.png, id=4464, 508.299pt x 357.7365pt>
+<Images/ComplexAnalysisPictures/Pizza.png, id=4470, 508.299pt x 357.7365pt>
 File: Images/ComplexAnalysisPictures/Pizza.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Pizza.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/Pizza.png  used on input line 77.
@@ -3117,7 +3117,7 @@ Overfull \hbox (51.98589pt too wide) detected at line 133
  []
 
 [465]
-<Images/ComplexAnalysisPictures/Box.png, id=4479, 380.01974pt x 242.1045pt>
+<Images/ComplexAnalysisPictures/Box.png, id=4485, 380.01974pt x 242.1045pt>
 File: Images/ComplexAnalysisPictures/Box.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/Box.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/Box.png  used on input line 140.
@@ -3128,7 +3128,7 @@ Overfull \hbox (46.85873pt too wide) detected at line 164
  []
 
 [466 <./Images/ComplexAnalysisPictures/Box.png>]
-<Images/ComplexAnalysisPictures/KeyHole.png, id=4485, 475.17525pt x 370.986pt>
+<Images/ComplexAnalysisPictures/KeyHole.png, id=4491, 475.17525pt x 370.986pt>
 File: Images/ComplexAnalysisPictures/KeyHole.png Graphic file (type png)
 <use Images/ComplexAnalysisPictures/KeyHole.png>
 Package pdftex.def Info: Images/ComplexAnalysisPictures/KeyHole.png  used on input line 169.
@@ -3165,21 +3165,21 @@ Package pdftex.def Info: Images/ComplexAnalysisPictures/HalfMoon.png  used on in
 (pdftex.def)             Requested size: 210.66867pt x 165.13823pt.
  [476] [477])) (./Sections/Bibliography.tex [478]) [479] (./MathNotes.aux)
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 5AE5029772B48D45994CBE4A0ED297FA;60310.
+(rerunfilecheck)             Checksum: 06AB1F1997DED4F7446E8B1163355A25;60439.
  ) 
 Here is how much of TeX's memory you used:
- 27253 strings out of 476093
- 550544 string characters out of 5795582
+ 27266 strings out of 476093
+ 550955 string characters out of 5795582
  1892787 words of memory out of 5000000
- 45782 multiletter control sequences out of 15000+600000
+ 45787 multiletter control sequences out of 15000+600000
  524008 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,23n,104p,820b,992s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes.pdf (479 pages, 7446096 bytes).
+Output written on MathNotes.pdf (479 pages, 7445797 bytes).
 PDF statistics:
- 4896 PDF objects out of 5155 (max. 8388607)
- 4089 compressed objects within 41 object streams
- 982 named destinations out of 1000 (max. 500000)
- 3434 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4902 PDF objects out of 5155 (max. 8388607)
+ 4095 compressed objects within 41 object streams
+ 983 named destinations out of 1000 (max. 500000)
+ 3442 words of extra memory for PDF output out of 10000 (max. 10000000)
 
