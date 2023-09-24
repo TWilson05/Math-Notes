@@ -1,0 +1,27 @@
+\subsection{Foundations}
+
+\subsubsection{Notation}
+We can define the following notation for probability:
+\begin{itemize}
+    \item We denoted the \textit{state space} or \textit{universal set} as $\Omega$ or $S$.
+    \item An \textit{event} is a ``nice" subset of the state space, i.e. an event $A$ fulfils $A\subseteq\Omega$. The set of all events is often denoted by $\mathcal{A},\ \mathcal{E},$ or $\mathcal{F}$.
+    \item A \textit{probability measure} $\prob$ is a map taking events as argument with
+    \begin{itemize}
+        \item $\prob:\ \mathcal{A}\to[0,1]$
+        \item $\prob(\Omega)=1$
+        \item For a countable index set $I$ with $(A_i)_{i\in I}$ being disjoint events, we have $\prob\brround{\bigsqcup\limits_{i\in I}A_i}=\sum\limits_{i\in I}\prob(A_i)$
+    \end{itemize}
+\end{itemize}
+Some more notation:\\
+We use the square cups $\sqcup$ to denote the disjoint union of sets. This means that $A_1\sqcup A_2$ implies that the two sets have no overlap and they are disjoint: $A_1\cap A_2=\emptyset$.\\
+Discrete Uniform Distribution:\\
+We require that $\Omega$ is non empty and finite. If every event $\omega$ is equally likely, we have a discrete uniform distribution. This means that
+\[\prob(\{\omega\})=\frac{1}{|\Omega|}\ \forall\omega\in\Omega\]
+Then the probability of an event $A$ is
+\[\prob(A)=\frac{|A|}{|\Omega|}\]
+We call this setting a discrete uniform distribution or uniformly random.\\
+Ex: For a die, we have $\Omega=\{1,2,3,4,5,6\}$ and $\prob(\{\omega\})=\frac{1}{6}$.\\
+Ex2: For two die we have $\Omega=\brcurly{(1,1),(1,2),\ldots,(6,5),(6,6)}$ and the probability of rolling a 1, 2, or 3 is
+\begin{align*}
+    &\prob\brround{\brcurly{1,2,3}}=\prob\brround{\{1\}\sqcup\{2\}\sqcup\{3\}}=\prob(\{1\})+\prob(\{2\})+\prob(\{3\})=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\frac{1}{2}
+\end{align*}
