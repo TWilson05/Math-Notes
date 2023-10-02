@@ -12,7 +12,25 @@ We can define the following notation for probability:
         \item For a countable index set $I$ with $(A_i)_{i\in I}$ being disjoint events, we have $\prob\brround{\bigsqcup\limits_{i\in I}A_i}=\sum\limits_{i\in I}\prob(A_i)$
     \end{itemize}
 \end{itemize}
-Some more notation:\\
+Set notations:
+\begin{itemize}
+    \item Intersection: $A\cap B=\brcurly{\omega\in\Omega:\ \omega\in A\text{ and }\omega\in B}$\\
+    \begin{venndiagram2sets}[labelA={}, labelB={}, labelOnlyA={$A$}, labelOnlyB={$B$}, labelAB={}]
+        \fillACapB
+    \end{venndiagram2sets}
+    \item Union: $A\cup B=\brcurly{\omega\in\Omega:\ \omega\in A\text{ or }\omega\in B}$\\
+    \begin{venndiagram2sets}[labelA={}, labelB={}, labelOnlyA={$A$}, labelOnlyB={$B$}, labelAB={}]
+        \fillA \fillB
+    \end{venndiagram2sets}
+    \item Complement: $A^c=\brcurly{\omega\in\Omega:\ \omega\notin A}$\\
+    \begin{venndiagram2sets}[labelA={}, labelB={}, labelOnlyA={$A$}, labelOnlyB={$B$}, labelAB={}]
+        \fillNotA
+    \end{venndiagram2sets}
+    \item Difference: $A\setminus B=\brcurly{\omega\in A:\ \omega\notin B}$\\
+    \begin{venndiagram2sets}[labelA={}, labelB={}, labelOnlyA={$A$}, labelOnlyB={$B$}, labelAB={}]
+        \fillANotB
+    \end{venndiagram2sets}
+\end{itemize}
 We use the square cups $\sqcup$ to denote the disjoint union of sets. This means that $A_1\sqcup A_2$ implies that the two sets have no overlap and they are disjoint: $A_1\cap A_2=\emptyset$.\\
 Discrete Uniform Distribution:\\
 We require that $\Omega$ is non empty and finite. If every event $\omega$ is equally likely, we have a discrete uniform distribution. This means that
@@ -25,3 +43,169 @@ Ex2: For two die we have $\Omega=\brcurly{(1,1),(1,2),\ldots,(6,5),(6,6)}$ and t
 \begin{align*}
     &\prob\brround{\brcurly{1,2,3}}=\prob\brround{\{1\}\sqcup\{2\}\sqcup\{3\}}=\prob(\{1\})+\prob(\{2\})+\prob(\{3\})=\frac{1}{6}+\frac{1}{6}+\frac{1}{6}=\frac{1}{2}
 \end{align*}
+Some useful properties of probability:\\
+For disjoint events $A,\ B$ we have $\prob(A\sqcup B)=\prob(A)+\prob(B)$.\\
+Let $A,\ B$ be events with $A\subset B$. Then $\prob(A)\leq\prob(B)$
+\begin{proof}
+Define $C:=B\setminus A$. By definition we have $\prob(C)\geq 0$, $B=A\sqcup C$ and hence
+\[\prob(B)=\prob(A\sqcup C)=\prob(A)+\prob(C)\geq\prob(A)+0=\prob(A)\]
+\end{proof}
+For any event $A$ it holds that $\prob(A^c)=1-\prob(A)$
+\begin{proof}
+Observe that $\Omega=A\sqcup A^c$. Hence
+\[1=\prob(\Omega)=\prob(A)+\prob(A^c)\]
+\end{proof}
+Let $A$ and $B$ be two events. Then
+\[\prob(A\cup B)=\prob(A)+\prob(B)-\prob(A\cap B)\]
+\begin{proof}
+Observe that $A\cup B=(A\setminus B)\sqcup(A\cap B)\sqcup(B\setminus A)$ which is a disjoint union. Hence,
+\begin{align*}
+    \prob(A\cup B)&=\prob(A\setminus B)+\prob(A\cap B)+\prob(B\setminus A)\\
+    &=\prob(A\setminus B)+\prob(A\cap B)+\prob(B\setminus A)\\
+    &=\prob(A)-\prob(A\cap B)+\prob(A\cap B)+\prob(B)-\prob(A\cap B)\\
+    &=\prob((A\setminus B)\sqcup(A\cap B))+\prob((A\cap B)\sqcup(B\setminus A))-\prob(A\cap B)\\
+    &=\prob(A)+\prob(B)-\prob(A\cap B)
+\end{align*}
+\end{proof}
+This is known as the inclusion-exclusion principle. The general case for $n\geq 2$ events is
+$$\prob\brround{\bigcup_{i=1}^nA_i}=\sum_{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<\ldots<i_k\leq n}\prob\brround{\bigcap_{j=1}^kA_{i_j}}$$
+
+\begin{proof}
+We begin by assuming the above hypothesis is true for $n\geq2$.\\
+We will also assume that the equation $\prob(A\cup B)=\prob(A)+\prob(B)-\prob(A\cap B)$ is taken as an axiom.\\
+The base case of $n=2$ gives
+\begin{align*}
+    &\prob\brround{A_1\cup A_2}=\sum_{k=1}^2(-1)^{k+1}\sum_{1\leq i_1<\ldots<i_k\leq n}\prob\brround{\bigcap_{j=1}^k A_{i_j}}\\
+    &\prob(A_1\cup A_2)=\prob(A_1)+\prob(A_2)-\prob(A_1\cap A_2)
+\end{align*}
+which is the same as our axiom, thus the base case is true.\\
+For $n+1$ case we can write
+\[
+\prob\brround{\bigcup_{i=1}^{n+1}A_i}=\prob\brround{\brround{\bigcup_{i=1}^nA_i}\cup A_{n+1}}
+\]
+We can then use the base case to rewrite this as
+\[
+\prob\brround{\bigcup_{i=1}^{n+1}A_i}=\prob\brround{\bigcup_{i=1}^nA_i}+\prob(A_{n+1})-\prob\brround{\brround{\bigcup_{i=1}^nA_i}\cap A_{n+1}}
+\]
+The last term in our expression can be rewritten using the distributive law as
+\[
+\prob\brround{\brround{\bigcup_{i=1}^nA_i}\cap A_{n+1}}=\prob((A_1\cap A_{n+1})\cup\cdots\cup(A_n\cap A_{n+1}))=\prob\brround{\bigcup_{i=1}^n(A_i\cap A_{n+1})}
+\]
+And so we have
+\[
+\prob\brround{\bigcup_{i=1}^{n+1}A_i}=\prob\brround{\bigcup_{i=1}^nA_i}+\prob(A_{n+1})-\prob\brround{\bigcup_{i=1}^n(A_i\cap A_{n+1})}
+\]
+The first and last terms are now unions of $n$ for which we assumed the formula to hold.\\
+Expanding these out gives
+\[
+\prob\brround{\bigcup_{i=1}^{n+1}A_i}=\sum_{k=1}^n(-1)^{k+1}\sum_{1\leq i_1<\ldots<i_k\leq n}\brround{\prob\brround{\bigcap_{j=1}^kA_{i_j}}-\prob\brround{\brround{\bigcap_{j=1}^kA_{i_j}}\cap A_{n+1}}}+\prob(A_{n+1})
+\]
+Combining these terms gives
+\[
+\prob\brround{\bigcup_{i=1}^{n+1}A_i}=\sum_{k=1}^{n+1}(-1)^{k+1}\sum_{1\leq i_1<\ldots<i_k\leq n+1}\prob\brround{\bigcap_{j=1}^kA_{i_j}}
+\]
+Which justifies the inductive step for $n+1$.
+\end{proof}
+
+\subsubsection{Repeated Experiments}
+Consider the experiment where we have a jar of $n$ balls, numbered $1$ to $n$. If we take a ball out of the jar, there are $n$ possible outcomes.\\
+If we repeat the experiment and put the ball back in the jar, the next draw is independent of the previous one. This is known as \textit{selection with replacement}. The number of possible outcomes will then be $n^2$. If this experiment is repeated $k$ times then the number of possible outcomes will be $n^k$.\\
+Now let's consider the case where we don't put the ball back in the jar. This is known as the case of \textit{selection without replacement}. The number of ways to arrange $n$ objects is
+\[n(n-1)\cdots2\cdot 1=n!\]
+Now, if we only select $k$ balls, the number of possible outcomes is
+\[n(n-1)\cdots(n-(k-1))=\frac{n!}{(n-k)!}\]
+So far we have been looking at the case where order matters. Some cases wherre the order of events matters to us when we are concerned about events happening sequentially, such as if you roll one dice and then another one. Basically any time when the position of an event is a consideration such as a time or belongs to a specific physical quantity. Cases where the order doesn't matter are if we have an unordered set for example. Say we want to select a committee of 3 people from a group of 10. The order in which we select the people doesn't matter.\\
+In the case where order doesn't matter, we have the following formulae:\\
+Selection with replacement:
+\[\binom{n+k-1}{k}=\frac{(n+k-1)!}{k!(n-1)!}\]
+Selection without replacement:
+\[\binom{n}{k}=\frac{n!}{k!(n-k)!}\]
+We get this formula by dividing the ordered case by the number of ways to order the $k$ objects.\\
+Ex: Given a 52 card deck, what is the probability of getting a flush of hearts?\\
+We have 52 cards in the deck and 13 of them are hearts. We want to select 5 cards. We can define the event of getting a flush of hearts as $A$. We can then write
+\begin{align*}
+    &\Omega=\brcurly{(\omega_1,\ldots,\omega_5):\ \omega_i\in\{1,\ldots,52\},\ \omega_i\neq\omega_j,\ i\neq j}\\
+    &\prob(\brcurly{\omega})=\frac{1}{|\Omega|}=\frac{1}{52}
+\end{align*}
+This resembles sampling without replacement. We can then write
+\begin{align*}
+    &|\Omega|=\frac{52!}{(52-5)!}\\
+    &A=\brcurly{(\omega_1,\ldots,\omega_5)\in\Omega:\ \omega_i\in\brcurly{1,\ldots,13}}\\
+    &|A|=\frac{13!}{(13-5)!}\\
+    &\prob(A)=\frac{|A|}{|\Omega|}=\frac{13!}{(13-5)!}\cdot\frac{(52-5)!}{52!}=\frac{33}{66640}\approx0.000495
+\end{align*}
+Ex2: If we roll two dice, what is the probability of getting different numbers?\\
+We can define the event of getting different numbers as $A$. We can then write
+\begin{align*}
+    &\Omega=\brcurly{(\omega_1,\omega_2):\ \omega_1,\omega_2\in\brcurly{1,\ldots,6}}\\
+    &|\Omega|=6^2=36\\
+    &\prob(\brcurly{\omega})=\frac{1}{|\Omega|}=\frac{1}{36}\\
+    &A=\brcurly{(\omega_1,\omega_2)\in\Omega:\ \omega_1\neq\omega_2}\\
+    &|A|=\frac{6!}{(6-2)!}=6\cdot 5=30\\
+    &\prob(A)=\frac{|A|}{|\Omega|}=\frac{30}{36}=\frac{5}{6}\approx0.833
+\end{align*}
+Ex3: In a classroom are 23 people. Assume that each one of them is independently equally likely to have their birthday on each of the 365 days of the year (yes, we also assume 365 for each year). Calculate the probability of at least two people having the same birthday.\\
+
+Let us represent the birthday of one person as $\omega_i\in\brcurly{1,2,\ldots,365}$.
+The universal set, $\Omega$, can be formed as an ordered set of the birthdays of the 23 people:
+\[
+\Omega = \brcurly{(\omega_1,\ldots,\omega_{23}):\ \omega_1,\ldots,\omega_{23}\in\brcurly{1,\ldots,365}}
+\]
+Because multiple people can have the same birthday it resembles the problem of sampling with replacement. The cardinality will then be
+\[
+|\Omega|=n^k=365^{23}
+\]
+We can define the event $A$ to be that at least two people share a birthday.
+The compliment of the problem $A$ is $A^c$ and is that everyone has a unique birthday. Given the probability of the compliment is easier to compute than the probability of the event we can compute the probability of the event as
+\[
+\prob(A)=1-\prob(A^c)
+\]
+For everyone to have a unique birthday resembles the problem of sampling without replacement as we cannot reuse the same numbers (can't have the same birthday twice).
+\[
+|A^c|=\frac{n!}{(n-k)!}=\frac{365!}{(365-23)!}
+\]
+The probability of the event is then
+\begin{align*}
+    &\prob(A)=1-\prob(A^c)=1-\frac{|A^c|}{|\Omega|}=\frac{\frac{365!}{(365-23)!}}{365^{23}}=\frac{365!}{365^{23}342!}\\
+    &\prob(A)=1-\frac{364!}{365^{22}342!}=1-\frac{1}{365^{22}}\prod_{i=343}^{364}i\\
+    &\prob(A)\approx 0.507
+\end{align*}
+
+Ex4: I have three non-standard six-sided dice. The red one has five sides showing 4 and one side showing 1. The green one has three sides showing 2 and three showing 5. The blue one has five sides showing 3 and one side showing 6.\\
+Consider a game where the first player chooses one of the dice and then the second player then selects one from the two that remain. Both players roll their dice and the player with the highest score wins. Do you want to be the first player or second player in this game?\\
+(You could start by using the method in the ``table" example to compute the winning probabilities for each of the three possible pairs of dice.)\\
+
+Because of the nonordinary arrangement of the dice, the easiest way to solve this problem may be to write out each possibility. We can split this problem into three distinct cases:
+\begin{enumerate}
+    \item Red vs. green
+    \item Red vs. blue
+    \item Green vs. blue
+\end{enumerate}
+Looking at the first case, if we have one roll with the red die and one roll with the green die we can make a table of each possible combination.\\
+\begin{tabular}{c|cc}
+possibilities & G2 & G5\\
+\hline
+R4 & $\colourboxed{red}{5\cdot3}$ & $\colourboxed{green}{5\cdot3}$\\
+R1 & $\colourboxed{green}{1\cdot3}$ & $\colourboxed{green}{1\cdot3}$
+\end{tabular}\\
+The cases where green wins are boxed in green and the cases where red wins are boxed in red.
+Summing the total possibilities we get that red wins in $\frac{15}{36}$ cases and green wins in $\frac{21}{36}$ cases so green is favored to win with a probability of $\frac{7}{12}$.\\
+Let us repeat this with the other two cases now:\\
+Red vs. blue:\\
+\begin{tabular}{c|cc}
+possibilities & B3 & B6\\
+\hline
+R4 & $\colourboxed{red}{5\cdot5}$ & $\colourboxed{blue}{5\cdot1}$\\
+R1 & $\colourboxed{blue}{1\cdot5}$ & $\colourboxed{blue}{1\cdot1}$
+\end{tabular}\\
+Here we get that red wins in $\frac{25}{36}$ cases and blue wins in $\frac{11}{36}$ cases so red is favored to win.\\
+Green vs. blue:\\
+\begin{tabular}{c|cc}
+possibilities & B3 & B6\\
+\hline
+G2 & $\colourboxed{blue}{3\cdot5}$ & $\colourboxed{blue}{3\cdot1}$\\
+G5 & $\colourboxed{green}{3\cdot5}$ & $\colourboxed{blue}{3\cdot1}$
+\end{tabular}\\
+Here we get that blue wins in $\frac{21}{36}$ cases and green wins in $\frac{15}{36}$ cases so blue is favored to win with a probability of $\frac{7}{12}$.\\
+
+The game resembles that of rock paper scissors in that one of the dies is favored to beat one of the other two but lose to the other. Given this, it makes more sense to \underline{choose second}. This way you can see what the other person selects and then choose the die that is favored to beat it. In the event that you have to choose first, selecting green or red gives the best odds of winning.

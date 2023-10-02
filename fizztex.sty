@@ -124,5 +124,24 @@
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newcommand{\Exp}[1]{\cdot 10^{#1}}
 
-% % centering
-% \newcommand{\cent}[1]{\begin{center}#1\end{center}}
+
+% coloured boxes
+\usepackage{xcolor}
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colourboxed}{}
+\def\colourboxed#1#{%
+  \colourboxedAux{#1}%
+}
+\newcommand*{\colourboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
