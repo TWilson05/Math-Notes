@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1696253890 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1696253892 0
-  "MathNotes.aux" 1696253892 1182 448913bc0ea115a9d8181a65e68d220b "pdflatex"
-  "MathNotes.out" 1696253892 672 273cd07bf493b78e1350a3ff949c7c3c "pdflatex"
+["pdflatex"] 1697482092 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1697482094 0
+  "MathNotes.aux" 1697482094 1613 15851222372c28f10567db59ae6062c7 "pdflatex"
+  "MathNotes.out" 1697482094 1308 ce92adf770d8180cebdd49366adf8369 "pdflatex"
   "MathNotes.tex" 1696240777 1440 83692a461edbe7c8e5fb3d92264783ed ""
-  "MathNotes.toc" 1696253892 423 0b3a5e6bac730ae889b3628f496a4dcb "pdflatex"
+  "MathNotes.toc" 1697482094 730 4f6e9af4c9df91d20024f748fcca0fc9 "pdflatex"
   "Sections/Probability.tex" 1695569804 67 0da00daebf3ed13535c3be086f71eccd ""
-  "Sections/Probability/Foundations.tex" 1696253889 16566 f4fe5c1a6f7b89429d0d74399932ca84 ""
+  "Sections/Probability/Foundations.tex" 1697482091 26534 fd8152dbf7d52062176217c5dccc2aaf ""
   "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1696240777 1440 83692a461edbe7c8e5fb3d92264783ed ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1671857571 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1671859246 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -51,6 +51,7 @@
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1671856204 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1671856204 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1671857571 145929 5c9aebea9ba6e33fc93158c04a3bdcd8 ""
+  "c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb" 1671858788 34421 79309417cbb00a4641f92d2efa583bbd ""
   "c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1671861760 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1671856423 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1671857004 40635 c40361e206be584d448876bba8a64a3b ""

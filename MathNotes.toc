@@ -1,5 +1,8 @@
 \contentsline {section}{\numberline {1}Probability}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Foundations}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Notation}{1}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Repeated Experiments}{4}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}Conditional Probability}{7}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.2}Repeated Experiments}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Conditional Probability}{8}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.2}Random Variables}{10}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Discrete Probability Distributions}{11}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Continuous Probability Distributions}{12}{subsubsection.1.2.2}%

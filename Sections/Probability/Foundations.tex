@@ -263,3 +263,178 @@ We can express Bayes' Theorem by starting with the expression for conditional pr
 Combining this with the Law of Total Probability we can get the more general expression for Baye's Theorem:
 $$\prob(A_k|B)=\prob(B|A_k)\frac{\prob(A_k)}{\sum\limits_{i=1}^n\prob(B|A_i)\prob(A_i)},\ \forall k\in \brcurly{1,\ldots,n}$$
 such that $\Omega$ is split up into $n$ disjoint partitions, $A_1,\ldots,A_n$.
+Ex: Celiac occurs in about $\frac{1}{135}$ people ($C$). Say about $5\%$ of people have similar symptoms ($C$) and don't have it. Also assume that the probability that you have symptoms if you have celiac is $99\%$. What is the probability of having celiac if you have the symptoms?
+\begin{align*}
+    &\prob(C)=\frac{1}{135}\\
+    &\prob(S|C^c)=0.05\\
+    &\prob(S|C)=0.99\\
+    &\prob(C|S)=\prob(S|C)\frac{\prob(C)}{\prob(S)}\\
+    &\prob(S)=\prob(S|C)\prob(C)+\prob(S|C^c)\prob(C^c)\\
+    &\prob(C|S)=\frac{\prob(S|C)\prob(C)}{\prob(S|C)\prob(C)+\prob(S|C^c)\prob(C^c)}=\frac{0.99\cdot\frac{1}{135}}{0.99\cdot\frac{1}{135}+0.05\cdot\frac{134}{135}}\approx0.13
+\end{align*}
+
+Two events $A$ and $B$ are independent if
+\[\prob(A\cap B)=\prob(A)\prob(B)\]
+Ex: Roll two D6. Let $A$ be the event that the first die is a 6 and $B$ be the event that the second die is a 6.
+\begin{align*}
+    &\prob(A)=\frac{1}{6}\\
+    &\prob(B)=\frac{1}{6}\\
+    &\prob(A\cap B)=\frac{1}{36}\\
+    &\prob(A)\prob(B)=\frac{1}{36}=P(A\cap B)
+\end{align*}
+So $A$ and $B$ are independent.\\
+Ex2: Roll two D6. Let $A$ be the event that the sum is 5 and $B$ be the event that there is at least one 1 rolled.
+\begin{align*}
+    &A=\brcurly{(1,4),(2,3),(3,2),(4,1)}\\
+    &B=\brcurly{(1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(2,1),(3,1),(4,1),(5,1),(6,1)}\\
+    &A\cap B=\brcurly{(1,4),(2,3),(3,2),(4,1),(1,1)}\\
+    &|A|=4,\ |B|=11,\ |A\cap B|=2\\
+    &\prob(A\cap B)=\frac{2}{36}\\
+    &\prob(A)=\frac{4}{36}\\
+    &\prob(B)=\frac{11}{36}\\
+    &\prob(A)\prob(B)=\frac{44}{1296}\neq\frac{2}{36}
+\end{align*}
+So $A$ and $B$ are not independent.
+
+\subsection{Random Variables}
+A random variable is a measurable function on the sample space. Usually, $X:\Omega\to\R$\\
+We usually use capital letters from the end of the alphabet to denote random variables.\\
+They are a great way to no longer have to care about the exact probability space.\\
+Ex: $\Omega=\brcurly{H,T}$, $\prob(\{H\})=\frac{1}{2}=\prob(\{T\})$\\
+So $X(H)=1$, $X(T)=0$\\
+$(\Omega,\prob)$ is the probability space.\\
+$\prob(X=1)=\prob(X=0)=\frac{1}{2}$
+\subsubsection{Discrete Probability Distributions}
+\textbf{Discrete uniform random variable:}\\
+$\prob(X=k)=\frac{1}{n}$ for all $k\in\brcurly{1,\ldots,n}$\\
+This is denoted by $X\sim\mathrm{Unif}\,(\brcurly{1,\ldots,n})$\\
+For example a toss of a coin can be represented as $X\sim\mathrm{Unif}\brcurly{0,1}$ and the roll of a D6 can be represented as $X\sim\mathrm{Unif}\brcurly{1,2,3,4,5,6}$\\
+\textbf{Bernoulli random variable:}\\
+$\prob(X=1)=p$ where $p\in[0,1]$ and $\prob(X=0)=1-p=q$\\
+Some examples of this include a coin toss (with a fair or unfair coin) and the probability of the answer to a yes/no question. Basically any trial where you can get either a true or false answer.\\
+\textbf{Binomial random variable:}\\
+This represents $k$ number of successes in $n$ independent Bernoulli trials.\\
+\[\prob(X=k)=\binom{n}{k}p^k(1-p)^{n-k}=\frac{n!}{k!(n-k)!}p^k(1-p)^{n-k}\]
+Represented by $X\sim\mathrm{Bin}(n,p)$ or $X\sim\mathrm{Binom}(n,p)$.\\
+For example, occurances of heads for a coin or number of passengers that miss a flight.\\
+Ex: Throw a coin $n$ times. What is the probability ofo getting at least 2 heads?
+\begin{align*}
+    \prob(X\geq2)&=1-\prob(\brcurly{x\geq2}^c)=1-\prob(\{X<2\})\\
+    &=1-\prob(X=1)-\prob(X=0)\\
+    &=1-\binom{n}{1}p(1-p)^{n-1}-\binom{n}{0}(1-p)^n,\ \quad p=\frac{1}{2}\\
+    &=1-n\bfrac{1}{2}^n-\bfrac{1}{2}^n\\
+    &=1-(n+1)\bfrac{1}{2}^n
+\end{align*}
+
+Probablity mass functions (pmf):\\
+Let $X$ be a discrete random variable and $(x_i)_{i\in I}$. The sequence of all values $X$ can adopt, $p(x_i)=\prob(X=x_i)\to p$ is the probability mass function of $X$. Note that
+\[\sum_{i\in I}p(x_i)=1\]
+To test this with the Bernoulli random variable:\\
+\begin{align*}
+    &p(0)+p(1)=(1-p)+p=1
+\end{align*}
+Discrete uniform:
+\begin{align*}
+    &\sum_{k=1}^np(k)=\sum_{k=1}^n\frac{1}{n}=\frac{n}{n}=1
+\end{align*}
+Binomial:
+\begin{align*}
+    &\sum_{k=0}^n\binom{n}{k}p^k(1-p)^{n-k}\\
+    &(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^kb^{n-k}\\
+    &\sum_{k=0}^n\binom{n}{k}p^k(1-p)^{n-k}=\sum_{k=0}^n\binom{n}{k}p^k(1-p)^{n-k}1^k=\brround{p+(1-p)}^n=1^n=1
+\end{align*}
+\textbf{Geometric Distribution:}\\
+Ex: Roll a die until you get a 6 (do an experiment until success).\\
+We can represent this type of expirement as a binomial distribution with $n=\infty$ and $p$ representing the probability of a successful experiment and $1-p$ the probability of an unsuccessful experiment.
+\begin{align*}
+    &p=\frac{1}{6}\\
+    &\sum_{k=1}^\infty p(1-p)^k=p\sum_{k=0}^\infty(1-p)^{k-1+1}\\
+    &\sum_{k=0}^\infty a^k=\frac{1}{1-a}\\
+    &p\sum_{k=0}^\infty(1-p)^{k-1+1}=p\frac{1}{1-(1-p)}=1
+\end{align*}
+\subsubsection{Continuous Probability Distributions}
+We say that a random variable, $X$ has a continuous distribution if there exists a function $f:\R\to\R$ such that for any ``nice'' $b\subseteq\R$
+\[\prob(X\in B)=\int_B f_X(x)dx\]
+We call $f_X$ the probablility density function (pdf) of $X$.\\
+We will also get from this definition that
+\begin{align*}
+    &f_X(x)\geq 0\ \forall x\in\R\\
+    &\int_{-\infty}^\infty f_X(x)dx=1
+\end{align*}
+For any random variable, $X$, we define its cumulative distribution function (cdf) $F_X$ for all $x\in \R$ by
+\[F_X(x)=\prob(X\leq x)=\prob(-\infty<X\leq x)=\int_{-\infty}^xf_X(y)dy\]
+We also have that
+\begin{itemize}
+    \item $F_X$ is non-decreasing
+    \item $\lim\limits_{x\to-\infty}F_X(x)=0$ and $\lim\limits_{x\to\infty} F_X(x)=1$
+    \item $F_X'(x)=f_X(x)$
+\end{itemize}
+For a regular continuous probability distribution, it is worth noting that the probability of a singular point is 0.
+\begin{align*}
+    &\prob(a<X\leq b)=\int_a^b f_X(x)dx\\
+    &\prob(X\leq b,X>a)=\prob(X\leq b)-\prob(X\leq a)=F_X(b)-F_X(a)
+\end{align*}
+Now if we say $b=a$ then we get
+\begin{align*}
+    &\prob(X=a)=\prob(a\leq X\leq a)=\int_a^a f_X(x)dx=0
+\end{align*}
+So we ignore all singular points. This is distinctly different than the discrete case where all we care about is singular points.
+
+\textbf{Continuous Uniform Distribution:}\\
+This is the case where the pdf is constant on some interval $[a,b]$ and 0 elsewhere.
+\begin{align*}
+    &\int_{-\infty}^\infty f_X(x)dx=\int_{-\infty}^a 0dx+\int_a^b cdx+\int_b^\infty 0dx=c(b-a)=1\\
+    &\Ra c=\frac{1}{b-a}
+\end{align*}
+We say that $X$ is uniformly distributed on the interval $[a,b]$, for $a<b$ if its pdf is given by
+\[f_X(x)=\eqnsystem{\frac{1}{b-a} & x\in[a,b]\\ 0 & x\notin[a,b]}\]
+We write $X\sim U([a,b])$ or $X\sim U[a,b]$ or $X\sim\mathrm{Unif}([a,b])$
+The cdf is given by
+\[F_X(x)=\eqnsystem{0 & x<a\\ \frac{x-a}{b-a} & a\leq x\leq b\\ 1 & b<x}\]
+Ex: if $T\sim U([1,5])$ what is $\prob(T\geq 2.5)$
+\begin{align*}
+    &\prob(T\geq 2.5)=\int_{2.5}^\infty f_X(x)dx=\int_{2.5}^5\frac{1}{4}dx=\frac{5-2.5}{4}=\frac{2.5}{4}=\frac{5}{8}
+\end{align*}
+\textbf{Exponential Distribution:}\\
+Ex: Radioactive decay.\\
+Radioactive atoms spontaneously decay. If the atom has not yet decayed, then the probability that it decays in the next short time $\Delta t$ is $\approx \lambda\Delta t$ for a constant $\lambda>0$. It does not matter how long the atom has been around. If it has not decayed up to now then the probability now is still $\approx \lambda \Delta t$.\\
+We can express this as
+\begin{align*}
+    &\prob(X\in[0,\Delta t])\approx\lambda\Delta t\\
+    &\prob(X\in[t,t+\Delta t]|X\geq t)=\prob(X\in[0,\Delta t])
+\end{align*}
+This is an example of a \textit{memoryless process} as the probability of decay is independent of the time the atom has been around (it doesn't care about the events that happened before). The memoryless property can be represented as $\prob(X\geq t+s|X\geq t)=\prob(X\geq s)$.
+\begin{align*}
+    &\prob(X\in[t,t+\Delta t]|X\geq t)=\frac{\prob(X\in[t,t+\Delta t], X\geq t)}{\prob(X\geq t)}=\frac{\prob(X\in[t,t+\Delta t])}{\prob(X\geq t)}\\
+    &\prob(X\in[t,t+\Delta t]|X\geq t)=\prob(X\in[0,t])\\
+    &g(\Delta t)=\frac{g(t+\Delta t)}{g(t)}\Ra g(\Delta t)g(t)=g(t+\Delta t)\\
+    &g\sim\mathrm{Exp}
+\end{align*}
+We say that a random variable $X$ is exponentially distributed to the parameter $\lambda>0$ if
+\[f_X(x)=\eqnsystem{0 & x<0\\ \lambda e^{-\lambda x} & x\geq 0}\]
+We write $X\sim\mathrm{Exp}(\lambda)$
+The cdf is given by
+\[F_X(x)=\eqnsystem{0 & x<0\\ 1-e^{-\lambda x} & x\geq 0}\]
+\textbf{Poisson Distribution:}\\
+Ex: Arrival of customers at a store.\\
+Let $Y$ be the number of customers that arrive unitil time $t$.
+\begin{align*}
+    &1-e^{-\lambda\Delta t}\approx\lambda\Delta t
+\end{align*}
+Probability of a customer arriving is $\lambda\Delta t$ and probability of someone not arriving is $1-\lambda\Delta t$. This represents a binomial distribution.
+\begin{align*}
+    &\Delta t=\frac{t}{n}\\
+    &\mathrm{Bin}\brround{\frac{t}{\Delta t},\lambda\Delta t}=\mathrm{Bin}\brround{\frac{t}{t/n},\frac{\lambda t}{n}}=\mathrm{Bin}\brround{n,\frac{\lambda t}{n}}\\
+    &\prob(Y=k)=\lim_{n\to\infty}\binom{n}{k}\bfrac{\lambda t}{n}^k\brround{1-\frac{\lambda t}{n}}^{n-k}=\lim_{n\to\infty}\frac{n!}{(n-k)!}\frac{(\lambda t)^k}{k!}\frac{1}{n^k}\brround{1-\frac{\lambda t}{n}}^{-k}\brround{1-\frac{\lambda t}{n}}^n\\
+    &=\lim_{n\to\infty}\frac{n(n-1)\cdots(n-k+1)}{n^k}\frac{(\lambda t)^k}{k!}\brround{1-\frac{\lambda t}{n}}^{-k}\brround{1-\frac{\lambda t}{n}}^n\\
+    &=1\cdot\frac{(\lambda t)^k}{k!}\cdot 1\cdot e^{-\lambda t}\\
+    &\tilde{\lambda}:=\lambda t\\
+    &\prob(Y=k)=\frac{\tilde{\lambda}^k}{k!}e^{-\tilde{\lambda}}
+\end{align*}
+The discrete case of the exponential distribution is the Poisson distribution.\\
+Let $X$ be a discrete random variable. We say that $X$ is Poisson distributed to the parameter $\lambda>0$ if
+\[\prob(X=k)=\frac{\lambda^k}{k!}e^{-\lambda}\]
+for all $k\in\brcurly{0,1,2,\ldots}$.\\
+We write $X\sim\mathrm{Pois}(\lambda)$
+
+
