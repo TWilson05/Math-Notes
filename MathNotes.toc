@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.2}Random Variables}{10}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.1}Discrete Probability Distributions}{11}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Continuous Probability Distributions}{12}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Expectations}{15}{subsubsection.1.2.3}%

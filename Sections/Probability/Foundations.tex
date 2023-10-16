@@ -395,6 +395,9 @@ Ex: if $T\sim U([1,5])$ what is $\prob(T\geq 2.5)$
 \begin{align*}
     &\prob(T\geq 2.5)=\int_{2.5}^\infty f_X(x)dx=\int_{2.5}^5\frac{1}{4}dx=\frac{5-2.5}{4}=\frac{2.5}{4}=\frac{5}{8}
 \end{align*}
+\textit{Note:} Anoter way we can represent the uniform distribution that avoids the piecewise notation is using the indicator function. The indicator function is defined as
+\[\ind_A(x)=\eqnsystem{1 & x\in A\\ 0 & x\notin A}\]
+So we can write the pdf as $f_X(x)=\frac{1}{b-a}\ind_{[a,b]}(x)$\\
 \textbf{Exponential Distribution:}\\
 Ex: Radioactive decay.\\
 Radioactive atoms spontaneously decay. If the atom has not yet decayed, then the probability that it decays in the next short time $\Delta t$ is $\approx \lambda\Delta t$ for a constant $\lambda>0$. It does not matter how long the atom has been around. If it has not decayed up to now then the probability now is still $\approx \lambda \Delta t$.\\
@@ -437,4 +440,89 @@ Let $X$ be a discrete random variable. We say that $X$ is Poisson distributed to
 for all $k\in\brcurly{0,1,2,\ldots}$.\\
 We write $X\sim\mathrm{Pois}(\lambda)$
 
+\subsubsection{Expectations}
+Ex: Roll a D6. Let $X$ be the number of dots that show up. What is the average (or expected) number of dots?
+\begin{align*}
+    &\Omega=\brcurly{1,2,3,4,5,6}\\
+    &\prob(\{1\})=\prob(\{2\})=\prob(\{3\})=\prob(\{4\})=\prob(\{5\})=\prob(\{6\})=\frac{1}{6}\\
+    &1\cdot\frac{1}{6}+2\cdot\frac{1}{6}+3\cdot\frac{1}{6}+4\cdot\frac{1}{6}+5\cdot\frac{1}{6}+6\cdot\frac{1}{6}=\frac{21}{6}=3.5
+\end{align*}
+So the avergae number of dots is 3.5. This is called the expected value of $X$, $\expect[X]$\\
+The expectation value of a discrete random variable $X$ is defined as
+\[\expect[X]=\sum_{x_i}x_i\prob(X=x_i)=\sum_{x_i}p_X(x_i)\]
+For a continuous random variable it is
+\[\expect[X]=\int_{-\infty}^\infty xf_X(x)dx\]
+Now, what if we want to compute $\expect[2X]$?\\
+We get
+\[\expect[2X]=\sum_{x_i}2x_i\prob(X=x_i)\]
+We can extend this to any function of $X$ and get that
+\[\expect[g(X)]=\sum_{x_i}g(x_i)\prob(X=x_i)\]
+We can also compute the expected value for the various distributions that we have defined thus far.\\
+$X\sim\mathrm{Bernoulli}(p)$:
+\begin{align*}
+    &x_i\in\brcurly{0,1}\\
+    &\expect[X]=0\cdot\prob(X=0)+1\cdot\prob(X=1)=0\cdot(1-p)+1\cdot p=p
+\end{align*}
+$X\sim U(\brcurly{k,\ldots,m})$:
+\begin{align*}
+    &\expect[X]=\sum_{i=k}^m i\frac{1}{m-k}=(m+k)\bfrac{m-k}{2}\bfrac{1}{m-k}=\frac{m+k}{2}
+\end{align*}
+$X\sim\mathrm{Bin}(n,p)$:
+\begin{align*}
+    &\expect[X]=\sum_{k=0}^n k\binom{n}{k}p^k(1-p)^{n-k}=\sum_{k=1}^nk\frac{n!}{(n-k)!k!}p^k(1-p)^{n-k}\\
+    &=\sum_{k=1}^n\frac{n!}{(n-k)!(k-1)!}p^k(1-p)^{n-k}=\sum_{k=1}^n\binom{n-1}{k-1}p^{k-1}(1-p)^{n-1-(k-1)}np\\
+    &=\sum_{k=0}^{n-1}\binom{n-1}{k}p^k(1-p)^{n-1-k}np=np
+\end{align*}
+$X\sim\mathrm{Poisson}(\lambda)$:
+\begin{align*}
+    &\expect[X]=\sum_{k=0}^\infty k\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=1}^\infty\frac{\lambda^{k-1}\lambda}{(k-1)!}e^{-\lambda}=\lambda\sum_{k=0}^\infty\frac{\lambda^k}{k!}e^{-\lambda}=\lambda
+\end{align*}
+$X\sim\mathrm{Geom}(p)$:
+\begin{align*}
+    &\expect[X]=1\cdot p+(1-p)(1+\expect[X])\\
+    &p\expect[X]=p+(1-p)=1\Ra \expect[X]=\frac{1}{p}
+\end{align*}
+$X\sim U([a,b])$:
+\begin{align*}
+    &\expect[X]=\int_{-\infty}^\infty xf_X(x)dx=\int_a^b\frac{x}{b-a}dx=\frac{1}{b-a}\frac{x^2}{2}\bigg|_a^b=\frac{b^2-a^2}{2(b-a)}=\frac{b+a}{2}
+\end{align*}
+$X\sim\mathrm{Exp}(\lambda)$:
+\begin{align*}
+    &\expect[X]=\int_{-\infty}^\infty xf_X(x)dx=\int_0^\infty x\lambda e^{-\lambda x}dx\\
+    &u=\lambda x,\ du=\lambda dx\\
+    &\int_0^\infty x\lambda e^{-\lambda x}dx=-xe^{-\lambda x}\eval_0^\infty+\int_0^\infty e^{-\lambda x}dx\\
+    &=-\frac{1}{\lambda}e^{-\lambda x}\eval_0^\infty=\frac{1}{\lambda}
+\end{align*}
+We can also compute the expectations values of more than just $X$.\\
+Ex: Compute $\expect[X^2]$ for $X\sim U[a,b]$
+\begin{align*}
+    &\expect[X^2]=\int_\R x^2f_X(x)dx=\int_\R x^2\frac{1}{b-a}\ind_{[a,b]}(x)dx=\frac{1}{b-a}\int_a^bx^2dx=\frac{1}{b-a}\frac{x^3}{3}\bigg|_a^b=\frac{b^3-a^3}{3(b-a)}=\frac{b^2+ab+a^2}{3}
+\end{align*}
+Ex2: Compute $\expect[Y^2]$ for $X\sim\mathrm{Exp}(\lambda)$
+\begin{align*}
+    &\expect[Y^2]=\int_\R y^2f_Y(y)dy=\int_\R y^2\lambda e^{-\lambda y}\ind\{y\geq 0\}dy\\
+    &=\lambda\int_0^\infty y^2e^{-\lambda y}dy=y^2\frac{\lambda}{-\lambda}e^{-\lambda y}\eval_0^\infty-\int_0^\infty 2y(-e^{-\lambda y})dy\\
+    &=0+2y\brround{-\frac{1}{\lambda}}e^{-\lambda y}\eval_0^\infty-\int_0^\infty 2\brround{-\frac{1}{\lambda}}e^{-\lambda y}dy\\
+    &=0-2\brround{-\frac{1}{\lambda}}\frac{1}{\lambda}e^{-\lambda y}\eval_0^\infty=\frac{2}{\lambda^2}
+\end{align*}
+Ex3: Compute $\expect[e^y]$ for $Y\sim\mathrm{Exp}(\lambda)$
+\begin{align*}
+    &\expect[e^y]=\int_\R e^yf_Y(y)dy=\int_\R e^y\lambda e^{-\lambda y}\ind\{y\geq 0\}dy=\lambda\int_0^\infty e^{-(\lambda-1)y}dy\\
+    &=\brsquare{\frac{\lambda}{-(\lambda-1)}e^{-(\lambda-1)}}_0^\infty=\frac{\lambda}{\lambda-1}
+\end{align*}
+We can also deal with functions of multiple random variables.\\
+\[\expect[X+Y]=\sum_{x_i,y_i}(x_i+y_i)\prob(X=x_i,Y=y_i)\]
+$y_i$ makes up all the values that $Y$ can take so we can write
+\begin{align*}
+    &\sum_{y_i}\prob(X=x_i,Y=y_i)=\prob\brround{\{X=x_i\}\cap\bigsqcup_{y_i}\{Y=y_i\}}\\
+    &\bigsqcup_{y_i}\{Y=y_i\}=\Omega\\
+    &\sum_{y_i}\prob(X=x_i,Y=y_i)=\prob(X=x_i)
+\end{align*}
+Using this trick we can get
+\begin{align*}
+    &\expect[X+Y]=\sum_{x_i}\sum_{y_i}x_i\prob(X=x_i,Y=y_i)+\sum_{x_i}\sum_{y_i}y_i\prob(X=x_i,Y=y_i)\\
+    &=\sum_{x_i}x_i\sum_{y_i}\prob(X=x_i,Y=y_i)+\sum_{y_i}y_i\sum_{x_i}\prob(X=x_i,Y=y_i)\\
+    &=\sum_{x_i}x_i\prob(X=x_i)+\sum_{y_i}y_i\prob(Y=y_i)=\expect[X]+\expect[Y]
+\end{align*}
+We also saw earlier that $\expect[2X]=2\expect[X]$. These two properties imply that $\expect[aX+bY]=a\expect[X]+b\expect[Y]$ which is called the linearity of expectation.\\
 
