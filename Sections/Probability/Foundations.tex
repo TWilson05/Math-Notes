@@ -525,4 +525,22 @@ Using this trick we can get
     &=\sum_{x_i}x_i\prob(X=x_i)+\sum_{y_i}y_i\prob(Y=y_i)=\expect[X]+\expect[Y]
 \end{align*}
 We also saw earlier that $\expect[2X]=2\expect[X]$. These two properties imply that $\expect[aX+bY]=a\expect[X]+b\expect[Y]$ which is called the linearity of expectation.\\
-
+Ex: Flip a coin 100 times. What is the expected number of streaks of 6 heads in a row?\\
+$X:=$ number of streaks of 6.\\ 
+$x_i:=$ streak of 6 happening with $i$.
+\begin{align*}
+    &\expect[x_i]=1\cdot{1}{2^6}+0\cdot\brround{1-\frac{1}{2^6}}=\frac{1}{64}\\
+    &\expect[X]=\expect\brsquare{\sum_{i=1}^{95}x_i}=\sum_{i=1}^{95}\expect[x_i]=\frac{95}{64}
+\end{align*}
+Conditional Expectations:\\
+\[\expect[X|A]=\sum_{x_i}x_i\prob(X=x_i|A)\]
+Law of total probability for expectations:\\
+Let $(A_i)_{i\in\brcurly{1,\ldots,n}}$ be a partition of $\Omega$ such that $\bigsqcup\limits_{i=1}^n A_i=\Omega$ then
+\[\expect[X]=\sum_{i=1}^n\expect[X|A_i]\prob(A_i)\]
+Note that in general $\expect[X^2]$ is not the same as $(\expect[X])^2$.\\
+Take the example of $f_X(x)=x\ind_{[0,2]}(x)$
+\begin{align*}
+    &\expect[X]=\int_\R xf_X(x)dx=\int_0^2x^2dx=\frac{8}{3}\\
+    &\expect[X^2]=\int_\R x^2f_X(x)dx=\int_0^2x^3dx=\frac{8}{4}=\frac{16}{4}=4\\
+    &(\expect[X])^2=\frac{64}{3}\neq4\Ra (\expect[X])^2\neq\expect[X^2]
+\end{align*}
