@@ -594,3 +594,83 @@ We can extend this to say that $X$ and $Y$ are independent if and only if
 for the discrete case and
 \[f_{X,Y}(x,y)=f_X(x)f_Y(y)\ \forall x,y\in\R\]
 for the continuous case.
+Ex: Say we have a box in the xy-plane that has a uniform distribution as shown
+\begin{center}
+\begin{tikzpicture}
+    \draw[->] (0,0) -- (3,0) node[right] {$x$};
+    \draw[->] (0,0) -- (0,3) node[above] {$y$};
+    \fill[blue!30] (0,0) rectangle (2,2);
+    \draw[dashed] (2,0) -- (2,2) -- (0,2);
+    \node[below] at (2,0) {$1$};
+    \node[left] at (0,2) {$1$};  
+\end{tikzpicture}
+\end{center}
+\begin{align*}
+    &(X,Y)\sim U([0,1]^2)\\
+    &f_{X,Y}(x,y)=\ind_{[0,1]^2}(x,y)=\ind_{[0,1]}(x)\ind_{[0,1]}(y)=f_X(x)f_Y(y)
+\end{align*}
+So $X$ is independent of $Y$
+Ex2: Now consider the same distribution but for a circle instead of a square
+\begin{center}
+\begin{tikzpicture}
+    \fill[blue!30] (0,0) circle (1);
+    \draw[->] (-2,0) -- (2,0) node[right] {$x$};
+    \draw[->] (0,-2) -- (0,2) node[above] {$y$};
+    \draw[dashed] (0,0) circle (1);
+    \draw[->] (0,0) -- (0.707,0.707) node[right] {$r=1$};
+\end{tikzpicture}
+\end{center}
+\begin{align*}
+    &(X,Y)\sim U(B_1^2(0,0))\\
+    &f_{X,Y}(x,y)=\frac{1}{\pi}\ind_{B_1^2(0,0)}(x,y)=\frac{1}{\pi}\ind\brcurly{\sqrt{x^2+y^2}\leq1}\\
+    &f_{X,Y}(x,y)=\frac{1}{\pi}\ind_{[-1,1]}(x)\ind\brcurly{|y|\leq\sqrt{1-x^2}}
+\end{align*}
+So $X$ and $Y$ are not independent\\
+$X$ and $Y$ being independed implies $\expect[XY]=\expect[X]\expect[Y]$
+\begin{align*}
+    &\expect[XY]=\int_{-\infty}^\infty\int_{-\infty}^\infty xyf_{X,Y}(x,y)dxdy=\int_{-\infty}^\infty\int_{-\infty}^\infty xf_X(x)yf_Y(y)dxdy\\
+    &=\int_{-\infty}^\infty yf_Y(y)dy\int_{-\infty}^\infty xf_X(x)dx=\expect[Y]\expect[X]
+\end{align*}
+So if $X$ and $Y$ are independent then $\expect[XY]=\expect[X]\expect[Y]$ however, the inverse is not always true. $\expect[XY]=\expect[X]\expect[Y]$ does not imply that $X$ and $Y$ are independent.\\
+If $X$ and $Y$ are independent then we can also get a formula for the variance of $X+Y$.
+\begin{align*}
+    &\Var(X+Y)=\expect[(X+Y)^2]-\expect[X+Y]^2\\
+    &=\expect[X^2+2XY+Y^2]-\brround{\expect[X]^2+2\expect[X]\expect[Y]+\expect[Y]^2}\\
+    &=\expect[X^2]-\expect[X]^2+\expect[Y^2]-\expect[Y]^2+2\expect[XY]-2\expect[X]\expect[Y]\\
+    &=\expect[X^2]-\expect[X]^2+\expect[Y^2]-\expect[Y]^2\\
+    &=\Var(X)+\Var(Y)
+\end{align*}
+We can also compute the variance for some of the distributions that we have defined thus far.\\
+$X\sim\mathrm{Binom}(n,p)$:
+\begin{align*}
+    &\expect[X^2]=\sum_{k=0}^n k^2\binom{n}{k}p^k(1-p)^{n-k}=\sum_{k=0}^nk\frac{n!}{(n-k)!(k-1)!}p^k(1-p)^{n-k}=p\\
+    &\Var(X)=\Var\brround{\sum_{i=1}^n x_i}=\sum_{i=1}^n\Var(x_i)=\sum_{i=1}^n\brround{\expect[x_i^2]-\expect[x_i]^2}\\
+    &=\sum_{i=1}^n\brround{p-p^2}=np(1-p)
+\end{align*}
+$X\sim\mathrm{Geom}(p)$:
+\begin{align*}
+    &\prob(X=k)=p(1-p)^{k-1},\ k\in\N\\
+    &\expect[X]=\frac{1}{p}\\
+    &\expect[X^2]=\sum_{k=1}^\infty k^2p(1-p)^{k-1}=\sum_{k=1}^\infty kp\ddx{p}\brround{-(1-p)^k}\\
+    &\expect[X^2]=\expect[X(X+1)]-\expect[X]\\
+    &\expect[X(X+1)]=\sum_{k=1}^\infty k(k+1)p(1-p)^{k-1}=p\sum_{k=1}^\infty \frac{d^2}{dp^2}(1-p)^{k+1}\\
+    &=p\frac{d^2}{dp^2}(1-p)^2\sum_{k=0}^\infty(1-p)^k=p\frac{d^2}{dp^2}(1-p)^2\frac{1}{1-(1-p)}=p\frac{d^2}{dp^2}\frac{(1-p)^2}{p}\\
+    &=p\frac{d^2}{dp^2}\brround{\frac{1}{p}-2+p}=p\frac{2}{p^3}=\frac{2}{p^2}\\
+    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X+1)]-\expect[X]-\expect[X]^2=\frac{2}{p^2}-\frac{1}{p}=\frac{1}{p^2}\\
+    &\Var(X)=\frac{1-p}{p^2}
+\end{align*}
+$X\sim\mathrm{Exp}(\lambda)$:
+\begin{align*}
+    &\expect[X]=\frac{1}{\lambda}\\
+    &\expect[X^2]=\frac{2}{\lambda^2}\\
+    &\Var(X)=\frac{2}{\lambda^2}-\bfrac{1}{\lambda}^2=\frac{1}{\lambda}
+\end{align*}
+$X\sim\mathrm{Poisson}(\lambda)$:
+\begin{align*}
+    &\prob(X=k)=\frac{\lambda^2}{k!}e^{-\lambda},\ k\in\N\cup\{0\}\\
+    &\expect[X]=\lambda\\
+    &\expect[X^2]=\sum_{k=0}^\infty k^2 k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\expect[X(X-1)]+\expect[X]\\
+    &\expect[X(X-1)]=\sum_{k=0}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty\frac{\lambda^2}{(k-2)!}e^{-\lambda}\\
+    &=\lambda^2\sum_{k=2}^\infty\frac{\lambda^{k-2}}{(k-2)!}e^{-\lambda}=\lambda^2\sum_{k=0}^\infty\frac{\lambda^k}{k!}e^{-\lambda}=\lambda^2\\
+    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X-1)]+\expect[X]+\expect[X]^2=\lambda^2+\lambda-\lambda^2=\lambda
+\end{align*}
