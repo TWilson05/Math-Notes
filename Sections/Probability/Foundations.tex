@@ -538,9 +538,59 @@ Law of total probability for expectations:\\
 Let $(A_i)_{i\in\brcurly{1,\ldots,n}}$ be a partition of $\Omega$ such that $\bigsqcup\limits_{i=1}^n A_i=\Omega$ then
 \[\expect[X]=\sum_{i=1}^n\expect[X|A_i]\prob(A_i)\]
 Note that in general $\expect[X^2]$ is not the same as $(\expect[X])^2$.\\
-Take the example of $f_X(x)=x\ind_{[0,2]}(x)$
+Take the example of $f_X(x)=\frac{1}{2}x\ind_{[0,2]}(x)$
 \begin{align*}
-    &\expect[X]=\int_\R xf_X(x)dx=\int_0^2x^2dx=\frac{8}{3}\\
-    &\expect[X^2]=\int_\R x^2f_X(x)dx=\int_0^2x^3dx=\frac{8}{4}=\frac{16}{4}=4\\
-    &(\expect[X])^2=\frac{64}{3}\neq4\Ra (\expect[X])^2\neq\expect[X^2]
+    &\expect[X]=\int_\R xf_X(x)dx=\frac{1}{2}\int_0^2x^2dx=\frac{4}{3}\\
+    &\expect[X^2]=\int_\R x^2f_X(x)dx=\frac{1}{2}\int_0^2x^3dx=\frac{16}{8}=2\\
+    &(\expect[X])^2=\frac{16}{3}\neq2\Ra (\expect[X])^2\neq\expect[X^2]
 \end{align*}
+
+Ex: Roulette has the numbers 1 to 36 in red (for odd) and black (for even). Additionally, there is the green 0 and depending on how much they want to scam you, also a green 00 and even 000. The expected pay-off of each possible bet is $\frac{36}{n}$ where $n=36+\text{number of greeens}$, i.e. $n=37$ in standard roulette and $n=38$ in American roulette.\\
+Let us assume that each bet, $X_i=1$.
+\begin{align*}
+    &\expect\brsquare{\sum_i a_iX_i}=\sum_i a_i\expect[X_i]=\sum_i a_i\frac{36}{n}=\frac{36}{n}\sum_i a_i\\
+    &\brround{\frac{36}{n}-1}\sum_i a_i<0,\ n<36
+\end{align*}
+
+\subsubsection{Variance}
+For a random variable $X$ with finite expectation we define its variance by
+\[\Var(X):=\expect\brsquare{(X-\expect[X])^2}=\expect[X^2]-(\expect[X])^2\]
+\begin{proof}
+    \begin{align*}
+        &\Var(X)=\expect\brsquare{(X-\expect[X])^2}=\expect\brsquare{X^2-2X\expect[X]+\expect[X]^2}\\
+        &=\expect[X^2]-2\expect[X\expect[X]]+\expect[X]^2=\expect[X^2]-2\expect[X]\expect[X]+\expect[X]^2\\
+        &=\expect[X^2]-\expect[X]^2
+    \end{align*}
+\end{proof}
+For a random variable with finite variance, we call $\sqrt{\Var(X)}$ the standard deviation of $X$ and denote it by $\sigma_X$.\\
+Let $X$ be a random variable with finite variance and $a,b\in\R$ be constants. Then
+\[\Var(aX+b)=a^2\Var(X)\]
+\begin{proof}
+    \begin{align*}
+        &\Var(aX+b)=\expect\brsquare{(aX+b-\expect[aX+b])^2}\\
+        &=\expect[(aX+b-(a\expect[X]+b)^2)]\\
+        &=\expect[a^2(X-\expect[X])^2]\\
+        &=a^2\expect[(X-\expect[X])^2]\\
+        &=a^2\Var(X)
+    \end{align*}
+\end{proof}
+Ex: The pay-off of a financial option has variance $\sigma^2$. If we purchase 2 such options, what is the variance of the pay-off?
+\[\Var(2X)=(2)^2\Var(X)=4\sigma^2\]
+Ex2: Instead we (short-)sell one such option, i.e. we own $-1$ such options. What is the variance of the pay-off?
+\[\Var(-X)=(-1)^2\Var(X)=\sigma^2\]
+Note that $\Var(-X)\neq -\Var(X)$\\
+What does it mean if a random variable, $X$, has $\Var(X)=0$?
+\begin{align*}
+    &0=\expect[(X-\expect[X])^2]=\sum_{x_i}(x_i-\expect[X])^2\prob(X=x_i)\\
+    &(x_i-\expect[X])\geq 0\text{ and }\prob(X=x_i)>0\\
+    &\Ra (x_i-\expect[X])^2=0\Ra x_i=\expect[X]
+\end{align*}
+$\expect[X]$ is a constant which means that there can only be one possible $x_i$ and one value for $X$ which is $\expect[X]$.\\
+\textbf{Independence of Random Variables:}\\
+Recall that $A$ and $B$ are independent if and only if $\prob(A\cap B)=\prob(A)\prob(B)$. We can extend this to random variables by setting $A=\{X\in C\}$ and $B=\{Y\in D\}$. And so we get
+\[\prob(X\in C,Y\in D)=\prob(X\in C)\prob(Y\in D)\]
+We can extend this to say that $X$ and $Y$ are independent if and only if
+\[\prob(X=x,Y=y)=\prob(X=x)\prob(Y=y)\]
+for the discrete case and
+\[f_{X,Y}(x,y)=f_X(x)f_Y(y)\ \forall x,y\in\R\]
+for the continuous case.
