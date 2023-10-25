@@ -586,7 +586,42 @@ What does it mean if a random variable, $X$, has $\Var(X)=0$?
     &\Ra (x_i-\expect[X])^2=0\Ra x_i=\expect[X]
 \end{align*}
 $\expect[X]$ is a constant which means that there can only be one possible $x_i$ and one value for $X$ which is $\expect[X]$.\\
-\textbf{Independence of Random Variables:}\\
+We can also compute the variance for some of the distributions that we have defined thus far.\\
+$X\sim\mathrm{Binom}(n,p)$:
+\begin{align*}
+    &\expect[X^2]=\sum_{k=0}^n k^2\binom{n}{k}p^k(1-p)^{n-k}=\sum_{k=0}^nk\frac{n!}{(n-k)!(k-1)!}p^k(1-p)^{n-k}=p\\
+    &\Var(X)=\Var\brround{\sum_{i=1}^n x_i}=\sum_{i=1}^n\Var(x_i)=\sum_{i=1}^n\brround{\expect[x_i^2]-\expect[x_i]^2}\\
+    &=\sum_{i=1}^n\brround{p-p^2}=np(1-p)
+\end{align*}
+$X\sim\mathrm{Geom}(p)$:
+\begin{align*}
+    &\prob(X=k)=p(1-p)^{k-1},\ k\in\N\\
+    &\expect[X]=\frac{1}{p}\\
+    &\expect[X^2]=\sum_{k=1}^\infty k^2p(1-p)^{k-1}=\sum_{k=1}^\infty kp\ddx{p}\brround{-(1-p)^k}\\
+    &\expect[X^2]=\expect[X(X+1)]-\expect[X]\\
+    &\expect[X(X+1)]=\sum_{k=1}^\infty k(k+1)p(1-p)^{k-1}=p\sum_{k=1}^\infty \frac{d^2}{dp^2}(1-p)^{k+1}\\
+    &=p\frac{d^2}{dp^2}(1-p)^2\sum_{k=0}^\infty(1-p)^k=p\frac{d^2}{dp^2}(1-p)^2\frac{1}{1-(1-p)}=p\frac{d^2}{dp^2}\frac{(1-p)^2}{p}\\
+    &=p\frac{d^2}{dp^2}\brround{\frac{1}{p}-2+p}=p\frac{2}{p^3}=\frac{2}{p^2}\\
+    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X+1)]-\expect[X]-\expect[X]^2=\frac{2}{p^2}-\frac{1}{p}=\frac{1}{p^2}\\
+    &\Var(X)=\frac{1-p}{p^2}
+\end{align*}
+$X\sim\mathrm{Exp}(\lambda)$:
+\begin{align*}
+    &\expect[X]=\frac{1}{\lambda}\\
+    &\expect[X^2]=\frac{2}{\lambda^2}\\
+    &\Var(X)=\frac{2}{\lambda^2}-\bfrac{1}{\lambda}^2=\frac{1}{\lambda}
+\end{align*}
+$X\sim\mathrm{Poisson}(\lambda)$:
+\begin{align*}
+    &\prob(X=k)=\frac{\lambda^2}{k!}e^{-\lambda},\ k\in\N\cup\{0\}\\
+    &\expect[X]=\lambda\\
+    &\expect[X^2]=\sum_{k=0}^\infty k^2 k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\expect[X(X-1)]+\expect[X]\\
+    &\expect[X(X-1)]=\sum_{k=0}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty\frac{\lambda^2}{(k-2)!}e^{-\lambda}\\
+    &=\lambda^2\sum_{k=2}^\infty\frac{\lambda^{k-2}}{(k-2)!}e^{-\lambda}=\lambda^2\sum_{k=0}^\infty\frac{\lambda^k}{k!}e^{-\lambda}=\lambda^2\\
+    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X-1)]+\expect[X]+\expect[X]^2=\lambda^2+\lambda-\lambda^2=\lambda
+\end{align*}
+
+\subsubsection{Independence of Random Variables:}
 Recall that $A$ and $B$ are independent if and only if $\prob(A\cap B)=\prob(A)\prob(B)$. We can extend this to random variables by setting $A=\{X\in C\}$ and $B=\{Y\in D\}$. And so we get
 \[\prob(X\in C,Y\in D)=\prob(X\in C)\prob(Y\in D)\]
 We can extend this to say that $X$ and $Y$ are independent if and only if
@@ -632,6 +667,16 @@ $X$ and $Y$ being independed implies $\expect[XY]=\expect[X]\expect[Y]$
     &=\int_{-\infty}^\infty yf_Y(y)dy\int_{-\infty}^\infty xf_X(x)dx=\expect[Y]\expect[X]
 \end{align*}
 So if $X$ and $Y$ are independent then $\expect[XY]=\expect[X]\expect[Y]$ however, the inverse is not always true. $\expect[XY]=\expect[X]\expect[Y]$ does not imply that $X$ and $Y$ are independent.\\
+We can extend this further to functions. If $X$ and $Y$ are independent then
+\[\expect[g(X)h(Y)]=\expect[g(X)]\expect[h(Y)]\]
+\begin{proof}
+\begin{align*}
+    &\expect[g(X)h(Y)]=\int_{-\infty}^\infty\int_{-\infty}^\infty g(x)h(y) f_{X,Y}(x,y)dxdy\\
+    &f_{X,Y}(x,y)=f_X(x)f_Y(y)\\
+    &\expect[g(x)h(y)]=\int_{-\infty}^\infty\int_{-\infty}^\infty g(x)h(y) f_X(x)f_Y(y)dxdy=\int_{-\infty}^\infty g(x)f_X(x)dx\int_{-\infty}^\infty h(y)f_Y(y)dy\\
+    &\expect[g(x)h(y)]=\expect[g(X)]\expect[h(Y)]
+\end{align*}
+\end{proof}
 If $X$ and $Y$ are independent then we can also get a formula for the variance of $X+Y$.
 \begin{align*}
     &\Var(X+Y)=\expect[(X+Y)^2]-\expect[X+Y]^2\\
@@ -640,37 +685,53 @@ If $X$ and $Y$ are independent then we can also get a formula for the variance o
     &=\expect[X^2]-\expect[X]^2+\expect[Y^2]-\expect[Y]^2\\
     &=\Var(X)+\Var(Y)
 \end{align*}
-We can also compute the variance for some of the distributions that we have defined thus far.\\
-$X\sim\mathrm{Binom}(n,p)$:
+Ex: Let $X$ and $Y$ be independent random variables with known variance and expectation. What is $\expect[X^2Y]$?
 \begin{align*}
-    &\expect[X^2]=\sum_{k=0}^n k^2\binom{n}{k}p^k(1-p)^{n-k}=\sum_{k=0}^nk\frac{n!}{(n-k)!(k-1)!}p^k(1-p)^{n-k}=p\\
-    &\Var(X)=\Var\brround{\sum_{i=1}^n x_i}=\sum_{i=1}^n\Var(x_i)=\sum_{i=1}^n\brround{\expect[x_i^2]-\expect[x_i]^2}\\
-    &=\sum_{i=1}^n\brround{p-p^2}=np(1-p)
+    &\expect[X^2Y]=\expect[X^2]\expect[Y]\\
+    &\Var(X)=\expect[X^2]-\expect[X]^2\Ra\expect[X^2]=\Var(X)+\expect[X]^2\\
+    &\expect[X^2Y]=(\Var(X)+\expect[X]^2)\expect[Y]
 \end{align*}
-$X\sim\mathrm{Geom}(p)$:
+
+\subsection{Normal Distributions}
+
+\subsubsection{Standardization}
+Let $X$ have finite variance. Then for $Y:=\frac{X-\expect[X]}{\sqrt{\Var(X)}}$ we have $\expect[Y]=0$ and $\Var(Y)=1$.
+\begin{proof}
 \begin{align*}
-    &\prob(X=k)=p(1-p)^{k-1},\ k\in\N\\
-    &\expect[X]=\frac{1}{p}\\
-    &\expect[X^2]=\sum_{k=1}^\infty k^2p(1-p)^{k-1}=\sum_{k=1}^\infty kp\ddx{p}\brround{-(1-p)^k}\\
-    &\expect[X^2]=\expect[X(X+1)]-\expect[X]\\
-    &\expect[X(X+1)]=\sum_{k=1}^\infty k(k+1)p(1-p)^{k-1}=p\sum_{k=1}^\infty \frac{d^2}{dp^2}(1-p)^{k+1}\\
-    &=p\frac{d^2}{dp^2}(1-p)^2\sum_{k=0}^\infty(1-p)^k=p\frac{d^2}{dp^2}(1-p)^2\frac{1}{1-(1-p)}=p\frac{d^2}{dp^2}\frac{(1-p)^2}{p}\\
-    &=p\frac{d^2}{dp^2}\brround{\frac{1}{p}-2+p}=p\frac{2}{p^3}=\frac{2}{p^2}\\
-    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X+1)]-\expect[X]-\expect[X]^2=\frac{2}{p^2}-\frac{1}{p}=\frac{1}{p^2}\\
-    &\Var(X)=\frac{1-p}{p^2}
+    &\expect[Y]=\expect\brsquare{\frac{X-\expect[X]}{\sqrt{\Var{X}}}}=\frac{1}{\sqrt{\Var(X)}}\brround{\expect[X]-\expect[X]}=0\\
+    &\Var(Y)=\Var\brround{\frac{X-\expect[X]}{\sqrt{\Var(X)}}}=\Var\brround{\frac{X}{\sqrt{\Var(X)}}}=\frac{1}{\Var(X)}\Var(X)=1
 \end{align*}
-$X\sim\mathrm{Exp}(\lambda)$:
+\end{proof}
+Let us now look at the example of
+\[\int_{-\infty}^\infty e^{-u^2}du=\sqrt{\pi}\]
+Since the exponential is non-negative, we can get that $f(u)=\frac{1}{\sqrt{\pi}}e^{-u^2}$ is a density function on $\R$. Calling a corresponding random variable $U$ we can calculate its expectation and variance as
 \begin{align*}
-    &\expect[X]=\frac{1}{\lambda}\\
-    &\expect[X^2]=\frac{2}{\lambda^2}\\
-    &\Var(X)=\frac{2}{\lambda^2}-\bfrac{1}{\lambda}^2=\frac{1}{\lambda}
+    &\expect[U]=\int_\R u\frac{1}{\sqrt{\pi}}e^{-u^2}du=-\frac{1}{2\sqrt{\pi}}e^{-u^2}\eval_{-\infty}^\infty=0\\
+    &\Var(U)=\expect[U^2]-\expect[U]^2=\expect[U^2]=\int_\R u^2\frac{1}{\sqrt{\pi}}e^{-u^2}du\\
+    &=-\frac{u}{2\sqrt{\pi}}e^{-u^2}\eval_{-\infty}^\infty-\int_{-\infty}^\infty -\frac{1}{2\sqrt{\pi}}e^{-u^2}du=\frac{1}{2}\int_{-\infty}^\infty\frac{1}{\sqrt{\pi}}e^{-u^2}du=\frac{1}{2}\int_{-\infty}^\infty f_U(u)du=\frac{1}{2}
 \end{align*}
-$X\sim\mathrm{Poisson}(\lambda)$:
+This gave us a variance of $\frac{1}{2}$. We can construct a standardized version as follows:
 \begin{align*}
-    &\prob(X=k)=\frac{\lambda^2}{k!}e^{-\lambda},\ k\in\N\cup\{0\}\\
-    &\expect[X]=\lambda\\
-    &\expect[X^2]=\sum_{k=0}^\infty k^2 k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\expect[X(X-1)]+\expect[X]\\
-    &\expect[X(X-1)]=\sum_{k=0}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty\frac{\lambda^2}{(k-2)!}e^{-\lambda}\\
-    &=\lambda^2\sum_{k=2}^\infty\frac{\lambda^{k-2}}{(k-2)!}e^{-\lambda}=\lambda^2\sum_{k=0}^\infty\frac{\lambda^k}{k!}e^{-\lambda}=\lambda^2\\
-    &\Var(X)=\expect[X^2]-\expect[X]^2=\expect[X(X-1)]+\expect[X]+\expect[X]^2=\lambda^2+\lambda-\lambda^2=\lambda
+    &X=\frac{U-\expect[U]}{\sqrt{\Var(U)}}=\frac{U}{\sqrt{\frac{1}{2}}}=\sqrt{2}U\\
+    &f_X(x)=F_X'(x)\\
+    &F_X(x)=\prob(X\leq x)=\prob(\sqrt{2}U\leq x)\\
+    &F_X(x)=\prob\brround{U\leq\frac{x}{\sqrt{2}}}=F_U\brround{\frac{x}{\sqrt{2}}}\\
+    &f_U(x)=F_U'(x)\\
+    &f_X(x)=\ddx{x}F_X(x)=\ddx{x}F_U\bfrac{x}{\sqrt{2}}=F_U'\bfrac{x}{\sqrt{2}}\frac{1}{\sqrt{2}}=f_U\bfrac{x}{\sqrt{2}}\frac{1}{\sqrt{2}}\\
+    &=\frac{1}{\sqrt{\pi}}e^{-\bfrac{x}{\sqrt{2}}^2}\frac{1}{\sqrt{2}}=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}
 \end{align*}
+We call a random variable $X$ standard normally distributed if it has the above density. We write $X\sim\norm(0,1)$.\\
+We can generalize this further to a normal distribution that has expectation (mean) $\mu$ and variance $\sigma^2$.\\
+We set $Y=\sigma X+\mu$ then $\expect[Y]=\mu$ and $\Var(Y)=\sigma^2$ and we get
+\begin{align*}
+    &f_Y(y)=\ddx{y}F_Y(y)=\ddx{y}\prob(Y\leq y)=\ddx{y}\prob(\sigma X+\mu\leq y)=\ddx{y}\prob\brround{x\leq\frac{y-\mu}{\sigma}}\\
+    &=\ddx{y}F_X\brround{\frac{y-\mu}{\sigma}}=f_X\bfrac{y-\mu}{\sigma}\frac{1}{\sigma}=\frac{1}{\sqrt{2\pi}}e^{-\frac{\bfrac{y-\mu}{\sigma}^2}{2}}\frac{1}{\sigma}=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(y-\mu)^2}{2\sigma^2}}
+\end{align*}
+We say that $X$ has normal or Gaussian distribution with mean $\mu$ and variance $\sigma^2$ and write $X\sim\norm(\mu,\sigma^2)$.\\
+Central Limit Theorem:\\
+Let $X_1,\ldots, X_n$ be independent random variables with $\expect[X_1]=\mu\in\R$ and $\Var(X_1)=\sigma^2>0$. We define $\overline{X}_n:=\frac{1}{n}\sum\limits_{i=1}^n x_i$. Then
+\[\lim_{n\to\infty}\prob\brround{\frac{\overline{X}_n-\expect[\overline{X}_n]}{\sqrt{\Var(\overline{X}_n)}}\leq x}=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}{2}}\]
+Other formulations of this are
+\[\sqrt{n}\frac{\overline{X}_n-\mu}{\sigma}\sim\norm(0,1)\]
+and
+\[\frac{\sum\limits_{i=1}^n(X_i-\mu)}{\sqrt{n}\sigma}\overset{d}{\to}\norm(0,1)\]
