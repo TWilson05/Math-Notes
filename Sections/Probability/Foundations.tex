@@ -529,7 +529,7 @@ Ex: Flip a coin 100 times. What is the expected number of streaks of 6 heads in 
 $X:=$ number of streaks of 6.\\ 
 $x_i:=$ streak of 6 happening with $i$.
 \begin{align*}
-    &\expect[x_i]=1\cdot{1}{2^6}+0\cdot\brround{1-\frac{1}{2^6}}=\frac{1}{64}\\
+    &\expect[x_i]=1\cdot\frac{1}{2^6}+0\cdot\brround{1-\frac{1}{2^6}}=\frac{1}{64}\\
     &\expect[X]=\expect\brsquare{\sum_{i=1}^{95}x_i}=\sum_{i=1}^{95}\expect[x_i]=\frac{95}{64}
 \end{align*}
 Conditional Expectations:\\
@@ -729,9 +729,49 @@ We set $Y=\sigma X+\mu$ then $\expect[Y]=\mu$ and $\Var(Y)=\sigma^2$ and we get
 \end{align*}
 We say that $X$ has normal or Gaussian distribution with mean $\mu$ and variance $\sigma^2$ and write $X\sim\norm(\mu,\sigma^2)$.\\
 Central Limit Theorem:\\
-Let $X_1,\ldots, X_n$ be independent random variables with $\expect[X_1]=\mu\in\R$ and $\Var(X_1)=\sigma^2>0$. We define $\overline{X}_n:=\frac{1}{n}\sum\limits_{i=1}^n x_i$. Then
-\[\lim_{n\to\infty}\prob\brround{\frac{\overline{X}_n-\expect[\overline{X}_n]}{\sqrt{\Var(\overline{X}_n)}}\leq x}=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}{2}}\]
+Let $X_1,\ldots, X_n$ be independent random variables with $\expect[X_i]=\mu\in\R$ and $\Var(X_i)=\sigma^2>0$. We define $\overline{X}_n:=\frac{1}{n}\sum\limits_{i=1}^n x_i$. Then
+\[\lim_{n\to\infty}\prob\brround{\frac{\overline{X}_n-\expect[\overline{X}_n]}{\sqrt{\Var(\overline{X}_n)}}\leq x}=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}{2}}du\]
 Other formulations of this are
 \[\sqrt{n}\frac{\overline{X}_n-\mu}{\sigma}\sim\norm(0,1)\]
 and
 \[\frac{\sum\limits_{i=1}^n(X_i-\mu)}{\sqrt{n}\sigma}\overset{d}{\to}\norm(0,1)\]
+Ex: An airline overbooked a flight for 500 passengers by 10 tickets. Assuming that every passenger does not turn up independently with probability 0.04, what is the probability that there are not enough seats on the plane?\\
+Let $X_i$ be the event that passenger $i$ shows up and let $i\in\brcurly{1,\ldots,510}$
+\begin{align*}
+    &X_i\sim\mathrm{Bernoulli}(0.96)\\
+    &\expect[X_i]=0.96\\
+    &\Var(X_i)=p(1-p)=0.96(1-0.96)=0.0384\\
+    &\prob\brround{\sum_{i=1}^{510}X_i\leq 500}
+\end{align*}
+We can then normalize and use the central limit theorem
+\begin{align*}
+    &\prob\brround{\sum_{i=1}^{510}X_i\leq 500}=\prob\brround{\frac{\sum\limits_{i=1}^nX_i-\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\sum\limits_{i=1}^n X_i}}}\leq\frac{500-\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\sum\limits_{i=1}^n X_i}}}}\\
+    &=\prob\brround{\frac{\sum\limits_{i=1}^nX_i-\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\sum\limits_{i=1}^n X_i}}}\leq\frac{500-510\cdot0.96}{\sqrt{510\cdot0.0384}}}\\
+    &\approx\prob\brround{\frac{\sum\limits_{i=1}^nX_i-\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\sum\limits_{i=1}^n X_i}}}\leq 2.35}\approx\int_{-\infty}^{2.35}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx\approx 0.99
+\end{align*}
+Ex2: We toss a coin a million times. What is the probability that the number of `heads' is between 49.95\% and 50.05\%?\\
+Let $X_i$ be the event that the $i$th toss is a head. Then
+\begin{align*}
+    &X_i\sim\mathrm{Bernoulli}(\tfrac{1}{2})\\
+    &\expect[X_i]=\frac{1}{2}\\
+    &\Var(X_i)=\frac{1}{2}(1-\tfrac{1}{2})=\frac{1}{4}\\
+    &\bar{X}=\frac{1}{10^6}\sum_{i=1}^{10^6}X_i\\
+    &\expect[\bar{X}]=\frac{1}{10^6}\sum_{i=1}^{10^6}\expect[X_i]=\frac{1}{2}\\
+    &\Var(\bar{X})=\bfrac{1}{10^{6}}^2\sum_{i=1}^{10^6}\Var(X_i)=\frac{1}{4\cdot10^6}\\
+    &\prob(0.4995\leq\bar{X}\leq0.5005)=\prob(\bar{X}\leq0.5005)-\prob(\bar{X}\leq0.4995)\\
+    &=\prob\brround{\frac{\bar{X}-\expect[\bar{X}]}{\sqrt{\Var(\bar{X})}}\leq\frac{0.5005-\frac{1}{2}}{\sqrt{\frac{1}{4\cdot 10^6}}}}-\prob\brround{\frac{\bar{X}-\expect[\bar{X}]}{\sqrt{\Var(\bar{X})}}\leq\frac{0.4995-\frac{1}{2}}{\sqrt{\frac{1}{4\cdot 10^6}}}}\\
+    &=\prob\brround{\frac{\bar{X}-\expect[\bar{X}]}{\sqrt{\Var(\bar{X})}}\leq1}-\prob\brround{\frac{\bar{X}-\expect[\bar{X}]}{\sqrt{\Var(\bar{X})}}\leq-1}\\
+    &\approx\int_{-\infty}^1\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx-\int_{-\infty}^{-1}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx\approx 0.6827
+\end{align*}
+Ex3: At a ceilidh for 150 people the bar needs to have an adequate supply of drinks. Assuming that each dancer drinks half a litre on average, with a standard deviation of 0.2L, how much should be in stock to be 99\% sure there is enough to drink?\\
+Let $X_i$ be the amount that the $i$th person drinks. Then
+\begin{align*}
+    &\expect[X_i]=\frac{1}{2}\\
+    &\Var(X_i)=0.2^2=0.04\\
+    &Y:=\sum_{i=1}^{150}X_i\\
+    &0.99\leq\prob(Y\leq s)=\prob\brround{\frac{Y-\expect[Y]}{\sqrt{\Var(Y)}}\leq\frac{s-75}{\sqrt{150\cdot0.04}}}\approx\int_{-\infty}^{\frac{s-75}{0.2\sqrt{150}}}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx\\
+    &\frac{s-75}{0.2\sqrt{150}}\geq 2.326\Ra s\geq 80.7
+\end{align*}
+We denote the CDF of the standard normal distribution by $\Phi(x):=\prob(X\leq x)$
+\[\Phi(z):=\int_{-\infty}^z\frac{1}{\sqrt{2\pi}e^{-\frac{x^2}{2}}}dx,\ \forall z\in\R\]
+Note that there is no analytical expression for $\Phi(z)$ and so we have to use numerical methods to calculate it.\\
