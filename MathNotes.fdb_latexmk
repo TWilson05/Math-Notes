@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1698584636 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1698584638 0
-  "MathNotes.aux" 1698584638 2281 0ce91aad36f5e9a31b2688ea64acfbae "pdflatex"
-  "MathNotes.out" 1698584638 2089 e0880a99beb9a5d3aa9b15c96b5e5439 "pdflatex"
+["pdflatex"] 1698856740 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1698856742 0
+  "MathNotes.aux" 1698856742 2418 7fea045f621e659508c2e65dfe36d8fc "pdflatex"
+  "MathNotes.out" 1698856742 2255 fdbda0a074dbb686eeaa75071bd6d1e1 "pdflatex"
   "MathNotes.tex" 1696240777 1440 83692a461edbe7c8e5fb3d92264783ed ""
-  "MathNotes.toc" 1698584638 1193 037b9fe49c3981d43a53f93d4ed2c534 "pdflatex"
+  "MathNotes.toc" 1698856742 1289 8465ec8bcfac3debe623abe7b974ce7d "pdflatex"
   "Sections/Probability.tex" 1695569804 67 0da00daebf3ed13535c3be086f71eccd ""
-  "Sections/Probability/Foundations.tex" 1698584635 47682 25ca64df58fe05af601ee00c974e991b ""
+  "Sections/Probability/Foundations.tex" 1698856740 49407 67cdff2c1535472592440caaa137f215 ""
   "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1696240777 1440 83692a461edbe7c8e5fb3d92264783ed ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1671857571 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1671859246 3524 cb3e574dea2d1052e39280babc910dc8 ""

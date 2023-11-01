@@ -775,3 +775,33 @@ Let $X_i$ be the amount that the $i$th person drinks. Then
 We denote the CDF of the standard normal distribution by $\Phi(x):=\prob(X\leq x)$
 \[\Phi(z):=\int_{-\infty}^z\frac{1}{\sqrt{2\pi}e^{-\frac{x^2}{2}}}dx,\ \forall z\in\R\]
 Note that there is no analytical expression for $\Phi(z)$ and so we have to use numerical methods to calculate it.\\
+
+\subsubsection{Joint Probabilities}
+Let $X$ and $Y$ be discrete random variables. We define the joint probability mass function of $X$ and $Y$ by
+\[p_{X,Y}(x,y):=\prob(X=x,Y=y)=\prob(X=x\text{ and }Y=y)\]
+It is necessary that
+\[0\leq p_{X,Y}(x,y)\leq 1\ \forall x,y\]
+and
+\[\sum_x\sum_y p_{X,Y}(x,y)=1\]
+We can also define the marginal probability mass functions of $X$ and $Y$ to be
+\[p_X(x)=\sum_y p_{X,Y}(x,y)\quad\quad p_Y(y)=\sum_x p_{X,Y}(x,y)\]
+What we're doing here is summing over all the possible options of $x$ or $y$ respectively to get an individual (not joint) probability expression.\\
+We can also define the conditional probability mass function of $X$ given $Y$ to be
+\[\prob((X,Y)\in A)=\iint_A f_{X,Y}(x,y)dxdy=1\]
+With the necessity that
+\[0\leq f_{X,Y}(x,y)\ \forall x,y\]
+and
+\[\int_\R\int_\R f_{X,Y}(x,y)dxdy=1\]
+The marginal density functions of $X$ and $Y$ can be defined as
+\[f_X(x)=\int_\R f_{X,Y}(x,y)dy\quad\quad f_Y(y)=\int_\R f_{X,Y}(x,y)dx\]
+Ex: If $f_{X,Y}(x,y)=\ind_{[0,1]^2}(x,y)$ what is the marginal density function of $X$?
+\begin{align*}
+    &f_X(x)=\int_{-\infty}^\infty f_{X,Y}(x,y)dy=\int_\R\ind_{[0,1]}(x)\ind_{[0,1]}(y)dy=\ind_{[0,1]}(x)\int_{-\infty}^\infty\ind_{[0,1]}(y)dy=\ind_{[0,1]}(x)\int_0^1 dy\\
+    &=\ind_{[0,1]}(x)
+\end{align*}
+Ex2: If $f_{X,Y}(x,y)=e^{-\frac{\pi x^2}{2}-2\pi y^2}$, are $X$ and $Y$ independent?
+\begin{align*}
+    &f_Y(y)=\int_\R f_{X,Y}(x,y)dx=e^{-2\pi y^2}\int_\R e^{-\frac{\pi x^2}{2}}dx=e^{-2\pi y^2}\int_\R\frac{\sqrt{2}}{\sqrt{2\pi\frac{1}{\pi}}}e^{-\frac{x^2}{2\frac{1}{\pi}}}dx\\
+    &=\sqrt{2}e^{-2\pi y^2}
+\end{align*}
+Because we were able to split the functions apart we can reason that they are independent.
