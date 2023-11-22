@@ -613,7 +613,7 @@ $X\sim\mathrm{Exp}(\lambda)$:
 \end{align*}
 $X\sim\mathrm{Poisson}(\lambda)$:
 \begin{align*}
-    &\prob(X=k)=\frac{\lambda^2}{k!}e^{-\lambda},\ k\in\N\cup\{0\}\\
+    &\prob(X=k)=\frac{\lambda^k}{k!}e^{-\lambda},\ k\in\N\cup\{0\}\\
     &\expect[X]=\lambda\\
     &\expect[X^2]=\sum_{k=0}^\infty k^2 k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\expect[X(X-1)]+\expect[X]\\
     &\expect[X(X-1)]=\sum_{k=0}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty k(k-1)\frac{\lambda^k}{k!}e^{-\lambda}=\sum_{k=2}^\infty\frac{\lambda^2}{(k-2)!}e^{-\lambda}\\
@@ -729,12 +729,14 @@ We set $Y=\sigma X+\mu$ then $\expect[Y]=\mu$ and $\Var(Y)=\sigma^2$ and we get
 \end{align*}
 We say that $X$ has normal or Gaussian distribution with mean $\mu$ and variance $\sigma^2$ and write $X\sim\norm(\mu,\sigma^2)$.\\
 Central Limit Theorem:\\
-Let $X_1,\ldots, X_n$ be independent random variables with $\expect[X_i]=\mu\in\R$ and $\Var(X_i)=\sigma^2>0$. We define $\overline{X}_n:=\frac{1}{n}\sum\limits_{i=1}^n x_i$. Then
+Let $X_1,\ldots, X_n$ be independent random variables with $\expect[X_i]=\mu\in\R$ and $\Var(X_i)=\sigma^2>0$. We define $\overline{X}_n:=\frac{1}{n}\sum\limits_{i=1}^n X_i$. Then
 \[\lim_{n\to\infty}\prob\brround{\frac{\overline{X}_n-\expect[\overline{X}_n]}{\sqrt{\Var(\overline{X}_n)}}\leq x}=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}{2}}du\]
-Other formulations of this are
-\[\sqrt{n}\frac{\overline{X}_n-\mu}{\sigma}\sim\norm(0,1)\]
-and
-\[\frac{\sum\limits_{i=1}^n(X_i-\mu)}{\sqrt{n}\sigma}\overset{d}{\to}\norm(0,1)\]
+We can express other formulations of this as
+\begin{align*}
+    &\frac{\overline{X}_n-\expect[\overline{X}_n]}{\sqrt{\Var(\overline{X}_n)}}=\frac{\frac{1}{n}\sum\limits_{i=1}^n X_i-\expect\brsquare{\frac{1}{n}\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\frac{1}{n}\sum\limits_{i=1}^n X_i}}}=\frac{\frac{1}{n}\sum\limits_{i=1}^n X_i-\frac{1}{n}\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\frac{1}{n^2}\Var\brround{\sum\limits_{i=1}^n X_i}}}=\boxed{\frac{\sum\limits_{i=1}^n X_i-\expect\brsquare{\sum\limits_{i=1}^n X_i}}{\sqrt{\Var\brround{\sum\limits_{i=1}^n X_i}}}}\\
+    &=\frac{\sum\limits_{i=1}^n X_i-\sum\limits_{i=1}^n\expect[X_i]}{\sqrt{\sum\limits_{i=1}^n\Var(X_i)}}=\boxed{\frac{\sum\limits_{i=1}^n (X_i-\mu)}{\sqrt{n}\sigma}}\\
+    &=\frac{\sum\limits_{i=1}^n X_i-n\mu}{\sqrt{n}\sigma^2}=\frac{\frac{1}{n}\sum\limits_{i=1}^n X_i-\mu}{\frac{\sigma^2}{\sqrt{n}}}=\boxed{\sqrt{n}\frac{\overline{X}_n-\mu}{\sigma^2}}
+\end{align*}
 Ex: An airline overbooked a flight for 500 passengers by 10 tickets. Assuming that every passenger does not turn up independently with probability 0.04, what is the probability that there are not enough seats on the plane?\\
 Let $X_i$ be the event that passenger $i$ shows up and let $i\in\brcurly{1,\ldots,510}$
 \begin{align*}
@@ -805,3 +807,168 @@ Ex2: If $f_{X,Y}(x,y)=e^{-\frac{\pi x^2}{2}-2\pi y^2}$, are $X$ and $Y$ independ
     &=\sqrt{2}e^{-2\pi y^2}
 \end{align*}
 Because we were able to split the functions apart we can reason that they are independent.
+
+\subsubsection{Maximums and Minimums}
+Let $n\in\N$ and $X_1,\ldots,X_n$ be independent, then $\prob(X_1\in A_1,\ldots,X_n\in A_n)$ for all nice sets $A_i$. The joint density function is
+\[f_{X_1,\ldots,X_n}(x_1,\ldots,x_n)=\prod_{i=1}^n f_{X_i}(x_i)\]
+and
+\[F_{X_1,\ldots,X_n}(x_1,\ldots,x_n)=\prod_{i=1}^n F_{X_i}(x_i)\]
+Also note that the expectation of products is the product of expectations here
+\[\expect\brsquare{\prod_{i=1}^n g_i(X_i)}=\prod_{i=1}^n\expect[g_i(X_i)]\]
+What is the distribution of the maximum of $n$ independent random variables $X_1,\ldots,X_n$?\\
+Define $M_n:=\max\limits_{i\in\brcurly{1,\ldots,n}}\{X_i\}$ then
+\begin{align*}
+    &F_{M_n}=\prob(M_n\leq z)=\prob\brround{\max_{i\in\brcurly{1,\ldots,n}}\{X_i\}\leq z}=\prob\brround{\text{all $X_i$ are }\leq z}=\prob\brround{X_1\leq z,\ldots,X_n\leq z}\\
+    &=\prob(X_1\leq z)\cdots\prob(X_n\leq z)=\prod_{i=1}^n \prob(X_i\leq z)=\prod_{i=1}^n F_{X_i}(z)
+\end{align*}
+Now assume that $X_i$ are identically and independently distributed (iid) with pdf $f_X$ and cdf $F_X$. Then
+\begin{align*}
+    &f_{M_n}(z)=\ddx{z} F_{M_n}(z)\\
+    &F_{X_i}=F_X\Ra F_{M_n}=\prod_{i=1}^n F_{X_i}(z)=(F_X(z))^n\\
+    &F_{M_n}(z)=F'_{M_n}(z)=\ddx{z}(F_X(z))^n=n(F_X(z))^{n-1}f_X(z)
+\end{align*}
+What about the minimum?\\
+\begin{align*}
+    &F_{\min(X_i)}(z)=\prob\brround{\min_{i}X_i\leq z}=\prob(\text{at least one}\leq z)\\
+    &=1-\prob\brround{\min_{i}X_i>z}=1-\prob(\text{all}>z)=1-\prod_{i=1}^n\prob(X_i>z)\\
+    &=1-\prod_{i=1}^n(1-\prob(X_1\leq z))=1-\prod_{i=1}^n(1-F_{X_i}(z))=1-(1-F_X(z))^n\\
+    &f_{\min(X_i)}(z)=\ddx{z}F_{\min(X_i)}(z)=n(1-F_X(z))^{n-1}f_X(z)
+\end{align*}
+Ex: If $X_i$ is iid and $X_i\sim\mathrm{Exp}(\lambda_i)$ what is $F_{\min}(X_i)$
+\begin{align*}
+    &F_{X_i}=(1-e^{-\lambda_i z})\ind\brcurly{z>0}\\
+    &F_{\min(X_i)}(z)=1-\prod_{i=1}^n(1-F_{X_i}(z))=1-\prod_{i=1}^n(1-(1-e^{-\lambda_i z})\ind\brcurly{z>0})\\
+    &=1-\prod_{i=1}^n e^{-\lambda_i z}=1-e^{-\sum\limits_{i=1}^n\lambda_i z}
+\end{align*}
+So we get that the minimum here is also exponentially distributed with
+\[\min_{i\in\brcurly{1,\ldots,n}}X_i\sim\mathrm{Exp}\brround{\sum_{i=1}^n \lambda_i}\]
+Applying the results from this to an example, let us consider the following:\\
+A circuit is made up of $n$ components. The lifetimes of the components are independent and exponentially distributed with $\tau_i\sim\mathrm{Exp}(\lambda)$. The circuit requires all of the parts to be able to function so as soon as a single part fails the entire circuit fails. How long do you expect the circuit to last?\\
+Let $T$ be the lifetime of the circuit such that $T=\min\limits_{i\in\brcurly{1,\ldots,n}}\tau_i$. From our previous result we know that $T\sim\mathrm{Exp}\brround{\sum\limits_{i=1}^n\tau_i}=\mathrm{Exp}(n\lambda)$. We can then calculate the expectation of $T$ as $\expect[T]=\frac{1}{n\lambda}$.
+
+\subsubsection{Linear Transformations}
+Sums in general:\\
+If we define a sum of random variables $Z:=X+Y$ then the pdf of the sum $Z$ is given to be
+\begin{align*}
+    &p_Z(z)=\prob(Z=z)=\prob(X+Y=z)=\prob(Y=z-X)\\
+    &X=\bigsqcup_{x_i}x_i\\
+    &p_Z(z)=\prob\brround{\bigsqcup_{x_i}\brcurly{Y=z-x_i,X=x_i}}=\sum_{x_i}\prob(Y=z-x_i,X=x_i)\\
+    &=\sum_{x_i}p_{X,Y}(x_i,z-x_i)
+\end{align*}
+If $X$ and $Y$ are independent then we get $p_{X,Y}(x,y)=p_X(x)p_Y(y)$ and
+\[p_{X+Y}(z)=\sum_{x_i}p_X(x_i)p_Y(z-x_i)=\sum_{y_i}p_X(z-y_i)p_Y(y_i)\]
+and for the continuous counterpart
+\[f_{X+Y}(z)\int_\R f_X(x)f_Y(z-x)dx=\int_\R f_X(z-y)f_Y(y)dy\]
+Ex: Let $X\sim\mathrm{Poisson}(\lambda)$ and $Y\sim\mathrm{Poisson}(\mu)$. What is the distribution of $X+Y$?
+\begin{align*}
+    &p_X(k)=\prob(X=k)=\frac{\lambda^k}{k!}e^{-\lambda}\ind_{\N_0}(k)\\
+    &p_Y(k)=\prob(Y=k)=\frac{\mu^k}{k!}e^{-\mu}\ind_{\N_0}(k)\\
+    &p_{X+Y}(k)=\sum_{i\in\Z} p_X(i)p_Y(k-i)=\sum_{i\in\Z}\frac{\lambda^i}{i!}e^{-\lambda}\ind_{\N_0}(i)\frac{\mu^{k-i}}{(k-i)!}e^{-\mu}\ind_{\N_0}(k-i)\\
+    &=\sum_{i=0}^\infty\frac{\lambda^i}{i!}e^{-\lambda}\frac{\mu^{k-i}}{(k-i)!}e^{-\mu}\ind_{\N_0}(k-i)=\frac{e^{-(\lambda+\mu)}}{k!}\sum_{i=0}^k\frac{k!}{i!(k-i)!}\lambda^i\mu^{k-i}\\
+    &(a+b)^n=\sum_{i=0}^n\binom{n}{i}a^ib^{n-i}\\
+    &p_{X+Y}(k)=\frac{e^{-(\lambda+\mu)}}{k!}(\lambda+\mu)^k\\
+    &\Ra X+Y\sim\mathrm{Poisson}(\lambda+\mu)
+\end{align*}
+Ex2: Let $X\sim\norm(\mu,1)$ be independent to $Y\sim\norm(\lambda,1)$. What is the distribution of $X+Y$?
+\begin{align*}
+    &f_{X+Y}(z)=\int_\R f_X(x)f_Y(z-x)dx=\int_\R\frac{1}{\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(z-x-\lambda)^2}{2}}dx\\
+    &=\frac{1}{\sqrt{2\pi}}\int_\R\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2-2x\mu+\mu^2}{2}}e^{-\frac{z^2-2xz+2x\lambda-x^2-2\lambda z+\lambda^2}{2}}dx\\
+    &=\frac{1}{\sqrt{2\pi}}\int_\R\frac{1}{\sqrt{2\pi}} e^{-\frac{2x^2-2x(\mu+\lambda+z)-2\lambda+\mu^2+\lambda^2+z^2}{2}}dx=\frac{1}{\sqrt{2\pi}}\int_\R\frac{1}{\sqrt{2\pi}}e^{-\frac{(x-\frac{1}{2}(\mu-\lambda+z))^2}{2}}e^{-\frac{2\lambda z+\mu^2+\lambda^2+z^2-\frac{1}{2}(\mu-\lambda+z)}{2}}dx\\
+    &=\frac{1}{\sqrt{2\pi 2}}e^{-\frac{\frac{1}{2}(z-\mu-\lambda)^2}{2}}\int_\R\frac{1}{\sqrt{2\pi\frac{1}{2}}}e^{-\frac{(x-\frac{1}{2}(\mu-\lambda+z))^2}{2}}dx\\
+    &=\frac{1}{\sqrt{2\pi2}}e^{-\frac{(z-(\mu+\lambda))^2}{2\cdot 2}}\\
+    &\Ra X+Y\sim\norm(\mu+\lambda,2)
+\end{align*}
+In general, we can prove that the sum of two independent normal distributions gives the following normal distribution.
+\[X+Y\sim\norm(\expect[X]+\expect[Y],\Var(X)+\Var(Y))\]
+We can also look at generalized linear transformations. We denote $g(x)=\mu+\sigma x$\\
+We define $g^{-1}$ as the left-inverse such that $g^{-1}(g(x))=x$.\\
+Let $g:\R\to\R$ such that $g^{-1}$ exists, is increasing, and differentiable where $f_X$ is positive. Define $Y:=g(x)$. Then
+\[f_Y(y)=f_X(g^{-1}(y))(g^{-1})'(y)\]
+\begin{proof}
+\begin{align*}
+    &f_Y(y)=F_Y'(y)\\
+    &F_Y(y)=\prob(Y\leq y)=\prob(g(X)\leq y)=\prob(g^{-1}(g(X))\leq g^{-1}(y))=\prob(X\leq g^{-1}(y))=F_X(g^{-1}(y))\\
+    &f_Y(y)=\ddx{y}F_X(g^{-1}(y))=F_X'(g^{-1}(y))(g^{-1})'(y)=f_X(g^{-1}(y))(g^{-1})'(y)
+\end{align*}
+\end{proof}
+Ex: Let $X\sim\mathrm{Exp}(\lambda)$ and $g(x)=\ln x$
+\begin{align*}
+    &Y:=g(X)=\ln X\\
+    &g^{-1}(y)=e^y\\
+    &(g^{-1})'(y)=e^y\\
+    &f_Y(y)=f_X(e^y)e^y=\lambda e^{-\lambda e^y+y}
+\end{align*}
+Ex2: A log-normal distribution random variable $Y$ means that $\ln(Y)\sim\norm(\mu,\sigma^2)$. Thus, define $Y=e^x$ for $X\sim\norm(\mu,\sigma)$. What is $f_Y$?
+\begin{align*}
+    &X\sim\norm(\mu,\sigma^2),\ g(x)=e^x\\
+    &g^{-1}(y)=\ln(y),\ (g^{-1})'(y)=\frac{1}{y}\\
+    &F_Y(y)=\prob(e^x\leq y)=\prob(X\leq \ln(y))\ind_{(0,\infty)}(y)=F_X(\ln(y))\ind_{(0,\infty)}(y)\\
+    &f_Y(y)=\ddx{y}F_X(\ln(y))\ind_{(0,\infty)}(y)=f_X(\ln(y))\ind_{(0,\infty)}(y)=\frac{1}{y}\ind_{(0,\infty)}(y)\\
+    &=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(\ln(y)-\mu)^2}{2\sigma^2}}\brround{\frac{1}{y}\ind\brcurly{y>0}}=\frac{1}{\sqrt{2\pi\sigma^2}y}e^{-\frac{(\ln(y)-\mu)^2}{2\sigma^2}}\ind_{(0,\infty)}(y)
+\end{align*}
+Ex3: Let $X$ be a continuous random variable. What is the distribution of $Y:=F_X(X)$. Note that $F_X$ is invertible wherever $f_X>0$.
+\begin{align*}
+    &f_Y(y)=\ddx{y}\prob(F_X(X)\leq y)\\
+    &F_X^{-1}:\ (0,1)\to\R\\
+    &\prob(X\leq F_X^{-1}(y))\ind_{[0,1]}(y)+\ind_{(1,\infty)}(y)\\
+    &=F_X(F_X^{-1}(y))\ind_{[0,1]}(y)+\ind_{(0,\infty)}(y)=y\ind_{[0,1]}(y)+\ind_{(0,\infty)}(y)\\
+    &f_Y(y)=F_Y'(y)=\ind_{[0,1]}(y)\\
+    &F_Y(y)\ind_{[0,1]}(y)(F(y))+\ind_{(1,\infty)}(F(y))=F(y)
+\end{align*}
+Ex4: Let $g(x)=x^2$ and for the random variable $X\sim\mathrm{Exp}(X)$ define $Y:=g(X)$. What is $f_Y$?
+\begin{align*}
+    &X\geq 0\ \therefore\sqrt{X^2}=|X|=X\\
+    &F_Y(y)=\prob(X^2\leq y)=\prob(X\leq \sqrt{y})\ind\brcurly{y\geq 0}=F_X(\sqrt{y})\ind\brcurly{y\geq 0}\\
+    &f_Y(y)=\lambda e^{-\lambda\sqrt{y}}\frac{1}{2\sqrt{y}}\ind\brcurly{y\geq0}
+\end{align*}
+
+\subsubsection{Covariance and Correlation}
+Recall that two random variables $X$ and $Y$ are independent if $f_{X,Y}(x,y)=f_X(x)f_Y(y)$. For expectations we can write this as
+\[\expect[XY]=\expect[X]\expect[Y]\Ra \expect[XY]-\expect[X]\expect[Y]=0\]
+Note that the converse is not true.\\
+We can also rewrite this as
+\[\expect[XY]-\expect[X]\expect[Y]=\expect[(X-\expect[X])(Y-\expect[Y])]\]
+We define the covariance of $X$ and $Y$ to be
+$$\Cov(X,Y)=\expect[(X-\expect[X])(Y-\expect[Y])]=\expect[XY]-\expect[X]\expect[Y]$$
+Note that if $X$ and $Y$ are independent then we get $\Cov(X,Y)=0$
+We can define some properties of covariance as follows:\\
+Let $X,Y,Z$ be random variables and $a,b\in\R$ then
+\begin{itemize}
+    \item $\Cov(X,Y)=\Cov(Y,X)$
+    \item $\Cov(X,X)=\Var(X)$
+    \begin{proof}
+        \begin{align*}
+            &\expect[XX]-\expect[X]\expect[X]=\expect[X^2]-\expect[X]^2=\Var(X)
+        \end{align*}
+    \end{proof}
+    \item $\Cov(aX+bY,Z)=a\Cov(X,Z)+b\Cov(Y,Z)$
+    \begin{proof}
+        \begin{align*}
+            &\expect[(aX+bY)Z]-\expect[aX+bY]\expect[Z]=\expect[aXZ+bYZ]-\expect[aX+bY]\expect[Z]\\
+            &=a\expect[XZ]+b\expect[YZ]-a\expect[X]\expect[Z]-b\expect[Y]\expect[Z]\\
+            &=a(\expect[XZ]-\expect[X]\expect[Z])+b(\expect[YZ]-\expect[Y]\expect[Z])\\
+            &=a\Cov(X,Z)+b\Cov(Y,Z)
+        \end{align*}
+    \end{proof}
+    \item Let $X$ and $Y$ be two random variables with finite variance. Then
+    \[\Var(X+Y)=\Var(X)+\Var(Y)+2\Cov(X,Y)\]
+    \begin{proof}
+        \begin{align*}
+            &\Var(X+Y)=\expect[(X+Y)^2]-\expect[X+Y]^2=\expect[X^2+2XY+Y^2]-\expect[X+Y]^2\\
+            &=\expect[X^2]+2\expect[XY]+\expect[Y^2]-\expect[X]^2-2\expect[X]\expect[Y]-\expect[Y]^2\\
+            &=\expect[X^2]-\expect[X]^2+\expect[Y^2]-\expect[Y]^2+2\expect[XY]-2\expect[X]\expect[Y]\\
+            &=\Var(X)+\Var(Y)+2\Cov(X,Y)
+        \end{align*}
+    \end{proof}
+    \item $(\Cov(X,Y))^2\leq\Var(X)\Var(Y)$ (Cauchy-Schwarz inequality)
+\end{itemize}
+We can also define the correlation between two random variables $X$ and $Y$ to be
+$$\Cor(X,Y)=\frac{\Cov(X,Y)}{\sqrt{\Var(X)\Var(Y)}}$$
+with the property that $-1\leq \Cor(X,Y)\leq 1$
+With these new definitions in place, we can use them to define the 2D normal distribution $\norm(\mu,\Sigma)$
+\[f_{X,Y}(x,y)=\frac{1}{\sqrt{(2\pi)^2\det(\Sigma)}}e^{-\frac{1}{2}\matrixx{x-\mu_x & y-\mu_y}\Sigma^{-1}\matrixx{x-\mu_x\\ y-\mu_y}}\]
+where $\Sigma$ is the matrix defined by
+\[\Sigma=\matrixx{\sigma_x^2 & \rho\sigma_x\sigma_y\\ \rho\sigma_x\sigma_y & \sigma_y^2}=\matrixx{\Var(X) & \Cov(X,Y)\\ \Cov(X,Y) & \Var(Y)}\]
+where $\rho\in(-1,1)$ and $\sigma_x,\sigma_y>0$.\\
+$X\sim\norm(\mu_x,\sigma_x^2)$, $Y\sim\norm(\mu_y,\sigma_y^2)$\\
+$\Cov(X,Y)=\rho\sigma_x\sigma_y$, $\Cor(X,Y)=\rho$\\

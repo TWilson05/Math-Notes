@@ -1067,6 +1067,12 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT MathNotes.aux
 INPUT ./MathNotes.out
 INPUT ./MathNotes.out
@@ -1089,5 +1095,6 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
