@@ -1007,3 +1007,46 @@ The strong law of large numbers is given by
 \[\prob\brround{\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^n X_i=\mu}=1\]
 or
 \[\prob\brround{\lim_{n\to\infty}\brvertical{\frac{1}{n}\sum_{i=1}^n X_i-\mu}\geq a}=0\]
+Let $X_1,X_2,\ldots$ be iid random variables with $X_i\sim\mathrm{Exp}(X\lambda)$. The sum of these random variables will form the Gamma distribution
+\[Z=\sum_{i=1}^k X_i\sim\mathrm{Gamma}(k,\lambda)\]
+\[f_Z(x)=\frac{\lambda^kx^{k-1}e^{-\lambda x}}{(k-1)!}\ind\brcurly{x\geq0}\]
+\begin{proof}
+We know that $f_{X_i}(x)=\lambda e^{-\lambda x}\ind_{[0,\infty)}(x)$ and we showed earlier in the notes that
+\[f_{X_1+X_2}(x)=\lambda^2xe^{-\lambda x}\ind_{[0,\infty)}(x)\]
+This proves the base case of $k=2$. Now, for the inductive step,
+\begin{align*}
+    &f_{X_1+\cdots+X_n}(x)=\frac{\lambda^nx^{n-1}e^{-\lambda x}}{(n-1)!}\ind\brcurly{x\geq0}\\
+    &f_{X_1+\cdots+X_{n+1}}(x)=\int_\R f_{X_1+\cdots+X_n}(y)f_{X_{n+1}}(x-y)dy\\
+    &=\int_\R\frac{\lambda^ny^{n-1}e^{-\lambda y}}{(n-1!)}\ind\brcurly{y\geq0}\lambda e^{-\lambda(x-y)}\ind\brcurly{x-y\geq 0}dy\\
+    &=\lambda^{n+1}e^{-\lambda x}\int_\R\frac{y^{n-1}}{(n-1)!}\ind\brcurly{0\leq y\leq x}dy\ind\brcurly{x\geq 0}\\
+    &=\lambda^{n+1}e^{-\lambda x}\brsquare{\frac{y^n}{n!}}_0^x\ind\brcurly{x\geq0}=\frac{\lambda^{n+1}x^ne^{-\lambda x}}{n!}\ind_{[0,\infty)}(x)
+\end{align*}
+\end{proof}
+From this, we can use the properties of the exponential distribution to conclude that for $Y\sim\mathrm{Gamma}(k,\lambda)$
+\begin{align*}
+    &\expect[Y]=\frac{k}{\lambda}\\
+    &\Var(Y)=\frac{k}{\lambda^2}\\
+    &Y\sim\mathrm{Gamma}(k,\lambda),\ Z\sim\mathrm{Gamma}(m,\lambda)\Ra Y+Z\sim\mathrm{Gamma}(k+m,\lambda)
+\end{align*}
+\textit{note that $\lambda$ has to be the same for both $Y$ and $Z$}\\
+Looking at another example, let $X_1,X_2,\ldots$ be iid random variables with $X_i\sim\norm(0,1)$. What is the distribution of $X_i^2$?
+\begin{align*}
+    &F_{X_i^2}(x)=\prob(X_i^2\leq x)=\prob(|X_i|\leq\sqrt{x})\ind\brcurly{x\geq0}\\
+    &=\prob(-\sqrt{x}\leq X_i\leq \sqrt{x})\ind\brcurly{x\geq0}=\brround{F_{X_i}(\sqrt{x})-F_{X_i}(-\sqrt{x})}\ind\brcurly{x\geq0}\\
+    &f_{X_i^2}=\ddx{x}F_{X_i^2}(x)=\brround{\frac{1}{\sqrt{2\pi}}e^{-\frac{(\sqrt{x})^2}{2}}\frac{1}{2\sqrt{x}}-\frac{1}{\sqrt{2\pi}}e^{-\frac{(-\sqrt{x})^2}{2}}\frac{1}{2\sqrt{x}}}\ind\brcurly{x\geq0}\\
+    &=\frac{1}{\sqrt{2\pi x}}e^{-\frac{|x|}{2}}\ind\brcurly{x\geq0}
+\end{align*}
+Now, what is the distribution of $X_1^2+X_2^2$?
+\begin{align*}
+    &f_{X_1^2+X_2^2}(x)=\int_\R f_{X_1^2}(y)f_{X_2^2}(x-y)dy\\
+    &=\int_\R\frac{1}{\sqrt{2\pi y}}e^{-\frac{y}{2}}\ind\brcurly{y\geq0}\frac{1}{\sqrt{2\pi(x-y)}}e^{-\frac{x-y}{2}}\ind\brcurly{x-y\geq0}dy\\
+    &=\frac{1}{2\pi}e^{-\frac{x}{2}}\int_0^x\frac{1}{\sqrt{y(x-y)}}dy\ind\brcurly{x\geq0}=\frac{1}{2}e^{-\frac{x}{2}}\ind\brcurly{x\geq0}\sim\mathrm{Exp}(\tfrac{1}{2})
+\end{align*}
+The distribution of $k$ squared iid standard normal random variables is called the $\chi^2$ distribution with $k$ degrees of freedom.
+\begin{align*}
+    &(X_1^2+X_2^2)\sim\mathrm{Exp}(\tfrac{1}{2})\\
+    &\sum_{i=1}^{2k} Z_i^2\sim\mathrm{Gamma}(k,\tfrac{1}{2})\\
+    &\chi^2(k)=\mathrm{Gamma}(\tfrac{k}{2},\tfrac{1}{2})
+\end{align*}
+Let $X\sim\chi^2(k)$ for $k\in\N$. Then
+\[f_X(x)=\frac{x^{\frac{k}{2}-1}}{2^{\frac{k}{2}}\Gamma(\tfrac{k}{2})}e^{-\frac{x}{2}}\ind_{[0,\infty)}(x)\]
