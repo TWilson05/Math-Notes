@@ -972,3 +972,16 @@ where $\Sigma$ is the matrix defined by
 where $\rho\in(-1,1)$ and $\sigma_x,\sigma_y>0$.\\
 $X\sim\norm(\mu_x,\sigma_x^2)$, $Y\sim\norm(\mu_y,\sigma_y^2)$\\
 $\Cov(X,Y)=\rho\sigma_x\sigma_y$, $\Cor(X,Y)=\rho$\\
+Ex: $\Var(X)=2$, $\Var(Y)=3$, $\Cov(X,Y)=1$, $Z=4X-Y$. What is $\Var(Z)$?
+\begin{align*}
+    &\Var(Z)=\Var(4X-Y)=\Var(4X)+\Var(-Y)+2\Cov(4X,-Y)\\
+    &=4^2\Var(X)+(-1)^2\Var(Y)+2(-4)\Cov(X,Y)\\
+    &=16\cdot 2+3-8=27
+\end{align*}
+Ex2: $\Var(X+Y)=0$. What is $\Cor(X,Y)$?
+\begin{align*}
+    &\Var(X+Y)=0\Ra X+Y=c\Ra Y=c-X\\
+    &\Var(Y)=\Var(c-X)=\Var(X)\\
+    &\Cov(X,Y)=\Cov(X,c-X)=\Cov(X,-X)=-\Cov(X,X)=-\Var(X)\\
+    &\Cor(X,Y)=\frac{\Cov(X,Y)}{\sqrt{\Var(X)\Var(Y)}}=\frac{-\Var(X)}{\sqrt{\Var(X)\Var(X)}}=-1
+\end{align*}
