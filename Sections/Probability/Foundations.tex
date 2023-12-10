@@ -985,3 +985,25 @@ Ex2: $\Var(X+Y)=0$. What is $\Cor(X,Y)$?
     &\Cov(X,Y)=\Cov(X,c-X)=\Cov(X,-X)=-\Cov(X,X)=-\Var(X)\\
     &\Cor(X,Y)=\frac{\Cov(X,Y)}{\sqrt{\Var(X)\Var(Y)}}=\frac{-\Var(X)}{\sqrt{\Var(X)\Var(X)}}=-1
 \end{align*}
+\subsubsection{Law of Large Numbers}
+Chebyshev's inequality:\\
+Let $X$ be a random variable with $\expect[X]=\mu$. Then for all $a>0$
+\[\prob(|X-\mu|\geq a)\leq\frac{\Var(X)}{a^2}\]
+\begin{proof}
+\begin{align*}
+    &\Var(X)=\expect[(X-\mu)^2||X-\mu|\geq a]\prob(|X-\mu|\geq a) + \expect[(X-\mu)^2||X-\mu|<a]\prob(|X-\mu|<a)\\
+    &\geq a^2\prob(|X-\mu|\geq a)\\
+    &\Ra \prob(|X-\mu|\geq a)\leq\frac{\Var(X)}{a^2}
+\end{align*}
+\end{proof}
+The (weak) law of large numbers:\\
+Let $(X_n)_{n\in\N}$ be a sequence of iid random variables with finite variance and expectation $\expect[X_n]=\mu$. Then for any $a>0$ we have
+\[\lim_{n\to\infty}\prob\brround{\brvertical{\frac{1}{n}\sum_{i=1}^n X_i-\mu}\geq a}=0\]
+\begin{proof}
+Observe that $\expect\brsquare{\frac{1}{n}\sum\limits_{i=1}^nX_i}=\mu$ and $\Var\brround{\frac{1}{n}\sum\limits_{i=1}^n X_i}=\frac{1}{n}\Var(X_i)$. Applying Chebyshev's inequality to $\frac{1}{n}\sum\limits_{i=1}^n X_i$ we get
+\[\prob\brround{\brvertical{\frac{1}{n}\sum_{i=1}^n X_i-\mu}\geq a}\leq\frac{\Var\brround{\frac{1}{n}\sum\limits_{i=1}^n X_i}}{a^2}=\frac{\Var(X_i)}{na^2}\ \overrightarrow{n\to\infty}\ 0\]
+\end{proof}
+The strong law of large numbers is given by
+\[\prob\brround{\lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^n X_i=\mu}=1\]
+or
+\[\prob\brround{\lim_{n\to\infty}\brvertical{\frac{1}{n}\sum_{i=1}^n X_i-\mu}\geq a}=0\]
