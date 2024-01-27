@@ -28,6 +28,10 @@
 
 \newcommand{\brvertical}[1]{\left| #1 \right|}
 
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+
 
 
 % Matrix commands
@@ -112,6 +116,15 @@
 \DeclareMathOperator{\Log}{Log}
 \DeclareMathOperator{\Res}{Res}
 
+% probability
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\ind}{\mathds{1}}
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\norm}{\mathcal{N}}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Cor}{Cor}
+
 % formula box
 \newcommand{\formulabox}[2]{\begin{center} \begin{tcolorbox}[text width = #1] $$#2$$\end{tcolorbox}\end{center}}
 \newcommand{\formula}[2]{\begin{tcolorbox}[title = #1] #2 \end{tcolorbox}}
@@ -121,5 +134,24 @@
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newcommand{\Exp}[1]{\cdot 10^{#1}}
 
-% % centering
-% \newcommand{\cent}[1]{\begin{center}#1\end{center}}
+
+% coloured boxes
+\usepackage{xcolor}
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colourboxed}{}
+\def\colourboxed#1#{%
+  \colourboxedAux{#1}%
+}
+\newcommand*{\colourboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
