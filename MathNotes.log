@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  4 MAY 2024 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.23)  4 MAY 2024 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,18 +679,84 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 LaTeX Font Info:    Trying to load font information for U+esint on input line 36.
  (c:/texlive/2022/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
-) (./MathNotes.toc)
+) (./MathNotes.toc [1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `MathNotes.toc'.
 
- (./Sections/Probability.tex (./Sections/Probability/Foundations.tex [1
+ (./Sections/Probability.tex (./Sections/Probability/Counting.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 42--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--72
+
+ []
+
+[3]
+<Images/FundamentalsPictures/PascalTriangle.jpg, id=274, 670.505pt x 492.84125pt>
+File: Images/FundamentalsPictures/PascalTriangle.jpg Graphic file (type jpg)
+<use Images/FundamentalsPictures/PascalTriangle.jpg>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangle.jpg  used on input line 81.
+(pdftex.def)             Requested size: 335.25168pt x 246.42001pt.
+<Images/FundamentalsPictures/PascalTriangleComb.png, id=275, 1284.8pt x 1009.7725pt>
+File: Images/FundamentalsPictures/PascalTriangleComb.png Graphic file (type png)
+<use Images/FundamentalsPictures/PascalTriangleComb.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTriangleComb.png  used on input line 83.
+(pdftex.def)             Requested size: 256.95544pt x 201.95091pt.
+<Images/FundamentalsPictures/PascalTrianglePathway.png, id=277, 360.34625pt x 346.29375pt>
+File: Images/FundamentalsPictures/PascalTrianglePathway.png Graphic file (type png)
+<use Images/FundamentalsPictures/PascalTrianglePathway.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PascalTrianglePathway.png  used on input line 88.
+(pdftex.def)             Requested size: 198.19104pt x 190.46214pt.
+<Images/FundamentalsPictures/PathwayEx.png, id=278, 493.845pt x 307.1475pt>
+File: Images/FundamentalsPictures/PathwayEx.png Graphic file (type png)
+<use Images/FundamentalsPictures/PathwayEx.png>
+Package pdftex.def Info: Images/FundamentalsPictures/PathwayEx.png  used on input line 93.
+(pdftex.def)             Requested size: 395.07652pt x 245.71832pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--99
+
+ []
+
+[4 <./Images/FundamentalsPictures/PascalTriangle.jpg>] [5 <./Images/FundamentalsPictures/PascalTriangleComb.png> <./Images/FundamentalsPictures/PascalTrianglePathway.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
+
+ []
+
+[6 <./Images/FundamentalsPictures/PathwayEx.png>]) (./Sections/Probability/Foundations.tex [7] [8] [9] [10] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
-[6]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
@@ -700,82 +766,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--210
 
  []
 
-[7]
+[14]
 Overfull \hbox (30.69366pt too wide) detected at line 232
 []
  []
 
-[8] [9]
+[15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 308--317
 
  []
 
-[10]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
-[11] [12]
+[18] [19]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 399.
  (c:/texlive/2022/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [13]
+) [20]
 Overfull \hbox (1.37021pt too wide) detected at line 436
 []
  []
 
-[14] [15]
+[21] [22]
 Overfull \hbox (55.53125pt too wide) detected at line 500
 []
  []
 
-[16]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
-[17]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
-[18] [19] [20] [21] [22] [23] [24] [25]
+[25] [26] [27] [28] [29] [30] [31] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 778--780
 
  []
 
-[26]
+[33]
 Overfull \hbox (6.85522pt too wide) detected at line 803
 []
  []
 
-[27]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 829--831
 
  []
 
-[28]
+[35]
 Overfull \hbox (43.99922pt too wide) detected at line 880
 []
  []
 
-[29] [30] [31] [32] [33] [34])) [35] (./MathNotes.aux)
+[36] [37] [38] [39] [40] [41])) [42] (./MathNotes.aux)
 Package rerunfilecheck Info: File `MathNotes.out' has not changed.
-(rerunfilecheck)             Checksum: 8F27F232E954532872E8DF2CF0F5DA69;2996.
+(rerunfilecheck)             Checksum: F3BB4AE33EEFF8843E3C47BF030EF3BE;6568.
  ) 
 Here is how much of TeX's memory you used:
- 24570 strings out of 476093
- 469310 string characters out of 5795582
+ 24659 strings out of 476093
+ 471797 string characters out of 5795582
  1875787 words of memory out of 5000000
- 44448 multiletter control sequences out of 15000+600000
+ 44496 multiletter control sequences out of 15000+600000
  522873 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,104p,708b,757s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,104p,708b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on MathNotes.pdf (35 pages, 344859 bytes).
+Output written on MathNotes.pdf (42 pages, 464344 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 58 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1714866967 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1714866969 0
-  "MathNotes.aux" 1714866969 2979 196c2cd47f9377fddbbfbaffbd8cd2cf "pdflatex"
-  "MathNotes.out" 1714866969 2996 8f27f232e954532872e8df2cf0f5da69 "pdflatex"
+["pdflatex"] 1714872737 "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" "MathNotes.pdf" "MathNotes" 1714872739 0
+  "Images/FundamentalsPictures/PascalTriangle.jpg" 1689245177 28603 b37931d1002dd4bcda4424d24718d320 ""
+  "Images/FundamentalsPictures/PascalTriangleComb.png" 1689245177 74419 1402e2aaab3475fef71d39d48ca380e8 ""
+  "Images/FundamentalsPictures/PascalTrianglePathway.png" 1689245177 3695 d4009cdec857b9fd636a9e2300b8b023 ""
+  "Images/FundamentalsPictures/PathwayEx.png" 1689245177 22219 234f9ac031a921d3d68e5de7c8193528 ""
+  "MathNotes.aux" 1714872739 5906 ccf149554f2ea337bea7d46d7869bf15 "pdflatex"
+  "MathNotes.out" 1714872739 6568 f3bb4ae33eeff8843e3c47bf030ef3be "pdflatex"
   "MathNotes.tex" 1714866961 1440 83692a461edbe7c8e5fb3d92264783ed ""
-  "MathNotes.toc" 1714866969 1686 fc513ae9935f588c98065d72acf74041 "pdflatex"
-  "Sections/Probability.tex" 1695569804 67 0da00daebf3ed13535c3be086f71eccd ""
+  "MathNotes.toc" 1714872739 3711 60a4267b813088f84719d9211c72703c "pdflatex"
+  "Sections/Probability.tex" 1714871006 110 b33a32bec1030b6b6f0a8deb42669f4c ""
+  "Sections/Probability/Counting.tex" 1714872734 7643 1e20d436abc905e4b96f6b1d0707b71e ""
   "Sections/Probability/Foundations.tex" 1706330080 66010 2b73383e1c4808af5d58d4711ed62b0f ""
   "c:/Users/tbwil/Documents/LaTeX Documents/Math Notes/MathNotes.tex" 1714866961 1440 83692a461edbe7c8e5fb3d92264783ed ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1671857571 2900 1537cc8184ad1792082cd229ecc269f4 ""
